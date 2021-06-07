@@ -190,11 +190,12 @@ sub Run {
 
             # get the number of FAQ articles in this category
             $SubCategoryData{ArticleCount} = $FAQObject->FAQCount(
-                CategoryIDs  => [$SubCategoryID],
-                ItemStates   => $InterfaceStates,
-                OnlyApproved => 1,
-                Valid        => 1,
-                UserID       => $Self->{UserID},
+                CategoryIDs        => [$SubCategoryID],
+                ItemStates         => $InterfaceStates,
+                CountSubCategories => 1,
+                OnlyApproved       => 1,
+                Valid              => 1,
+                UserID             => $Self->{UserID},
             );
 
             # output the category data

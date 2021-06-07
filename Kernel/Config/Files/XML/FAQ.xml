@@ -2781,4 +2781,11 @@ Your OTRS Notification Master
             <Item ValueType="String" ValueRegex="^\d+$">4</Item>
         </Value>
     </Setting>
+    <Setting Name="FAQExplorer::CountSubCategories" Required="0" Valid="1">
+        <Description Translatable="1">Count articles from FAQ subcategories for explorer.</Description>
+        <Navigation>Core::FAQ::Explorer</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
 </otrs_config>
