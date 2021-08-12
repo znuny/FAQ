@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>6.1.0</Version>
+    <Version>6.1.1</Version>
     <Framework>6.1.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -9,6 +9,7 @@
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="6.1.1" Date="2021-08-12 21:56:43 +0200">Initial 6.1 release</ChangeLog>
     <ChangeLog Version="6.0.29" Date="2021-04-21 16:10:32 +0200">Moved complex link table configuration for FAQ items to Perl config file (Znuny security advisory 2021-05, see https://www.znuny.org/de/advisories/zsa-2021-05).</ChangeLog>
     <Filelist>
         <File Permission="770" Location="bin/cgi-bin/faq.pl"/>
