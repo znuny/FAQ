@@ -2781,4 +2781,107 @@ Your OTRS Notification Master
             <Item ValueType="String" ValueRegex="^\d+$">4</Item>
         </Value>
     </Setting>
+    <Setting Name="FAQ::Agent::RelatedArticles::Enabled" Required="1" Valid="1">
+        <Description Translatable="1">Enable the related article feature for the agent frontend.</Description>
+        <Navigation>Core::FAQ::RelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Output::FilterElementPost###OutputFilterPostFAQAgentRelatedArticles" Required="0" Valid="1">
+        <Description Translatable="1">Output filter to add Java-script to CustomerTicketMessage screen.</Description>
+        <Navigation>Frontend::Base::OutputFilter</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::FilterElementPost::FAQAgentRelatedArticles</Item>
+                <Item Key="Templates">
+                    <Hash>
+                        <Item Key="AgentTicketPhone">1</Item>
+                        <Item Key="AgentTicketEmail">1</Item>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Template::GenerateBlockHooks###100-FAQ-FAQAgentRelatedArticles" Required="1" Valid="1">
+        <Description Translatable="1">Generate HTML comment hooks for the specified blocks so that filters can use them.</Description>
+        <Navigation>Frontend::Base::OutputFilter</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="AgentTicketPhone">
+                    <Array>
+                        <Item>TicketOptions</Item>
+                    </Array>
+                </Item>
+                <Item Key="AgentTicketEmail">
+                    <Array>
+                        <Item>TicketOptions</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Module###AgentFAQRelatedArticles" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the agent interface.</Description>
+        <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">Agent FAQ Related Articles.</Item>
+                    <Item Key="Title" Translatable="1">Agent FAQ Related Articles</Item>
+                    <Item Key="NavBarName"></Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###QueuesEnabled" Required="0" Valid="0">
+        <Description Translatable="1">List of queue names for which the related article feature is enabled.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Array>
+                <Item>Raw</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###DefaultLanguages" Required="0" Valid="1">
+        <Description Translatable="1">The default languages for the related FAQ articles.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Array>
+                <Item>en</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###ShowLimit" Required="1" Valid="1">
+        <Description Translatable="1">Output limit for the related FAQ articles.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">5</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###VoteStarsVisible" Required="0" Valid="0">
+                 <Description Translatable="1">Show the stars for the articles with a rating equal or greater like the defined value if enabled.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">3</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###Position" Required="1" Valid="1">
+        <Description Translatable="1">Defines the position where the related FAQ articles widget is located.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="Select" SelectedID="1">
+                <Item ValueType="Option" Value="1" Translatable="1">Below subject</Item>
+                <Item ValueType="Option" Value="2" Translatable="1">Below body</Item>
+            </Item>
+        </Value>
+    </Setting>
 </otrs_config>

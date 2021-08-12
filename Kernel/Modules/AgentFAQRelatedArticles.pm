@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -26,7 +27,9 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $Config = $Kernel::OM->Get('Kernel::Config')->Get("FAQ::Frontend::$Self->{Action}");
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+    my $Config = $ConfigObject->Get("FAQ::Frontend::$Self->{Action}");
 
     my $JSON = '';
 
@@ -65,14 +68,15 @@ sub Run {
     }
 
     if (@RelatedFAQArticleList) {
+        my $FAQVotingEnabled = $ConfigObject->Get('FAQ::Voting');
 
-        # Generate the html for the widget.
         my $AgentRelatedFAQArticlesHTMLString = $LayoutObject->Output(
             TemplateFile => 'AgentFAQRelatedArticles',
             Data         => {
                 RelatedFAQArticleList         => \@RelatedFAQArticleList,
                 RelatedFAQArticleFoundNothing => $RelatedFAQArticleFoundNothing,
                 VoteStarsVisible              => $Config->{VoteStarsVisible},
+                FAQVotingEnabled              => $FAQVotingEnabled,
             },
         );
 
