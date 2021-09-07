@@ -1590,7 +1590,7 @@ articles. If the word is a keyword in a FAQ article the quantifier for
 this FAQ article will be increased (word counter + current FAQ article
 quantifier). Here is a example for the related FAQ article ordering:
 
-                
+
     We have some FAQ Article with the following keywords:
         - FAQArticle 1 with keywords:  'itsm', 'changemanagement', 'ticket'
         - FAQArticle 2 with keywords: 'itsm', 'changemangement'
@@ -1603,8 +1603,8 @@ quantifier). Here is a example for the related FAQ article ordering:
         - FAQArticle 1 => 11 - ( changemanagement (5) + ticket (4) + itsm (1) = Quantifier (11) )
         - FAQArticle 2 => 6  - ( changemanagement (5) + itsm (1) = Quantifier (6) )
         - FAQArticle 3 => 4  - ( ticket (4) = Quantifier (4) )
-                
-            
+
+
 
 If two articles have the same keyword quantifier the last change time
 and create time will also be used for the sorting.
@@ -1648,7 +1648,7 @@ the following command on the command line:
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test GenericInterface/FAQConnector
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Console/Command/Admin/FAQ/Import --test Console/Command/Maint/FAQ/ContentTypeSet
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test UpgradeLowerThan5092
-            
+
 
 Selenium unit tests
 
@@ -1660,7 +1660,7 @@ WebDriver.
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test CustomerFAQExplorer --test CustomerFAQPrint --test CustomerFAQSearch --test CustomerFAQZoom --test Customer/FAQ/RelatedArticles
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test PublicFAQExplorer --test PublicFAQPrint --test PublicFAQRSS --test PublicFAQSearch --test PublicFAQZoom
     shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Dashboard/FAQ --test FAQJournalOverview/Small --test FAQMenu/Generic --test FAQOverview/Small --test HeaderMeta/AgentFAQSearch --test HeaderMeta/CustomerFAQSearch --test HeaderMeta/PublicFAQSearch --test LinkObject/FAQ
-            
+
 
 Run all available unit tests
 
@@ -1689,7 +1689,7 @@ web service in the system using the provided YAML file (.yaml) included
 on this package.
 
     shell> bin/otrs.Console.pl Admin::WebService::Add --name GenericInterfaceFAQConnector --source-path scripts/webservices/GenericInterfaceFAQConnector.yaml
-                
+
 
 Also you can install the web service importing the mentioned YAML file
 via web interface in the next URL using the 'Import web service'
@@ -1699,7 +1699,7 @@ button on the left side bar.
 
 The content of the YAML file is shown below.
 
-                    
+
     ---
     Debugger:
       DebugThreshold: debug
@@ -1728,8 +1728,8 @@ The content of the YAML file is shown below.
           SOAPAction: ''
         Type: HTTP::SOAP
     RemoteSystem: ''
-                    
-                
+
+
 
 In order to use the web service you need to use an new interface in
 OTRS. As for agents you use index.pl and for customers you use
@@ -1746,7 +1746,7 @@ number. To get the list of "valid" web services and they corresponding
 ID number you can use the following command:
 
     shell> bin/otrs.Console.pl Admin::WebService::List
-                
+
 
 For this specific web service, using the default configuration you can
 call it as follows:
@@ -1778,14 +1778,14 @@ languages including ID and the Name for each language on the system.
 
 Request format:
 
-                    
+
             <LanguageList/>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <LanguageListResponse>
              <!--1 or more repetitions:-->
              <Language>
@@ -1793,12 +1793,12 @@ Response format:
                 <Name>?</Name>
              </Language>
           </LanguageListResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <LanguageListResponse>
              <Language>
                 <ID>1</ID>
@@ -1813,8 +1813,8 @@ Response example:
                 <Name>es</Name>
              </Language>
           </LanguageListResponse>
-                    
-                
+
+
 
 ## PublicCategoryList
 
@@ -1826,14 +1826,14 @@ category.
 
 Request format:
 
-                    
+
             <PublicCategoryList/>
-                    
-                
+
+
 
 Response format:
 
-                    
+
          <PublicCategoryListResponse>
              <!--1 or more repetitions:-->
              <Category>
@@ -1841,12 +1841,12 @@ Response format:
                 <Name>?</Name>
              </Category>
           </PublicCategoryListResponse>
-                     
-                
+
+
 
 Response example:
 
-                    
+
           <PublicCategoryListResponse>
              <Category>
                 <ID>2</ID>
@@ -1861,8 +1861,8 @@ Response example:
                 <Name>Public::SubCategory B</Name>
              </Category>
           </PublicCategoryListResponse>
-                    
-                
+
+
 
 ## PublicFAQGet
 
@@ -1877,27 +1877,27 @@ the attachment contents are not really needed.
 
 Request format:
 
-                    
+
           <PublicFAQGet>
              <ItemID>?</ItemID>
              <!-- optional, defaults to 1 -->
              <GetAttachmentContents>?</GetAttachmentContents>
           </PublicFAQGet>
-                    
-                
+
+
 
 Request example:
 
-                    
+
           <PublicFAQGet>
             <ItemID>6,7</ItemID>
           </PublicFAQGet>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <PublicFAQGetResponse>
              <!--Zero or more repetitions:-->
              <FAQItem>
@@ -1942,12 +1942,12 @@ Response format:
                 </Attachment>
              </FAQItem>
           </PublicFAQGetResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <PublicFAQGetResponse>
               <FAQItem>
                 <ID>6</ID>
@@ -2030,8 +2030,8 @@ Response example:
                 <ContentType>text/html</ContentType>
               </FAQItem>
           </PublicFAQGetResponse>
-                    
-                
+
+
 
 ## PublicFAQSearch
 
@@ -2052,7 +2052,7 @@ The full FAQ item data can be retrieved for each ID by using
 
 Request format:
 
-                    
+
           <PublicFAQSearch>
              <!--Optional:-->
              <Number>?</Number>
@@ -2073,12 +2073,12 @@ Request format:
              <!--Optional:-->
              <OprderByDirection>?</OprderByDirection>
           </PublicFAQSearch>
-                    
-                
+
+
 
 Request example:
 
-                    
+
          <PublicFAQSearch>
             <Number>*134*</Number>
             <Title>*some title*</Title>
@@ -2089,22 +2089,22 @@ Request example:
             <OrderBy>FAQID</OrderBy>
             <OrderByDirection>Up</OrderByDirection>
           </PublicFAQSearch>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <PublicFAQSearchResponse>
              <!--Zero or more repetitions:-->
              <ID>?</ID>
           </PublicFAQSearchResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <PublicFAQSearchResponse>
              <ID>20</ID>
              <ID>19</ID>
@@ -2118,5 +2118,3 @@ Response example:
              <ID>6</ID>
              <ID>5</ID>
           </PublicFAQSearchResponse>
-                    
-                
