@@ -2884,4 +2884,45 @@ Your OTRS Notification Master
             </Item>
         </Value>
     </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Attribute" Required="0" Valid="1">
+        <Description Translatable="1">Customer user attribute to check its group relation.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="String">UserLanguage</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Mapping" Required="0" Valid="1">
+        <Description Translatable="1">Mapping between customer user attribute value and group.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="de">G_FAQ_Germany</Item>
+                <Item Key="hu">G_FAQ_Hungary</Item>
+                <Item Key="tr">G_FAQ_Turkey</Item>
+                <Item Key="en">G_FAQ_English</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###DefaultGroup" Required="0" Valid="0">
+        <Description Translatable="1">Group to which customer users belong by default (if this setting is enabled).</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="String">G_FAQ_English</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Enabled" Required="0" Valid="1">
+        <Description Translatable="1">Enable customer user permission attributes.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions::CustomerGroupSupport" Required="0" Valid="1">
+        <Description Translatable="1">Enable customer group support permissions.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+
 </otrs_config>

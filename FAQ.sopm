@@ -143,6 +143,7 @@
         <File Permission="660" Location="scripts/test/FAQ/RelatedArticle.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/AgentCategorySearch.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CategoryAdd.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/Category/CheckCustomerUserCategory.t"/>
         <File Permission="660" Location="scripts/test/FAQ/UpgradeLowerThan5092.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CheckCategoryUserPermission.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/FAQConnector.t"/>

@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -556,6 +557,11 @@ sub Data {
     $Self->{Translation}->{'internal (agent)'} = 'intern (Agent)';
     $Self->{Translation}->{'public (all)'} = 'öffentlich (Alle)';
     $Self->{Translation}->{'public (public)'} = 'öffentlich (öffentlich)';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = 'Kundenbenutzer-Attribut zur Prüfung der Gruppenzuordnung.';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = 'Mapping zwischen Kundenbenutzer-Attributwert und Gruppe.';
+    $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} = 'Gruppe, zu der Kundenbenutzer standardmäßig gehören (sofern diese Einstellung aktiviert ist).';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Attribute für Kundenbenutzerrechte aktivieren.';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
