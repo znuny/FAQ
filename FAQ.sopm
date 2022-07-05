@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>6.3.1</Version>
+    <Version>6.3.2</Version>
     <Framework>6.3.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -9,6 +9,7 @@
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="6.3.2" Date="2022-07-05 09:43:09 +0200">Added group permissions for customer users.</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-16 22:39:26 +0100">Ported to 6.3</ChangeLog>
     <ChangeLog Version="6.2.2" Date="2022-02-16 14:59:57 +0100">Fixed links in customer frontend - changed from iframe to blank.</ChangeLog>
     <ChangeLog Version="6.2.1" Date="2021-11-09 10:21:21 +0100">Ported to 6.2.</ChangeLog>
