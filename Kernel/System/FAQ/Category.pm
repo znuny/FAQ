@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,7 +20,10 @@ our @ObjectDependencies = (
     'Kernel::System::DB',
     'Kernel::System::Group',
     'Kernel::System::Log',
-    'Kernel::System::Valid'
+    'Kernel::System::Valid',
+    'Kernel::Config',
+    'Kernel::System::CustomerUser',
+
 );
 
 =head1 NAME
@@ -1501,20 +1504,17 @@ sub GetCustomerCategories {
         UserID => $Param{UserID},
     );
 
-    my %UserGroups = $Kernel::OM->Get('Kernel::System::CustomerGroup')->GroupMemberList(
-        UserID => $Param{CustomerUser},
-        Type   => 'ro',
-        Result => 'HASH',
+    my $UserGroups = $Self->_GetCustomerUserGroups(
+        CustomerUser => $Param{CustomerUser}
     );
 
     my $CustomerCategories = $Self->_UserCategories(
         Categories     => $Categories,
         CategoryGroups => $CategoryGroups,
-        UserGroups     => \%UserGroups,
+        UserGroups     => $UserGroups,
         UserID         => $Param{UserID},
     );
 
-    # cache
     $Self->{Cache}->{$CacheKey} = $CustomerCategories;
 
     return $CustomerCategories;
@@ -1957,6 +1957,121 @@ sub _UserCategories {
     }
 
     return \%UserCategories;
+}
+
+sub _GetCustomerUserGroups {
+    my ( $Self, %Param ) = @_;
+
+    return if !$Param{CustomerUser};
+
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $GroupObject  = $Kernel::OM->Get('Kernel::System::Group');
+
+    my $CustomerUserPermissionsEnabled = $ConfigObject->Get('FAQ::CustomerUserPermissions')->{Enabled};
+    my $CustomerGroupConfig            = $ConfigObject->Get('CustomerGroupSupport');
+    my $CustomerGroupSupportEnabled    = $ConfigObject->Get('FAQ::CustomerUserPermissions::CustomerGroupSupport');
+
+    my %UserGroups;
+
+    if ($CustomerUserPermissionsEnabled) {
+        my %UserGroups = %{ $Self->_GetCustomerUserAttributeGroups(%Param) // {} };
+        if ( $CustomerGroupConfig && $CustomerGroupSupportEnabled ) {
+            %UserGroups = ( %UserGroups, %{ $Self->_GetCustomerUserCustomerGroupSupportGroups(%Param) // {} } );
+        }
+        return \%UserGroups;
+    }
+
+    %UserGroups = $GroupObject->GroupList( Valid => 1 );
+
+    return \%UserGroups;
+}
+
+sub _GetCustomerUserCustomerGroupSupportGroups {
+    my ( $Self, %Param ) = @_;
+
+    my $CustomerGroupObject = $Kernel::OM->Get('Kernel::System::CustomerGroup');
+
+    my %UserGroups = $CustomerGroupObject->GroupMemberList(
+        UserID => $Param{CustomerUser},
+        Type   => 'ro',
+        Result => 'HASH',
+    );
+
+    return \%UserGroups;
+}
+
+sub _GetCustomerUserAttributeGroups {
+    my ( $Self, %Param ) = @_;
+
+    my $CustomerUserObject = $Kernel::OM->Get('Kernel::System::CustomerUser');
+    my $ConfigObject       = $Kernel::OM->Get('Kernel::Config');
+    my $GroupObject        = $Kernel::OM->Get('Kernel::System::Group');
+    my $LogObject          = $Kernel::OM->Get('Kernel::System::Log');
+
+    ARGUMENT:
+    for my $Argument (qw(CustomerUser)) {
+        next ARGUMENT if IsStringWithData( $Param{$Argument} );
+        $LogObject->Log(
+            Priority => 'error',
+            Message  => "Need $Argument!",
+        );
+
+        return;
+    }
+
+    my %CustomerUser = $CustomerUserObject->CustomerUserDataGet(
+        User => $Param{CustomerUser},
+    );
+    return if !%CustomerUser;
+
+    my $CustomerUserPermissions = $ConfigObject->Get('FAQ::CustomerUserPermissions');
+    return if !IsHashRefWithData($CustomerUserPermissions);
+
+    my $DefaultGroup = $CustomerUserPermissions->{DefaultGroup};
+
+    my %CustomerUserGroups;
+
+    if ( IsStringWithData($DefaultGroup) ) {
+        my $DefaultGroupID = $GroupObject->GroupLookup(
+            Group => $DefaultGroup,
+        );
+
+        if ( !$DefaultGroupID ) {
+            $LogObject->Log(
+                Priority => 'error',
+                Message  => "Default group: $DefaultGroup not found.",
+            );
+            return \%CustomerUserGroups;
+        }
+
+        $CustomerUserGroups{$DefaultGroupID} = $DefaultGroup;
+    }
+
+    my $Mapping = $CustomerUserPermissions->{Mapping};
+    return \%CustomerUserGroups if !IsHashRefWithData($Mapping);
+
+    my $Attribute = $CustomerUserPermissions->{Attribute};
+    return \%CustomerUserGroups if !IsStringWithData($Attribute);
+
+    my $AttributeValue = $CustomerUser{$Attribute};
+    return \%CustomerUserGroups if !IsStringWithData($AttributeValue);
+    return \%CustomerUserGroups if !IsStringWithData( $Mapping->{$AttributeValue} );
+
+    my $GroupID = $GroupObject->GroupLookup(
+        Group => $Mapping->{$AttributeValue},
+    );
+
+    if ( !$GroupID ) {
+        $LogObject->Log(
+            Priority => 'error',
+            Message  => "Group: $Mapping->{$AttributeValue} not found.",
+        );
+        return \%CustomerUserGroups;
+    }
+
+    $CustomerUserGroups{$GroupID} = $Mapping->{$AttributeValue};
+
+    return \%CustomerUserGroups;
 }
 
 1;
