@@ -2924,4 +2924,31 @@ Your OTRS Notification Master
             <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
+    <Setting Name="Frontend::RichText::Autocompletion::Modules###FAQ" Required="0" Valid="1">
+        <Description Translatable="1">Rich text editor configuration for autocompletion module.</Description>
+        <Navigation>Core</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Trigger">??</Item>
+                <Item Key="Categories">
+                    <Array>
+                        <Item>Misc</Item>
+                    </Array>
+                </Item>
+                <Item Key="SearchFields">
+                    <Array>
+                        <Item>Title</Item>
+                        <Item>Keywords</Item>
+                        <Item>Field1</Item>
+                        <Item>Field2</Item>
+                        <Item>Field3</Item>
+                        <Item>Field4</Item>
+                        <Item>Field5</Item>
+                        <Item>Field6</Item>
+                        <Item>CategoryName</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
 </otrs_config>

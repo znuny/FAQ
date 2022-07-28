@@ -123,6 +123,7 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFullText.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQZoom.tt"/>
+        <File Permission="660" Location="Kernel/System/Autocompletion/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/FAQ/Import.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Maint/FAQ/ContentTypeSet.pm"/>
         <File Permission="660" Location="Kernel/System/DynamicField/ObjectType/FAQ.pm"/>
@@ -135,6 +136,7 @@
         <File Permission="660" Location="Kernel/System/FAQSearch.pm"/>
         <File Permission="660" Location="Kernel/System/LinkObject/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/Stats/Static/FAQAccess.pm"/>
+        <File Permission="660" Location="scripts/test/Autocompletion/FAQ.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/FAQ/Import.t"/>
         <File Permission="660" Location="scripts/webservices/GenericFAQConnectorREST.yml"/>
         <File Permission="660" Location="scripts/webservices/GenericFAQConnectorSOAP.yml"/>
