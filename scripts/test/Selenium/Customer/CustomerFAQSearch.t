@@ -133,10 +133,10 @@ $Selenium->RunTest(
         # There are no test FAQs, user doesn't have permission for test category.
         for my $FAQ (@FAQSearch) {
 
-            # check if there is not test FAQ on screen
-            $Self->True(
-                index( $Selenium->get_page_source(), $FAQ->{FAQTitle} ) == -1,
-                "$FAQ->{FAQTitle} is found",
+            # check if there is no test FAQ on screen
+            $Selenium->PageContains(
+                String  => $FAQ->{FAQTitle},
+                Message => "$FAQ->{FAQTitle} is found",
             );
         }
 
@@ -170,9 +170,9 @@ $Selenium->RunTest(
         for my $FAQ (@FAQSearch) {
 
             # Check if there is test FAQ on screen.
-            $Self->True(
-                index( $Selenium->get_page_source(), $FAQ->{FAQTitle} ) > -1,
-                "$FAQ->{FAQTitle} is found",
+            $Selenium->PageContains(
+                String  => $FAQ->{FAQTitle},
+                Message => "$FAQ->{FAQTitle} is found",
             );
         }
 
@@ -194,17 +194,17 @@ $Selenium->RunTest(
             if ( $FAQ->{Type} eq 'FAQChangeSearch' ) {
 
                 # Check if there is test FAQChangeSearch* on screen.
-                $Self->True(
-                    index( $Selenium->get_page_source(), $FAQ->{FAQTitle} ) > -1,
-                    "$FAQ->{FAQTitle} - found",
+                $Selenium->PageContains(
+                    String  => $FAQ->{FAQTitle},
+                    Message => "$FAQ->{FAQTitle} - found",
                 );
             }
             else {
 
                 # Check if there is no test FAQSearch* on screen.
-                $Self->True(
-                    index( $Selenium->get_page_source(), $FAQ->{FAQTitle} ) == -1,
-                    "$FAQ->{FAQTitle} is not found",
+                $Selenium->PageContainsNot(
+                    String  => $FAQ->{FAQTitle},
+                    Message => "$FAQ->{FAQTitle} is not found",
                 );
             }
 
