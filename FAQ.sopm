@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>6.0.32</Version>
+    <Version>6.0.33</Version>
     <Framework Minimum="6.0.26">6.0.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -9,6 +9,7 @@
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="6.0.33" Date="2022-10-27 16:37:12 +0200">Removed "Subject" change event restriction (minimum letters in subject field greater than 10) for showing related articles in agent and customer interface.</ChangeLog>
     <ChangeLog Version="6.0.32" Date="2022-06-20 08:05:16 +0200">Added group permissions for customer users.</ChangeLog>
     <ChangeLog Version="6.0.31" Date="2022-02-16 15:39:10 +0100">Fixed links in customer frontend - changed from iframe to blank.</ChangeLog>
     <ChangeLog Version="6.0.30" Date="2021-08-12 21:37:40 +0200">Added related FAQ articles for agents</ChangeLog>
