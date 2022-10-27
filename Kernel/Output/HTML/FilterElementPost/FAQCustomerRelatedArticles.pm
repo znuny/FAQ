@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -191,10 +191,8 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
 });
 
 \$('#Subject').on('paste keydown', function (Event) {
-    var Value = \$('#Subject').val();
-
     // trigger only the change event for the subject, if space or enter was pressed
-    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEDITOR.instances['RichText'].getData())) || Event.type !== 'keydown') {
+    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 )) || Event.type !== 'keydown') {
         \$('#Subject').trigger('change');
     }
 });
