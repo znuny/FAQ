@@ -11,7 +11,7 @@ customers, therefore effectively saving time.
 ## FAQ explorer
 
 Intuitive navigation and flexible mapping of theme hierarchies within
-the FAQ explorer enable easy navigation through the database.
+the FAQ explorer enables easy navigation through the database.
 
 ## WYSIWYG editor
 
@@ -33,9 +33,9 @@ customer interface, too (e.g. user guides as PDF).
 
 Using the FAQ state you can determine the interface(s) in which an FAQ
 article should be displayed. Articles with their state set to
-"internal" are only visible for agents via the agent interface.
+"internal" are only visible to agents via the agent interface.
 Articles whose state is set to "external" are also displayed in the
-protected customer section, and articles tagged as "public" are
+protected customer section and articles tagged as "public" are
 available in the non-protected public area as well.
 
 ## Comfortable navigation and clickable keywords
@@ -66,13 +66,14 @@ information about the quality of FAQ articles.
 
 ## This might be helpful (agent and customer ticket creation)
 
-An additional widget for the customer ticket creation provides
-helpful FAQ article related for the inserted subject and text.
+An additional widget for customer ticket creation provides
+helpful FAQ article related to the inserted subject and text.
 
 ## Inserting FAQ articles on OTRS replies
 
 You can insert FAQ articles (including images and attachments) in new
 tickets or replies you generate in OTRS.
+
 
 ## Release workflow
 
@@ -89,13 +90,22 @@ providing information about changes in FAQ articles.
 The FAQ package supports the Open Search format (enabling quick searches
 directly from the browser).
 
+## FAQ Autocompletion
+
+The auto complete feature, starting in version 6.4, allows users to use the keyword
+"??" and a search term, to find articles and instert them directly into the text.
+
+i.e. ??password
+
+![Auto comlpete results](doc/en/images/faq_autocomplete.png){width="100%"}
+
 ## Create links using the category name
 
 It is possible to refer to FAQ items by creating a link
 for web browsers using the category name instead of just the category ID.
 
 To be able to use this feature just replace the CategoryID parameter
-with Category parameter in your current links. Category parameter is the
+with the Category parameter in your current links. The category parameter is the
 full category path, each sub-category is separated by "::" (which is
 also called the "category long name"). Imagine the following category
 tree:
@@ -159,7 +169,7 @@ interface by adding the following operations.
     attachment is represented by an 'Attachment' sub-container.
 
 ::: {.note}
-Please take a look into the appendix: [Generic Interface FAQ Connector
+Please take a look at the appendix: [Generic Interface FAQ Connector
 Configuration](#GIFAQCC) below to learn more about how to activate this
 feature, as well as the appendix: [Generic Interface FAQ Connector
 API](#GIFAQCA) for details on using the above functions.
@@ -168,13 +178,10 @@ API](#GIFAQCA) for details on using the above functions.
 ## Dynamic fields for FAQ
 
 Basic dynamic field support (Text, TextArea, Checkbox, Dropdown,
-Multiselect, Date and DateTime) has been implemented for FAQ items. Its
-creation, behavior and configuration is similar to the dynamic fields
-for tickets.
+Multiselect, Date, and DateTime) has been implemented for FAQ items. Its
+creation, behavior, and configuration are similar to those of the dynamic fields for tickets.
 
-Already created dynamic fields cannot be used for FAQ. New dynamic
-fields for FAQ (exclusively) have to be created (same as ticket and
-article dynamic fields).
+Dynamic fields previously created cannot be used for FAQ. Newly installed exclusive dynamic fields types are available.
 
 Dynamic fields extend FAQ by adding multiple options to store and
 present information on FAQ Items, beyond the normal fields (e.g.

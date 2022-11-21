@@ -2,8 +2,14 @@
 
 ## General
 
-The package can be configured via the SysConfig in the Admin Interface.
+The package can be configured via the System Configuration in the Admin Interface.
 The following configuration options are available:
+
+### Frontend::RichText::Autocompletion::Modules###FAQ
+
+Navigation: Core
+
+Enable keyword searching for specifiecd categories and designate which fields are searchable.
 
 ### CustomerFrontend::HeaderMetaModule###3-FAQSearch.
 
