@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -716,7 +717,7 @@ sub FAQRatingStarsShow {
     else {
 
         # output stars
-        for ( 1 .. $StarCounter ) {
+        for my $Index ( 1 .. $StarCounter ) {
             $Self->Block(
                 Name => 'RateStars',
             );

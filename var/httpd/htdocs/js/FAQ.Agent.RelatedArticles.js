@@ -1,6 +1,6 @@
 // --
 // Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-// Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+// Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -210,7 +210,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
 
             $('#Subject').on('paste keydown', function (Event) {
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13 )) || Event.type !== 'keydown') {
+                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13)) || Event.type !== 'keydown') {
                     $('#Subject').trigger('change');
                 }
             });
