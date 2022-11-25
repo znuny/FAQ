@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::sr_Latn_FAQ;
@@ -16,13 +15,13 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AgentFAQAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
     $Self->{Translation}->{'Add FAQ Article'} = 'Dodaj FAQ članak';
     $Self->{Translation}->{'Keywords'} = 'Ključne reči';
     $Self->{Translation}->{'A category is required.'} = 'Kategorija je obavezna.';
     $Self->{Translation}->{'Approval'} = 'Odobrenje';
 
-    # Template: AgentFAQCategory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'FAQ Category Management'} = 'Upravljanje FAQ kategorijama';
     $Self->{Translation}->{'Add FAQ Category'} = 'Dodaj FAQ kategoriju';
     $Self->{Translation}->{'Edit FAQ Category'} = 'Uredi FAQ kategoriju';
@@ -39,13 +38,13 @@ sub Data {
     $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'Ova kategorija je upotrebljena u sledećim FAQ člancima';
     $Self->{Translation}->{'This category is parent of the following subcategories'} = 'Ova kategorija je nadređena sledećim podkategorijama';
 
-    # Template: AgentFAQDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
     $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'Da li stvarno želite da obrišete ovaj FAQ članak?';
 
-    # Template: AgentFAQEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ';
 
-    # Template: AgentFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'FAQ pretraživač';
     $Self->{Translation}->{'Quick Search'} = 'Brzo traženje';
     $Self->{Translation}->{'Wildcards are allowed.'} = 'Džokerski znaci su dozvoljeni.';
@@ -54,15 +53,15 @@ sub Data {
     $Self->{Translation}->{'FAQ Articles'} = 'FAQ članci';
     $Self->{Translation}->{'No subcategories found.'} = 'Podkategorije nisu pronađene.';
 
-    # Template: AgentFAQHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
     $Self->{Translation}->{'History of'} = 'Istorija od';
     $Self->{Translation}->{'History Content'} = 'Sadržaj istorije';
     $Self->{Translation}->{'Createtime'} = 'Vreme kreiranja';
 
-    # Template: AgentFAQJournalOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'Nisu pronađeni podaci FAQ dnevnika.';
 
-    # Template: AgentFAQLanguage
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
     $Self->{Translation}->{'FAQ Language Management'} = 'Upravljanje FAQ jezicima';
     $Self->{Translation}->{'Add FAQ Language'} = 'Dodaj FAQ jezik';
     $Self->{Translation}->{'Edit FAQ Language'} = 'Uredi FAQ jezik';
@@ -76,17 +75,17 @@ sub Data {
         'Ne možete obrisati ovaj jezik. Upotrebljen je u bar jednom FAQ članku!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Ovaj jezik je upotrebljen u sledećim FAQ člancima';
 
-    # Template: AgentFAQOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Podešavanje konteksta';
     $Self->{Translation}->{'FAQ articles per page'} = 'FAQ članaka po strani';
 
-    # Template: AgentFAQOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
     $Self->{Translation}->{'No FAQ data found.'} = 'Nisu pronađeni FAQ podaci.';
 
-    # Template: AgentFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
     $Self->{Translation}->{'out of 5'} = 'od 5';
 
-    # Template: AgentFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
     $Self->{Translation}->{'Keyword'} = 'Ključna reč';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'Glasaj (npr jednako 10 ili veće od 60)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Oceni (npr jednako 25% ili veće od 75%)';
@@ -97,10 +96,10 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = 'Vreme promene FAQ članka (pre/posle)';
     $Self->{Translation}->{'FAQ Article Change Time (between)'} = 'Vreme promene FAQ članka (između)';
 
-    # Template: AgentFAQSearchOpenSearchDescriptionFulltext
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
     $Self->{Translation}->{'FAQFulltext'} = 'FAQ tekst';
 
-    # Template: AgentFAQSearchSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ pretraga';
     $Self->{Translation}->{'Profile Selection'} = 'Izbor profila';
     $Self->{Translation}->{'Vote'} = 'Glas';
@@ -114,7 +113,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Create Time'} = 'Vreme kreiranja FAQ članka';
     $Self->{Translation}->{'FAQ Article Change Time'} = 'Vreme promene FAQ članka';
 
-    # Template: AgentFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
     $Self->{Translation}->{'FAQ Information'} = 'FAQ informacija';
     $Self->{Translation}->{'Rating'} = 'Ocenjivanje';
     $Self->{Translation}->{'Votes'} = 'Glasovi';
@@ -128,7 +127,7 @@ sub Data {
     $Self->{Translation}->{'not helpful'} = 'nije korisno';
     $Self->{Translation}->{'very helpful'} = 'vrlo korisno';
 
-    # Template: AgentFAQZoomSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
     $Self->{Translation}->{'Add FAQ title to article subject'} = 'Dodaj naslov FAQ članku';
     $Self->{Translation}->{'Insert FAQ Text'} = 'Unesi FAQ tekst';
     $Self->{Translation}->{'Insert Full FAQ'} = 'Unesi kompletan FAQ';
@@ -136,15 +135,15 @@ sub Data {
     $Self->{Translation}->{'Insert FAQ Text & Link'} = 'Unesi FAQ tekst i vezu';
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Unesi kompletan FAQ i vezu';
 
-    # Template: CustomerFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
     $Self->{Translation}->{'No FAQ articles found.'} = 'Nisu pronađeni FAQ članci.';
 
-    # Template: CustomerFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
     $Self->{Translation}->{'This might be helpful'} = 'Ovo može da bude od pomoći';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = 'Korisni resursi za uneti predmet i tekst nisu pronađeni.';
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Za listu korisnih resursa, molimo unesite predmet ili tekst.';
 
-    # Template: CustomerFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
     $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Potpuna tekstualna pretraga u FAQ člancima (npr. "John*n" ili "Will*")';
     $Self->{Translation}->{'Vote restrictions'} = 'Ograničenja glasanja';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Samo FAQ članci sa glasovima...';
@@ -155,14 +154,14 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Samo FAQ članci kreirani između';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Profil pretrage kao šablon?';
 
-    # Template: CustomerFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Broj članka';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Traži članke sa ključnom reči';
 
-    # Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Javno';
 
-    # Template: PublicFAQSearchResultShort
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'Nazad na FAQ pretraživač';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
@@ -211,7 +210,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
     $Self->{Translation}->{'Result'} = 'Rezultat';
-    $Self->{Translation}->{'Last update'} = 'Poslednje ažuriranje';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = 'FAQ dinamička polja';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
@@ -280,18 +278,22 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Tip sadržaja';
 
-    # Database XML / SOPM Definition: FAQ.sopm
+    # XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'interno';
     $Self->{Translation}->{'external'} = 'eksterno';
     $Self->{Translation}->{'public'} = 'javno';
 
-    # JS File: FAQ.Agent.ConfirmationDialog
+    # JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
     $Self->{Translation}->{'Ok'} = 'U redu';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Filter za „HTML” izlaz za dodavanje veze iza definisanog niza znakova. Element Slika dozvoljava dva načina unosa. Prvi je naziv slike (npr faq.png). u ovom slučaju biće korišćena „OTRS” putanja do slike.  Druga mogućnost je unos veze do slike.';
     $Self->{Translation}->{'Add FAQ article'} = 'Dodaj FAQ članak';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
+    $Self->{Translation}->{'Below body'} = '';
+    $Self->{Translation}->{'Below subject'} = '';
     $Self->{Translation}->{'CSS color for the voting result.'} = '„CSS” boja za rezultat glasanja.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Vreme oslobađanja keša za FAQ stavke.';
     $Self->{Translation}->{'Category Management'} = 'Upravljanje kategorijama';
@@ -302,6 +304,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = 'Detalji klijentskog FAQ.';
     $Self->{Translation}->{'Customer FAQ search.'} = 'Pretraga klijentskog FAQ.';
     $Self->{Translation}->{'Customer FAQ.'} = 'Klijentski FAQ.';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'Broj decimala u rezultatu glasanja.';
     $Self->{Translation}->{'Default category name.'} = 'Naziv podrazumevane kategorije.';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Podrazumevani jezik FAQ članaka u jednojezičkom načinu rada.';
@@ -354,6 +357,8 @@ sub Data {
         'Određuje informacije koje će biti ubačene u FAQ bazirani tiket. "Kompletan FAQ" uključuje tekst, priloge i umetnute slike.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definiše pozadinske parametre za kontrolnu tablu. "Limit" definiše broj podrezumevano prikazanih unosa. "Grupa" se koristi da ograniči pristup dodatku (npr. Grupa: admin;group1;group2;)."Podrazumevano" ukazuje na to da li je dodatak podrazumevano aktiviran ili da je potrebno da ga korisnik manuelno aktivira.';
+    $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definiše prikazane kolone u FAQ pretraživaču. Ova opcija nema uticaj na pozicije kolona.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -392,7 +397,10 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'Dinamička polja prikazana u detaljnom pregledu FAQ u javnom interfejsu.';
     $Self->{Translation}->{'Edit this FAQ'} = 'Uredi ovaj FAQ';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Aktiviranje više jezika na FAQ modulu.';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Aktivira funkciju srodnih članaka za interfejs klijenta.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Aktiviranje mehanizma za glasanje na FAQ modulu.';
@@ -411,7 +419,11 @@ sub Data {
     $Self->{Translation}->{'Field4'} = 'Polje4';
     $Self->{Translation}->{'Field5'} = 'Polje5';
     $Self->{Translation}->{'Full FAQ'} = 'Kompletan FAQ';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
+        '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Grupa za odobravanje FAQ članaka.';
+    $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
+        '';
     $Self->{Translation}->{'History of this FAQ'} = 'Istorijat ovog FAQ';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Uključi interna polja u FAQ baziran tiket.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Uključi naziv svakog polja u FAQ baziran tiket.';
@@ -430,6 +442,7 @@ sub Data {
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Lista tipova stanja koji se mogu koristiti u javnom interfejsu.';
     $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Registracija modula za učitavanje za javni interfejs.';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Maksimalni broj FAQ članaka koji će biti prikazani u rezultatu FAQ pretraživača u interfejsu operatera.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -522,6 +535,8 @@ sub Data {
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Prikaži zadnje kreirane stavke u definisanim interfejsima.';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Prikaži zvezdice za članke sa jednakom ili boljom ocenom od definisane vrednosti (postavite vrednost \'0\' za deaktiviranje prikaza).';
+    $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
+        '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Prikaži prvih 10 stavki u definisanim interfejsima.';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Prikaži glasanje u definisanim interfejsima.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =

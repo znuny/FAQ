@@ -12,8 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-02-07 11:51+0000\n"
 "Last-Translator: Joao Ferro <joao.ferro@otrs.com>\n"
-"Language-Team: Portuguese <https://translate.app.otrs.com/projects/otrs-6/"
-"faq/pt/>\n"
+"Language-Team: Portuguese <https://translate.app.otrs.com/projects/otrs-6/faq/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,419 +20,403 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Weblate 3.10\n"
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
 msgstr "Adicionar artigo de FAQ"
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Keywords"
 msgstr "Palavras-chave"
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "A category is required."
 msgstr "É necessária uma categoria."
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Approval"
 msgstr "Aprovação"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "FAQ Category Management"
 msgstr "Gestão de Categorias de FAQ"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add FAQ Category"
 msgstr "Adicionar Categoria de Perguntas e Respostas"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
 msgstr "Editrar categoria de Perguntas e Respostas"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add category"
 msgstr "Adicionar categoria"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add Category"
 msgstr "Adicionar Categoria"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit Category"
 msgstr "Editar Categoria"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Subcategory of"
 msgstr "Subcategoria de"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Please select at least one permission group."
 msgstr "Selecione pelo menos um grupo de permissões."
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Agent groups that can access articles in this category."
 msgstr "Grupos de agentes com acesso a artigos nesta categoria."
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Will be shown as comment in Explorer."
 msgstr "Comentário a apresentar no browser."
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Do you really want to delete this category?"
 msgstr "Confirma a remoção desta categoria?"
 
-#. Template: AgentFAQCategory
-msgid ""
-"You can not delete this category. It is used in at least one FAQ article and/"
-"or is parent of at least one other category"
-msgstr ""
-"Não pode remover esta categoria. Tem pelo menos um artigo e/ou uma "
-"subcategoria"
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
+msgstr "Não pode remover esta categoria. Tem pelo menos um artigo e/ou uma subcategoria"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "This category is used in the following FAQ article(s)"
 msgstr "Esta categoria é utilizada no(s) seguinte(s) artigo(s)"
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "This category is parent of the following subcategories"
 msgstr "Esta categoria tem as seguintes subcategorias"
 
-#. Template: AgentFAQDelete
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
 msgid "Do you really want to delete this FAQ article?"
 msgstr "Confirma a remoção deste artigo?"
 
-#. Template: AgentFAQEdit
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "FAQ"
 msgstr "FAQ"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "FAQ Explorer"
 msgstr "Explorador da FAQ"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Quick Search"
 msgstr "Pesquisa rápida"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Wildcards are allowed."
 msgstr "Asteriscos(*) são permitidos."
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Advanced Search"
 msgstr "Pesquisa avançada"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Subcategories"
 msgstr "Subcategorias"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "FAQ Articles"
 msgstr "Artigos"
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "No subcategories found."
 msgstr "Nenhuma subcategoria."
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "History of"
 msgstr "Histórico de"
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "History Content"
 msgstr "Histórico do conteúdo"
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "Createtime"
 msgstr "Hora de criação"
 
-#. Template: AgentFAQJournalOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
 msgid "No FAQ Journal data found."
 msgstr "Sem dados de diário."
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "FAQ Language Management"
 msgstr "Gestão de idiomas de FAQ"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add FAQ Language"
 msgstr "Adicionar Idioma de FAQ"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit FAQ Language"
 msgstr "Editar Linguagem de Perguntas e Respostas"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Use this feature if you want to work with multiple languages."
 msgstr "Use esta funcionalidade se deseja trabalhar com múltiplos idiomas."
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add language"
 msgstr "Adicionar idioma"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add Language"
 msgstr "Adicionar idioma"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit Language"
 msgstr "Editar idioma"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Do you really want to delete this language?"
 msgstr "Confirma a remoção deste idioma?"
 
-#. Template: AgentFAQLanguage
-msgid ""
-"You can not delete this language. It is used in at least one FAQ article!"
-msgstr ""
-"Não pode remover este idioma. É utilizado em pelo menos um artigo da FAQ!"
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
+msgid "You can not delete this language. It is used in at least one FAQ article!"
+msgstr "Não pode remover este idioma. É utilizado em pelo menos um artigo da FAQ!"
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "This language is used in the following FAQ Article(s)"
 msgstr "Este idioma é utilizado no(s) seguinte(s) artigo(s)"
 
-#. Template: AgentFAQOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "Context Settings"
 msgstr "Configurações de Contexto"
 
-#. Template: AgentFAQOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "FAQ articles per page"
 msgstr "Artigos por página"
 
-#. Template: AgentFAQOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
 msgid "No FAQ data found."
 msgstr "Nenhum FAQ encontrado."
 
-#. Template: AgentFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
 msgid "out of 5"
 msgstr "de 5"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Keyword"
 msgstr "Palavra-chave"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
 msgstr "Votar"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
 msgstr "Classificar"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Approved"
 msgstr "Aprovado"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Last changed by"
 msgstr "Última alteração por"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (before/after)"
 msgstr "Data de criação do artigo (antes/depois)"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (between)"
 msgstr "Data de criação do artigo (entre)"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (before/after)"
 msgstr "Data de modificação do artigo (antes/depois)"
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (between)"
 msgstr "Data de modificação do artigo (entre)"
 
-#. Template: AgentFAQSearchOpenSearchDescriptionFulltext
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
 msgid "FAQFulltext"
 msgstr "Texto integral"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Search"
 msgstr "Pesquisa"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Profile Selection"
 msgstr "Seleção de perfil"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Vote"
 msgstr "Votar"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No vote settings"
 msgstr "Sem definição de voto"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific votes"
 msgstr "Votos específicos"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 10 or GreaterThan 60"
 msgstr "ex: Igual a 10 ou Superior a 60"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Rate"
 msgstr "Classificar"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No rate settings"
 msgstr "Sem configurações de pontuação"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific rate"
 msgstr "Classificação específica"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 25% or GreaterThan 75%"
 msgstr "ex. Igual a 25% ou maior que 75%"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Create Time"
 msgstr "Data de criação"
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Change Time"
 msgstr "Data de modificação"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "FAQ Information"
 msgstr "Informação do artigo"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Rating"
 msgstr "Classificação"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Votes"
 msgstr "Votos"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "No votes found!"
 msgstr "Sem votos!"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "No votes found! Be the first one to rate this FAQ article."
 msgstr "Sem votos. Seja o primeiro a classificar este artigo."
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Download Attachment"
 msgstr "Descarregar Anexo"
 
-#. Template: AgentFAQZoom
-msgid ""
-"To open links in the following description blocks, you might need to press "
-"Ctrl or Cmd or Shift key while clicking the link (depending on your browser "
-"and OS)."
-msgstr ""
-"Para abrir as ligações abaixo poderá necessitar de pressionar a tecla CTRL "
-"(ou CMD) ou Shift (dependendo do browser e do sistema operativo) quando "
-"clicar sobre a ligação."
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
+msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
+msgstr "Para abrir as ligações abaixo poderá necessitar de pressionar a tecla CTRL (ou CMD) ou Shift (dependendo do browser e do sistema operativo) quando clicar sobre a ligação."
 
-#. Template: AgentFAQZoom
-msgid ""
-"How helpful was this article? Please give us your rating and help to improve "
-"the FAQ Database. Thank You!"
-msgstr ""
-"Este artigo foi útil? Utilize a classificação para nos ajudar a melhorar a "
-"FAQ. Obrigado!"
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
+msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
+msgstr "Este artigo foi útil? Utilize a classificação para nos ajudar a melhorar a FAQ. Obrigado!"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "not helpful"
 msgstr "não ajudou"
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "very helpful"
 msgstr "ajudou muito"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Add FAQ title to article subject"
 msgstr "Adicionar o título da FAQ ao assunto do artigo"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text"
 msgstr "Inserir o texto da FAQ"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ"
 msgstr "Inserir a FAQ completa"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Link"
 msgstr "Inserir ligação para a FAQ"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text & Link"
 msgstr "Inserir texto e a ligação para a FAQ"
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ & Link"
 msgstr "Inserir o texto completo e a ligação para a FAQ"
 
-#. Template: CustomerFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
 msgid "No FAQ articles found."
 msgstr "Nenhum artigo FAQ encontrado."
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "This might be helpful"
 msgstr "Isto pode Ajudar"
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Found no helpful resources for the subject and text."
 msgstr "Não foram encontrados resultados úteis para o assunto ou texto."
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr "Insira um assunto ou texto para listar artigos relevantes."
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr "Pesquisa no texto integral dos artigos da FAQ"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Vote restrictions"
 msgstr "Restrições de votos"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with votes..."
 msgstr "Apenas artigos com votos..."
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Rate restrictions"
 msgstr "Restrições de classificação"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with rate..."
 msgstr "Apenas artigos com classificação..."
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Time restrictions"
 msgstr "Restrição horária"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created"
 msgstr "Apenas artigos criados"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created between"
 msgstr "Apenas artigos criados entre"
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Search-Profile as Template?"
 msgstr "Guardar modelo de pesquisa?"
 
-#. Template: CustomerFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Article Number"
 msgstr "Número do artigo"
 
-#. Template: CustomerFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Search for articles with keyword"
 msgstr "Procurar artigos com a palavra-chave"
 
-#. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
 msgid "Public"
 msgstr "Publico"
 
-#. Template: PublicFAQSearchResultShort
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
 msgid "Back to FAQ Explorer"
 msgstr "Voltar ao explorador da FAQ"
 
@@ -443,9 +426,7 @@ msgstr "Necessita de permissão de escrita(rw)!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
-"Não foram encontradas categorias onde o utilizador possua permissões de "
-"leitura e escrita!"
+msgstr "Não foram encontradas categorias onde o utilizador possua permissões de leitura e escrita!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
@@ -521,13 +502,11 @@ msgstr "É necessária a opção de configuração FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
-msgstr ""
-"A opção de configuração FAQ::Frontend::Overview precisa ser um valor HASH!"
+msgstr "A opção de configuração FAQ::Frontend::Overview precisa ser um valor HASH!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
-"Não foram encontradas opções de configuração para a visualização \"%s\"!"
+msgstr "Não foram encontradas opções de configuração para a visualização \"%s\"!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
@@ -729,33 +708,25 @@ msgstr "Top 10 artigos FAQ"
 msgid "Content Type"
 msgstr "Tipo de conteúdo"
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "internal"
 msgstr "interno"
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "external"
 msgstr "externo"
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "public"
 msgstr "público"
 
-#. JS File: FAQ.Agent.ConfirmationDialog
+#. JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
 msgid "Ok"
 msgstr "Ok"
 
 #. SysConfig
-msgid ""
-"A filter for HTML output to add links behind a defined string. The element "
-"Image allows two input kinds. First the name of an image (e.g. faq.png). In "
-"this case the OTRS image path will be used. The second possibility is to "
-"insert the link to the image."
-msgstr ""
-"Um filtro de HTML de output para adicionar links antes de um determinado "
-"texto. O elemento Imagem permite dois tipos de input. Primeiro, o nome de "
-"uma imagem (ex. faq.png). Neste caso, o caminho para imagens OTRS será "
-"usado. A segunda possibilidade é inserir o link para a imagem."
+msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image."
+msgstr "Um filtro de HTML de output para adicionar links antes de um determinado texto. O elemento Imagem permite dois tipos de input. Primeiro, o nome de uma imagem (ex. faq.png). Neste caso, o caminho para imagens OTRS será usado. A segunda possibilidade é inserir o link para a imagem."
 
 #. SysConfig
 msgid "Add FAQ article"
@@ -834,196 +805,100 @@ msgid "Default type of tickets for the approval of FAQ articles."
 msgstr "Tipo de tickets para a aprovação de artigos da FAQ."
 
 #. SysConfig
-msgid ""
-"Default value for the Action parameter for the public frontend. The Action "
-"parameter is used in the scripts of the system."
-msgstr ""
-"Valor do parâmetro 'Action' na interface pública. Este parâmetro é usado nos "
-"scripts do sistema."
+msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
+msgstr "Valor do parâmetro 'Action' na interface pública. Este parâmetro é usado nos scripts do sistema."
 
 #. SysConfig
-msgid ""
-"Define Actions where a settings button is available in the linked objects "
-"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
-"must have registered the following JS and CSS files: Core.AllocationList."
-"css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent."
-"TableFilters.js and Core.Agent.LinkObject.js."
-msgstr ""
-"Definir Acções onde um botão de configurações está disponível na widget the "
-"objectos ligados (LinkObject::ViewMode = \"complex\"). Estas Acções devem "
-"estar registadas nos seguintes ficheiros JS e CSS: Core.AllocationList.css, "
-"Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js "
-"and Core.Agent.LinkObject.js."
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr "Definir Acções onde um botão de configurações está disponível na widget the objectos ligados (LinkObject::ViewMode = \"complex\"). Estas Acções devem estar registadas nos seguintes ficheiros JS e CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
 msgstr "Indique se o título do FAQ deve ser concatenado ao assunto do artigo."
 
 #. SysConfig
-msgid ""
-"Define which columns are shown in the linked FAQs widget (LinkObject::"
-"ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields "
-"(DynamicField_NameX) are allowed for DefaultColumns."
-msgstr ""
-"Defina que colunas são apresentadas no widget dos FAQ ligados (LinkObject::"
-"ViewMode = \"complex\"). Nota: Apenas atributos de FAQ e campos dinâmicos "
-"DynamicField_NameX)."
+msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
+msgstr "Defina que colunas são apresentadas no widget dos FAQ ligados (LinkObject::ViewMode = \"complex\"). Nota: Apenas atributos de FAQ e campos dinâmicos DynamicField_NameX)."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
-"Define um módulo de resumo para mostrar a visualização pequena de um jornal "
-"FAQ."
+msgstr "Define um módulo de resumo para mostrar a visualização pequena de um jornal FAQ."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
-"Define um módulo de resumo para mostrar a visualização pequena de uma lista "
-"de FAQ."
+msgstr "Define um módulo de resumo para mostrar a visualização pequena de uma lista de FAQ."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
-"agent interface."
-msgstr ""
-"Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da "
-"interface do agente."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
+msgstr "Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da interface do agente."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
-"customer interface."
-msgstr ""
-"Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da "
-"interface do cliente."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
+msgstr "Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da interface do cliente."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in a FAQ search of the "
-"public interface."
-msgstr ""
-"Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da "
-"interface pública."
+msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
+msgstr "Define o atributo padrão FAQ para classificar o FAQ em uma pesquisa FAQ da interface pública."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
-"agent interface."
-msgstr ""
-"Define o atributo padrão de ordenação no Explorador de FAQ da interface do "
-"agente."
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
+msgstr "Define o atributo padrão de ordenação no Explorador de FAQ da interface do agente."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
-"customer interface."
-msgstr ""
-"Define o atributo padrão de ordenação no Explorador de FAQ da interface do "
-"cliente."
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
+msgstr "Define o atributo padrão de ordenação no Explorador de FAQ da interface do cliente."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the "
-"public interface."
-msgstr ""
-"Define o atributo padrão de ordenação no Explorador de FAQ da interface "
-"pública."
+msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
+msgstr "Define o atributo padrão de ordenação no Explorador de FAQ da interface pública."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order in the FAQ Explorer result of the agent "
-"interface. Up: oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados no Explorador de FAQ na interface "
-"do agente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados no Explorador de FAQ na interface do agente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order in the FAQ Explorer result of the customer "
-"interface. Up: oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados no Explorador de FAQ na interface "
-"do cliente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados no Explorador de FAQ na interface do cliente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order in the FAQ Explorer result of the public "
-"interface. Up: oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados no Explorador de FAQ na interface "
-"pública. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados no Explorador de FAQ na interface pública. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order of a search result in the agent interface. Up: "
-"oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados na pesquisa de FAQ na interface do "
-"agente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados na pesquisa de FAQ na interface do agente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order of a search result in the customer interface. "
-"Up: oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados na pesquisa de FAQ na interface do "
-"cliente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados na pesquisa de FAQ na interface do cliente. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
-msgid ""
-"Defines the default FAQ order of a search result in the public interface. "
-"Up: oldest on top. Down: latest on top."
-msgstr ""
-"Define a ordenação padrão dos resultados na pesquisa de FAQ na interface "
-"pública. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
+msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
+msgstr "Define a ordenação padrão dos resultados na pesquisa de FAQ na interface pública. Acima: mais antigos no topo. Abaixo: mais recentes no topo."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
 msgstr "Define o atributo padrão no ecrã de pesquisa de FAQ."
 
 #. SysConfig
-msgid ""
-"Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" "
-"includes text, attachments and inline images."
-msgstr ""
-"Define a informação a ser inserida no chamado baseado em FAQ. \"Todo o FAQ\" "
-"inclui texto, anexos e imagens embutidas."
+msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
+msgstr "Define a informação a ser inserida no chamado baseado em FAQ. \"Todo o FAQ\" inclui texto, anexos e imagens embutidas."
 
 #. SysConfig
-msgid ""
-"Defines the parameters for the dashboard backend. \"Limit\" defines the "
-"number of entries displayed by default. \"Group\" is used to restrict access "
-"to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if "
-"the plugin is enabled by default or if the user needs to enable it manually."
-msgstr ""
-"Define os parâmetros para o backend do dashboard. \"Limite\" define o número "
-"de entradas exibidas por padrão. \"Grupo\" é usado para restringir o acesso "
-"ao plugin (ex.: Grupo: admin, grupo1, grupo2). \"Padrão\" indica se o plugin "
-"é habilitado por padrão ou se o usuário precisa habilitá-lo manualmente."
+msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
+msgstr "Define os parâmetros para o backend do dashboard. \"Limite\" define o número de entradas exibidas por padrão. \"Grupo\" é usado para restringir o acesso ao plugin (ex.: Grupo: admin, grupo1, grupo2). \"Padrão\" indica se o plugin é habilitado por padrão ou se o usuário precisa habilitá-lo manualmente."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns in the FAQ Explorer. This option has no effect on "
-"the position of the column."
-msgstr ""
-"Define as colunas mostradas no Explorador de FAQ. Esta opção não tem efeito "
-"sobre a posição da coluna."
+msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
+msgstr "Define as colunas mostradas no Explorador de FAQ. Esta opção não tem efeito sobre a posição da coluna."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns in the FAQ journal. This option has no effect on "
-"the position of the column."
-msgstr ""
-"Define as colunas mostradas no jornal FAQ. Esta opção não tem efeito sobre a "
-"posição da coluna."
+msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
+msgstr "Define as colunas mostradas no jornal FAQ. Esta opção não tem efeito sobre a posição da coluna."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns in the FAQ search. This option has no effect on "
-"the position of the column."
-msgstr ""
-"Define as colunas mostradas na pesquisa FAQ. Esta opção não tem efeito sobre "
-"a posição da coluna."
+msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
+msgstr "Define as colunas mostradas na pesquisa FAQ. Esta opção não tem efeito sobre a posição da coluna."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
@@ -1039,79 +914,59 @@ msgstr "Apagar esta FAQ!"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
-"Campos dinâmicos exibidos no ecrã de adicionar FAQ da interface de agente."
+msgstr "Campos dinâmicos exibidos no ecrã de adicionar FAQ da interface de agente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
-"Campos dinâmicos exibidos np ecrã de editar FAQ da interface de agente."
+msgstr "Campos dinâmicos exibidos np ecrã de editar FAQ da interface de agente."
 
 #. SysConfig
-msgid ""
-"Dynamic fields shown in the FAQ overview screen of the customer interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista geral do FAQ do interface de cliente."
+msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
+msgstr "Campos dinâmicos exibidos na vista geral do FAQ do interface de cliente."
 
 #. SysConfig
-msgid ""
-"Dynamic fields shown in the FAQ overview screen of the public interface."
+msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr "Campos dinâmicos exibidos na vista geral do FAQ no interface público."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
-"Campos dinâmicos exibidos no ecrã de imprimir FAQ da interface de agente."
+msgstr "Campos dinâmicos exibidos no ecrã de imprimir FAQ da interface de agente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de impressão do FAQ no interface de "
-"cliente."
+msgstr "Campos dinâmicos exibidos na vista de impressão do FAQ no interface de cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de impressão do FAQ no interface público."
+msgstr "Campos dinâmicos exibidos na vista de impressão do FAQ no interface público."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
-"Campos dinâmicos mostrados no ecrã de pesquisa de FAQ da interface de agente."
+msgstr "Campos dinâmicos mostrados no ecrã de pesquisa de FAQ da interface de agente."
 
 #. SysConfig
-msgid ""
-"Dynamic fields shown in the FAQ search screen of the customer interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de procura do FAQ no interface de cliente."
+msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
+msgstr "Campos dinâmicos exibidos na vista de procura do FAQ no interface de cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de procura do FAQ no interface público."
+msgstr "Campos dinâmicos exibidos na vista de procura do FAQ no interface público."
 
 #. SysConfig
-msgid ""
-"Dynamic fields shown in the FAQ small format overview screen of the agent "
-"interface."
-msgstr ""
-"Campos dinâmicos exibidos no ecrã visão geral de FAQ em formato pequeno da "
-"interface de agente."
+msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
+msgstr "Campos dinâmicos exibidos no ecrã visão geral de FAQ em formato pequeno da interface de agente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
-"Campos dinâmicos exibidos no ecrã de zoom de FAQ da interface de agente."
+msgstr "Campos dinâmicos exibidos no ecrã de zoom de FAQ da interface de agente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de detalhe do FAQ no interface de cliente."
+msgstr "Campos dinâmicos exibidos na vista de detalhe do FAQ no interface de cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
-"Campos dinâmicos exibidos na vista de detalhe do FAQ no interface público."
+msgstr "Campos dinâmicos exibidos na vista de detalhe do FAQ no interface público."
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -1123,8 +978,7 @@ msgstr "Permitir vários idiomas no módulo FAQ."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
-"Ativar a funcionalidade de artigos relacionados na interface do cliente."
+msgstr "Ativar a funcionalidade de artigos relacionados na interface do cliente."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
@@ -1232,18 +1086,15 @@ msgstr "Link de outro artigo para este item FAQ"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
-"Lista do nomes de filas para os quais o recurso desse artigo está ativado."
+msgstr "Lista do nomes de filas para os quais o recurso desse artigo está ativado."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
-"Lista dos tipos de estado que pode ser utilizado na interface de agente."
+msgstr "Lista dos tipos de estado que pode ser utilizado na interface de agente."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
-"Lista dos tipos de estado que pode ser utilizado na interface de cliente."
+msgstr "Lista dos tipos de estado que pode ser utilizado na interface de cliente."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
@@ -1254,137 +1105,72 @@ msgid "Loader module registration for the public interface."
 msgstr "Registo do módulo Loader do interface público."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
-"the agent interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador "
-"FAQ da interface do atendente."
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador FAQ da interface do atendente."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
-"the customer interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador "
-"FAQ da interface do cliente."
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador FAQ da interface do cliente."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the FAQ Explorer result of "
-"the public interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador "
-"FAQ da interface pública."
+msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador FAQ da interface pública."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the FAQ journal in the "
-"agent interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no jornal FAQ da interface "
-"do atendente."
+msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no jornal FAQ da interface do atendente."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the result of a search in "
-"the agent interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa "
-"na interface do atendente."
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the result of a search in "
-"the customer interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa "
-"na interface do cliente."
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa na interface do cliente."
 
 #. SysConfig
-msgid ""
-"Maximum number of FAQ articles to be displayed in the result of a search in "
-"the public interface."
-msgstr ""
-"O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa "
-"na interface publica."
+msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
+msgstr "O número máximo de artigos FAQ para ser exibido no resultado de uma pesquisa na interface publica."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
-"in the agent interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de "
-"entradas da FAQ da interface de atendente."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de entradas da FAQ da interface de atendente."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
-"in the customer interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de "
-"entradas da FAQ da interface de cliente."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de entradas da FAQ da interface de cliente."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer "
-"in the public interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de "
-"entradas da FAQ da interface pública."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na lista de entradas da FAQ da interface pública."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
-"the agent interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de "
-"FAQ da interface de atendente."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de FAQ da interface de atendente."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
-"the customer interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de "
-"FAQ da interface de cliente."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de FAQ da interface de cliente."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ Search in "
-"the public interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de "
-"FAQ da interface pública."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos na Pesquisa de FAQ da interface pública."
 
 #. SysConfig
-msgid ""
-"Maximum size of the titles in a FAQ article to be shown in the FAQ journal "
-"in the agent interface."
-msgstr ""
-"Tamanho máximo de títulos em um artigo FAQ a serem exibidos no Jornal FAQ da "
-"interface de atendente."
+msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
+msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos no Jornal FAQ da interface de atendente."
 
 #. SysConfig
-msgid ""
-"Module to generate HTML OpenSearch profile for short FAQ search in the "
-"customer interface."
-msgstr ""
-"Módulo para gerar perfil de HTML OpenSearch para pequenas procuras de FAQ no "
-"interface de cliente."
+msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
+msgstr "Módulo para gerar perfil de HTML OpenSearch para pequenas procuras de FAQ no interface de cliente."
 
 #. SysConfig
-msgid ""
-"Module to generate HTML OpenSearch profile for short FAQ search in the "
-"public interface."
-msgstr ""
-"Módulo para gerar perfil HTML OpenSearch para pesquisas curtas de FAQ na "
-"interface pública."
+msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
+msgstr "Módulo para gerar perfil HTML OpenSearch para pesquisas curtas de FAQ na interface pública."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
-"Módulo para gerar perfil de HTML OpenSearch para pequenas procuras de FAQ."
+msgstr "Módulo para gerar perfil de HTML OpenSearch para pequenas procuras de FAQ."
 
 #. SysConfig
 msgid "New FAQ Article."
@@ -1395,36 +1181,20 @@ msgid "New FAQ articles need approval before they get published."
 msgstr "Novos artigos FAQ precisam de aprovação antes de ser publicados."
 
 #. SysConfig
-msgid ""
-"Number of FAQ articles to be displayed in the FAQ Explorer of the customer "
-"interface."
-msgstr ""
-"Número de artigos FAQ para ser exibido no explorador FAQ da interface do "
-"cliente."
+msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
+msgstr "Número de artigos FAQ para ser exibido no explorador FAQ da interface do cliente."
 
 #. SysConfig
-msgid ""
-"Number of FAQ articles to be displayed in the FAQ Explorer of the public "
-"interface."
-msgstr ""
-"Número de artigos FAQ para ser exibido no explorador FAQ da interface "
-"publica."
+msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
+msgstr "Número de artigos FAQ para ser exibido no explorador FAQ da interface publica."
 
 #. SysConfig
-msgid ""
-"Number of FAQ articles to be displayed on each page of a search result in "
-"the customer interface."
-msgstr ""
-"Número de artigos FAQ para ser exibido em cada página de um resultado de "
-"pesquisa na interface do cliente."
+msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
+msgstr "Número de artigos FAQ para ser exibido em cada página de um resultado de pesquisa na interface do cliente."
 
 #. SysConfig
-msgid ""
-"Number of FAQ articles to be displayed on each page of a search result in "
-"the public interface."
-msgstr ""
-"Número de artigos FAQ para ser exibido em cada página de um resultado de "
-"pesquisa na interface pública."
+msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
+msgstr "Número de artigos FAQ para ser exibido em cada página de um resultado de pesquisa na interface pública."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
@@ -1440,29 +1210,19 @@ msgstr "Número de itens mostrados no recurso top 10."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
-"Filtro de saída para adicionar Java-script ao interface "
-"CustomerTicketMessage."
+msgstr "Filtro de saída para adicionar Java-script ao interface CustomerTicketMessage."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
 msgstr "Limite de saída para os artigos desse FAQ."
 
 #. SysConfig
-msgid ""
-"Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
-"journal overview."
-msgstr ""
-"Parâmetros de páginas (nas quais os itens FAQ são mostrados) da visão geral "
-"pequena do jornal FAQ."
+msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
+msgstr "Parâmetros de páginas (nas quais os itens FAQ são mostrados) da visão geral pequena do jornal FAQ."
 
 #. SysConfig
-msgid ""
-"Parameters for the pages (in which the FAQ items are shown) of the small FAQ "
-"overview."
-msgstr ""
-"Parâmetros de páginas (nas quais os itens FAQ são mostrados) da visão geral "
-"pequena de FAQ."
+msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
+msgstr "Parâmetros de páginas (nas quais os itens FAQ são mostrados) da visão geral pequena de FAQ."
 
 #. SysConfig
 msgid "Print this FAQ"
@@ -1509,70 +1269,40 @@ msgid "Search FAQ."
 msgstr "Pesquisar FAQ."
 
 #. SysConfig
-msgid ""
-"Select how many items should be shown in Journal Overview \"Small\" by "
-"default."
-msgstr ""
-"Selecione quantos itens devem ser mostrados na visão geral do diário \"Small"
-"\" por padrão."
+msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
+msgstr "Selecione quantos itens devem ser mostrados na visão geral do diário \"Small\" por padrão."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
-msgstr ""
-"Selecione quantos itens devem ser mostrados na visão geral \"Small\" por "
-"padrão."
+msgstr "Selecione quantos itens devem ser mostrados na visão geral \"Small\" por padrão."
 
 #. SysConfig
-msgid ""
-"Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
-"Configura a altura padrão (em pixels) de campos HTML embutidos no "
-"AgentFAQZoom."
+msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
+msgstr "Configura a altura padrão (em pixels) de campos HTML embutidos no AgentFAQZoom."
 
 #. SysConfig
-msgid ""
-"Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom "
-"(and PublicFAQZoom)."
-msgstr ""
-"Configura a altura padrão (em pixels) de campos HTML embutidos em "
-"CustomerFAQZoom (e PublicFAQZoom)."
+msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
+msgstr "Configura a altura padrão (em pixels) de campos HTML embutidos em CustomerFAQZoom (e PublicFAQZoom)."
 
 #. SysConfig
-msgid ""
-"Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
-"Configura a altura máxima (em pixels) de campos HTML embutidos no "
-"AgentFAQZoom."
+msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
+msgstr "Configura a altura máxima (em pixels) de campos HTML embutidos no AgentFAQZoom."
 
 #. SysConfig
-msgid ""
-"Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom "
-"(and PublicFAQZoom)."
-msgstr ""
-"Configura a altura máxima (em pixels) de campos HTML embutidos em "
-"CustomerFAQZoom (e PublicFAQZoom)."
+msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
+msgstr "Configura a altura máxima (em pixels) de campos HTML embutidos em CustomerFAQZoom (e PublicFAQZoom)."
 
 #. SysConfig
-msgid ""
-"Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
-"Mostra botão \"Inserir Link FAQ\" em Ampliação pequena para o artigos FAQ "
-"públicos."
+msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
+msgstr "Mostra botão \"Inserir Link FAQ\" em Ampliação pequena para o artigos FAQ públicos."
 
 #. SysConfig
-msgid ""
-"Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in "
-"AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
-"Mostrar botões \"Inserir texto do FAQ e link\" / \"Inserir todo o FAQ e link"
-"\" em AgentFAQZoomSmall para Artigos de FAQ públicos."
+msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
+msgstr "Mostrar botões \"Inserir texto do FAQ e link\" / \"Inserir todo o FAQ e link\" em AgentFAQZoomSmall para Artigos de FAQ públicos."
 
 #. SysConfig
-msgid ""
-"Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
-msgstr ""
-"Mostrar botões \"Inserir texto do FAQ\" / \"Inserir todo o FAQ\" em "
-"AgentFAQZoomSmall."
+msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
+msgstr "Mostrar botões \"Inserir texto do FAQ\" / \"Inserir todo o FAQ\" em AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
@@ -1584,9 +1314,7 @@ msgstr "Mostrar caminho FAQ sim / não."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
-msgstr ""
-"Mostrar itens inválidos no resultado do Explorador de FAQ na interface de "
-"agente."
+msgstr "Mostrar itens inválidos no resultado do Explorador de FAQ na interface de agente."
 
 #. SysConfig
 msgid "Show items of subcategories."
@@ -1601,12 +1329,8 @@ msgid "Show last created items in defined interfaces."
 msgstr "Mostrar os últimos itens criados em interfaces definidas."
 
 #. SysConfig
-msgid ""
-"Show the stars for the articles with a rating equal or greater like the "
-"defined value (set value '0' to deactivate the output)."
-msgstr ""
-"Mostre as estrelas para os artigos com uma classificação igual ou maior do "
-"valor definido (defina o valor '0' para desativar a saída)."
+msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
+msgstr "Mostre as estrelas para os artigos com uma classificação igual ou maior do valor definido (defina o valor '0' para desativar a saída)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
@@ -1617,52 +1341,28 @@ msgid "Show voting in defined interfaces."
 msgstr "Mostrar votação em interfaces definidas."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu that allows linking a FAQ with another object in "
-"the zoom view of such FAQ of the agent interface."
-msgstr ""
-"Mostra um link no menu que permite ligar um FAQ com outro objeto no modo de "
-"exibição ampliada na interface do atendente."
+msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
+msgstr "Mostra um link no menu que permite ligar um FAQ com outro objeto no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu that allows to delete a FAQ in its zoom view in the "
-"agent interface."
-msgstr ""
-"Mostra um link no menu que permite excluir um FAQ no modo de exibição "
-"ampliada na interface do atendente."
+msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
+msgstr "Mostra um link no menu que permite excluir um FAQ no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to access the history of a FAQ in its zoom view of "
-"the agent interface."
-msgstr ""
-"Mostra um link no menu para acessar o histórico de um FAQ no modo de "
-"exibição ampliada na interface do atendente."
+msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
+msgstr "Mostra um link no menu para acessar o histórico de um FAQ no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to edit a FAQ in the its zoom view of the agent "
-"interface."
-msgstr ""
-"Mostra um link no menu para editar um FAQ no modo de exibição ampliada na "
-"interface do atendente."
+msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
+msgstr "Mostra um link no menu para editar um FAQ no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to go back in the FAQ zoom view of the agent "
-"interface."
-msgstr ""
-"Mostra um link no menu para voltar um FAQ no modo de exibição ampliada na "
-"interface do atendente."
+msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
+msgstr "Mostra um link no menu para voltar um FAQ no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to print a FAQ in the its zoom view of the agent "
-"interface."
-msgstr ""
-"Mostra um link no menu para imprimir um FAQ no modo de exibição ampliada na "
-"interface do atendente."
+msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
+msgstr "Mostra um link no menu para imprimir um FAQ no modo de exibição ampliada na interface do atendente."
 
 #. SysConfig
 msgid "Solution"
@@ -1682,40 +1382,23 @@ msgstr "O idioma padrão para os artigos desse FAQ."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
-"O identificador para um FAQ, exemplo FAQ # KB # # MyFAQ. O padrão é FAQ #."
+msgstr "O identificador para um FAQ, exemplo FAQ # KB # # MyFAQ. O padrão é FAQ #."
 
 #. SysConfig
-msgid ""
-"This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
-"objects using the 'Normal' link type."
-msgstr ""
-"Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros "
-"objetos 'FAQ' usando o tipo de vínculo 'Normal'."
+msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
+msgstr "Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros objetos 'FAQ' usando o tipo de vínculo 'Normal'."
 
 #. SysConfig
-msgid ""
-"This setting defines that a 'FAQ' object can be linked with other 'FAQ' "
-"objects using the 'ParentChild' link type."
-msgstr ""
-"Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros "
-"objetos 'FAQ' usando o tipo de vínculo 'Pai e filho'."
+msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
+msgstr "Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros objetos 'FAQ' usando o tipo de vínculo 'Pai e filho'."
 
 #. SysConfig
-msgid ""
-"This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
-"objects using the 'Normal' link type."
-msgstr ""
-"Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros "
-"objetos 'Chamado' usando o tipo de vínculo 'Normal'."
+msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
+msgstr "Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros objetos 'Chamado' usando o tipo de vínculo 'Normal'."
 
 #. SysConfig
-msgid ""
-"This setting defines that a 'FAQ' object can be linked with other 'Ticket' "
-"objects using the 'ParentChild' link type."
-msgstr ""
-"Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros "
-"objetos 'Chamado' usando o tipo de vínculo 'Pai e filho'."
+msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
+msgstr "Essa configuração define que um objeto 'FAQ' pode ser relacionado com outros objetos 'Chamado' usando o tipo de vínculo 'Pai e filho'."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
@@ -1744,3 +1427,56 @@ msgstr "público (todos)"
 #. SysConfig
 msgid "public (public)"
 msgstr "público (público)"
+
+#. SysConfig
+msgid "Agent FAQ Related Articles"
+msgstr ""
+
+#. SysConfig
+msgid "Agent FAQ Related Articles."
+msgstr ""
+
+#. SysConfig
+msgid "Below body"
+msgstr ""
+
+#. SysConfig
+msgid "Below subject"
+msgstr ""
+
+#. SysConfig
+msgid "Customer user attribute to check its group relation."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the position where the related FAQ articles widget is located."
+msgstr ""
+
+#. SysConfig
+msgid "Enable customer group support permissions."
+msgstr ""
+
+#. SysConfig
+msgid "Enable customer user permission attributes."
+msgstr ""
+
+#. SysConfig
+msgid "Enable the related article feature for the agent frontend."
+msgstr ""
+
+#. SysConfig
+msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
+msgstr ""
+
+#. SysConfig
+msgid "Group to which customer users belong by default (if this setting is enabled)."
+msgstr ""
+
+#. SysConfig
+msgid "Mapping between customer user attribute value and group."
+msgstr ""
+
+#. SysConfig
+msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
+msgstr ""
+

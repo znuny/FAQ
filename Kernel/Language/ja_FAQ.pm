@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::ja_FAQ;
@@ -16,13 +15,13 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AgentFAQAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
     $Self->{Translation}->{'Add FAQ Article'} = 'FAQの新規追加';
     $Self->{Translation}->{'Keywords'} = 'キーワード';
     $Self->{Translation}->{'A category is required.'} = 'カテゴリは必須項目です。';
     $Self->{Translation}->{'Approval'} = '承認';
 
-    # Template: AgentFAQCategory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'FAQ Category Management'} = 'FAQ カテゴリ管理';
     $Self->{Translation}->{'Add FAQ Category'} = 'FAQ カテゴリを追加';
     $Self->{Translation}->{'Edit FAQ Category'} = 'FAQ カテゴリを編集';
@@ -39,13 +38,13 @@ sub Data {
     $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'このカテゴリは以下の記事で使用されています。';
     $Self->{Translation}->{'This category is parent of the following subcategories'} = 'このカテゴリは以下のカテゴリの親カテゴリです。';
 
-    # Template: AgentFAQDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
     $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'この記事を削除してよろしいですか？';
 
-    # Template: AgentFAQEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ';
 
-    # Template: AgentFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'FAQ一覧';
     $Self->{Translation}->{'Quick Search'} = '検索';
     $Self->{Translation}->{'Wildcards are allowed.'} = 'ワイルドカードが利用可能です。';
@@ -54,15 +53,15 @@ sub Data {
     $Self->{Translation}->{'FAQ Articles'} = 'FAQ項目';
     $Self->{Translation}->{'No subcategories found.'} = '子カテゴリはありません。';
 
-    # Template: AgentFAQHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
     $Self->{Translation}->{'History of'} = '履歴: ';
     $Self->{Translation}->{'History Content'} = '履歴内容';
     $Self->{Translation}->{'Createtime'} = '作成日時';
 
-    # Template: AgentFAQJournalOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'ジャーナルの情報がありません。';
 
-    # Template: AgentFAQLanguage
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
     $Self->{Translation}->{'FAQ Language Management'} = 'FAQ 言語管理';
     $Self->{Translation}->{'Add FAQ Language'} = 'FAQ 言語を追加';
     $Self->{Translation}->{'Edit FAQ Language'} = 'FAQ 言語を編集';
@@ -76,17 +75,17 @@ sub Data {
         'この言語を削除することはできません。一つ以上のFAQで使用されています！';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'この言語は、以下のFAQで使用されています。';
 
-    # Template: AgentFAQOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = '設定';
     $Self->{Translation}->{'FAQ articles per page'} = 'ページ毎の記事数';
 
-    # Template: AgentFAQOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
     $Self->{Translation}->{'No FAQ data found.'} = 'FAQデータはありません。';
 
-    # Template: AgentFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
     $Self->{Translation}->{'out of 5'} = '5つ星のうち';
 
-    # Template: AgentFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
     $Self->{Translation}->{'Keyword'} = 'キーワード';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = '投票 (例. 10に等しい あるいは 60より大きい)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'レート (例. 25%に等しい あるいは 75%より大きい)';
@@ -97,10 +96,10 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = 'FAQ項目変更日時 (以前/以後)';
     $Self->{Translation}->{'FAQ Article Change Time (between)'} = 'FAQ項目変更日時 (期間指定)';
 
-    # Template: AgentFAQSearchOpenSearchDescriptionFulltext
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
     $Self->{Translation}->{'FAQFulltext'} = 'FAQ全文';
 
-    # Template: AgentFAQSearchSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ検索';
     $Self->{Translation}->{'Profile Selection'} = 'プロファイル選択';
     $Self->{Translation}->{'Vote'} = '投票';
@@ -114,7 +113,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Create Time'} = 'FAQ項目作成日時';
     $Self->{Translation}->{'FAQ Article Change Time'} = 'FAQ項目変更時間';
 
-    # Template: AgentFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
     $Self->{Translation}->{'FAQ Information'} = 'FAQ情報';
     $Self->{Translation}->{'Rating'} = 'レーティング';
     $Self->{Translation}->{'Votes'} = '投票';
@@ -128,7 +127,7 @@ sub Data {
     $Self->{Translation}->{'not helpful'} = 'あまり役に立たなかった';
     $Self->{Translation}->{'very helpful'} = 'とても役に立った';
 
-    # Template: AgentFAQZoomSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
     $Self->{Translation}->{'Add FAQ title to article subject'} = '項目の主題にFAQタイトルを追加する';
     $Self->{Translation}->{'Insert FAQ Text'} = '記事を挿入する';
     $Self->{Translation}->{'Insert Full FAQ'} = 'FAQ全文を挿入する';
@@ -136,15 +135,15 @@ sub Data {
     $Self->{Translation}->{'Insert FAQ Text & Link'} = '記事とリンクを挿入する';
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'FAQ全文とリンクを挿入する';
 
-    # Template: CustomerFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
     $Self->{Translation}->{'No FAQ articles found.'} = '該当する記事はありません。';
 
-    # Template: CustomerFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
     $Self->{Translation}->{'This might be helpful'} = 'こちらの情報も役にたつかもしれません';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = '件名と本文から有効な情報は見つかりませんでした';
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '件名か本文を記入して、有効な情報のリストを取得';
 
-    # Template: CustomerFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
     $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'FAQ全文検索（例："John*n"、"Will*"）';
     $Self->{Translation}->{'Vote restrictions'} = '投票規制';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '投票されているFAQのみ...';
@@ -155,14 +154,14 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = '期間内に作成されたFAQ項目のみ';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Search-Profile-検索プロフィール　をテンプレートにしますか?';
 
-    # Template: CustomerFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = ' FAQ 項目ナンバー';
     $Self->{Translation}->{'Search for articles with keyword'} = '記事のキーワード検索';
 
-    # Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = '公開';
 
-    # Template: PublicFAQSearchResultShort
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'FAQエクスプローラーに戻る';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
@@ -211,7 +210,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
     $Self->{Translation}->{'Result'} = '結果';
-    $Self->{Translation}->{'Last update'} = '最終更新日';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = 'FAQ ダイナミック・フィールド';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
@@ -280,18 +278,22 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'コンテンツタイプ';
 
-    # Database XML / SOPM Definition: FAQ.sopm
+    # XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = '内部向';
     $Self->{Translation}->{'external'} = '外部向';
     $Self->{Translation}->{'public'} = '公開';
 
-    # JS File: FAQ.Agent.ConfirmationDialog
+    # JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
     $Self->{Translation}->{'Ok'} = 'はい';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'フィルタ定義　-定義された文字列（string）にリンクを追加するhtmlアウトプット-  エレメント・イメージは、2種類のインプットが可能です。1つ目、イメージの名前です (例. faq.png)。この場合、OTRSイメージ・パスが使用されます。2つ目、イメージにリンクを挿入することが可能性です。';
     $Self->{Translation}->{'Add FAQ article'} = 'FAQ 記事を追加する';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
+    $Self->{Translation}->{'Below body'} = '';
+    $Self->{Translation}->{'Below subject'} = '';
     $Self->{Translation}->{'CSS color for the voting result.'} = '評価の結果表示ようのカラー（スタイルシート）';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'FAQ項目から離脱するまでのキャッシュ時間';
     $Self->{Translation}->{'Category Management'} = 'カテゴリー管理';
@@ -302,6 +304,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = '顧客用FAQの詳細表示';
     $Self->{Translation}->{'Customer FAQ search.'} = '顧客用FAQの検索';
     $Self->{Translation}->{'Customer FAQ.'} = '顧客用FAQ';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
     $Self->{Translation}->{'Decimal places of the voting result.'} = '投票の結果の小数点以下の桁数';
     $Self->{Translation}->{'Default category name.'} = '既定のカテゴリ';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = '規定の言語（単一言語モードで運用時）';
@@ -355,6 +358,8 @@ sub Data {
         'FAQ記事からチケットへの挿入される情報を定義する。「FAQすべて」にはテキスト・添付・及びインラインの画像が含まれます。';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'ダッシュボードのバックエンドパラメータを定義。「Limit リミット」は標準で表示されるエントリーを定義します。「Group グループ」はプラグインへのアクセスを制限します。(例. Group: admin;group1;group2)。「Default　デフォルト」はプラグインが標準で有効になっているか、ユーザーが手動で有効にする必要があるかを定義します。';
+    $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         '担当者画面における、FAQ一覧での表示項目の設定。この設定によって項目の並び順を制御することはできません。';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -393,7 +398,10 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '公開インターフェイスのFAQズーム画面に表示するダイナミック・フィールド';
     $Self->{Translation}->{'Edit this FAQ'} = 'この記事を編集';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '多言語を有効にする';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '顧客向けフロントエンドの関連記事機能を有効にします。';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '評価の機能を有効にする';
@@ -412,7 +420,11 @@ sub Data {
     $Self->{Translation}->{'Field4'} = 'Field4';
     $Self->{Translation}->{'Field5'} = 'Field5';
     $Self->{Translation}->{'Full FAQ'} = 'FAQ全文';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
+        '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'FAQの記事の承認のためのグループ';
+    $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
+        '';
     $Self->{Translation}->{'History of this FAQ'} = 'この記事の履歴';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'FAQ由来のチケットに含まれる内部項目';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'FAQ由来のチケットに含まれる内部項目すべての名称';
@@ -431,6 +443,7 @@ sub Data {
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         '公開画面で利用可能なステートタイプリスト';
     $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         '担当者インターフェイスのFAQ一覧で表示する記事の最大数';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -522,6 +535,8 @@ sub Data {
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '最新の変更を表示する画面（担当者用/顧客用/公開）を定義';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '最新の新規作成を表示する画面（担当者用/顧客用/公開）を定義';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
+        '';
+    $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'トップ10を表示する画面（担当者用/顧客用/公開）を定義';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = '評価を表示する画面（担当者用/顧客用/公開）を定義';

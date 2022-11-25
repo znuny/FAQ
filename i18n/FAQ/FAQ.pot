@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2020-07-06 13:00+0000\n"
+"POT-Creation-Date: 2022-11-25 08:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,403 +10,403 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
 msgstr ""
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Keywords"
 msgstr ""
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "A category is required."
 msgstr ""
 
-#. Template: AgentFAQAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Approval"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "FAQ Category Management"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add FAQ Category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add Category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit Category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Subcategory of"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Please select at least one permission group."
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Agent groups that can access articles in this category."
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Will be shown as comment in Explorer."
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Do you really want to delete this category?"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "This category is used in the following FAQ article(s)"
 msgstr ""
 
-#. Template: AgentFAQCategory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "This category is parent of the following subcategories"
 msgstr ""
 
-#. Template: AgentFAQDelete
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
 msgid "Do you really want to delete this FAQ article?"
 msgstr ""
 
-#. Template: AgentFAQEdit
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "FAQ"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "FAQ Explorer"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Quick Search"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Wildcards are allowed."
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Advanced Search"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Subcategories"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "FAQ Articles"
 msgstr ""
 
-#. Template: AgentFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "No subcategories found."
 msgstr ""
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "History of"
 msgstr ""
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "History Content"
 msgstr ""
 
-#. Template: AgentFAQHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "Createtime"
 msgstr ""
 
-#. Template: AgentFAQJournalOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
 msgid "No FAQ Journal data found."
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "FAQ Language Management"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add FAQ Language"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit FAQ Language"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Use this feature if you want to work with multiple languages."
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add language"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add Language"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit Language"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Do you really want to delete this language?"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "You can not delete this language. It is used in at least one FAQ article!"
 msgstr ""
 
-#. Template: AgentFAQLanguage
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "This language is used in the following FAQ Article(s)"
 msgstr ""
 
-#. Template: AgentFAQOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "Context Settings"
 msgstr ""
 
-#. Template: AgentFAQOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "FAQ articles per page"
 msgstr ""
 
-#. Template: AgentFAQOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
 msgid "No FAQ data found."
 msgstr ""
 
-#. Template: AgentFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
 msgid "out of 5"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Keyword"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Approved"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Last changed by"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (before/after)"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (between)"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (before/after)"
 msgstr ""
 
-#. Template: AgentFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (between)"
 msgstr ""
 
-#. Template: AgentFAQSearchOpenSearchDescriptionFulltext
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
 msgid "FAQFulltext"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Search"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Profile Selection"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Vote"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No vote settings"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific votes"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 10 or GreaterThan 60"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Rate"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No rate settings"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific rate"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 25% or GreaterThan 75%"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Create Time"
 msgstr ""
 
-#. Template: AgentFAQSearchSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Change Time"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "FAQ Information"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Rating"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Votes"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "No votes found!"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "No votes found! Be the first one to rate this FAQ article."
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Download Attachment"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "not helpful"
 msgstr ""
 
-#. Template: AgentFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "very helpful"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Add FAQ title to article subject"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Link"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text & Link"
 msgstr ""
 
-#. Template: AgentFAQZoomSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ & Link"
 msgstr ""
 
-#. Template: CustomerFAQExplorer
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
 msgid "No FAQ articles found."
 msgstr ""
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "This might be helpful"
 msgstr ""
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Found no helpful resources for the subject and text."
 msgstr ""
 
-#. Template: CustomerFAQRelatedArticles
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Vote restrictions"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with votes..."
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Rate restrictions"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with rate..."
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Time restrictions"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created between"
 msgstr ""
 
-#. Template: CustomerFAQSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Search-Profile as Template?"
 msgstr ""
 
-#. Template: CustomerFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Article Number"
 msgstr ""
 
-#. Template: CustomerFAQZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Search for articles with keyword"
 msgstr ""
 
-#. Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
 msgid "Public"
 msgstr ""
 
-#. Template: PublicFAQSearchResultShort
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
 msgid "Back to FAQ Explorer"
 msgstr ""
 
@@ -528,10 +528,6 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
-msgstr ""
-
-#. Perl Module: Kernel/Modules/AgentFAQPrint.pm
-msgid "Last update"
 msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
@@ -698,19 +694,19 @@ msgstr ""
 msgid "Content Type"
 msgstr ""
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "internal"
 msgstr ""
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "external"
 msgstr ""
 
-#. Database XML / SOPM Definition: FAQ.sopm
+#. XML Definition: FAQ.sopm
 msgid "public"
 msgstr ""
 
-#. JS File: FAQ.Agent.ConfirmationDialog
+#. JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
 msgid "Ok"
 msgstr ""
 
@@ -720,6 +716,22 @@ msgstr ""
 
 #. SysConfig
 msgid "Add FAQ article"
+msgstr ""
+
+#. SysConfig
+msgid "Agent FAQ Related Articles"
+msgstr ""
+
+#. SysConfig
+msgid "Agent FAQ Related Articles."
+msgstr ""
+
+#. SysConfig
+msgid "Below body"
+msgstr ""
+
+#. SysConfig
+msgid "Below subject"
 msgstr ""
 
 #. SysConfig
@@ -760,6 +772,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Customer FAQ."
+msgstr ""
+
+#. SysConfig
+msgid "Customer user attribute to check its group relation."
 msgstr ""
 
 #. SysConfig
@@ -879,6 +895,10 @@ msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the n
 msgstr ""
 
 #. SysConfig
+msgid "Defines the position where the related FAQ articles widget is located."
+msgstr ""
+
+#. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
 
@@ -963,7 +983,19 @@ msgid "Edit this FAQ"
 msgstr ""
 
 #. SysConfig
+msgid "Enable customer group support permissions."
+msgstr ""
+
+#. SysConfig
+msgid "Enable customer user permission attributes."
+msgstr ""
+
+#. SysConfig
 msgid "Enable multiple languages on FAQ module."
+msgstr ""
+
+#. SysConfig
+msgid "Enable the related article feature for the agent frontend."
 msgstr ""
 
 #. SysConfig
@@ -1035,7 +1067,15 @@ msgid "Full FAQ"
 msgstr ""
 
 #. SysConfig
+msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
+msgstr ""
+
+#. SysConfig
 msgid "Group for the approval of FAQ articles."
+msgstr ""
+
+#. SysConfig
+msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
 
 #. SysConfig
@@ -1092,6 +1132,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Mapping between customer user attribute value and group."
 msgstr ""
 
 #. SysConfig
@@ -1320,6 +1364,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
+msgstr ""
+
+#. SysConfig
+msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
 
 #. SysConfig
