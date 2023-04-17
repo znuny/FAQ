@@ -1131,7 +1131,7 @@ Navigation: Frontend::Base::OutputFilter.
 
 A filter for HTML output to add links behind a defined string. The
 element Image allows two input kinds. First the name of an image (e.g.
-faq.png). In this case the OTRS image path will be used. The second
+faq.png). In this case the Znuny image path will be used. The second
 possibility is to insert the link to the image.
 
 ### Frontend::Search###FAQ.
@@ -1411,7 +1411,7 @@ Main menu item registration.
 
 ## Approval function
 
-The OTRS FAQ has an approval feature. If you activate the approval
+The Znuny FAQ has an approval feature. If you activate the approval
 feature all newly created FAQs also create a new ticket in a predefined
 queue. The persons who need to approve the FAQ entries can then act on
 these tickets and approve the FAQ articles if they see fit. As long as
@@ -1441,7 +1441,7 @@ generated. The list of the available variables is listed below.
 
 ## Related article function
 
-The OTRS FAQ package has an related article feature for the customer
+The Znuny FAQ package has an related article feature for the customer
 ticket creation. The feature is activated by default, but the
 functionality can be deactivated by with the following setting:
 'FAQ::Customer::RelatedArticles::Enabled'.
@@ -1504,7 +1504,7 @@ This example shows how to create a new FAQ article.
     There are tree possible FAQ states: "internal": only agents can
     see the FAQ article, "external": agents and registered customer
     can see the FAQ article and "public": this FAQ articles are
-    accessible from the OTRS public interface.
+    accessible from the Znuny public interface.
 
     By default the system has the Category "Misc" and the Languages
     "en" for English and "de" for German. (more Categories and
@@ -1738,7 +1738,7 @@ The content of the YAML file is shown below.
 
 
 In order to use the web service you need to use an new interface in
-OTRS. As for agents you use index.pl and for customers you use
+Znuny. As for agents you use index.pl and for customers you use
 customer.pl, for web services you use "nph-genericinterface.pl".
 
 The default and suggested name for this web service is
@@ -1772,8 +1772,8 @@ For the following examples uses SOAP XML data structures since
 HTTP::SOAP is the default transport for Generic Interface Operations and
 can be used with otrs.SOAPRequest.pl.
 
-otrs.SOAPRequest.pl is a simple Perl script to test the OTRS Generic
-Interface, the code can be found in the OTRS administration manual.
+otrs.SOAPRequest.pl is a simple Perl script to test the Znuny Generic
+Interface, the code can be found in the Znuny administration manual.
 
 ## LanguageList
 

@@ -568,9 +568,6 @@
         <br/>
         You are about to install the package FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
@@ -578,9 +575,6 @@
         <br/>
         <br/>
         Sie sind im Begriff, das Paket FAQ zu installieren.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Install Information" Lang="es"><![CDATA[
@@ -590,9 +584,6 @@
         <br/>
         Usted est&aacute; a punto de instalar el paquete FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -600,9 +591,6 @@
         <br/>
         <br/>
         Ön az FAQ csomag telepítésére készül.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="en"><![CDATA[
@@ -619,9 +607,6 @@
         If you are using the FAQ approval feature, you need to create a group and define a queue.
         You will find further information in the SysConfig options starting with "FAQ::Approval".
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
@@ -636,9 +621,6 @@
         <br/>
         Wenn Sie das FAQ-Freigabe-Feature verwenden möchten, müssen Sie eine Gruppe dafür anlegen und eine Queue definieren.
         Weitere Informationen finden Sie in den SysConfig-Optionen, die mit "FAQ::Approval" beginnen.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="es"><![CDATA[
@@ -655,9 +637,6 @@
         Si usted est&aacute; utilizando la funcionalidad de "FAQ approval", necesita crear un grupo y definir una cola.
         Encontrar&aacute; m&aacute;s informaci&oacute;n en sysconfig, en FAQ -> Core::Approval.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Telepítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -673,9 +652,6 @@
         Ha használja a GyIK jóváhagyás szolgáltatást, akkor létre kell hoznia egy csoportot, és meg kell határoznia egy várólistát.
         További információkat fog találni a rendszerbeállításokban a FAQ -> Core::Approval alcsoportban.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
         <br/>
@@ -683,9 +659,6 @@
         <br/>
         <br/>
         You are about to upgrade the package FAQ.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
@@ -695,9 +668,6 @@
         <br/>
         Sie sind im Begriff, das Paket FAQ zu aktualisieren.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="es"><![CDATA[
         <br/>
@@ -706,9 +676,6 @@
         <br/>
         Usted est&aacute; apunto de actualizar el paquete FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -716,9 +683,6 @@
         <br/>
         <br/>
         Ön az FAQ csomag frissítésére készül.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUpgrade>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
@@ -736,9 +700,6 @@
         The groups 'faq' and 'faq_admin' that were created during package installation will be deactivated.
         You can activate these groups again in the admin area.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
         <br/>
@@ -754,9 +715,6 @@
         <br/>
         Die von diesem Paket angelegten Gruppen 'faq' und 'faq_admin' werden deaktiviert.
         Sie können jederzeit im Admin-Bereich wieder aktiviert werden.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="es"><![CDATA[
@@ -774,9 +732,6 @@
         Los grupos 'faq' y 'faq_admin' que fueron creados durante la instalaci&oacute;n del paquete ser&aacute;n desactivados.
         Usted puede activar estos grupos nuevamente en el &aacute;rea de admin.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Eltávolítási információk" Lang="hu"><![CDATA[
         <br/>
@@ -792,9 +747,6 @@
         <br/>
         A csomagtelepítés során létrehozott „faq” és „faq_admin” csoport ki lesz kapcsolva.
         Ezeket a csoportokat az adminisztrációs területen tudja ismét bekapcsolni.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUninstall>
 </otrs_package>
