@@ -1649,11 +1649,11 @@ Run the package specific unit tests
 To run only the unit test which will be delivered with this package, use
 the following command on the command line:
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test FAQ --test FAQSearch --test FAQSearch/InConditionGet
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --directory FAQ
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test GenericInterface/FAQConnector
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Console/Command/Admin/FAQ/Import --test Console/Command/Maint/FAQ/ContentTypeSet
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test UpgradeLowerThan5092
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test FAQ --test FAQSearch --test FAQSearch/InConditionGet
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --directory FAQ
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test GenericInterface/FAQConnector
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test Console/Command/Admin/FAQ/Import --test Console/Command/Maint/FAQ/ContentTypeSet
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test UpgradeLowerThan5092
 
 
 Selenium unit tests
@@ -1662,10 +1662,10 @@ To run the Selenium unit tests, make sure you have a complete Selenium
 environment setup in your Kernel/Config.pm file and a running a
 WebDriver.
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test AgentFAQExplorer --test AgentFAQLanguage --test AgentFAQLinkObject --test AgentFAQPrint --test AgentFAQSearch --test AgentFAQZoom --test Agent/FAQ/RelatedArticles
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test CustomerFAQExplorer --test CustomerFAQPrint --test CustomerFAQSearch --test CustomerFAQZoom --test Customer/FAQ/RelatedArticles
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test PublicFAQExplorer --test PublicFAQPrint --test PublicFAQRSS --test PublicFAQSearch --test PublicFAQZoom
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Dashboard/FAQ --test FAQJournalOverview/Small --test FAQMenu/Generic --test FAQOverview/Small --test HeaderMeta/AgentFAQSearch --test HeaderMeta/CustomerFAQSearch --test HeaderMeta/PublicFAQSearch --test LinkObject/FAQ
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test AgentFAQExplorer --test AgentFAQLanguage --test AgentFAQLinkObject --test AgentFAQPrint --test AgentFAQSearch --test AgentFAQZoom --test Agent/FAQ/RelatedArticles
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test CustomerFAQExplorer --test CustomerFAQPrint --test CustomerFAQSearch --test CustomerFAQZoom --test Customer/FAQ/RelatedArticles
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test PublicFAQExplorer --test PublicFAQPrint --test PublicFAQRSS --test PublicFAQSearch --test PublicFAQZoom
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test Dashboard/FAQ --test FAQJournalOverview/Small --test FAQMenu/Generic --test FAQOverview/Small --test HeaderMeta/AgentFAQSearch --test HeaderMeta/CustomerFAQSearch --test HeaderMeta/PublicFAQSearch --test LinkObject/FAQ
 
 
 Run all available unit tests
@@ -1673,7 +1673,7 @@ Run all available unit tests
 To run all available unit tests, use the following command on the
 command line:
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run
 
 # ChangeLog
 
@@ -1694,14 +1694,14 @@ The following is an example of how to use Command line to install the
 web service in the system using the provided YAML file (.yaml) included
 on this package.
 
-    shell> bin/otrs.Console.pl Admin::WebService::Add --name GenericInterfaceFAQConnector --source-path scripts/webservices/GenericInterfaceFAQConnector.yaml
+    shell> bin/znuny.Console.pl Admin::WebService::Add --name GenericInterfaceFAQConnector --source-path scripts/webservices/GenericInterfaceFAQConnector.yaml
 
 
 Also you can install the web service importing the mentioned YAML file
 via web interface in the next URL using the 'Import web service'
 button on the left side bar.
 
-<http://localhost/otrs/index.pl?Action=AdminGenericInterfaceWebservice;Subaction=Add>
+<http://localhost/znuny/index.pl?Action=AdminGenericInterfaceWebservice;Subaction=Add>
 
 The content of the YAML file is shown below.
 
@@ -1730,7 +1730,7 @@ The content of the YAML file is shown below.
           Encoding: UTF-8
           Endpoint: ''
           MaxLength: 10000000
-          NameSpace: http://www.otrs.org/FAQConnector/
+          NameSpace: https://www.znuny.org/FAQConnector
           SOAPAction: ''
         Type: HTTP::SOAP
     RemoteSystem: ''
@@ -1751,15 +1751,15 @@ associated ID number. You can call the web service by name or by ID
 number. To get the list of "valid" web services and they corresponding
 ID number you can use the following command:
 
-    shell> bin/otrs.Console.pl Admin::WebService::List
+    shell> bin/znuny.Console.pl Admin::WebService::List
 
 
 For this specific web service, using the default configuration you can
 call it as follows:
 
-<http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericFAQConnector>
+<http://localhost/znuny/nph-genericinterface.pl/Webservice/GenericFAQConnector>
 (by name, recommended) or
-<http://localhost/otrs/nph-genericinterface.pl/WebserviceID/1> (by ID).
+<http://localhost/znuny/nph-genericinterface.pl/WebserviceID/1> (by ID).
 
 ::: {.note}
 Both web service name and ID from the example above could be different
@@ -1770,9 +1770,9 @@ in your current environment.
 
 For the following examples uses SOAP XML data structures since
 HTTP::SOAP is the default transport for Generic Interface Operations and
-can be used with otrs.SOAPRequest.pl.
+can be used with znuny.SOAPRequest.pl.
 
-otrs.SOAPRequest.pl is a simple Perl script to test the Znuny Generic
+znuny.SOAPRequest.pl is a simple Perl script to test the Znuny Generic
 Interface, the code can be found in the Znuny administration manual.
 
 ## LanguageList

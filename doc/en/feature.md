@@ -123,18 +123,18 @@ following path: Category=GrandParent::Parent::Son.
 See the link examples below:
 
 from:
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;CategoryID=1>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;CategoryID=1>
 
 to:
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;Category=Misc>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;Category=Misc>
 
 Other Examples:
 
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;Category=My%20Category>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;Category=My%20Category>
 
-[http://localhost/otrs/index.pl?Action=CustomerFAQExplorer;Category=GrandParent::Parent::Son](http://localhost/otrs/index.pl?Action=CustomerFAQExplorer;Category=GranParent::Parent::Son)
+[http://localhost/znuny/index.pl?Action=CustomerFAQExplorer;Category=GrandParent::Parent::Son](http://localhost/znuny/index.pl?Action=CustomerFAQExplorer;Category=GranParent::Parent::Son)
 
-[http://localhost/otrs/index.pl?Action=PublicFAQExplorer;Category=My%20Category::Subcategory](http://localhost/otrs/index.pl?Action=PublicFAQExplorer;Category=My%20Category::SubCategory)
+[http://localhost/znuny/index.pl?Action=PublicFAQExplorer;Category=My%20Category::Subcategory](http://localhost/znuny/index.pl?Action=PublicFAQExplorer;Category=My%20Category::SubCategory)
 
 ## Generic interface FAQ connector for the public interface
 
