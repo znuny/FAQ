@@ -51,7 +51,7 @@ articles or (CMDB) configuration items.
 ## Full-text and quick search
 
 You can execute a full-text and quick search in the entire knowledge
-database. You can also use OTRS operators for "AND" or "OR"
+database. You can also use Znuny operators for "AND" or "OR"
 relations.
 
 ## Top 10 articles
@@ -69,10 +69,10 @@ information about the quality of FAQ articles.
 An additional widget for customer ticket creation provides
 helpful FAQ article related to the inserted subject and text.
 
-## Inserting FAQ articles on OTRS replies
+## Inserting FAQ articles on Znuny replies
 
 You can insert FAQ articles (including images and attachments) in new
-tickets or replies you generate in OTRS.
+tickets or replies you generate in Znuny.
 
 
 ## Release workflow
@@ -123,22 +123,22 @@ following path: Category=GrandParent::Parent::Son.
 See the link examples below:
 
 from:
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;CategoryID=1>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;CategoryID=1>
 
 to:
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;Category=Misc>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;Category=Misc>
 
 Other Examples:
 
-<http://localhost/otrs/index.pl?Action=AdminFAQExplorer;Category=My%20Category>
+<http://localhost/znuny/index.pl?Action=AdminFAQExplorer;Category=My%20Category>
 
-[http://localhost/otrs/index.pl?Action=CustomerFAQExplorer;Category=GrandParent::Parent::Son](http://localhost/otrs/index.pl?Action=CustomerFAQExplorer;Category=GranParent::Parent::Son)
+[http://localhost/znuny/index.pl?Action=CustomerFAQExplorer;Category=GrandParent::Parent::Son](http://localhost/znuny/index.pl?Action=CustomerFAQExplorer;Category=GranParent::Parent::Son)
 
-[http://localhost/otrs/index.pl?Action=PublicFAQExplorer;Category=My%20Category::Subcategory](http://localhost/otrs/index.pl?Action=PublicFAQExplorer;Category=My%20Category::SubCategory)
+[http://localhost/znuny/index.pl?Action=PublicFAQExplorer;Category=My%20Category::Subcategory](http://localhost/znuny/index.pl?Action=PublicFAQExplorer;Category=My%20Category::SubCategory)
 
 ## Generic interface FAQ connector for the public interface
 
-Allows you to use the functions for FAQ public interface via OTRS generic
+Allows you to use the functions for FAQ public interface via Znuny generic
 interface by adding the following operations.
 
 -   LanguageList
