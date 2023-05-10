@@ -536,33 +536,12 @@ Your OTRS Notification Master
                             <Array>
                             </Array>
                         </Item>
-                        <Item Key="Description" Translatable="1">FAQ</Item>
-                        <Item Key="Name" Translatable="1">FAQ</Item>
-                        <Item Key="Link">Action=CustomerFAQExplorer</Item>
-                        <Item Key="LinkOption"></Item>
-                        <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Menu</Item>
-                        <Item Key="Block"></Item>
-                        <Item Key="AccessKey"></Item>
-                        <Item Key="Prio">700</Item>
-                    </Hash>
-                </Item>
-                <Item>
-                    <Hash>
-                        <Item Key="Group">
-                            <Array>
-                            </Array>
-                        </Item>
-                        <Item Key="GroupRo">
-                            <Array>
-                            </Array>
-                        </Item>
                         <Item Key="Description" Translatable="1">FAQ Explorer</Item>
                         <Item Key="Name" Translatable="1">FAQ Explorer</Item>
                         <Item Key="Link">Action=CustomerFAQExplorer</Item>
                         <Item Key="LinkOption"></Item>
                         <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Submenu</Item>
+                        <Item Key="Type">Menu</Item>
                         <Item Key="Block"></Item>
                         <Item Key="AccessKey">x</Item>
                         <Item Key="Prio">710</Item>
@@ -1592,12 +1571,12 @@ Your OTRS Notification Master
                             <Array>
                             </Array>
                         </Item>
-                        <Item Key="Description" Translatable="1">Search</Item>
-                        <Item Key="Name" Translatable="1">Search</Item>
+                        <Item Key="Description" Translatable="1">FAQ Search</Item>
+                        <Item Key="Name" Translatable="1">FAQ Search</Item>
                         <Item Key="Link">Action=CustomerFAQSearch</Item>
                         <Item Key="LinkOption"></Item>
                         <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Submenu</Item>
+                        <Item Key="Type">Menu</Item>
                         <Item Key="Block"></Item>
                         <Item Key="AccessKey">f</Item>
                         <Item Key="Prio">780</Item>
@@ -2296,6 +2275,7 @@ Your OTRS Notification Master
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::Output::HTML::ToolBar::Link</Item>
+                <Item Key="Block">ToolBarActions</Item>
                 <Item Key="Name" Translatable="1">Add FAQ article</Item>
                 <Item Key="Link">Action=AgentFAQAdd</Item>
                 <Item Key="Action">AgentFAQAdd</Item>

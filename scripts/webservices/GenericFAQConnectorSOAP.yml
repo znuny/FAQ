@@ -21,7 +21,7 @@ Provider:
   Transport:
     Config:
       MaxLength: '100000000'
-      NameSpace: http://www.otrs.org/FAQConnector/
+      NameSpace: http://www.znuny.org/FAQConnector/
       RequestNameFreeText: ''
       RequestNameScheme: Plain
       ResponseNameFreeText: ''

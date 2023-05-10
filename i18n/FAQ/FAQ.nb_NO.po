@@ -5,7 +5,7 @@
 # Peter Værlien <pvarlien@online.no>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2022-09-02 15:14+0000\n"
 "Last-Translator: Peter Værlien <peter.varlien@kdrs.no>\n"

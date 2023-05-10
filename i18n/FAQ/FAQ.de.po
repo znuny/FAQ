@@ -55,7 +55,7 @@
 # bce0ba3cf0737f4654586bd1fe5e7d63, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2022-03-26 13:53+0000\n"
 "Last-Translator: Silvia Hentschel <silvia.hentschel@tu-dresden.de>\n"

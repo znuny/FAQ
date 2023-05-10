@@ -4,7 +4,7 @@
 # Hsiao-Ting Wang <hsiaoting.wang@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-02-25 22:18+0000\n"
 "Last-Translator: Howard <howardlababy@gmail.com>\n"

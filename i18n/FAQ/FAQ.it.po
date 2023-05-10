@@ -11,7 +11,7 @@
 # Vincenzo Reale <vinx.reale@gmail.com>, 2015-2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-05-05 15:34+0000\n"
 "Last-Translator: Efrem Baraldo <efrem.baraldo@gmail.com>\n"

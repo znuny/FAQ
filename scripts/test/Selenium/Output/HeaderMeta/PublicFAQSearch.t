@@ -57,7 +57,7 @@ $Selenium->RunTest(
 
         # search test created FAQ in quick-search
         $Selenium->find_element("//input[\@id='Search']")->send_keys($FAQTitle);
-        $Selenium->find_element("//button[\@value='Search'][\@type='submit']")->VerifiedClick();
+        $Selenium->find_element("//input[\@id='Search']")->VerifiedSubmit();
 
         # check for quick-search result
         $Self->True(

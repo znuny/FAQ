@@ -5,7 +5,7 @@
 # Peter van Beugen <peter@tda.nl>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-09-01 14:46+0000\n"
 "Last-Translator: Nick van der Burg <nmp.vanderburg@gmail.com>\n"

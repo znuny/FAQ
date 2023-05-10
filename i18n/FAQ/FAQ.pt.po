@@ -8,7 +8,7 @@
 # Renato Brigham <renato.brigham@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-02-07 11:51+0000\n"
 "Last-Translator: Joao Ferro <joao.ferro@otrs.com>\n"

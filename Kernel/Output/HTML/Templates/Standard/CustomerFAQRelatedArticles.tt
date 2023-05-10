@@ -7,12 +7,10 @@
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-
-<div class="WidgetSimple">
+<div class="WidgetSimple Expanded FAQ-related-articles-widget">
 
     <div class="Header">
         <h3>[% Translate("This might be helpful") | html %]</h3>
-        <div class="Clear"></div>
     </div>
 
     <div class="Content">
@@ -25,7 +23,11 @@
                 </a>
             [% IF FAQArticle.Votes && Data.VoteStarsVisible && FAQArticle.StarCounter >= Data.VoteStarsVisible %]
                 <span title="[% FAQArticle.StarCounter | html %] [% Translate("out of 5") | html %]">
-                - [% FILTER repeat(FAQArticle.StarCounter) %]<span class="RateStar"><i class="fa fa-star"></i></span>[% END %]
+                    - [% FILTER repeat(FAQArticle.StarCounter) %]
+                    <span class="RateStar">
+                        <i class="fa fa-star"></i>
+                    </span>
+                [% END %]
                 </span>
             [% END %]
             </li>
@@ -38,4 +40,3 @@
     [% END %]
     </div>
 </div>
-<div class="Clear"></div>

@@ -9,7 +9,7 @@
 # 陈德文 <sggggy@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-01-30 12:51+0000\n"
 "Last-Translator: Huimin Wang <whuim@qq.com>\n"

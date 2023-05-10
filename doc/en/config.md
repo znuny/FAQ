@@ -1714,7 +1714,7 @@ The content of the YAML file is shown below.
     Provider:
       Operation:
         LanguageList:
-          Description: List  all availables languages
+          Description: List  all available languages
           Type: FAQ::LanguageList
         PublicCategoryList:
           Description: List all public FAQ categories (with tree information)

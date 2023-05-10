@@ -160,7 +160,7 @@ $Selenium->RunTest(
         # Check correct position of widget.
         $Self->True(
             $Selenium->execute_script(
-                "return \$('#FAQRelatedArticlesLabel').prev('div.Clear').prev('div.Field').find('#Subject').length;"
+                "return \$('#FAQRelatedArticlesLabel').prev('div').find('#Subject').length;"
             ),
             'Widget is correctly positioned below subject field.',
         );
@@ -225,7 +225,7 @@ $Selenium->RunTest(
 
         $Self->True(
             $Selenium->execute_script(
-                "return \$('#FAQRelatedArticlesLabel').prev('div.Clear').prev('div').find('#RichText').length;"
+                "return \$('#FAQRelatedArticlesLabel').prev('div').find('#RichText').length;"
             ),
             'Widget is correctly positioned below richtext field.',
         );

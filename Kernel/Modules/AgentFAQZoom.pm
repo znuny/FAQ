@@ -816,17 +816,6 @@ sub Run {
 
         my $CancelButtonClass = 'ZoomSmallButton';
 
-        # Show the "Or" block between the buttons and the Cancel & close window label.
-        if ($ShowOrBlock) {
-            $LayoutObject->Block(
-                Name => 'Or',
-                Data => {},
-            );
-
-            # Set the $CancelButtonClass to ''.
-            $CancelButtonClass = '';
-        }
-
         # Send data to JS.
         $LayoutObject->AddJSData(
             Key   => 'AgentFAQZoomSmall',

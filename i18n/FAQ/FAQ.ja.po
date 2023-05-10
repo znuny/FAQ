@@ -7,7 +7,7 @@
 # Norihiro Tanaka <noritnk@kcn.ne.jp>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
 "PO-Revision-Date: 2020-02-22 12:18+0000\n"
 "Last-Translator: HISATOSHI OONISHI <hisatoshi.onishi@gmail.com>\n"

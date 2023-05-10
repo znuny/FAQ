@@ -9,72 +9,13 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 
 @media screen,projection,tv,handheld {
 
-/**
- * @package     FAQ - Skin "Default"
- * @section     FAQZoom
- */
-
-/**
- * @section     Header
- */
-
-.FAQHeader {
-    width: 80%;
-    overflow: hidden;
-    position: relative;
-}
-
-.FAQHeader h2 {
-    margin: 3px 0 0;
-    font-size: 24px;
-    line-height: 120%;
-    position: relative;
-    float: left;
-}
-.RTL .FAQHeader h2 {
-    padding: 0 36px 0 0;
-    float: right;
-}
-
-.FAQHeader .FAQHook {
-    color: #666;
-    font-size: 12px;
-}
-
-.MessageBody {
-    padding: 0px 15px;
-}
-
-#FAQOptions {
-    overflow: hidden;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-}
-
-#FAQOptions li {
-    float: left;
-    margin-left: 5px;
-}
-
-#FAQOptions .Print {
-    color: #777;
-    font-size: 15px;
-}
-#FAQOptions .Print:hover {
-    color: #f92;
-}
-#FAQOptions .Print span {
-    display: block;
-    text-indent: -9999px;
-}
 
 li.KeywordsContainer {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-div.Attachments {
+/* div.Attachments {
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -102,6 +43,6 @@ div.Attachments {
 
 .Attachments .DownloadAttachment {
     margin-left: 2px;
-}
+} */
 
 } /* end @media */
