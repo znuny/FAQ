@@ -22,14 +22,13 @@
     <Filelist>
         <File Permission="770" Location="bin/cgi-bin/faq.pl"/>
         <File Permission="770" Location="bin/fcgi-bin/faq.fpl"/>
-        <File Permission="660" Location="doc/faq-database.png"/>
         <File Permission="660" Location="Kernel/Config/Files/XML/FAQ.xml"/>
         <File Permission="660" Location="Kernel/Config/Files/ZZZZZFAQItemLinkObjectPermissions.pm"/>
         <File Permission="660" Location="Kernel/cpan-lib/XML/RSS/SimpleGen.pm"/>
-        <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicCategoryList.pm"/>
         <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/LanguageList.pm"/>
-        <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicFAQSearch.pm"/>
+        <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicCategoryList.pm"/>
         <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicFAQGet.pm"/>
+        <File Permission="660" Location="Kernel/GenericInterface/Operation/FAQ/PublicFAQSearch.pm"/>
         <File Permission="660" Location="Kernel/Language/da_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/de_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/en_GB_FAQ.pm"/>
@@ -46,8 +45,8 @@
         <File Permission="660" Location="Kernel/Language/nb_NO_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/nl_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/pl_FAQ.pm"/>
-        <File Permission="660" Location="Kernel/Language/pt_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/pt_BR_FAQ.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/ru_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/sr_Cyrl_FAQ.pm"/>
         <File Permission="660" Location="Kernel/Language/sr_Latn_FAQ.pm"/>
@@ -84,19 +83,19 @@
         <File Permission="660" Location="Kernel/Modules/PublicFAQZoom.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/Dashboard/FAQ.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FAQJournalOverview/Small.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FAQMenu/Generic.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FAQMenu/Delete.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FAQMenu/Generic.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FAQOverview/Small.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQ.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQAgentRelatedArticles.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQCustomerRelatedArticles.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/Layout/FAQ.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/LinkObject/FAQ.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQ.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQAgentRelatedArticles.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQCustomerRelatedArticles.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentDashboardFAQOverview.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt"/>
@@ -104,16 +103,15 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt"/>
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFAQNumber.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt"/>
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt"/>
@@ -131,30 +129,29 @@
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/FAQ/Import.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Maint/FAQ/ContentTypeSet.pm"/>
         <File Permission="660" Location="Kernel/System/DynamicField/ObjectType/FAQ.pm"/>
+        <File Permission="660" Location="Kernel/System/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/FAQ/Category.pm"/>
         <File Permission="660" Location="Kernel/System/FAQ/Language.pm"/>
         <File Permission="660" Location="Kernel/System/FAQ/RelatedArticle.pm"/>
         <File Permission="660" Location="Kernel/System/FAQ/State.pm"/>
         <File Permission="660" Location="Kernel/System/FAQ/Vote.pm"/>
-        <File Permission="660" Location="Kernel/System/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/FAQSearch.pm"/>
         <File Permission="660" Location="Kernel/System/LinkObject/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/Stats/Static/FAQAccess.pm"/>
         <File Permission="660" Location="scripts/test/Autocompletion/FAQ.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/FAQ/Import.t"/>
-        <File Permission="660" Location="scripts/webservices/GenericFAQConnectorREST.yml"/>
-        <File Permission="660" Location="scripts/webservices/GenericFAQConnectorSOAP.yml"/>
         <File Permission="660" Location="scripts/test/Console/Command/Maint/FAQ/ContentTypeSet.t"/>
         <File Permission="660" Location="scripts/test/DynamicField/ObjectType/FAQ/ObjectDataGet.t"/>
-        <File Permission="660" Location="scripts/test/FAQSearch/InConditionGet.t"/>
         <File Permission="660" Location="scripts/test/FAQ.t"/>
-        <File Permission="660" Location="scripts/test/FAQSearch.t"/>
-        <File Permission="660" Location="scripts/test/FAQ/RelatedArticle.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/AgentCategorySearch.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CategoryAdd.t"/>
-        <File Permission="660" Location="scripts/test/FAQ/Category/CheckCustomerUserCategory.t"/>
-        <File Permission="660" Location="scripts/test/FAQ/UpgradeLowerThan5092.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CheckCategoryUserPermission.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/Category/CheckCustomerUserCategory.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/Explorer/CountSubCategories.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/RelatedArticle.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/UpgradeLowerThan5092.t"/>
+        <File Permission="660" Location="scripts/test/FAQSearch.t"/>
+        <File Permission="660" Location="scripts/test/FAQSearch/InConditionGet.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/FAQConnector.t"/>
         <File Permission="660" Location="scripts/test/sample/FAQ-Test1.doc"/>
         <File Permission="660" Location="scripts/test/sample/FAQ-Test1.pdf"/>
@@ -179,11 +176,6 @@
         <File Permission="660" Location="scripts/test/Selenium/Customer/CustomerFAQSearch.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Customer/CustomerFAQZoom.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Customer/FAQ/RelatedArticles.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQExplorer.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQPrint.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQRSS.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQSearch.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQZoom.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Output/Dashboard/FAQ.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Output/FAQJournalOverview/Small.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Output/FAQMenu/Generic.t"/>
@@ -192,6 +184,13 @@
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/CustomerFAQSearch.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Output/HeaderMeta/PublicFAQSearch.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Output/LinkObject/FAQ.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQExplorer.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQPrint.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQRSS.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQSearch.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Public/PublicFAQZoom.t"/>
+        <File Permission="660" Location="scripts/webservices/GenericFAQConnectorREST.yml"/>
+        <File Permission="660" Location="scripts/webservices/GenericFAQConnectorSOAP.yml"/>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQ.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.FAQZoom.js"/>
@@ -203,9 +202,9 @@
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/img/help-small.png"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Customer.Default.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Customer.Detail.css"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.FAQZoom.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.RelatedArticles.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.Widget.css"/>
-        <File Permission="660" Location="var/httpd/htdocs/skins/Customer/default/css/FAQ.FAQZoom.css"/>
         <File Permission="660" Location="var/packagesetup/FAQ.pm"/>
         <File Permission="660" Location="var/stats/FAQ-FAQAccess.xml"/>
     </Filelist>
