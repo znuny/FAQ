@@ -1204,7 +1204,7 @@ sub FAQCount {
     }
 
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
-    
+
     my $CountSubCategories = $ConfigObject->Get('FAQExplorer::CountSubCategories');
     if ( $Param{CountSubCategories} && $CountSubCategories ) {
         my %Categories;
@@ -1227,6 +1227,7 @@ sub FAQCount {
             keys %Categories,
         ];
     }
+
     # set default value
     my $Valid    = $Param{Valid} ? 1 : 0;
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
