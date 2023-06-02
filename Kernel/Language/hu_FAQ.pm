@@ -154,6 +154,9 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Csak az e között létrehozott GyIK bejegyzések';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Keresési profil sablonként?';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+    $Self->{Translation}->{'Search Results for'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Bejegyzésszám';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Bejegyzések keresése kulcsszavakkal';
@@ -397,6 +400,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';

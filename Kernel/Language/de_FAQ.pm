@@ -154,6 +154,9 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Nur Tickets, die erstellt wurden zwischen';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Suchprofil als Vorlage?';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+    $Self->{Translation}->{'Search Results for'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Artikelnummer';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Suche nach Artikeln mit Schlüsselwörtern';
@@ -397,6 +400,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'Angezeigte Dynamische Felder im FAQ Zoom-Bildschirm des öffentlichen Bereichs. ';
     $Self->{Translation}->{'Edit this FAQ'} = 'FAQ bearbeiten';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        'Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer.';
     $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Attribute für Kundenbenutzerrechte aktivieren.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Multiple Sprachen im FAQ-Modul aktivieren.';

@@ -1475,3 +1475,11 @@ msgstr ""
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+msgid "Search Results for"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
+msgstr ""
+

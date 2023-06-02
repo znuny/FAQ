@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2022-11-25 08:30+0000\n"
+"POT-Creation-Date: 2023-06-02 13:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,6 +392,10 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Search-Profile as Template?"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+msgid "Search Results for"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
@@ -980,6 +984,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Edit this FAQ"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 
 #. SysConfig

@@ -154,6 +154,9 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Alleen FAQ-artikelen gemaakt tussen';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Zoekprofiel als sjabloon?';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+    $Self->{Translation}->{'Search Results for'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Artikelnummer';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Zoek naar artikelen met trefwoord';
@@ -397,6 +400,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'Dynamische velden weergegeven in het FAQ-zoomscherm van de openbare interface.';
     $Self->{Translation}->{'Edit this FAQ'} = 'Bewerk deze FAQ';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Schakel meerdere talen in op de FAQ-module.';

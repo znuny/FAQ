@@ -154,6 +154,9 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'เฉพาะบทความ FAQที่สร้างในระหว่าง';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Search-Profile เป็นแม่แบบ?';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
+    $Self->{Translation}->{'Search Results for'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'หมายเลขบทความ';
     $Self->{Translation}->{'Search for articles with keyword'} = 'ค้นหาบทความด้วยคีย์เวิร์ด';
@@ -397,6 +400,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'แก้ไข FAQ นี้';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'เปิดใช้งานหลากหลายภาษา ในโมดูล FAQ.';
