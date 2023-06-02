@@ -1203,6 +1203,30 @@ sub FAQCount {
         }
     }
 
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    
+    my $CountSubCategories = $ConfigObject->Get('FAQExplorer::CountSubCategories');
+    if ( $Param{CountSubCategories} && $CountSubCategories ) {
+        my %Categories;
+
+        my $CategoryList = $Self->CategoryList(
+            UserID => $Param{UserID},
+        );
+
+        my @CategoryIDs = @{ $Param{CategoryIDs} || [] };
+        CATEGORYID:
+        while ( my $CategoryID = shift @CategoryIDs ) {
+            $Categories{$CategoryID}++;
+
+            next CATEGORYID if !exists $CategoryList->{$CategoryID};
+
+            push @CategoryIDs, keys %{ $CategoryList->{$CategoryID} };
+        }
+
+        $Param{CategoryIDs} = [
+            keys %Categories,
+        ];
+    }
     # set default value
     my $Valid    = $Param{Valid} ? 1 : 0;
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
