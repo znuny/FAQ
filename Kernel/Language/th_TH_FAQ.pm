@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = 'การอนุมัติ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'เพิ่มหมวดหมู่';
     $Self->{Translation}->{'FAQ Category Management'} = 'การจัดการหมวดหมู่ FAQ';
     $Self->{Translation}->{'Add FAQ Category'} = '';
     $Self->{Translation}->{'Edit FAQ Category'} = '';
-    $Self->{Translation}->{'Add category'} = 'เพิ่มหมวดหมู่';
     $Self->{Translation}->{'Add Category'} = 'เพิ่มหมวดหมู่';
     $Self->{Translation}->{'Edit Category'} = 'แก้ไขหมวดหมู่';
     $Self->{Translation}->{'Subcategory of'} = 'หมวดหมู่ย่อยของ';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'ไม่พบวารสาร FAQ ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'การจัดการภาษา FAQ';
-    $Self->{Translation}->{'Add FAQ Language'} = '';
-    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         '';
     $Self->{Translation}->{'Add language'} = 'เพิ่มภาษา';
+    $Self->{Translation}->{'FAQ Language Management'} = 'การจัดการภาษา FAQ';
+    $Self->{Translation}->{'Add FAQ Language'} = '';
+    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Add Language'} = 'เพิ่มภาษา';
     $Self->{Translation}->{'Edit Language'} = 'แก้ไขภาษา';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'คุณต้องการลบภาษานี้หรือไม่?';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'การค้นหาโดย FAQ';
     $Self->{Translation}->{'Profile Selection'} = 'การเลือกโปรไฟล์';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = 'โหวต';
     $Self->{Translation}->{'No vote settings'} = 'ไม่มีการตั้งค่าการโหวต';
     $Self->{Translation}->{'Specific votes'} = 'การโหวตที่เฉพาะเจาะจง';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'ค้นหาแบบฉบับเต็มในบทความ FAQ (เช่น "John*n" or "Will*")';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = 'ข้อจำกัดการโหวต';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'เฉพาะบทความFAQ โดยการโหวด...';
     $Self->{Translation}->{'Rate restrictions'} = 'ข้อจำกัดการประเมิน';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'หมายเลขบทความ';
     $Self->{Translation}->{'Search for articles with keyword'} = 'ค้นหาบทความด้วยคีย์เวิร์ด';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'ค้นหาแบบฉบับเต็มในบทความ FAQ (เช่น "John*n" or "Will*")';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'สาธารณะ';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'แก้ไข FAQ นี้';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'เปิดใช้งานหลากหลายภาษา ในโมดูล FAQ.';

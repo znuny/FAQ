@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2022-11-25 08:30+0000\n"
+"POT-Creation-Date: 2023-06-02 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,10 @@ msgid "Approval"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+msgid "Add category"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "FAQ Category Management"
 msgstr ""
 
@@ -36,10 +40,6 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
-msgid "Add category"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
@@ -135,6 +135,14 @@ msgid "No FAQ Journal data found."
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
+msgid "Use this feature if you want to work with multiple languages."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
+msgid "Add language"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "FAQ Language Management"
 msgstr ""
 
@@ -144,14 +152,6 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit FAQ Language"
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-msgid "Add language"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
@@ -236,6 +236,10 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Profile Selection"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Core FAQ Data"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
@@ -359,7 +363,7 @@ msgid "Type a subject or text to get a list of helpful resources."
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
+msgid "Template name"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
@@ -400,6 +404,14 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Search for articles with keyword"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "VLimitation"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
@@ -980,6 +992,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Edit this FAQ"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 
 #. SysConfig

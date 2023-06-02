@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = 'Godkjenning';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'Legg til kategori';
     $Self->{Translation}->{'FAQ Category Management'} = 'Kategorioppsett for OSS';
     $Self->{Translation}->{'Add FAQ Category'} = '';
     $Self->{Translation}->{'Edit FAQ Category'} = '';
-    $Self->{Translation}->{'Add category'} = 'Legg til kategori';
     $Self->{Translation}->{'Add Category'} = 'Legg til kategori';
     $Self->{Translation}->{'Edit Category'} = 'Endre kategori';
     $Self->{Translation}->{'Subcategory of'} = 'Underkategori av';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'Språkoppsett for OSS';
-    $Self->{Translation}->{'Add FAQ Language'} = '';
-    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         '';
     $Self->{Translation}->{'Add language'} = 'Legg til språk';
+    $Self->{Translation}->{'FAQ Language Management'} = 'Språkoppsett for OSS';
+    $Self->{Translation}->{'Add FAQ Language'} = '';
+    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Add Language'} = 'Legg til språk';
     $Self->{Translation}->{'Edit Language'} = 'Endre språk';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'Vil du virkelig fjerne dette språket?';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'OSS-søk';
     $Self->{Translation}->{'Profile Selection'} = 'Profilvalg';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = 'Stem';
     $Self->{Translation}->{'No vote settings'} = 'Ingen stemmeinnstillinger';
     $Self->{Translation}->{'Specific votes'} = 'Spesifikk notis';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Fulltekstsøk i OSS-artikler (f.eks. "Ol*" eller "Andreas*n"';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = '';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Bare OSS artikler med stemmer...';
     $Self->{Translation}->{'Rate restrictions'} = '';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Artikkelnummer';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Søk etter artikler med nøkkelord';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Fulltekstsøk i OSS-artikler (f.eks. "Ol*" eller "Andreas*n"';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Offentlig';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Endre denne artikkelen';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '';

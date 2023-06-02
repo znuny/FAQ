@@ -364,7 +364,7 @@ msgstr "Nem találhatók hasznos erőforrások a tárgyhoz és a szöveghez."
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr "Írjon be egy tárgyat vagy szöveget a hasznos erőforrások listájának lekéréséhez."
 
-#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr "Szabad-szavas keresés a GyIK bejegyzésekben (például „J*nos” vagy „Kov*”)"
 
@@ -1474,5 +1474,21 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Core FAQ Data"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+msgid "Template name"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "VLimitation"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 

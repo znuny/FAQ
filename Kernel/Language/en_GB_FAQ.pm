@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = 'Approval';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'Add category';
     $Self->{Translation}->{'FAQ Category Management'} = 'FAQ Category Management';
     $Self->{Translation}->{'Add FAQ Category'} = 'Add FAQ Category';
     $Self->{Translation}->{'Edit FAQ Category'} = 'Edit FAQ Category';
-    $Self->{Translation}->{'Add category'} = 'Add category';
     $Self->{Translation}->{'Add Category'} = 'Add Category';
     $Self->{Translation}->{'Edit Category'} = 'Edit Category';
     $Self->{Translation}->{'Subcategory of'} = 'Subcategory of';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'No FAQ Journal data found';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'FAQ Language Management';
-    $Self->{Translation}->{'Add FAQ Language'} = 'Add FAQ Language';
-    $Self->{Translation}->{'Edit FAQ Language'} = 'Edit FAQ Language';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         'Use this feature if you want to work with multiple languages.';
     $Self->{Translation}->{'Add language'} = 'Add language';
+    $Self->{Translation}->{'FAQ Language Management'} = 'FAQ Language Management';
+    $Self->{Translation}->{'Add FAQ Language'} = 'Add FAQ Language';
+    $Self->{Translation}->{'Edit FAQ Language'} = 'Edit FAQ Language';
     $Self->{Translation}->{'Add Language'} = 'Add Language';
     $Self->{Translation}->{'Edit Language'} = 'Edit Language';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'Do you really want to delete this language?';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ Search';
     $Self->{Translation}->{'Profile Selection'} = 'Profile Selection';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = 'Vote';
     $Self->{Translation}->{'No vote settings'} = 'No vote settings';
     $Self->{Translation}->{'Specific votes'} = 'Specific votes';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Type a subject or text to get a list of helpful resources.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = 'Vote restrictions';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Only FAQ articles with votes...';
     $Self->{Translation}->{'Rate restrictions'} = 'Rate restrictions';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Article Number?';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Search for articles with keyword';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Public';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Edit this FAQ';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Enable multiple languages on FAQ module.';

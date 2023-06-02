@@ -365,7 +365,7 @@ msgstr "Geen nuttige bronnen gevonden voor het onderwerp en de tekst."
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr "Typ een onderwerp of tekst om een lijst met nuttige bronnen te krijgen."
 
-#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr "Zoeken in volledige tekst in FAQ-artikelen (bijv. \"John*n\" of \"Will*\")"
 
@@ -1475,5 +1475,21 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Core FAQ Data"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+msgid "Template name"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "VLimitation"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 

@@ -367,7 +367,7 @@ msgstr "件名と本文から有効な情報は見つかりませんでした"
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr "件名か本文を記入して、有効な情報のリストを取得"
 
-#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr "FAQ全文検索（例：\"John*n\"、\"Will*\"）"
 
@@ -1478,5 +1478,21 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Core FAQ Data"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+msgid "Template name"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "VLimitation"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 

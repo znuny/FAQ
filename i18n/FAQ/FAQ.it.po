@@ -371,7 +371,7 @@ msgstr "Non sono state trovate risorse utili per l'oggetto e il testo."
 msgid "Type a subject or text to get a list of helpful resources."
 msgstr "Digita un oggetto o un testo per ottenere un elenco di risorse utili."
 
-#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
 msgstr "Ricerca testuale negli articoli FAQ (ad esempio \"John*n\" or \"Will*\")"
 
@@ -1520,5 +1520,21 @@ msgstr ""
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Core FAQ Data"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
+msgid "Template name"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+msgid "VLimitation"
+msgstr ""
+
+#. SysConfig
+msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 

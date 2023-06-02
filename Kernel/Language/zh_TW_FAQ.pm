@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = '審批';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = '添加目錄分類';
     $Self->{Translation}->{'FAQ Category Management'} = '常見問題目錄分類管理';
     $Self->{Translation}->{'Add FAQ Category'} = '新增 FAQ 類別';
     $Self->{Translation}->{'Edit FAQ Category'} = '編輯 FAQ 類別';
-    $Self->{Translation}->{'Add category'} = '添加目錄分類';
     $Self->{Translation}->{'Add Category'} = '添加目錄分類';
     $Self->{Translation}->{'Edit Category'} = '編輯目錄分類';
     $Self->{Translation}->{'Subcategory of'} = '子類別：';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = '沒有找到常見問題日誌數據。';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = '常見問題語言管理';
-    $Self->{Translation}->{'Add FAQ Language'} = '新增 FAQ 語言';
-    $Self->{Translation}->{'Edit FAQ Language'} = '編輯 FAQ 語言';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         '';
     $Self->{Translation}->{'Add language'} = '添加語言';
+    $Self->{Translation}->{'FAQ Language Management'} = '常見問題語言管理';
+    $Self->{Translation}->{'Add FAQ Language'} = '新增 FAQ 語言';
+    $Self->{Translation}->{'Edit FAQ Language'} = '編輯 FAQ 語言';
     $Self->{Translation}->{'Add Language'} = '添加語言';
     $Self->{Translation}->{'Edit Language'} = '編輯語言';
     $Self->{Translation}->{'Do you really want to delete this language?'} = '您確定要刪除此語言？';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = '常見問題搜尋';
     $Self->{Translation}->{'Profile Selection'} = '檔案資料選項';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = '投票';
     $Self->{Translation}->{'No vote settings'} = '沒有投票設定';
     $Self->{Translation}->{'Specific votes'} = '指定選票';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = '常見問題文章全文檢索 (例："John*n" 或 "Will*")';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = '投票限制條件';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '只是有被投選的常見問題文章';
     $Self->{Translation}->{'Rate restrictions'} = '評分限制條件';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = '文章編號';
     $Self->{Translation}->{'Search for articles with keyword'} = '用關鍵字搜尋文章';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = '常見問題文章全文檢索 (例："John*n" 或 "Will*")';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = '公開';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = '編輯此常見問題';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '啓用常見問題模組多種語言';

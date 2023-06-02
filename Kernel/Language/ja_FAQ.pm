@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = '承認';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'カテゴリを追加';
     $Self->{Translation}->{'FAQ Category Management'} = 'FAQ カテゴリ管理';
     $Self->{Translation}->{'Add FAQ Category'} = 'FAQ カテゴリを追加';
     $Self->{Translation}->{'Edit FAQ Category'} = 'FAQ カテゴリを編集';
-    $Self->{Translation}->{'Add category'} = 'カテゴリを追加';
     $Self->{Translation}->{'Add Category'} = 'カテゴリを追加';
     $Self->{Translation}->{'Edit Category'} = 'カテゴリを編集';
     $Self->{Translation}->{'Subcategory of'} = '親カテゴリ';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'ジャーナルの情報がありません。';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'FAQ 言語管理';
-    $Self->{Translation}->{'Add FAQ Language'} = 'FAQ 言語を追加';
-    $Self->{Translation}->{'Edit FAQ Language'} = 'FAQ 言語を編集';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         '多言語で作業をしたい場合、この項目を設定してください。';
     $Self->{Translation}->{'Add language'} = '言語を追加';
+    $Self->{Translation}->{'FAQ Language Management'} = 'FAQ 言語管理';
+    $Self->{Translation}->{'Add FAQ Language'} = 'FAQ 言語を追加';
+    $Self->{Translation}->{'Edit FAQ Language'} = 'FAQ 言語を編集';
     $Self->{Translation}->{'Add Language'} = '言語を追加';
     $Self->{Translation}->{'Edit Language'} = '言語を編集';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'この言語を削除してよろしいですか？';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ検索';
     $Self->{Translation}->{'Profile Selection'} = 'プロファイル選択';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = '投票';
     $Self->{Translation}->{'No vote settings'} = '投票の設定がありません';
     $Self->{Translation}->{'Specific votes'} = '特定の投票';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '件名か本文を記入して、有効な情報のリストを取得';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'FAQ全文検索（例："John*n"、"Will*"）';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = '投票規制';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '投票されているFAQのみ...';
     $Self->{Translation}->{'Rate restrictions'} = 'レート規制';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = ' FAQ 項目ナンバー';
     $Self->{Translation}->{'Search for articles with keyword'} = '記事のキーワード検索';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'FAQ全文検索（例："John*n"、"Will*"）';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = '公開';
@@ -398,6 +403,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '公開インターフェイスのFAQズーム画面に表示するダイナミック・フィールド';
     $Self->{Translation}->{'Edit this FAQ'} = 'この記事を編集';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '多言語を有効にする';

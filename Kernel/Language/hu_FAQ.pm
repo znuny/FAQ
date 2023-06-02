@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = 'Jóváhagyás';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'Kategória hozzáadása';
     $Self->{Translation}->{'FAQ Category Management'} = 'GyIK kategóriakezelés';
     $Self->{Translation}->{'Add FAQ Category'} = 'GyIK kategória hozzáadása';
     $Self->{Translation}->{'Edit FAQ Category'} = 'GyIK kategória szerkesztése';
-    $Self->{Translation}->{'Add category'} = 'Kategória hozzáadása';
     $Self->{Translation}->{'Add Category'} = 'Kategória hozzáadása';
     $Self->{Translation}->{'Edit Category'} = 'Kategória szerkesztése';
     $Self->{Translation}->{'Subcategory of'} = 'Alkategóriája ennek';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'Nem találhatók GyIK napló adatok.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'GyIK nyelvkezelés';
-    $Self->{Translation}->{'Add FAQ Language'} = 'GyIK nyelv hozzáadása';
-    $Self->{Translation}->{'Edit FAQ Language'} = 'GyIK nyelv szerkesztése';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         'Akkor használja ezt a szolgáltatást, ha több nyelvvel szeretne dolgozni.';
     $Self->{Translation}->{'Add language'} = 'Nyelv hozzáadása';
+    $Self->{Translation}->{'FAQ Language Management'} = 'GyIK nyelvkezelés';
+    $Self->{Translation}->{'Add FAQ Language'} = 'GyIK nyelv hozzáadása';
+    $Self->{Translation}->{'Edit FAQ Language'} = 'GyIK nyelv szerkesztése';
     $Self->{Translation}->{'Add Language'} = 'Nyelv hozzáadása';
     $Self->{Translation}->{'Edit Language'} = 'Nyelv szerkesztése';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'Valóban törölni szeretné ezt a nyelvet?';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'GyIK keresés';
     $Self->{Translation}->{'Profile Selection'} = 'Profil kiválasztás';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = 'Szavazás';
     $Self->{Translation}->{'No vote settings'} = 'Nincsenek szavazási beállítások';
     $Self->{Translation}->{'Specific votes'} = 'Adott szavazatok';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Írjon be egy tárgyat vagy szöveget a hasznos erőforrások listájának lekéréséhez.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Szabad-szavas keresés a GyIK bejegyzésekben (például „J*nos” vagy „Kov*”)';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = 'Szavazási korlátozások';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Csak a szavazatokkal rendelkező GyIK bejegyzések…';
     $Self->{Translation}->{'Rate restrictions'} = 'Értékelés korlátozások';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Bejegyzésszám';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Bejegyzések keresése kulcsszavakkal';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Szabad-szavas keresés a GyIK bejegyzésekben (például „J*nos” vagy „Kov*”)';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Nyilvános';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';

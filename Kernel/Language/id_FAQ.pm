@@ -22,10 +22,10 @@ sub Data {
     $Self->{Translation}->{'Approval'} = 'Persetujuan';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
+    $Self->{Translation}->{'Add category'} = 'Tambah kategori';
     $Self->{Translation}->{'FAQ Category Management'} = 'Manajemen Kategori FAQ';
     $Self->{Translation}->{'Add FAQ Category'} = '';
     $Self->{Translation}->{'Edit FAQ Category'} = '';
-    $Self->{Translation}->{'Add category'} = 'Tambah kategori';
     $Self->{Translation}->{'Add Category'} = 'Tambah Kategori';
     $Self->{Translation}->{'Edit Category'} = 'Edit Kategori';
     $Self->{Translation}->{'Subcategory of'} = 'Sub-kategori dari';
@@ -62,12 +62,12 @@ sub Data {
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'Data Jurnal FAQ tidak ditemukan.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
-    $Self->{Translation}->{'FAQ Language Management'} = 'Manajemen Bahasa FAQ';
-    $Self->{Translation}->{'Add FAQ Language'} = '';
-    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
         '';
     $Self->{Translation}->{'Add language'} = 'Tambah bahasa';
+    $Self->{Translation}->{'FAQ Language Management'} = 'Manajemen Bahasa FAQ';
+    $Self->{Translation}->{'Add FAQ Language'} = '';
+    $Self->{Translation}->{'Edit FAQ Language'} = '';
     $Self->{Translation}->{'Add Language'} = 'Tambah Bahasa';
     $Self->{Translation}->{'Edit Language'} = 'Edit Bahasa';
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'Anda yakin akan menghapus bahasa ini?';
@@ -102,6 +102,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'Pencarian FAQ';
     $Self->{Translation}->{'Profile Selection'} = 'Pemilihan Profil';
+    $Self->{Translation}->{'Core FAQ Data'} = '';
     $Self->{Translation}->{'Vote'} = 'Pilih';
     $Self->{Translation}->{'No vote settings'} = 'Tidak ada pengaturan pemilihan';
     $Self->{Translation}->{'Specific votes'} = 'Pemilihan khusus';
@@ -144,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Pencarian Tekspenuh pada Artikel FAQ (contoh: "John*n" atau "Will")';
+    $Self->{Translation}->{'Template name'} = '';
     $Self->{Translation}->{'Vote restrictions'} = 'Batasan Pemilihan';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Hanya artikel FAQ yang telah dipilih...';
     $Self->{Translation}->{'Rate restrictions'} = 'Batasan Peringkat';
@@ -157,6 +158,10 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Nomor Artikel';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Cari artikel dengan kata kunci';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Pencarian Tekspenuh pada Artikel FAQ (contoh: "John*n" atau "Will")';
+    $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Umum';
@@ -397,6 +402,8 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'ubah FAQ ini.';
+    $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
+        '';
     $Self->{Translation}->{'Enable customer group support permissions.'} = '';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Aktifkan multibahasa pada modul FAQ.';
