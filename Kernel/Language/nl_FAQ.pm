@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::nl_FAQ;
@@ -15,13 +15,13 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AgentFAQAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
     $Self->{Translation}->{'Add FAQ Article'} = 'FAQ-artikel toevoegen';
     $Self->{Translation}->{'Keywords'} = 'Zoekwoorden';
     $Self->{Translation}->{'A category is required.'} = 'Een categorie is vereist.';
     $Self->{Translation}->{'Approval'} = 'Goedkeuring';
 
-    # Template: AgentFAQCategory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'FAQ Category Management'} = 'FAQ-categoriebeheer';
     $Self->{Translation}->{'Add FAQ Category'} = 'FAQ-categorie toevoegen';
     $Self->{Translation}->{'Edit FAQ Category'} = 'FAQ-categorie bewerken';
@@ -38,13 +38,13 @@ sub Data {
     $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'Deze categorie wordt gebruikt in de volgende FAQ-artikel(en)';
     $Self->{Translation}->{'This category is parent of the following subcategories'} = 'Deze categorie is de bovenliggende van de volgende subcategorieën';
 
-    # Template: AgentFAQDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
     $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'Wil je dit FAQ-artikel echt verwijderen?';
 
-    # Template: AgentFAQEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ';
 
-    # Template: AgentFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'FAQ Verkenner';
     $Self->{Translation}->{'Quick Search'} = 'Snelzoeken';
     $Self->{Translation}->{'Wildcards are allowed.'} = 'Wildcards zijn toegestaan.';
@@ -53,15 +53,15 @@ sub Data {
     $Self->{Translation}->{'FAQ Articles'} = 'FAQ-artikelen';
     $Self->{Translation}->{'No subcategories found.'} = 'Geen Subcategorieën gevonden.';
 
-    # Template: AgentFAQHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
     $Self->{Translation}->{'History of'} = 'Geschiedenis van';
     $Self->{Translation}->{'History Content'} = 'Geschiedenisinhoud';
     $Self->{Translation}->{'Createtime'} = 'Maak tijd';
 
-    # Template: AgentFAQJournalOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'Geen FAQ-journaalgegevens gevonden.';
 
-    # Template: AgentFAQLanguage
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
     $Self->{Translation}->{'FAQ Language Management'} = 'FAQ Taalbeheer';
     $Self->{Translation}->{'Add FAQ Language'} = 'FAQ-taal toevoegen';
     $Self->{Translation}->{'Edit FAQ Language'} = 'FAQ-taal bewerken';
@@ -75,17 +75,17 @@ sub Data {
         'Je kunt deze taal niet verwijderen. Het wordt gebruikt in ten minste één FAQ-artikel!';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Deze taal wordt gebruikt in de volgende FAQ-artikel(en)';
 
-    # Template: AgentFAQOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Contextinstellingen';
     $Self->{Translation}->{'FAQ articles per page'} = 'FAQ-artikelen per pagina';
 
-    # Template: AgentFAQOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
     $Self->{Translation}->{'No FAQ data found.'} = 'Geen FAQ-gegevens gevonden.';
 
-    # Template: AgentFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
     $Self->{Translation}->{'out of 5'} = 'van de 5';
 
-    # Template: AgentFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
     $Self->{Translation}->{'Keyword'} = 'Zoekwoord';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'Stem (bijv. is gelijk aan 10 of groter dan 60)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Beoordeling (bijv. Is gelijk aan 25% of Groter dan 75%)';
@@ -96,10 +96,10 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = 'FAQ-artikel wijzigingstijd (voor/na)';
     $Self->{Translation}->{'FAQ Article Change Time (between)'} = 'FAQ-artikel wijzigingstijd (tussen)';
 
-    # Template: AgentFAQSearchOpenSearchDescriptionFulltext
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
     $Self->{Translation}->{'FAQFulltext'} = 'FAQ volledige tekst';
 
-    # Template: AgentFAQSearchSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ Zoeken';
     $Self->{Translation}->{'Profile Selection'} = 'Profielselectie';
     $Self->{Translation}->{'Vote'} = 'Stem';
@@ -113,7 +113,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Create Time'} = 'FAQ-artikel maak tijd';
     $Self->{Translation}->{'FAQ Article Change Time'} = 'FAQ-artikel wijzigingstijd';
 
-    # Template: AgentFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
     $Self->{Translation}->{'FAQ Information'} = 'FAQ Informatie';
     $Self->{Translation}->{'Rating'} = 'Beoordeling';
     $Self->{Translation}->{'Votes'} = 'Stemmen';
@@ -127,7 +127,7 @@ sub Data {
     $Self->{Translation}->{'not helpful'} = 'niet nuttig';
     $Self->{Translation}->{'very helpful'} = 'erg nuttig';
 
-    # Template: AgentFAQZoomSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
     $Self->{Translation}->{'Add FAQ title to article subject'} = 'Voeg FAQ-titel toe aan het onderwerp van het artikel';
     $Self->{Translation}->{'Insert FAQ Text'} = 'Voeg FAQ-tekst in';
     $Self->{Translation}->{'Insert Full FAQ'} = 'Voeg de volledige FAQ in';
@@ -135,15 +135,15 @@ sub Data {
     $Self->{Translation}->{'Insert FAQ Text & Link'} = 'Voeg FAQ Tekst & Link in';
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Volledige FAQ & Link invoegen';
 
-    # Template: CustomerFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
     $Self->{Translation}->{'No FAQ articles found.'} = 'Geen FAQ-artikelen gevonden.';
 
-    # Template: CustomerFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
     $Self->{Translation}->{'This might be helpful'} = 'Dit kan nuttig zijn';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = 'Geen nuttige bronnen gevonden voor het onderwerp en de tekst.';
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Typ een onderwerp of tekst om een lijst met nuttige bronnen te krijgen.';
 
-    # Template: CustomerFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
     $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Zoeken in volledige tekst in FAQ-artikelen (bijv. "John*n" of "Will*")';
     $Self->{Translation}->{'Vote restrictions'} = 'Stem beperkingen';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Alleen FAQ-artikelen met stemmen ...';
@@ -154,14 +154,14 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Alleen FAQ-artikelen gemaakt tussen';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Zoekprofiel als sjabloon?';
 
-    # Template: CustomerFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Artikelnummer';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Zoek naar artikelen met trefwoord';
 
-    # Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Openbaar';
 
-    # Template: PublicFAQSearchResultShort
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'Terug naar FAQ Verkenner';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
@@ -210,7 +210,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
     $Self->{Translation}->{'Result'} = 'Resultaat';
-    $Self->{Translation}->{'Last update'} = 'Laatste update';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = 'FAQ Dynamische velden';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
@@ -279,18 +278,22 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = 'Inhoudstype';
 
-    # Database XML / SOPM Definition: FAQ.sopm
+    # XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'intern';
     $Self->{Translation}->{'external'} = 'extern';
     $Self->{Translation}->{'public'} = 'openbaar';
 
-    # JS File: FAQ.Agent.ConfirmationDialog
+    # JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Een filter voor HTML-uitvoer om links toe te voegen achter een gedefinieerde tekenreeks. Het element Image staat twee invoertypes toe. Eerst de naam van een afbeelding (bijv. Faq.png). In dit geval wordt het OTRS-afbeeldingspad gebruikt. De tweede mogelijkheid is om de link naar de afbeelding in te voegen.';
     $Self->{Translation}->{'Add FAQ article'} = 'FAQ-artikel toevoegen';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
+    $Self->{Translation}->{'Below body'} = '';
+    $Self->{Translation}->{'Below subject'} = '';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'CSS-kleur voor het stemresultaat.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Cachetijd voor FAQ-items.';
     $Self->{Translation}->{'Category Management'} = 'Categorie beheer';
@@ -301,6 +304,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = 'Klant FAQ Zoom.';
     $Self->{Translation}->{'Customer FAQ search.'} = 'Klant FAQ zoeken.';
     $Self->{Translation}->{'Customer FAQ.'} = 'Klant FAQ.';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'Decimalen van het stemresultaat.';
     $Self->{Translation}->{'Default category name.'} = 'Standaard categorienaam.';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Standaardtaal voor FAQ-artikelen over de modus voor één taal.';
@@ -353,6 +357,8 @@ sub Data {
         'Definieert de informatie die in een op FAQ gebaseerd ticket moet worden ingevoegd. "Volledige FAQ" bevat tekst, bijlagen en inline afbeeldingen.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definieert de parameters voor de dashboardbackend. "Limiet" definieert het aantal items dat standaard wordt weergegeven. "Groep" wordt gebruikt om de toegang tot de plug-in te beperken (bijv. Groep: admin; groep1; groep2;). "Standaard" geeft aan of de plug-in standaard is ingeschakeld of dat de gebruiker deze handmatig moet inschakelen.';
+    $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definieert de weergegeven kolommen in de FAQ Verkenner. Deze optie heeft geen invloed op de positie van de kolom.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -391,7 +397,10 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         'Dynamische velden weergegeven in het FAQ-zoomscherm van de openbare interface.';
     $Self->{Translation}->{'Edit this FAQ'} = 'Bewerk deze FAQ';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Schakel meerdere talen in op de FAQ-module.';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Schakel de gerelateerde artikelfunctie in voor de frontend van de klant.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Stemmechanisme inschakelen op de FAQ-module.';
@@ -410,7 +419,11 @@ sub Data {
     $Self->{Translation}->{'Field4'} = 'Veld4';
     $Self->{Translation}->{'Field5'} = 'Veld5';
     $Self->{Translation}->{'Full FAQ'} = 'Volledige FAQ';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
+        '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Groep voor de goedkeuring van FAQ-artikelen.';
+    $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
+        '';
     $Self->{Translation}->{'History of this FAQ'} = 'Geschiedenis van deze FAQ';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Voeg interne velden toe aan een FAQ gebaseerd ticket.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Vermeld de naam van elk veld in een op FAQ gebaseerd ticket.';
@@ -429,6 +442,7 @@ sub Data {
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Lijst met statustypen die in de openbare interface kunnen worden gebruikt.';
     $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Registratie van ladermodule voor de openbare interface.';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Maximumaantal FAQ-artikelen dat moet worden weergegeven in het FAQ Verkenner-resultaat van de agentinterface.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -520,6 +534,8 @@ sub Data {
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
+        '';
+    $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Stemmen in gedefinieerde interfaces weergeven.';

@@ -2,8 +2,14 @@
 
 ## General
 
-The package can be configured via the SysConfig in the Admin Interface.
+The package can be configured via the System Configuration in the Admin Interface.
 The following configuration options are available:
+
+### Frontend::RichText::Autocompletion::Modules###FAQ
+
+Navigation: Core
+
+Enable keyword searching for specifiecd categories and designate which fields are searchable.
 
 ### CustomerFrontend::HeaderMetaModule###3-FAQSearch.
 
@@ -1125,7 +1131,7 @@ Navigation: Frontend::Base::OutputFilter.
 
 A filter for HTML output to add links behind a defined string. The
 element Image allows two input kinds. First the name of an image (e.g.
-faq.png). In this case the OTRS image path will be used. The second
+faq.png). In this case the Znuny image path will be used. The second
 possibility is to insert the link to the image.
 
 ### Frontend::Search###FAQ.
@@ -1405,7 +1411,7 @@ Main menu item registration.
 
 ## Approval function
 
-The OTRS FAQ has an approval feature. If you activate the approval
+The Znuny FAQ has an approval feature. If you activate the approval
 feature all newly created FAQs also create a new ticket in a predefined
 queue. The persons who need to approve the FAQ entries can then act on
 these tickets and approve the FAQ articles if they see fit. As long as
@@ -1435,7 +1441,7 @@ generated. The list of the available variables is listed below.
 
 ## Related article function
 
-The OTRS FAQ package has an related article feature for the customer
+The Znuny FAQ package has an related article feature for the customer
 ticket creation. The feature is activated by default, but the
 functionality can be deactivated by with the following setting:
 'FAQ::Customer::RelatedArticles::Enabled'.
@@ -1498,7 +1504,7 @@ This example shows how to create a new FAQ article.
     There are tree possible FAQ states: "internal": only agents can
     see the FAQ article, "external": agents and registered customer
     can see the FAQ article and "public": this FAQ articles are
-    accessible from the OTRS public interface.
+    accessible from the Znuny public interface.
 
     By default the system has the Category "Misc" and the Languages
     "en" for English and "de" for German. (more Categories and
@@ -1590,7 +1596,7 @@ articles. If the word is a keyword in a FAQ article the quantifier for
 this FAQ article will be increased (word counter + current FAQ article
 quantifier). Here is a example for the related FAQ article ordering:
 
-                
+
     We have some FAQ Article with the following keywords:
         - FAQArticle 1 with keywords:  'itsm', 'changemanagement', 'ticket'
         - FAQArticle 2 with keywords: 'itsm', 'changemangement'
@@ -1603,8 +1609,8 @@ quantifier). Here is a example for the related FAQ article ordering:
         - FAQArticle 1 => 11 - ( changemanagement (5) + ticket (4) + itsm (1) = Quantifier (11) )
         - FAQArticle 2 => 6  - ( changemanagement (5) + itsm (1) = Quantifier (6) )
         - FAQArticle 3 => 4  - ( ticket (4) = Quantifier (4) )
-                
-            
+
+
 
 If two articles have the same keyword quantifier the last change time
 and create time will also be used for the sorting.
@@ -1643,12 +1649,12 @@ Run the package specific unit tests
 To run only the unit test which will be delivered with this package, use
 the following command on the command line:
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test FAQ --test FAQSearch --test FAQSearch/InConditionGet
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --directory FAQ
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test GenericInterface/FAQConnector
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Console/Command/Admin/FAQ/Import --test Console/Command/Maint/FAQ/ContentTypeSet
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test UpgradeLowerThan5092
-            
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test FAQ --test FAQSearch --test FAQSearch/InConditionGet
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --directory FAQ
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test GenericInterface/FAQConnector
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test Console/Command/Admin/FAQ/Import --test Console/Command/Maint/FAQ/ContentTypeSet
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test UpgradeLowerThan5092
+
 
 Selenium unit tests
 
@@ -1656,18 +1662,18 @@ To run the Selenium unit tests, make sure you have a complete Selenium
 environment setup in your Kernel/Config.pm file and a running a
 WebDriver.
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test AgentFAQExplorer --test AgentFAQLanguage --test AgentFAQLinkObject --test AgentFAQPrint --test AgentFAQSearch --test AgentFAQZoom --test Agent/FAQ/RelatedArticles
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test CustomerFAQExplorer --test CustomerFAQPrint --test CustomerFAQSearch --test CustomerFAQZoom --test Customer/FAQ/RelatedArticles
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test PublicFAQExplorer --test PublicFAQPrint --test PublicFAQRSS --test PublicFAQSearch --test PublicFAQZoom
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test Dashboard/FAQ --test FAQJournalOverview/Small --test FAQMenu/Generic --test FAQOverview/Small --test HeaderMeta/AgentFAQSearch --test HeaderMeta/CustomerFAQSearch --test HeaderMeta/PublicFAQSearch --test LinkObject/FAQ
-            
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test AgentFAQExplorer --test AgentFAQLanguage --test AgentFAQLinkObject --test AgentFAQPrint --test AgentFAQSearch --test AgentFAQZoom --test Agent/FAQ/RelatedArticles
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test CustomerFAQExplorer --test CustomerFAQPrint --test CustomerFAQSearch --test CustomerFAQZoom --test Customer/FAQ/RelatedArticles
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test PublicFAQExplorer --test PublicFAQPrint --test PublicFAQRSS --test PublicFAQSearch --test PublicFAQZoom
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run --test Dashboard/FAQ --test FAQJournalOverview/Small --test FAQMenu/Generic --test FAQOverview/Small --test HeaderMeta/AgentFAQSearch --test HeaderMeta/CustomerFAQSearch --test HeaderMeta/PublicFAQSearch --test LinkObject/FAQ
+
 
 Run all available unit tests
 
 To run all available unit tests, use the following command on the
 command line:
 
-    shell> perl bin/otrs.Console.pl Dev::UnitTest::Run
+    shell> perl bin/znuny.Console.pl Dev::UnitTest::Run
 
 # ChangeLog
 
@@ -1688,18 +1694,18 @@ The following is an example of how to use Command line to install the
 web service in the system using the provided YAML file (.yaml) included
 on this package.
 
-    shell> bin/otrs.Console.pl Admin::WebService::Add --name GenericInterfaceFAQConnector --source-path scripts/webservices/GenericInterfaceFAQConnector.yaml
-                
+    shell> bin/znuny.Console.pl Admin::WebService::Add --name GenericInterfaceFAQConnector --source-path scripts/webservices/GenericInterfaceFAQConnector.yaml
+
 
 Also you can install the web service importing the mentioned YAML file
 via web interface in the next URL using the 'Import web service'
 button on the left side bar.
 
-<http://localhost/otrs/index.pl?Action=AdminGenericInterfaceWebservice;Subaction=Add>
+<http://localhost/znuny/index.pl?Action=AdminGenericInterfaceWebservice;Subaction=Add>
 
 The content of the YAML file is shown below.
 
-                    
+
     ---
     Debugger:
       DebugThreshold: debug
@@ -1708,7 +1714,7 @@ The content of the YAML file is shown below.
     Provider:
       Operation:
         LanguageList:
-          Description: List  all availables languages
+          Description: List  all available languages
           Type: FAQ::LanguageList
         PublicCategoryList:
           Description: List all public FAQ categories (with tree information)
@@ -1724,15 +1730,15 @@ The content of the YAML file is shown below.
           Encoding: UTF-8
           Endpoint: ''
           MaxLength: 10000000
-          NameSpace: http://www.otrs.org/FAQConnector/
+          NameSpace: https://www.znuny.org/FAQConnector
           SOAPAction: ''
         Type: HTTP::SOAP
     RemoteSystem: ''
-                    
-                
+
+
 
 In order to use the web service you need to use an new interface in
-OTRS. As for agents you use index.pl and for customers you use
+Znuny. As for agents you use index.pl and for customers you use
 customer.pl, for web services you use "nph-genericinterface.pl".
 
 The default and suggested name for this web service is
@@ -1745,15 +1751,15 @@ associated ID number. You can call the web service by name or by ID
 number. To get the list of "valid" web services and they corresponding
 ID number you can use the following command:
 
-    shell> bin/otrs.Console.pl Admin::WebService::List
-                
+    shell> bin/znuny.Console.pl Admin::WebService::List
+
 
 For this specific web service, using the default configuration you can
 call it as follows:
 
-<http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericFAQConnector>
+<http://localhost/znuny/nph-genericinterface.pl/Webservice/GenericFAQConnector>
 (by name, recommended) or
-<http://localhost/otrs/nph-genericinterface.pl/WebserviceID/1> (by ID).
+<http://localhost/znuny/nph-genericinterface.pl/WebserviceID/1> (by ID).
 
 ::: {.note}
 Both web service name and ID from the example above could be different
@@ -1764,10 +1770,10 @@ in your current environment.
 
 For the following examples uses SOAP XML data structures since
 HTTP::SOAP is the default transport for Generic Interface Operations and
-can be used with otrs.SOAPRequest.pl.
+can be used with znuny.SOAPRequest.pl.
 
-otrs.SOAPRequest.pl is a simple Perl script to test the OTRS Generic
-Interface, the code can be found in the OTRS administration manual.
+znuny.SOAPRequest.pl is a simple Perl script to test the Znuny Generic
+Interface, the code can be found in the Znuny administration manual.
 
 ## LanguageList
 
@@ -1778,14 +1784,14 @@ languages including ID and the Name for each language on the system.
 
 Request format:
 
-                    
+
             <LanguageList/>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <LanguageListResponse>
              <!--1 or more repetitions:-->
              <Language>
@@ -1793,12 +1799,12 @@ Response format:
                 <Name>?</Name>
              </Language>
           </LanguageListResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <LanguageListResponse>
              <Language>
                 <ID>1</ID>
@@ -1813,8 +1819,8 @@ Response example:
                 <Name>es</Name>
              </Language>
           </LanguageListResponse>
-                    
-                
+
+
 
 ## PublicCategoryList
 
@@ -1826,14 +1832,14 @@ category.
 
 Request format:
 
-                    
+
             <PublicCategoryList/>
-                    
-                
+
+
 
 Response format:
 
-                    
+
          <PublicCategoryListResponse>
              <!--1 or more repetitions:-->
              <Category>
@@ -1841,12 +1847,12 @@ Response format:
                 <Name>?</Name>
              </Category>
           </PublicCategoryListResponse>
-                     
-                
+
+
 
 Response example:
 
-                    
+
           <PublicCategoryListResponse>
              <Category>
                 <ID>2</ID>
@@ -1861,8 +1867,8 @@ Response example:
                 <Name>Public::SubCategory B</Name>
              </Category>
           </PublicCategoryListResponse>
-                    
-                
+
+
 
 ## PublicFAQGet
 
@@ -1877,27 +1883,27 @@ the attachment contents are not really needed.
 
 Request format:
 
-                    
+
           <PublicFAQGet>
              <ItemID>?</ItemID>
              <!-- optional, defaults to 1 -->
              <GetAttachmentContents>?</GetAttachmentContents>
           </PublicFAQGet>
-                    
-                
+
+
 
 Request example:
 
-                    
+
           <PublicFAQGet>
             <ItemID>6,7</ItemID>
           </PublicFAQGet>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <PublicFAQGetResponse>
              <!--Zero or more repetitions:-->
              <FAQItem>
@@ -1942,12 +1948,12 @@ Response format:
                 </Attachment>
              </FAQItem>
           </PublicFAQGetResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <PublicFAQGetResponse>
               <FAQItem>
                 <ID>6</ID>
@@ -2030,8 +2036,8 @@ Response example:
                 <ContentType>text/html</ContentType>
               </FAQItem>
           </PublicFAQGetResponse>
-                    
-                
+
+
 
 ## PublicFAQSearch
 
@@ -2052,7 +2058,7 @@ The full FAQ item data can be retrieved for each ID by using
 
 Request format:
 
-                    
+
           <PublicFAQSearch>
              <!--Optional:-->
              <Number>?</Number>
@@ -2073,12 +2079,12 @@ Request format:
              <!--Optional:-->
              <OprderByDirection>?</OprderByDirection>
           </PublicFAQSearch>
-                    
-                
+
+
 
 Request example:
 
-                    
+
          <PublicFAQSearch>
             <Number>*134*</Number>
             <Title>*some title*</Title>
@@ -2089,22 +2095,22 @@ Request example:
             <OrderBy>FAQID</OrderBy>
             <OrderByDirection>Up</OrderByDirection>
           </PublicFAQSearch>
-                    
-                
+
+
 
 Response format:
 
-                    
+
           <PublicFAQSearchResponse>
              <!--Zero or more repetitions:-->
              <ID>?</ID>
           </PublicFAQSearchResponse>
-                    
-                
+
+
 
 Response example:
 
-                    
+
           <PublicFAQSearchResponse>
              <ID>20</ID>
              <ID>19</ID>
@@ -2118,5 +2124,3 @@ Response example:
              <ID>6</ID>
              <ID>5</ID>
           </PublicFAQSearchResponse>
-                    
-                

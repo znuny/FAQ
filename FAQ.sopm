@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>6.0.29</Version>
-    <ChangeLog Version="6.0.29" Date="2021-04-21 16:10:32 +0200">Moved complex link table configuration for FAQ items to Perl config file (Znuny security advisory 2021-05, see https://www.znuny.org/de/advisories/zsa-2021-05).</ChangeLog>
-    <Framework Minimum="6.0.26">6.0.x</Framework>
+    <Version>7.0.1</Version>
+    <Framework>7.0.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
-    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="7.0.1" Date="2023-05-10 11:24:12 +0200">Initial release for Znuny 7.0.</ChangeLog>
+    <ChangeLog Version="6.5.1" Date="2023-02-20 14:25:07 +0100">Initial release for Znuny 6.5.</ChangeLog>
+    <ChangeLog Version="6.4.2" Date="2022-10-27 16:51:03 +0200">Removed "Subject" change event restriction (minimum letters in subject field greater than 10) for showing related articles in agent and customer interface.</ChangeLog>
+    <ChangeLog Version="6.4.1" Date="2022-07-28 14:32:03 +0200">Initial release for Znuny 6.4.</ChangeLog>
+    <ChangeLog Version="6.3.2" Date="2022-07-05 09:43:09 +0200">Added group permissions for customer users.</ChangeLog>
+    <ChangeLog Version="6.3.1" Date="2022-03-16 22:39:26 +0100">Ported to 6.3</ChangeLog>
+    <ChangeLog Version="6.2.2" Date="2022-02-16 14:59:57 +0100">Fixed links in customer frontend - changed from iframe to blank.</ChangeLog>
+    <ChangeLog Version="6.2.1" Date="2021-11-09 10:21:21 +0100">Ported to 6.2.</ChangeLog>
+    <ChangeLog Version="6.1.1" Date="2021-08-12 21:56:43 +0200">Initial 6.1 release</ChangeLog>
+    <ChangeLog Version="6.0.29" Date="2021-04-21 16:10:32 +0200">Moved complex link table configuration for FAQ items to Perl config file (Znuny security advisory 2021-05, see https://www.znuny.org/de/advisories/zsa-2021-05).</ChangeLog>
     <Filelist>
         <File Permission="770" Location="bin/cgi-bin/faq.pl"/>
         <File Permission="770" Location="bin/fcgi-bin/faq.fpl"/>
@@ -84,6 +93,7 @@
         <File Permission="660" Location="Kernel/Output/HTML/Layout/FAQ.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/LinkObject/FAQ.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQ.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQAgentRelatedArticles.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/FAQCustomerRelatedArticles.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentDashboardFAQOverview.tt"/>
@@ -117,6 +127,7 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFullText.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFAQZoom.tt"/>
+        <File Permission="660" Location="Kernel/System/Autocompletion/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/FAQ/Import.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Maint/FAQ/ContentTypeSet.pm"/>
         <File Permission="660" Location="Kernel/System/DynamicField/ObjectType/FAQ.pm"/>
@@ -129,6 +140,7 @@
         <File Permission="660" Location="Kernel/System/FAQSearch.pm"/>
         <File Permission="660" Location="Kernel/System/LinkObject/FAQ.pm"/>
         <File Permission="660" Location="Kernel/System/Stats/Static/FAQAccess.pm"/>
+        <File Permission="660" Location="scripts/test/Autocompletion/FAQ.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/FAQ/Import.t"/>
         <File Permission="660" Location="scripts/webservices/GenericFAQConnectorREST.yml"/>
         <File Permission="660" Location="scripts/webservices/GenericFAQConnectorSOAP.yml"/>
@@ -140,6 +152,7 @@
         <File Permission="660" Location="scripts/test/FAQ/RelatedArticle.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/AgentCategorySearch.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CategoryAdd.t"/>
+        <File Permission="660" Location="scripts/test/FAQ/Category/CheckCustomerUserCategory.t"/>
         <File Permission="660" Location="scripts/test/FAQ/UpgradeLowerThan5092.t"/>
         <File Permission="660" Location="scripts/test/FAQ/Category/CheckCategoryUserPermission.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/FAQConnector.t"/>
@@ -556,9 +569,6 @@
         <br/>
         You are about to install the package FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
@@ -566,9 +576,6 @@
         <br/>
         <br/>
         Sie sind im Begriff, das Paket FAQ zu installieren.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Install Information" Lang="es"><![CDATA[
@@ -578,9 +585,6 @@
         <br/>
         Usted est&aacute; a punto de instalar el paquete FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -588,9 +592,6 @@
         <br/>
         <br/>
         Ön az FAQ csomag telepítésére készül.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="en"><![CDATA[
@@ -607,9 +608,6 @@
         If you are using the FAQ approval feature, you need to create a group and define a queue.
         You will find further information in the SysConfig options starting with "FAQ::Approval".
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
@@ -624,9 +622,6 @@
         <br/>
         Wenn Sie das FAQ-Freigabe-Feature verwenden möchten, müssen Sie eine Gruppe dafür anlegen und eine Queue definieren.
         Weitere Informationen finden Sie in den SysConfig-Optionen, die mit "FAQ::Approval" beginnen.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="es"><![CDATA[
@@ -643,9 +638,6 @@
         Si usted est&aacute; utilizando la funcionalidad de "FAQ approval", necesita crear un grupo y definir una cola.
         Encontrar&aacute; m&aacute;s informaci&oacute;n en sysconfig, en FAQ -> Core::Approval.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Telepítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -661,9 +653,6 @@
         Ha használja a GyIK jóváhagyás szolgáltatást, akkor létre kell hoznia egy csoportot, és meg kell határoznia egy várólistát.
         További információkat fog találni a rendszerbeállításokban a FAQ -> Core::Approval alcsoportban.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroInstall>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
         <br/>
@@ -671,9 +660,6 @@
         <br/>
         <br/>
         You are about to upgrade the package FAQ.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
@@ -683,9 +669,6 @@
         <br/>
         Sie sind im Begriff, das Paket FAQ zu aktualisieren.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="es"><![CDATA[
         <br/>
@@ -694,9 +677,6 @@
         <br/>
         Usted est&aacute; apunto de actualizar el paquete FAQ.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
         <br/>
@@ -704,9 +684,6 @@
         <br/>
         <br/>
         Ön az FAQ csomag frissítésére készül.<br/>
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUpgrade>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
@@ -724,9 +701,6 @@
         The groups 'faq' and 'faq_admin' that were created during package installation will be deactivated.
         You can activate these groups again in the admin area.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
         <br/>
@@ -742,9 +716,6 @@
         <br/>
         Die von diesem Paket angelegten Gruppen 'faq' und 'faq_admin' werden deaktiviert.
         Sie können jederzeit im Admin-Bereich wieder aktiviert werden.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="es"><![CDATA[
@@ -762,9 +733,6 @@
         Los grupos 'faq' y 'faq_admin' que fueron creados durante la instalaci&oacute;n del paquete ser&aacute;n desactivados.
         Usted puede activar estos grupos nuevamente en el &aacute;rea de admin.
         <br/>
-        <br/>
-        ((enjoy))<br/>
-        <br/>
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Eltávolítási információk" Lang="hu"><![CDATA[
         <br/>
@@ -780,9 +748,6 @@
         <br/>
         A csomagtelepítés során létrehozott „faq” és „faq_admin” csoport ki lesz kapcsolva.
         Ezeket a csoportokat az adminisztrációs területen tudja ismét bekapcsolni.
-        <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
     ]]></IntroUninstall>
 </otrs_package>

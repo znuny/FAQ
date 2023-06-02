@@ -1,5 +1,6 @@
 /*
-Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
@@ -132,30 +133,13 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     margin-right:10px;
     color: #000000;
 }
-
-.VotingBox {
-    min-width: 20pc;
-    margin: 0 30px 21px;
-    color: #6A6A6A;
-    background: #F9F9F9;
-    border-left: 1px solid #D6D6D6;
-    border-right: 1px solid #D6D6D6;
-    display: inline-block;
-    position: relative;
-    border-bottom: 1px solid #D6D6D6;
-}
-
-.VotingBox > #Messenger {
-    height: auto;
-    border-top: 1px solid #EEE;
-}
-
+/*
 .RSSIcon {
     float: right;
     height: 16px;
     width: 28px;
 }
-
+*/
 .DownloadAttachment a,
 .Keyword a {
     color: #FF9922;
@@ -166,9 +150,6 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     color: #FF7722;
 }
 
-.VotingActionRow {
-    height: 23px;
-}
 
 .FAQMessageBrowser {
     margin-bottom: 10px;

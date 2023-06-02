@@ -1,5 +1,6 @@
 /*
-Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
@@ -23,7 +24,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 }
 
 .LayoutFixedSidebar {
-    display: block;
+    /*display: block;*/
 }
 
 .LayoutFixedSidebar > .ContentColumn {
@@ -78,46 +79,6 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
  * @subsection  Customer WidgetSimple
  */
 
-.WidgetSimple {
-    border: 1px solid #E9E9E9;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #DDD;
-    padding: 0;
-    position: relative;
-    width: auto;
-    z-index: 10;
-    margin-bottom: 10px;
-}
-
-.WidgetSimple .Header {
-    padding: 5px 8px 3px;
-    color: #222;
-    background: #eeeeee;
-    border-bottom: 1px solid #D6D6D6;
-    text-shadow: 0 1px 0 #FFF;
-    position: relative;
-}
-
-.WidgetSimple .Header h3 {
-    font-weight: bold;
-    float: left;
-}
-
-.RTL .WidgetSimple .Header h3 {
-    float: right;
-}
-
-.WidgetSimple .Header h3 span {
-    font-weight: normal;
-}
-
-.WidgetSimple .Content {
-    height: auto;
-    overflow: hidden;
-    padding: 13px 8px;
-    background: #FFF;
-    border: 0 none;
-}
 
 .WidgetSimple .Pagination {
     font-size: 11px;
@@ -142,31 +103,10 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
  * @subsection Overview
  */
 
-.Overview thead {
-    background: #cccccc;
-    display: table-header-group;
-}
-
-.Overview thead th {
-    color: #4B4B4B;
-    font-size: 11px;
-    text-transform: uppercase;
-    background: none;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #BBB;
-    border-right: 1px solid #CCC;
-    vertical-align: bottom;
-    white-space: nowrap;
-}
 
 /**
  * @subsection FAQMiniList
  */
-
-ul.FAQMiniList span {
-    display: block;
-    font-size: 10px;
-}
 
 iframe.FAQField {
     width: 100%;

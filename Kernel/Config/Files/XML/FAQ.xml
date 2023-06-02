@@ -536,33 +536,12 @@ Your OTRS Notification Master
                             <Array>
                             </Array>
                         </Item>
-                        <Item Key="Description" Translatable="1">FAQ</Item>
-                        <Item Key="Name" Translatable="1">FAQ</Item>
-                        <Item Key="Link">Action=CustomerFAQExplorer</Item>
-                        <Item Key="LinkOption"></Item>
-                        <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Menu</Item>
-                        <Item Key="Block"></Item>
-                        <Item Key="AccessKey"></Item>
-                        <Item Key="Prio">700</Item>
-                    </Hash>
-                </Item>
-                <Item>
-                    <Hash>
-                        <Item Key="Group">
-                            <Array>
-                            </Array>
-                        </Item>
-                        <Item Key="GroupRo">
-                            <Array>
-                            </Array>
-                        </Item>
                         <Item Key="Description" Translatable="1">FAQ Explorer</Item>
                         <Item Key="Name" Translatable="1">FAQ Explorer</Item>
                         <Item Key="Link">Action=CustomerFAQExplorer</Item>
                         <Item Key="LinkOption"></Item>
                         <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Submenu</Item>
+                        <Item Key="Type">Menu</Item>
                         <Item Key="Block"></Item>
                         <Item Key="AccessKey">x</Item>
                         <Item Key="Prio">710</Item>
@@ -1592,12 +1571,12 @@ Your OTRS Notification Master
                             <Array>
                             </Array>
                         </Item>
-                        <Item Key="Description" Translatable="1">Search</Item>
-                        <Item Key="Name" Translatable="1">Search</Item>
+                        <Item Key="Description" Translatable="1">FAQ Search</Item>
+                        <Item Key="Name" Translatable="1">FAQ Search</Item>
                         <Item Key="Link">Action=CustomerFAQSearch</Item>
                         <Item Key="LinkOption"></Item>
                         <Item Key="NavBar">FAQ</Item>
-                        <Item Key="Type">Submenu</Item>
+                        <Item Key="Type">Menu</Item>
                         <Item Key="Block"></Item>
                         <Item Key="AccessKey">f</Item>
                         <Item Key="Prio">780</Item>
@@ -1898,6 +1877,11 @@ Your OTRS Notification Master
         <Navigation>Frontend::Agent::ModuleRegistration::Loader</Navigation>
         <Value>
             <Hash>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>FAQ.Agent.FAQ.js</Item>
+                    </Array>
+                </Item>
             </Hash>
         </Value>
     </Setting>
@@ -2291,6 +2275,7 @@ Your OTRS Notification Master
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::Output::HTML::ToolBar::Link</Item>
+                <Item Key="Block">ToolBarActions</Item>
                 <Item Key="Name" Translatable="1">Add FAQ article</Item>
                 <Item Key="Link">Action=AgentFAQAdd</Item>
                 <Item Key="Action">AgentFAQAdd</Item>
@@ -2779,6 +2764,176 @@ Your OTRS Notification Master
         <Navigation>Frontend::Customer::FAQRelatedArticles</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^\d+$">4</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Agent::RelatedArticles::Enabled" Required="1" Valid="1">
+        <Description Translatable="1">Enable the related article feature for the agent frontend.</Description>
+        <Navigation>Core::FAQ::RelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Output::FilterElementPost###OutputFilterPostFAQAgentRelatedArticles" Required="0" Valid="1">
+        <Description Translatable="1">Output filter to add Java-script to CustomerTicketMessage screen.</Description>
+        <Navigation>Frontend::Base::OutputFilter</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::FilterElementPost::FAQAgentRelatedArticles</Item>
+                <Item Key="Templates">
+                    <Hash>
+                        <Item Key="AgentTicketPhone">1</Item>
+                        <Item Key="AgentTicketEmail">1</Item>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Template::GenerateBlockHooks###100-FAQ-FAQAgentRelatedArticles" Required="1" Valid="1">
+        <Description Translatable="1">Generate HTML comment hooks for the specified blocks so that filters can use them.</Description>
+        <Navigation>Frontend::Base::OutputFilter</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="AgentTicketPhone">
+                    <Array>
+                        <Item>TicketOptions</Item>
+                    </Array>
+                </Item>
+                <Item Key="AgentTicketEmail">
+                    <Array>
+                        <Item>TicketOptions</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Module###AgentFAQRelatedArticles" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the agent interface.</Description>
+        <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">Agent FAQ Related Articles.</Item>
+                    <Item Key="Title" Translatable="1">Agent FAQ Related Articles</Item>
+                    <Item Key="NavBarName"></Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###QueuesEnabled" Required="0" Valid="0">
+        <Description Translatable="1">List of queue names for which the related article feature is enabled.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Array>
+                <Item>Raw</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###DefaultLanguages" Required="0" Valid="1">
+        <Description Translatable="1">The default languages for the related FAQ articles.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Array>
+                <Item>en</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###ShowLimit" Required="1" Valid="1">
+        <Description Translatable="1">Output limit for the related FAQ articles.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">5</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###VoteStarsVisible" Required="0" Valid="0">
+                 <Description Translatable="1">Show the stars for the articles with a rating equal or greater like the defined value if enabled.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">3</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::Frontend::AgentFAQRelatedArticles###Position" Required="1" Valid="1">
+        <Description Translatable="1">Defines the position where the related FAQ articles widget is located.</Description>
+        <Navigation>Frontend::Agent::FAQRelatedArticles</Navigation>
+        <Value>
+            <Item ValueType="Select" SelectedID="1">
+                <Item ValueType="Option" Value="1" Translatable="1">Below subject</Item>
+                <Item ValueType="Option" Value="2" Translatable="1">Below body</Item>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Attribute" Required="0" Valid="1">
+        <Description Translatable="1">Customer user attribute to check its group relation.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="String">UserLanguage</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Mapping" Required="0" Valid="1">
+        <Description Translatable="1">Mapping between customer user attribute value and group.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="de">G_FAQ_Germany</Item>
+                <Item Key="hu">G_FAQ_Hungary</Item>
+                <Item Key="tr">G_FAQ_Turkey</Item>
+                <Item Key="en">G_FAQ_English</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###DefaultGroup" Required="0" Valid="0">
+        <Description Translatable="1">Group to which customer users belong by default (if this setting is enabled).</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="String">G_FAQ_English</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions###Enabled" Required="0" Valid="1">
+        <Description Translatable="1">Enable customer user permission attributes.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
+    <Setting Name="FAQ::CustomerUserPermissions::CustomerGroupSupport" Required="0" Valid="1">
+        <Description Translatable="1">Enable customer group support permissions.</Description>
+        <Navigation>Core::FAQ</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::RichText::Autocompletion::Modules###FAQ" Required="0" Valid="1">
+        <Description Translatable="1">Rich text editor configuration for autocompletion module.</Description>
+        <Navigation>Core</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Trigger">??</Item>
+                <Item Key="Categories">
+                    <Array>
+                        <Item>Misc</Item>
+                    </Array>
+                </Item>
+                <Item Key="SearchFields">
+                    <Array>
+                        <Item>Title</Item>
+                        <Item>Keywords</Item>
+                        <Item>Field1</Item>
+                        <Item>Field2</Item>
+                        <Item>Field3</Item>
+                        <Item>Field4</Item>
+                        <Item>Field5</Item>
+                        <Item>Field6</Item>
+                        <Item>CategoryName</Item>
+                    </Array>
+                </Item>
+            </Hash>
         </Value>
     </Setting>
     <Setting Name="FAQExplorer::CountSubCategories" Required="0" Valid="1">

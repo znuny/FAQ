@@ -1,5 +1,6 @@
 // --
-// Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -33,7 +34,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
             LastResponse,
             SlideDuration  = 400,
             HelpText       = Core.Language.Translate('This might be helpful'),
-            $Widget        = $('<label id="FAQRelatedArticlesLabel" for="FAQRelatedArticles">' + HelpText + ':</label><div id="FAQRelatedArticles" class="Field" style="min-height: 0px;"></div><div class="Clear"></div>'),
+            $Widget        = $('<div id="FAQRelatedArticlesLabel" for="FAQRelatedArticles" class="WidgetSimple Expanded FAQ-related-articles-widget"> <div class="Header"> <h2>' + HelpText + '</h2> </div> <div id="FAQRelatedArticles" class="Content"> </div></div>'),
             $AJAXLoader    = $('<span id="AJAXLoaderFAQRelatedArticles" class="AJAXLoader"></span>');
 
         // Widget position below subject.
@@ -41,7 +42,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
 
             $('#Subject')
                 .parent()
-                .next()
+                .parent()
                 .after($Widget);
         }
         // Widget position below text.
@@ -49,7 +50,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
 
             $('#RichText')
                 .parent()
-                .next()
+                .parent()
                 .after($Widget);
         }
 
@@ -150,8 +151,8 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                                                     $('#FAQRelatedArticles')
                                                         .empty()
                                                         .html(Response.AgentRelatedFAQArticlesHTMLString)
-                                                        .css('padding-top', '3px')
-                                                        .css('padding-bottom', '3px')
+                                                        .css('padding-top', '0px')
+                                                        .css('padding-bottom', '0px')
                                                         .slideDown(SlideDuration);
 
                                                     $('#FAQRelatedArticlesLabel').show();
@@ -162,16 +163,16 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                                                 $('#FAQRelatedArticles')
                                                     .empty()
                                                     .html(Response.AgentRelatedFAQArticlesHTMLString)
-                                                    .css('padding-top', '3px')
-                                                    .css('padding-bottom', '3px');
+                                                    .css('padding-top', '0px')
+                                                    .css('padding-bottom', '0px');
                                             }
                                         }
                                         else {
 
                                             $('#FAQRelatedArticles')
                                                 .html(Response.AgentRelatedFAQArticlesHTMLString)
-                                                .css('padding-top', '3px')
-                                                .css('padding-bottom', '3px')
+                                                .css('padding-top', '0px')
+                                                .css('padding-bottom', '0px')
                                                 .slideDown(SlideDuration, function () {
 
                                                     $('#FAQRelatedArticlesLabel').show();
@@ -208,10 +209,8 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
             });
 
             $('#Subject').on('paste keydown', function (Event) {
-                var Value = $('#Subject').val();
-
                 // trigger only the change event for the subject, if space or enter was pressed
-                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13) && (Value.length > 10 || CKEDITOR.instances['RichText'].getData())) || Event.type !== 'keydown') {
+                if ((Event.type === 'keydown' && (Event.which == 32 || Event.which == 13)) || Event.type !== 'keydown') {
                     $('#Subject').trigger('change');
                 }
             });

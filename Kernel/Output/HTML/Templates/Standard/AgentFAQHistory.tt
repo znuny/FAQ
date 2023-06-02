@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -7,18 +8,12 @@
 # --
 
 <div class="LayoutPopup ARIARoleMain">
-
     <div class="Header">
-        <h1>
-            [% Translate("History of") | html %] [% Config("FAQ::FAQHook") %]: [% Data.Number | html %] - [% Data.Title | truncate(60) | html %]
-        </h1>
-        <p>
-            <a href="#" class="CancelClosePopup">[% Translate("Close") | html %]</a>
-        </p>
+        <h1>[% Translate("History of") | html %] [% Config("FAQ::FAQHook") %]: [% Data.Number | html %] - [% Data.Title | truncate(60) | html %]</h1>
+        <a href="#" class="CancelClosePopup btn-cancel-ghost btn-main btn-width-md">[% Translate("Cancel") | html %]</a>
     </div>
-
     <div class="Content">
-        <div class="WidgetSimple">
+        <div class="WidgetSimple table-widget">
             <div class="Header">
                 <h2>
                     [% Translate("History Content") | html %]
@@ -34,26 +29,23 @@
                         </tr>
                     </thead>
                     <tbody>
-
 [% RenderBlockStart("Row") %]
-                        <tr>
-                            <td>
-                                [% Translate(Data.Name) | html %]
-                            </td>
-                            <td>
-                                [% Data.CreatedBy | html %]
-                            </td>
-                            <td>
-                                [% Data.Created | Localize("TimeLong") %]
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    [% Translate(Data.Name) | html %]
+                                </td>
+                                <td>
+                                    [% Data.CreatedBy | html %]
+                                </td>
+                                <td>
+                                    [% Data.Created | Localize("TimeLong") %]
+                                </td>
+                            </tr>
 [% RenderBlockEnd("Row") %]
-
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <div class="Footer">
-    </div>
+    <div class="Footer"></div>
 </div>

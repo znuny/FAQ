@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -92,9 +93,9 @@ sub Run {
         Data         => {},
     );
 
-    my $Search = '(<div id="RichTextServerError"[^>]*>.*?<\/div>)(\s*<div class="Clear"><\/div>\s*<\/div>)';
+    my $Search = '(<div class="RichTextHolder.*)';
     ${ $Param{Data} }
-        =~ s{$Search}{$1<div id="FAQRelatedArticles" class="Hidden">$CustomerRelatedFAQArticlesHTMLString</div>$2}msg;
+        =~ s{$Search}{<div id="FAQRelatedArticles" class="Hidden">$CustomerRelatedFAQArticlesHTMLString</div>$1}msg;
 
     my $FrontendCustomerTicketMessageConfig      = $ConfigObject->Get("Ticket::Frontend::CustomerTicketMessage");
     my $FrontendCustomerFAQRelatedArticlesConfig = $ConfigObject->Get("FAQ::Frontend::CustomerFAQRelatedArticles");
@@ -190,10 +191,8 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
 });
 
 \$('#Subject').on('paste keydown', function (Event) {
-    var Value = \$('#Subject').val();
-
     // trigger only the change event for the subject, if space or enter was pressed
-    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 ) && ( Value.length > 10 || CKEDITOR.instances['RichText'].getData())) || Event.type !== 'keydown') {
+    if (( Event.type === 'keydown' && ( Event.which == 32 || Event.which == 13 )) || Event.type !== 'keydown') {
         \$('#Subject').trigger('change');
     }
 });

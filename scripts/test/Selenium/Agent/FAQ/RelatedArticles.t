@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -159,7 +160,7 @@ $Selenium->RunTest(
         # Check correct position of widget.
         $Self->True(
             $Selenium->execute_script(
-                "return \$('#FAQRelatedArticlesLabel').prev('div.Clear').prev('div.Field').find('#Subject').length;"
+                "return \$('#FAQRelatedArticlesLabel').prev('div').find('#Subject').length;"
             ),
             'Widget is correctly positioned below subject field.',
         );
@@ -224,7 +225,7 @@ $Selenium->RunTest(
 
         $Self->True(
             $Selenium->execute_script(
-                "return \$('#FAQRelatedArticlesLabel').prev('div.Clear').prev('div').find('#RichText').length;"
+                "return \$('#FAQRelatedArticlesLabel').prev('div').find('#RichText').length;"
             ),
             'Widget is correctly positioned below richtext field.',
         );

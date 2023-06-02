@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -56,7 +57,7 @@ $Selenium->RunTest(
 
         # search test created FAQ in quick-search
         $Selenium->find_element("//input[\@id='Search']")->send_keys($FAQTitle);
-        $Selenium->find_element("//button[\@value='Search'][\@type='submit']")->VerifiedClick();
+        $Selenium->find_element("//input[\@id='Search']")->VerifiedSubmit();
 
         # check for quick-search result
         $Self->True(

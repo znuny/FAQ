@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -939,7 +940,7 @@ sub Run {
             );
 
             PAGE:
-            for ( 2 .. $MaxPages ) {
+            for my $PageNumber ( 2 .. $MaxPages ) {
 
                 # output table (or a fragment of it)
                 %TableParam = $PDFObject->Table( %TableParam, );
@@ -951,7 +952,7 @@ sub Run {
                 else {
                     $PDFObject->PageNew(
                         %PageParam,
-                        FooterRight => $Page . ' ' . $_,
+                        FooterRight => $Page . ' ' . $PageNumber,
                     );
                 }
             }

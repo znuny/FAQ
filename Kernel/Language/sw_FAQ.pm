@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::sw_FAQ;
@@ -15,13 +15,13 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AgentFAQAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
     $Self->{Translation}->{'Add FAQ Article'} = 'Ongeza makala ya maswali';
     $Self->{Translation}->{'Keywords'} = 'Maneno makuu';
     $Self->{Translation}->{'A category is required.'} = 'Sehemu inahitajika';
     $Self->{Translation}->{'Approval'} = 'Idhini';
 
-    # Template: AgentFAQCategory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'FAQ Category Management'} = 'Sehemu ya menejimenti ya maswali';
     $Self->{Translation}->{'Add FAQ Category'} = '';
     $Self->{Translation}->{'Edit FAQ Category'} = '';
@@ -38,13 +38,13 @@ sub Data {
     $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'Hii sehemu inatumika katika makala ya maswali ifuatayo.';
     $Self->{Translation}->{'This category is parent of the following subcategories'} = 'Hii ni sehemu mama ya vijisehemu vifuatavyo ';
 
-    # Template: AgentFAQDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
     $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'Je unataka Kufuta hii makala ya maswali?';
 
-    # Template: AgentFAQEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'Maswali';
 
-    # Template: AgentFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'Kichunguzaji maswali';
     $Self->{Translation}->{'Quick Search'} = 'Tafuta haraka';
     $Self->{Translation}->{'Wildcards are allowed.'} = 'Wildcard haziruhusiwi';
@@ -53,15 +53,15 @@ sub Data {
     $Self->{Translation}->{'FAQ Articles'} = 'Makala ya Maswali';
     $Self->{Translation}->{'No subcategories found.'} = 'Hakuna vijisehemu vilivyopatikana.';
 
-    # Template: AgentFAQHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
     $Self->{Translation}->{'History of'} = 'Historia ya';
     $Self->{Translation}->{'History Content'} = 'Maudhui ya historia';
     $Self->{Translation}->{'Createtime'} = 'Muda wa kutengeneza';
 
-    # Template: AgentFAQJournalOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
     $Self->{Translation}->{'No FAQ Journal data found.'} = 'Data za jarida la maswali hazijapatikana.';
 
-    # Template: AgentFAQLanguage
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
     $Self->{Translation}->{'FAQ Language Management'} = 'Menejimenti ya lugha ya maswali';
     $Self->{Translation}->{'Add FAQ Language'} = '';
     $Self->{Translation}->{'Edit FAQ Language'} = '';
@@ -75,17 +75,17 @@ sub Data {
         'Huwezi kufuta lugha hii. Imetumika kwenye makala ya maswali zaidi ya moja.';
     $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Hii lugha imetumika katika makala ya(za) maswali ifuatayo.';
 
-    # Template: AgentFAQOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Mipangilio ya muktadha';
     $Self->{Translation}->{'FAQ articles per page'} = 'Makala ya maswali kwa ukurasa';
 
-    # Template: AgentFAQOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
     $Self->{Translation}->{'No FAQ data found.'} = 'Hakuna data za maswali';
 
-    # Template: AgentFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
     $Self->{Translation}->{'out of 5'} = 'Kati ya 5';
 
-    # Template: AgentFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
     $Self->{Translation}->{'Keyword'} = 'Neno kuu';
     $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'Kura (mfano. sawa na 10 au Zaidi ya 60)';
     $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'Kiwango (mfano Sawa na 25% au Zaidi ya 75%)';
@@ -96,10 +96,10 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = 'Muda wa kubadilisha makala ya maswali (kabla/baada)';
     $Self->{Translation}->{'FAQ Article Change Time (between)'} = 'Muda wa kubadilisha makala ya maswali (katikati)';
 
-    # Template: AgentFAQSearchOpenSearchDescriptionFulltext
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
     $Self->{Translation}->{'FAQFulltext'} = 'Nakala nzima ya maswali yanayo ulizwa mara kwa mara.';
 
-    # Template: AgentFAQSearchSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'Tafuta maswali';
     $Self->{Translation}->{'Profile Selection'} = 'Chaguo la maelezo mafupi';
     $Self->{Translation}->{'Vote'} = 'Kura';
@@ -113,7 +113,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Article Create Time'} = 'Muda wa kutengeneza makala ya maswali';
     $Self->{Translation}->{'FAQ Article Change Time'} = 'Muda wa kubadili makala ya maswali';
 
-    # Template: AgentFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
     $Self->{Translation}->{'FAQ Information'} = 'Habari za Maswali';
     $Self->{Translation}->{'Rating'} = 'Thaminisha';
     $Self->{Translation}->{'Votes'} = 'Kura';
@@ -127,7 +127,7 @@ sub Data {
     $Self->{Translation}->{'not helpful'} = 'Haina Msaada';
     $Self->{Translation}->{'very helpful'} = 'Ina msaada sana';
 
-    # Template: AgentFAQZoomSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
     $Self->{Translation}->{'Add FAQ title to article subject'} = 'Ongeza kichwa cha habari cha maswali katika somo ya makala';
     $Self->{Translation}->{'Insert FAQ Text'} = 'Ingiza matini ya maswali';
     $Self->{Translation}->{'Insert Full FAQ'} = 'Ingiza maswali yote';
@@ -135,15 +135,15 @@ sub Data {
     $Self->{Translation}->{'Insert FAQ Text & Link'} = 'Ingiza nakala ya maswali na Link';
     $Self->{Translation}->{'Insert Full FAQ & Link'} = 'Ingiza maswali yote na link';
 
-    # Template: CustomerFAQExplorer
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
     $Self->{Translation}->{'No FAQ articles found.'} = 'Hakuna makala ya maswali iliyopatikana';
 
-    # Template: CustomerFAQRelatedArticles
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
     $Self->{Translation}->{'This might be helpful'} = '';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = '';
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
 
-    # Template: CustomerFAQSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
     $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'Tafuta nakala kamili katika maswali yanayooulizwa mara kwa mara (mfano "John" au "Will")';
     $Self->{Translation}->{'Vote restrictions'} = 'Vizuizi vya kura';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Makala ya maswali yenye kura ';
@@ -154,14 +154,14 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Makala ya maswali yalitengenezwa kati ya';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Tafuta maelezo mafupi kama kielezo';
 
-    # Template: CustomerFAQZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Namba ya makala';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Tafuta Makala kwa neno kuu';
 
-    # Template: PublicFAQSearchOpenSearchDescriptionFAQNumber
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'Umma';
 
-    # Template: PublicFAQSearchResultShort
+    # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'Back to FAQ mchunguzi';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
@@ -210,7 +210,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQPrint.pm
     $Self->{Translation}->{'Result'} = 'Matokeo';
-    $Self->{Translation}->{'Last update'} = 'Mabadiliko ya mwisho';
     $Self->{Translation}->{'FAQ Dynamic Fields'} = '';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
@@ -279,18 +278,22 @@ sub Data {
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
     $Self->{Translation}->{'Content Type'} = '';
 
-    # Database XML / SOPM Definition: FAQ.sopm
+    # XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ndani';
     $Self->{Translation}->{'external'} = 'nje';
     $Self->{Translation}->{'public'} = 'umma';
 
-    # JS File: FAQ.Agent.ConfirmationDialog
+    # JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
     $Self->{Translation}->{'Ok'} = 'Sawa';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Kichujio cha matokeo ya HTML ili kuongeza viungo kwa tungo zilizo fafanuliwa. Sura ya elemnti hii inaruhusu maingizo ya aina mbili. Kwanza jinala sura (mf. faq.png). Kwa kesi hii sura ya njia ya OTRS itatumika. Njia ya pili ni kuingiza kiungo cha hiyo sura.';
     $Self->{Translation}->{'Add FAQ article'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
+    $Self->{Translation}->{'Below body'} = '';
+    $Self->{Translation}->{'Below subject'} = '';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'Rangi ya CSS kwa matokeo ya kura';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Muda wa maswali yaliyyoulizwa mara myingi kufutika kutoka kwenye kumbukumbu';
     $Self->{Translation}->{'Category Management'} = 'Usimamizi wa kategori';
@@ -301,6 +304,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = '';
     $Self->{Translation}->{'Customer FAQ search.'} = '';
     $Self->{Translation}->{'Customer FAQ.'} = '';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'Mwongo wa matokeo ya kura';
     $Self->{Translation}->{'Default category name.'} = 'Jina la chaguo-msingi la kategori';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Chaguo-msingi la lugha ya makala ya maswali yaliyoulizwa mara nyingi katika lugha moja.';
@@ -353,6 +357,8 @@ sub Data {
         'Fafanua taarifa itakayoingizwa kwenye maswali yanayoulizwa mara kwa mara kwa misingi ya tiketi. "Maswali yaliyojaa nayayoulizwa mara kwa mara" yanayojumuisha nakala, viambatanishi na taswaira ya mstari wa ndani.';
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         '';
+    $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
+        '';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Fafanua safu zilizoonyeshwa katika kitafuta maswali. Hili chaguo halina madhara katika nafasi kwenye safu.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -391,7 +397,10 @@ sub Data {
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
         '';
     $Self->{Translation}->{'Edit this FAQ'} = 'Hariri makala hii';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Wezesha Lugha nyingi nyingi katika maswali haya.';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Wezesha ';
@@ -410,7 +419,11 @@ sub Data {
     $Self->{Translation}->{'Field4'} = 'Sehemu4';
     $Self->{Translation}->{'Field5'} = 'Sehemu5';
     $Self->{Translation}->{'Full FAQ'} = '';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
+        '';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Makundi ya idhini kwa maswali yaliyoulizwa mara kwa mara.';
+    $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
+        '';
     $Self->{Translation}->{'History of this FAQ'} = 'Historia ya maswali haya yaliyoulizwa mara kwa mara.';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Jumuisha sehemu za ndani za maswali yaliyoulizwa mara kwa mara kulingana na tiketi.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Jumuisha jina la kila sehemu ya maswali yaliyoulizwa mara nyingi kulingana na tiketi.';
@@ -429,6 +442,7 @@ sub Data {
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Orodha ya aina ya hali ambazo zinaweza kutumika katika kiolesura cha umma.';
     $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Namba ya upeo wa juu ya maswali yanayoulizwa mara kwa mara yanayatayoonyeshwa katika majibu ya kichunguzi cha maswali yanayoulizwa mara kwa mara ya kiolesura cha wakala.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -520,6 +534,8 @@ sub Data {
     $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'Inaonyesha vipengele vilivyobadilishwa katika kiolesura kilichofafanuliwa.';
     $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'Inaonyesha vipengele vilivyotengenezwa mwishoni katika kiolesura  kilichofafanuliwa.';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
+        '';
+    $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
         '';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Inaonyesha vipengele  10  bora katika kiolesura kilichofafanuliwa.';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Inaonyesha kupiga kura katika kiolesura kilichofafanuliwa.';

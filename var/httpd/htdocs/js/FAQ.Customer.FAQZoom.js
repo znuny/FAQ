@@ -1,5 +1,6 @@
 // --
-// Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+// Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+// Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (GPL). If you
@@ -119,11 +120,11 @@ FAQ.Customer.FAQZoom = (function (TargetNS) {
         });
 
         $('.RateButton').on('click', function () {
-            var RateNumber = parseInt($(this).closest('div').attr('id').replace(/RateButton/, ''), 10);
+            var RateNumber = parseInt($(this).closest('li').attr('id').replace(/RateButton/, ''), 10);
             $('#RateValue').val(RateNumber);
             $('#RateSubmitButton').fadeIn(250);
             $('#FAQVoting').find('.RateButton').each(function() {
-                var ItemRateNumber = parseInt($(this).closest('div').attr('id').replace(/RateButton/, ''), 10);
+                var ItemRateNumber = parseInt($(this).closest('li').attr('id').replace(/RateButton/, ''), 10);
                 if (ItemRateNumber <= RateNumber) {
                     $(this).addClass('RateChecked');
                     $(this).removeClass('RateUnChecked');

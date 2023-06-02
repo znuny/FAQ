@@ -1,5 +1,6 @@
 /*
-Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
@@ -73,6 +74,16 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     border-color: #999;
 }
 
+.InvisibleText {
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    text-indent: -9999px;
+    white-space: nowrap;
+    width: 0;
+}
+
+/*
 .SearchBox {
     position: relative;
 }
@@ -88,14 +99,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     width: 13pc;
 }
 
-.InvisibleText {
-    display: inline-block;
-    height: 0;
-    position: absolute;
-    text-indent: -9999px;
-    white-space: nowrap;
-    width: 0;
-}
+
 
 .RTL .SearchBox input[type='text']{
     border-left: none;
@@ -137,5 +141,6 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     background-color: #e5e5e5;
     cursor: pointer;
 }
+*/
 
 }

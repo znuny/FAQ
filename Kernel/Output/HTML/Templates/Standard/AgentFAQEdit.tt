@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,13 +21,11 @@
             <div class="LayoutPopup ARIARoleMain">
 
                 <div class="Header">
-                    <h1>[% Translate("Edit") | html %]: [% Translate("FAQ") | html %]: [% Data.Number | html %]</h1>
-                    <p class="AsteriskExplanation">[% Translate("All fields marked with an asterisk (*) are mandatory.") | html %]</p>
-                    <p>
-                        <a href="#" class="CancelClosePopup">[% Translate("Cancel & close") | html %]</a>
-                    </p>
+                    <h1>[% Translate("Edit") | html %] [% Translate("FAQ") | html %] - [% Data.Number | html %]</h1>
+                    <a href="#" class="CancelClosePopup btn-cancel-ghost btn-main btn-width-md">[% Translate("Cancel") | html %]</a>
                 </div>
-                <div class="Content">
+
+                <div class="Content card">
 [% RenderBlockEnd("StartSmall") %]
 
 [% RenderBlockStart("FAQEdit") %]
@@ -36,72 +35,86 @@
                     <input type="hidden" name="ItemID" value="[% Data.ItemID | html %]"/>
                     <input type="hidden" name="ScreenType" value="[% Data.ScreenType | html %]"/>
 
-                    <fieldset class="TableLike [% Data.FieldsetClass | html %]">
-
-                        <label class="Mandatory" for="Title"><span class="Marker">* </span>[% Translate("Title") | html %]:</label>
-                        <div class="Field">
-                            <input type="text" name="Title" id="Title" value="[% Data.Title | html %]" class="W50pc Validate_Required [% Data.TitleServerError | html %]" maxlength="200"/>
-                            <div id="TitleError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
-                            <div id="TitleServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
-                        </div>
-                        <div class="Clear"></div>
-
-                        <label for="Keywords">[% Translate("Keywords") | html %]:</label>
-                        <div class="Field">
-                            <input type="text" name="Keywords" id="Keywords" value="[% Data.Keywords | html %]" class="W50pc" maxlength="200"/>
-                        </div>
-                        <div class="Clear"></div>
-
-                        <label class="Mandatory" for="CategoryID"><span class="Marker">* </span>[% Translate("Category") | html %]:</label>
-                        <div class="Field">
-                            [% Data.CategoryOption %]
-                            <div id="CategoryIDError" class="TooltipErrorMessage">
-                                <p>[% Translate("A category is required.") | html %]</p>
-                            </div>
-                            <div id="CategoryIDServerError" class="TooltipErrorMessage">
-                                <p>[% Translate("A category is required.") | html %]</p>
+                    <fieldset class="TableLike [% Data.FieldsetClass | html %] no-card-item">
+                        <div class="field-wrapper">
+                            <label class="Mandatory" for="Title"><span class="Marker">* </span>[% Translate("Title") | html %]:</label>
+                            <div class="Field">
+                                <input type="text" name="Title" id="Title" value="[% Data.Title | html %]" class="W50pc Validate_Required [% Data.TitleServerError | html %]" maxlength="200"/>
+                                <div id="TitleError" class="TooltipErrorMessage">
+                                    <p>[% Translate("This field is required.") | html %]</p>
+                                </div>
+                                <div id="TitleServerError" class="TooltipErrorMessage">
+                                    <p>[% Translate("This field is required.") | html %]</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label for="StateID">[% Translate("State") | html %]:</label>
-                        <div class="Field">
-                            [% Data.StateOption %]
+                        <div class="field-wrapper">
+                            <label for="Keywords">[% Translate("Keywords") | html %]:</label>
+                            <div class="Field">
+                                <input type="text" name="Keywords" id="Keywords" value="[% Data.Keywords | html %]" class="W50pc" maxlength="200"/>
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label for="ValidID">[% Translate("Validity") | html %]:</label>
-                        <div class="Field">
-                            [% Data.ValidOption %]
+                        <div class="field-wrapper">
+                            <label class="Mandatory" for="CategoryID"><span class="Marker">* </span>[% Translate("Category") | html %]:</label>
+                            <div class="Field">
+                                [% Data.CategoryOption %]
+                                <div id="CategoryIDError" class="TooltipErrorMessage">
+                                    <p>[% Translate("A category is required.") | html %]</p>
+                                </div>
+                                <div id="CategoryIDServerError" class="TooltipErrorMessage">
+                                    <p>[% Translate("A category is required.") | html %]</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="Clear"></div>
+
+                        <div class="field-wrapper">
+                            <label for="StateID">[% Translate("State") | html %]:</label>
+                            <div class="Field">
+                                [% Data.StateOption %]
+                            </div>
+                        </div>
+
+                        <div class="field-wrapper">
+                            <label for="ValidID">[% Translate("Validity") | html %]:</label>
+                            <div class="Field">
+                                [% Data.ValidOption %]
+                            </div>
+                        </div>
 
 [% RenderBlockStart("Language") %]
-                        <label for="LanguageID">[% Translate("Language") | html %]:</label>
-                        <div class="Field">
-                            [% Data.LanguageOption %]
-                        </div>
-                        <div class="Clear"></div>
+                            <div class="field-wrapper">
+                                <label for="LanguageID">[% Translate("Language") | html %]:</label>
+                                <div class="Field">
+                                    [% Data.LanguageOption %]
+                                </div>
+                            </div>
 [% RenderBlockEnd("Language") %]
 
 [% RenderBlockStart("NoLanguage") %]
-                        <input type="hidden" name="LanguageID" value="[% Data.LanguageID | html %]"/>
+                            <div class="field-wrapper">
+                                <input type="hidden" name="LanguageID" value="[% Data.LanguageID | html %]"/>
+                            </div>
 [% RenderBlockEnd("NoLanguage") %]
 
 [% RenderBlockStart("Approval") %]
-                        <label for="Approved">[% Translate("Approval") | html %]:</label>
-                        <div class="Field">
-                            [% Data.ApprovalOption %]
+                        <div class="field-wrapper">
+                            <label for="Approved">[% Translate("Approval") | html %]:</label>
+                            <div class="Field">
+                                [% Data.ApprovalOption %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 [% RenderBlockEnd("Approval") %]
 
+
 [% RenderBlockStart("DynamicField") %]
-                        [% Data.Label %]
-                        <div class="Field">
-                            [% Data.Field %]
-                        </div>
-                        <div class="Clear"></div>
+                            <div class="field-wrapper">
+                                [% Data.Label %]
+                                <div class="Field">
+                                    [% Data.Field %]
+                                </div>
+                            </div>
 [% RenderBlockEnd("DynamicField") %]
 
 # example of how to use fixed dynamic field blocks for customizations
@@ -113,7 +126,7 @@
 #                    <div class="Field">
 #                        [% Data.Field %]
 #                    </div>
-#                    <div class="Clear"></div>
+#
 #                </div>
 #[% RenderBlockEnd("DynamicField_Field1") %]
 #[% RenderBlockStart("DynamicField_Field2") %]
@@ -122,39 +135,54 @@
 #                    <div class="Field">
 #                        [% Data.Field %]
 #                    </div>
-#                    <div class="Clear"></div>
+#
 #                </div>
 #[% RenderBlockEnd("DynamicField_Field2") %]
 
-                        <label>[% Translate("Attachment") | html %]:</label>
-                        <div class="Field">
-[% INCLUDE "FormElements/AttachmentList.tt" %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Attachment") | html %]:</label>
+                            <div class="Field component-attachment">
+                                [% INCLUDE "FormElements/AttachmentList.tt" %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
 [% RenderBlockStart("FAQContent") %]
-                        <label for="[% Data.Field | html %]">[% Translate(Data.Caption) | html %]:<br/><span class="FAQStateName">([% Translate(Data.StateName) | html %])</span></label>
-                        <div class="RichTextField">
-                            <textarea id="[% Data.Field | html %]" class="RichText" name="[% Data.Field | html %]" rows="15" cols="70">[% Data.Content | html %]</textarea>
-                        </div>
-                        <div class="Clear"></div>
+                            <div class="field-wrapper">
+                                <label for="[% Data.Field | html %]">
+                                    [% Translate(Data.Caption) | html %]
+                                    <span class="FAQStateName">([% Translate(Data.StateName) | html %])</span>
+                                </label>
+                                <div class="RichTextField">
+                                    <textarea id="[% Data.Field | html %]" class="RichText" name="[% Data.Field | html %]" rows="15" cols="70">[% Data.Content | html %]</textarea>
+                                </div>
+                            </div>
 [% RenderBlockEnd("FAQContent") %]
 
+                        <div class="field-wrapper">
 [% RenderBlockStart("EndNormal") %]
-                        <div class="Field SpacingTop">
-                            <button class="Primary CallForAction" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]"><span><i class="fa fa-check"></i> [% Translate("Update") | html %]</span></button>
-                        </div>
+                                <div class="Field SpacingTop">
+                                    <button class="Primary CallForAction" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]">
+                                        <span>
+                                            <i class="fa fa-check"></i>
+                                            [% Translate("Update") | html %]
+                                        </span>
+                                    </button>
+                                </div>
 [% RenderBlockEnd("EndNormal") %]
+                        </div>
 
                     </fieldset>
 [% RenderBlockEnd("FAQEdit") %]
                 </div>
 
 [% RenderBlockStart("EndSmall") %]
-                <div class="Footer">
-                    <button class="Primary CallForAction" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]"><span><i class="fa fa-check-square-o"></i> [% Translate("Update") | html %]</span></button>
-                </div>
+                    <div class="Footer">
+                        <button class="btn-primary btn-main btn-width-md" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]">
+                            <span>
+                                [% Translate("Update") | html %]
+                            </span>
+                        </button>
+                    </div>
 [% RenderBlockEnd("EndSmall") %]
-
             </div>
         </form>

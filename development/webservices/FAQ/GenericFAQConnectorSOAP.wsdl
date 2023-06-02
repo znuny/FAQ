@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<wsdl:definitions name="GenericFAQConnectorSOAP" targetNamespace="http://www.otrs.org/FAQConnector/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.otrs.org/FAQConnector/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:definitions name="GenericFAQConnectorSOAP" targetNamespace="http://www.znuny.org/FAQConnector/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.znuny.org/FAQConnector/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
-    <xsd:schema targetNamespace="http://www.otrs.org/FAQConnector/">
+    <xsd:schema targetNamespace="http://www.znuny.org/FAQConnector/">
       <xsd:element name="LanguageList">
         <xsd:complexType>
           <xsd:sequence/>
@@ -188,7 +188,7 @@
   <wsdl:binding name="GenericFAQConnector_Binding" type="tns:GenericFAQConnector_PortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="LanguageList">
-      <soap:operation soapAction="http://www.otrs.org/FAQConnector/LanguageList"/>
+      <soap:operation soapAction="http://www.znuny.org/FAQConnector/LanguageList"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -197,7 +197,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="PublicCategoryList">
-      <soap:operation soapAction="http://www.otrs.org/FAQConnector/PublicCategoryList"/>
+      <soap:operation soapAction="http://www.znuny.org/FAQConnector/PublicCategoryList"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -206,7 +206,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="PublicFAQSearch">
-      <soap:operation soapAction="http://www.otrs.org/FAQConnector/PublicFAQSearch"/>
+      <soap:operation soapAction="http://www.znuny.org/FAQConnector/PublicFAQSearch"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -215,7 +215,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="PublicFAQGet">
-      <soap:operation soapAction="http://www.otrs.org/FAQConnector/PublicFAQGet"/>
+      <soap:operation soapAction="http://www.znuny.org/FAQConnector/PublicFAQGet"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -226,7 +226,7 @@
   </wsdl:binding>
   <wsdl:service name="GenericFAQConnector">
     <wsdl:port binding="tns:GenericFAQConnector_Binding" name="GenericFAQConnector_Port">
-      <soap:address location="http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericFAQConnectorSOAP"/>
+      <soap:address location="http://localhost/znuny/nph-genericinterface.pl/Webservice/GenericFAQConnectorSOAP"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
