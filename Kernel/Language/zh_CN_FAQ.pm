@@ -154,9 +154,6 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = '仅在以下时间段创建的FAQ文章';
     $Self->{Translation}->{'Search-Profile as Template?'} = '将搜索配置设置为模板？';
 
-    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
-    $Self->{Translation}->{'Search Results for'} = '';
-
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = '文章编号';
     $Self->{Translation}->{'Search for articles with keyword'} = '使用关键字搜索文章';

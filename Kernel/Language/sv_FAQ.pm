@@ -154,9 +154,6 @@ sub Data {
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Endast FAQ artiklar skapade mellan';
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Sök-profil som mall?';
 
-    # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
-    $Self->{Translation}->{'Search Results for'} = '';
-
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
     $Self->{Translation}->{'Article Number'} = 'Artikelnummer';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Sök efter artiklar med nyckelord';
