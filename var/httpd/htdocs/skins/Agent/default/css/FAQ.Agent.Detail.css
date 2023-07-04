@@ -18,6 +18,10 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     * @subsection  Article table body
     */
 
+    .ArticleFAQContent .message {
+        white-space: break-spaces;
+    }
+
     /* .ArticleFAQContent {
         padding: 11px 12px;
         line-height: 1.3;
