@@ -253,7 +253,7 @@ function CheckIFrameHeight(IFrameID) {
 [% RenderBlockEnd("FAQContentHTML") %]
 [% RenderBlockStart("FAQContentPlain") %]
                         <div class="ArticleFAQContent">
-                            <textarea class="message" rows="10">[% Data.Content %]</textarea>
+                            <div class="message">[% Data.Content %]</div>
                         </div>
 [% RenderBlockEnd("FAQContentPlain") %]
                     </div>

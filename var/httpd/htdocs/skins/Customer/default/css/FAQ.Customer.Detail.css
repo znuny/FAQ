@@ -19,6 +19,10 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
     line-height: 1.3;
 }
 
+.ArticleFAQContent .message {
+    white-space: break-spaces;
+}
+
 .RateButton {
     position: relative;
     text-align: center;
