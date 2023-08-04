@@ -1386,7 +1386,6 @@ Your OTRS Notification Master
                 <Item Key="JavaScript">
                     <Array>
                         <Item>FAQ.Agent.ConfirmationDialog.js</Item>
-                        <Item>FAQ.Agent.TicketCompose.js</Item>
                         <Item>FAQ.Agent.FAQZoom.js</Item>
                         <Item>Core.UI.AllocationList.js</Item>
                         <Item>Core.UI.Table.Sort.js</Item>
