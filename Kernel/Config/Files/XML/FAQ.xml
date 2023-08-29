@@ -823,8 +823,8 @@ Your OTRS Notification Master
                 <Item Key="URL1">
                     <Hash>
                         <Item Key="Description" Translatable="1">FAQ</Item>
-                        <Item Key="URL">/otrs/index.pl?Action=AgentFAQZoom;ItemID=&lt;MATCH2&gt;</Item>
-                        <Item Key="Image">/otrs-web/skins/Agent/default/img/help-small.png</Item>
+                        <Item Key="URL">/znuny/index.pl?Action=AgentFAQZoom;ItemID=&lt;MATCH2&gt;</Item>
+                        <Item Key="Image">/znuny-web/skins/Agent/default/img/help-small.png</Item>
                         <Item Key="Target">_blank</Item>
                     </Hash>
                 </Item>
