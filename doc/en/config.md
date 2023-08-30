@@ -1,6 +1,12 @@
 # Configuration
 
-## General
+## Configuring Customer Group Management For Categories.
+
+A customer user always sees all categories, even if the category has no viewable articles. If you want to limit the viewable categories for them, you will first be required to activate ``CustomerGroupSupport`` in the framework. Once this is active, set ``FAQ::CustomerUserPermissions###Enabled`` to enabled. This will allow the defined group to customer user and group to customer relations to apply to the FAQ categories.
+
+**Note:** You must also ensure that your customers will have access to their tickets in the customer portal, by assigning them the proper groups for queues which they should have access to.
+
+## System Configuration Options
 
 The package can be configured via the System Configuration in the Admin Interface.
 The following configuration options are available:
