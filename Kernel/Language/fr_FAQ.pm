@@ -284,7 +284,7 @@ sub Data {
     $Self->{Translation}->{'public'} = 'publique';
 
     # JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
-    $Self->{Translation}->{'Ok'} = 'Ok';
+    $Self->{Translation}->{'Ok'} = 'Oui';
 
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
