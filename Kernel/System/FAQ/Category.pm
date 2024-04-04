@@ -123,6 +123,11 @@ sub CategoryAdd {
             . "created successfully ($Param{UserID})!",
     );
 
+    # delete old local cache
+    for my $CacheKey (qw(CategoryGroupGetAll CategoryList GetCategoryTree CustomerCategorySearch::Articles)) {
+        delete $Self->{Cache}->{$CacheKey};
+    }
+
     # trigger event
     $Self->EventHandler(
         Event => 'FAQCategoryAdd',
@@ -261,6 +266,11 @@ sub CategoryDelete {
             WHERE category_id = ?',
         Bind => [ \$Param{CategoryID} ],
     );
+
+    # delete old local cache
+    for my $CacheKey (qw(CategoryGroupGetAll CategoryList GetCategoryTree CustomerCategorySearch::Articles)) {
+        delete $Self->{Cache}->{$CacheKey};
+    }
 
     # trigger event
     $Self->EventHandler(
@@ -1055,6 +1065,11 @@ sub CategoryUpdate {
     $Kernel::OM->Get('Kernel::System::Cache')->CleanUp(
         Type => 'FAQ',
     );
+
+    # delete old local cache
+    for my $CacheKey (qw(CategoryList GetCategoryTree CustomerCategorySearch::Articles)) {
+        delete $Self->{Cache}->{$CacheKey};
+    }
 
     # trigger event
     $Self->EventHandler(
@@ -1912,6 +1927,9 @@ sub SetCategoryGroup {
         # write attachment to db
         return if !$DBObject->Do( SQL => $SQL );
     }
+
+    # delete old local cache
+    delete $Self->{Cache}->{CategoryGroupGetAll};
 
     # trigger event
     $Self->EventHandler(
