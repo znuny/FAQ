@@ -46,6 +46,8 @@ Returns:
 sub LanguageAdd {
     my ( $Self, %Param ) = @_;
 
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
     for my $Argument (qw(Name UserID)) {
         if ( !$Param{$Argument} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -57,11 +59,39 @@ sub LanguageAdd {
         }
     }
 
-    return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
+    return if !$DBObject->Do(
         SQL => '
             INSERT INTO faq_language (name)
             VALUES (?)',
         Bind => [ \$Param{Name} ],
+    );
+
+    my $SQL = 'SELECT    id FROM faq_language
+               WHERE     name = ?
+               ORDER BY  id DESC';
+
+    # get id
+    return if !$DBObject->Prepare(
+        SQL  => $SQL,
+        Bind => [
+            \$Param{Name},
+        ],
+        Limit => 1,
+    );
+
+    my $ID;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        $ID = $Row[0];
+    }
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQLanguageAdd',
+        Data  => {
+            LanguageID => $ID,
+            Name       => $Param{Name},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -102,6 +132,15 @@ sub LanguageDelete {
             DELETE FROM faq_language
             WHERE id = ?',
         Bind => [ \$Param{LanguageID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQLanguageDelete',
+        Data  => {
+            LanguageID => $Param{LanguageID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -401,6 +440,16 @@ sub LanguageUpdate {
     # delete all cache, as FAQGet() will be also affected.
     $Kernel::OM->Get('Kernel::System::Cache')->CleanUp(
         Type => 'FAQ',
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQLanguageUpdate',
+        Data  => {
+            LanguageID => $Param{LanguageID},
+            Name       => $Param{Name},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;

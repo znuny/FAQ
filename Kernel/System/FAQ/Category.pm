@@ -123,6 +123,19 @@ sub CategoryAdd {
             . "created successfully ($Param{UserID})!",
     );
 
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQCategoryAdd',
+        Data  => {
+            CategoryID => $CategoryID,
+            ParentID   => $Param{ParentID},
+            Name       => $Param{Name},
+            ValidID    => $Param{ValidID},
+            Comment    => $Param{Comment},
+        },
+        UserID => $Param{UserID},
+    );
+
     return $CategoryID;
 }
 
@@ -247,6 +260,15 @@ sub CategoryDelete {
             DELETE FROM faq_category_group
             WHERE category_id = ?',
         Bind => [ \$Param{CategoryID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQCategoryDelete',
+        Data  => {
+            CategoryID => $Param{CategoryID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -1032,6 +1054,19 @@ sub CategoryUpdate {
     # delete all cache, as FAQGet() will be also affected.
     $Kernel::OM->Get('Kernel::System::Cache')->CleanUp(
         Type => 'FAQ',
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQCategoryUpdate',
+        Data  => {
+            CategoryID => $Param{CategoryID},
+            ParentID   => $Param{ParentID},
+            Name       => $Param{Name},
+            Comment    => $Param{Comment},
+            ValidID    => $Param{ValidID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -1877,6 +1912,16 @@ sub SetCategoryGroup {
         # write attachment to db
         return if !$DBObject->Do( SQL => $SQL );
     }
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQSetCategoryGroup',
+        Data  => {
+            CategoryID => $Param{CategoryID},
+            GroupIDs   => $Param{GroupIDs},
+        },
+        UserID => $Param{UserID},
+    );
 
     return 1;
 }
