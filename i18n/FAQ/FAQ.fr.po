@@ -13,14 +13,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2019-10-31 23:03+0000\n"
-"Last-Translator: Carlos Rodríguez <carlos.rodriguez@otrs.com>\n"
-"Language-Team: French (http://www.transifex.com/otrs/OTRS/language/fr/)\n"
+"PO-Revision-Date: 2024-04-14 07:55+0000\n"
+"Last-Translator: Jaime Pires <jaime_pires92@hotmail.fr>\n"
+"Language-Team: French <https://translations.znuny.org/projects/znuny/faq/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -388,7 +390,7 @@ msgstr "Restrictions de note"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with rate..."
-msgstr "Uniquement les articles  avec une note de ..."
+msgstr "Uniquement les articles avec une note de ..."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Time restrictions"
@@ -444,7 +446,7 @@ msgstr "Une catégorie devrait avoir un nom !"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists"
-msgstr "Cette catégorie existe déjà !"
+msgstr "Cette catégorie existe déjà"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
@@ -484,7 +486,7 @@ msgstr "Impossible de supprimer l'article %s !"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr "L'ID de catégorie %s est invalide !"
+msgstr "L'ID de catégorie %s est invalide"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
@@ -1497,4 +1499,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
-
