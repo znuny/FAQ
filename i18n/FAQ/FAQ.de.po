@@ -1541,5 +1541,5 @@ msgstr ""
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer."
 

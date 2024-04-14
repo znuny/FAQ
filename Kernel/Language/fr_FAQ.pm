@@ -149,7 +149,7 @@ sub Data {
     $Self->{Translation}->{'Vote restrictions'} = 'Restrictions de vote';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Uniquement les articles avec des votes...';
     $Self->{Translation}->{'Rate restrictions'} = 'Restrictions de note';
-    $Self->{Translation}->{'Only FAQ articles with rate...'} = 'Uniquement les articles  avec une note de ...';
+    $Self->{Translation}->{'Only FAQ articles with rate...'} = 'Uniquement les articles avec une note de ...';
     $Self->{Translation}->{'Time restrictions'} = 'Restrictions de temps';
     $Self->{Translation}->{'Only FAQ articles created'} = 'Uniquement les nouveaux articles';
     $Self->{Translation}->{'Only FAQ articles created between'} = 'Uniquement les articles créés entre';
@@ -177,7 +177,7 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentFAQCategory.pm
     $Self->{Translation}->{'Need CategoryID!'} = 'Besoin de l\'ID de la catégorie !';
     $Self->{Translation}->{'A category should have a name!'} = 'Une catégorie devrait avoir un nom !';
-    $Self->{Translation}->{'This category already exists'} = 'Cette catégorie existe déjà !';
+    $Self->{Translation}->{'This category already exists'} = 'Cette catégorie existe déjà';
     $Self->{Translation}->{'This category already exists!'} = 'Cette catégorie existe déjà !';
     $Self->{Translation}->{'No CategoryID is given!'} = 'Aucun ID de catégorie n\'a été donné !';
     $Self->{Translation}->{'Was not able to delete the category %s!'} = 'Impossible de supprimer la catégorie %s !';
@@ -191,7 +191,7 @@ sub Data {
     $Self->{Translation}->{'Was not able to delete the FAQ article %s!'} = 'Impossible de supprimer l\'article %s !';
 
     # Perl Module: Kernel/Modules/AgentFAQExplorer.pm
-    $Self->{Translation}->{'The CategoryID %s is invalid.'} = 'L\'ID de catégorie %s est invalide !';
+    $Self->{Translation}->{'The CategoryID %s is invalid.'} = 'L\'ID de catégorie %s est invalide';
 
     # Perl Module: Kernel/Modules/AgentFAQHistory.pm
     $Self->{Translation}->{'Can\'t show history, as no ItemID is given!'} = 'Impossible d\'afficher l\'historique, puisqu\'aucun ID d\'élément n\'a été donné !';
