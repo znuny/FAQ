@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>7.0.2</Version>
+    <Version>7.0.3</Version>
     <Framework>7.0.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -9,6 +9,7 @@
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="7.0.3" Date="2024-05-28 12:30:24 +0200">Fixed issue with instance cache not being deleted in functions that update data. Added event support for FAQ functions.</ChangeLog>
     <ChangeLog Version="7.0.2" Date="2023-08-30 19:04:12 +0200">Added details on customer groups to the manual</ChangeLog>
     <ChangeLog Version="7.0.1" Date="2023-05-10 11:24:12 +0200">Initial release for Znuny 7.0.</ChangeLog>
     <ChangeLog Version="6.5.1" Date="2023-02-20 14:25:07 +0100">Initial release for Znuny 6.5.</ChangeLog>
