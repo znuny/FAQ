@@ -49,6 +49,8 @@ Returns:
 sub StateAdd {
     my ( $Self, %Param ) = @_;
 
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
     for my $Argument (qw(Name TypeID UserID)) {
         if ( !$Param{$Argument} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -60,11 +62,42 @@ sub StateAdd {
         }
     }
 
-    return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
+    return if !$DBObject->Do(
         SQL => '
             INSERT INTO faq_state (name, type_id)
             VALUES ( ?, ? )',
         Bind => [ \$Param{Name}, \$Param{TypeID} ],
+    );
+
+    my $SQL = 'SELECT    id FROM faq_state
+               WHERE     name = ?
+               AND       type_id = ?
+               ORDER BY  id DESC';
+
+    # get id
+    return if !$DBObject->Prepare(
+        SQL  => $SQL,
+        Bind => [
+            \$Param{Name},
+            \$Param{TypeID},
+        ],
+        Limit => 1,
+    );
+
+    my $ID;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        $ID = $Row[0];
+    }
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQStateAdd',
+        Data  => {
+            StateID => $ID,
+            Name    => $Param{Name},
+            TypeID  => $Param{TypeID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -229,6 +262,17 @@ sub StateUpdate {
             SET name = ?, type_id = ?,
             WHERE id = ?',
         Bind => [ \$Param{Name}, \$Param{TypeID}, \$Param{StateID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQStateUpdate',
+        Data  => {
+            StateID => $Param{StateID},
+            Name    => $Param{Name},
+            TypeID  => $Param{TypeID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;

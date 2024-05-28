@@ -50,6 +50,8 @@ Returns:
 sub VoteAdd {
     my ( $Self, %Param ) = @_;
 
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
     for my $Argument (qw(CreatedBy ItemID IP Interface UserID)) {
         if ( !$Param{$Argument} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -61,7 +63,7 @@ sub VoteAdd {
         }
     }
 
-    return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
+    return if !$DBObject->Do(
         SQL => '
             INSERT INTO faq_voting (created_by, item_id, ip, interface, rate, created )
             VALUES ( ?, ?, ?, ?, ?, current_timestamp )',
@@ -76,6 +78,46 @@ sub VoteAdd {
     $Kernel::OM->Get('Kernel::System::Cache')->Delete(
         Type => 'FAQ',
         Key  => $CacheKey,
+    );
+
+    my $SQL = 'SELECT    id FROM faq_voting
+               WHERE     created_by = ?
+               AND       item_id = ?
+               AND       ip = ?
+               AND       interface = ?
+               AND       rate = ?
+               ORDER BY  id DESC';
+
+    # get id
+    return if !$DBObject->Prepare(
+        SQL  => $SQL,
+        Bind => [
+            \$Param{CreatedBy},
+            \$Param{ItemID},
+            \$Param{IP},
+            \$Param{Interface},
+            \$Param{Rate},
+        ],
+        Limit => 1,
+    );
+
+    my $ID;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        $ID = $Row[0];
+    }
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQVoteAdd',
+        Data  => {
+            VoteID    => $ID,
+            CreatedBy => $Param{CreatedBy},
+            ItemID    => $Param{ItemID},
+            IP        => $Param{IP},
+            Interface => $Param{Interface},
+            Rate      => $Param{Rate},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -115,6 +157,15 @@ sub VoteDelete {
             DELETE FROM faq_voting
             WHERE id = ?',
         Bind => [ \$Param{VoteID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQVoteDelete',
+        Data  => {
+            VoteID => $Param{VoteID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;

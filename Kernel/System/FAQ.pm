@@ -83,10 +83,8 @@ sub new {
     $Self->{CacheTTL} = int( $ConfigObject->Get('FAQ::CacheTTL') || 60 * 60 * 24 * 2 );
 
     # init of event handler
-    # currently there are no FAQ event modules but is needed to initialize otherwise errors are
-    #     log due to searching undefined setting into ConfigObject.
     $Self->EventHandlerInit(
-        Config => '',
+        Config => 'FAQ::EventModulePost',
     );
 
     return $Self;
@@ -695,6 +693,15 @@ sub FAQAdd {
     # Cleanup the runtime cache from the FAQ/Category.pm.
     delete $Self->{Cache};
 
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQAdd',
+        Data  => {
+            ItemID => $ID,
+        },
+        UserID => $Param{UserID},
+    );
+
     return $ID;
 }
 
@@ -740,7 +747,7 @@ sub FAQUpdate {
 
     my %FAQData = $Self->FAQGet(
         ItemID     => $Param{ItemID},
-        ItemFields => 0,
+        ItemFields => 1,
         UserID     => $Param{UserID},
     );
 
@@ -825,6 +832,16 @@ sub FAQUpdate {
     $Self->FAQHistoryAdd(
         Name   => 'Updated',
         ItemID => $Param{ItemID},
+        UserID => $Param{UserID},
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQUpdate',
+        Data  => {
+            ItemID     => $Param{ItemID},
+            OldFAQData => \%FAQData,
+        },
         UserID => $Param{UserID},
     );
 
@@ -955,6 +972,23 @@ sub AttachmentAdd {
         $AttachmentID = $Row[0];
     }
 
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQAttachmentAdd',
+        Data  => {
+            ItemID      => $Param{ItemID},
+            FileID      => $AttachmentID,
+            Filename    => $Param{Filename},
+            ContentType => $Param{ContentType},
+            Filesize    => $Param{Filesize},
+            Content     => $Param{Content},
+            Inline      => $Param{Inline},
+            CreatedBy   => $Param{UserID},
+            ChangedBy   => $Param{UserID},
+        },
+        UserID => $Param{UserID},
+    );
+
     return $AttachmentID;
 }
 
@@ -1055,6 +1089,16 @@ sub AttachmentDelete {
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL  => 'DELETE FROM faq_attachment WHERE id = ? AND faq_id = ? ',
         Bind => [ \$Param{FileID}, \$Param{ItemID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQAttachmentDelete',
+        Data  => {
+            ItemID => $Param{ItemID},
+            FileID => $Param{FileID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -1381,6 +1425,15 @@ sub FAQDelete {
     # delete cache
     $Self->_DeleteFromFAQCache(%Param);
 
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQDelete',
+        Data  => {
+            ItemID => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
+    );
+
     return 1;
 }
 
@@ -1403,6 +1456,8 @@ Returns:
 sub FAQHistoryAdd {
     my ( $Self, %Param ) = @_;
 
+    my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
+
     for my $Argument (qw(ItemID Name UserID)) {
         if ( !$Param{$Argument} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -1414,13 +1469,47 @@ sub FAQHistoryAdd {
         }
     }
 
-    return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
+    return if !$DBObject->Do(
         SQL => 'INSERT INTO faq_history (name, item_id, ' .
             ' created, created_by, changed, changed_by)' .
             ' VALUES ( ?, ?, current_timestamp, ?, current_timestamp, ?)',
         Bind => [
             \$Param{Name}, \$Param{ItemID}, \$Param{UserID}, \$Param{UserID},
         ],
+    );
+
+    my $SQL = 'SELECT    id FROM faq_history
+               WHERE     name = ?
+               AND       item_id = ?
+               AND       created_by = ?
+               AND       changed_by = ?
+               ORDER BY  id DESC';
+
+    # get id
+    return if !$DBObject->Prepare(
+        SQL  => $SQL,
+        Bind => [
+            \$Param{Name},
+            \$Param{ItemID},
+            \$Param{UserID},
+            \$Param{UserID},
+        ],
+        Limit => 1,
+    );
+
+    my $ID;
+    while ( my @Row = $DBObject->FetchrowArray() ) {
+        $ID = $Row[0];
+    }
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQHistoryAdd',
+        Data  => {
+            FAQHistoryID => $ID,
+            ItemID       => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -1521,6 +1610,15 @@ sub FAQHistoryDelete {
     return if !$Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL  => 'DELETE FROM faq_history WHERE item_id = ?',
         Bind => [ \$Param{ItemID} ],
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQHistoryDelete',
+        Data  => {
+            ItemID => $Param{ItemID},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
@@ -2384,6 +2482,15 @@ sub FAQContentTypeSet {
             Type => 'FAQ',
         );
 
+        # trigger event
+        $Self->EventHandler(
+            Event => 'FAQContentTypeSet',
+            Data  => {
+                ItemID => $Param{FAQItemIDs},
+            },
+            UserID => $Param{UserID} || 1,    # TODO check
+        );
+
         return 1;
     }
 
@@ -2449,6 +2556,15 @@ sub FAQContentTypeSet {
     # Delete cache
     $Kernel::OM->Get('Kernel::System::Cache')->CleanUp(
         Type => 'FAQ',
+    );
+
+    # trigger event
+    $Self->EventHandler(
+        Event => 'FAQContentTypeSet',
+        Data  => {
+            ItemID => $Param{FAQItemIDs},
+        },
+        UserID => $Param{UserID},
     );
 
     return 1;
