@@ -540,10 +540,29 @@ sub Run {
             Name => 'FAQDynamicField',
             Data => {
                 Label => $Label,
-                Value => $ValueStrg->{Value},
-                Title => $ValueStrg->{Title},
             },
         );
+
+        if ( $ValueStrg->{Link} ) {
+            $LayoutObject->Block(
+                Name => 'FAQDynamicFieldLink',
+                Data => {
+                    Value                       => $ValueStrg->{Value},
+                    Title                       => $ValueStrg->{Title},
+                    Link                        => $ValueStrg->{Link},
+                    $DynamicFieldConfig->{Name} => $ValueStrg->{Title},
+                },
+            );
+        }
+        else {
+            $LayoutObject->Block(
+                Name => 'FAQDynamicFieldPlain',
+                Data => {
+                    Value => $ValueStrg->{Value},
+                    Title => $ValueStrg->{Title},
+                },
+            );
+        }
 
         # example of dynamic fields order customization
         $LayoutObject->Block(
