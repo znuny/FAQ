@@ -7,15 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2022-09-02 15:14+0000\n"
+"PO-Revision-Date: 2024-07-27 15:34+0000\n"
 "Last-Translator: Peter Værlien <peter.varlien@kdrs.no>\n"
-"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/znuny/faq/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/"
+"znuny/faq/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -67,11 +68,11 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Agent groups that can access articles in this category."
-msgstr "Saksbehandlergrupper som har tilgang til artikler i denne kategorien"
+msgstr "Saksbehandlergrupper som har tilgang til artikler i denne kategorien."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Will be shown as comment in Explorer."
-msgstr "Vil vises som kommentar i utforskeren"
+msgstr "Vil vises som kommentar i utforskeren."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Do you really want to delete this category?"
@@ -123,7 +124,7 @@ msgstr "Ofte Stilte Spørsmål"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "No subcategories found."
-msgstr "Ingen underkategorier funnet"
+msgstr "Ingen underkategorier funnet."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
 msgid "History of"
@@ -191,7 +192,7 @@ msgstr "OSS artikler per side"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
 msgid "No FAQ data found."
-msgstr "Ingen artikler funnet"
+msgstr "Ingen artikler funnet."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
 msgid "out of 5"
@@ -1492,4 +1493,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
-

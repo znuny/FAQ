@@ -10,15 +10,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2020-02-07 11:51+0000\n"
-"Last-Translator: Joao Ferro <joao.ferro@otrs.com>\n"
-"Language-Team: Portuguese <https://translate.app.otrs.com/projects/otrs-6/faq/pt/>\n"
+"PO-Revision-Date: 2024-07-27 15:34+0000\n"
+"Last-Translator: Genilson Borges <genilsonborges17@gmail.com>\n"
+"Language-Team: Portuguese <https://translations.znuny.org/projects/znuny/faq/"
+"pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -1430,23 +1431,23 @@ msgstr "público (público)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Artigos relacionados a FAQ do agente"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Artigos relacionados a FAQ do agente."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Corpo abaixo"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Assunto abaixo"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Atributo de usuário cliente para verificar sua relação de grupo."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
@@ -1495,4 +1496,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
-
