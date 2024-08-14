@@ -122,6 +122,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         overflow: hidden;
     }
 */
+
     /**
     * AgentFAQExplorer
     */
@@ -149,7 +150,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         border: none;
     }
 
-    .FAQZoom .Actions, 
+    .FAQZoom .Actions,
     .FAQZoom .Actions > li {
         display: flex;
         align-items: center;
@@ -168,7 +169,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         margin: 0 8px;
     }
 
-    .FAQZoom .Actions li a, 
+    .FAQZoom .Actions li a,
     .FAQZoom .Actions li span {
         display: flex;
         align-items: center;
@@ -180,9 +181,14 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         border-radius: var(--border-radius-xxs);
     }
 
-    .FAQZoom .Actions li:hover > a, 
+    .FAQZoom .Actions li:hover > a,
     .FAQZoom .Actions li:hover > span {
         background: var(--gray-light);
-      }
+    }
 
+    .FAQZoom .WidgetSimple fieldset.TableLike .Value,
+    .FAQZoom .WidgetSimple fieldset.TableLike .Value span {
+        line-height: 140%;
+        gap: var(--gap-sm);
+    }
 }
