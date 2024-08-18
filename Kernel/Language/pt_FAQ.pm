@@ -295,10 +295,10 @@ sub Data {
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Um filtro de HTML de output para adicionar links antes de um determinado texto. O elemento Imagem permite dois tipos de input. Primeiro, o nome de uma imagem (ex. faq.png). Neste caso, o caminho para imagens OTRS será usado. A segunda possibilidade é inserir o link para a imagem.';
     $Self->{Translation}->{'Add FAQ article'} = 'Adicionar artigo à FAQ';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = 'Artigos relacionados a FAQ do agente';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = 'Artigos relacionados a FAQ do agente.';
+    $Self->{Translation}->{'Below body'} = 'Corpo abaixo';
+    $Self->{Translation}->{'Below subject'} = 'Assunto abaixo';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'Cor CSS para o resultado da votação.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Tempo de permanência em cache dos artigos da FAQ.';
     $Self->{Translation}->{'Category Management'} = 'Gestão de categorias';
@@ -309,7 +309,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = 'Visualização da FAQ.';
     $Self->{Translation}->{'Customer FAQ search.'} = 'Pesquisa da FAQ.';
     $Self->{Translation}->{'Customer FAQ.'} = 'FAQ do cliente.';
-    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = 'Atributo de usuário cliente para verificar sua relação de grupo.';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'Número de casas decimais do resultado da votação.';
     $Self->{Translation}->{'Default category name.'} = 'Nome da categoria por omissão.';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'Idioma por omissão dos artigos da FAQ.';
@@ -448,7 +448,6 @@ sub Data {
         'Lista dos tipos de estado que pode ser utilizado na interface de cliente.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Lista dos tipos de estado que pode ser utilizado na interface pública.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Registo do módulo Loader do interface público.';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'O número máximo de artigos FAQ para ser exibido no resultado do Gerenciador FAQ da interface do atendente.';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'público (público)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

@@ -448,7 +448,6 @@ sub Data {
         'Lijst met statustypen die in de klanteninterface kunnen worden gebruikt.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Lijst met statustypen die in de openbare interface kunnen worden gebruikt.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Registratie van ladermodule voor de openbare interface.';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Maximumaantal FAQ-artikelen dat moet worden weergegeven in het FAQ Verkenner-resultaat van de agentinterface.';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = '';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

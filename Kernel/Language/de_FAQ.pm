@@ -448,7 +448,6 @@ sub Data {
         'Liste der Statustypen, die in der Kundenoberfläche genutzt werden können.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Liste der Statustypen, die in der öffentlichen Oberfläche genutzt werden können.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Lade-Modulregistrierung für das öffentliche Interface.';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = 'Mapping zwischen Kundenbenutzer-Attributwert und Gruppe.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Maximale Anzahl von FAQ-Artikeln die im FAQ-Explorerl im Agenten-Interface angezeigt werden.';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'öffentlich (öffentlich)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

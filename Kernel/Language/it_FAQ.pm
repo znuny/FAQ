@@ -448,7 +448,6 @@ sub Data {
         '';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         '';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         '';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'pubblico (pubblico)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

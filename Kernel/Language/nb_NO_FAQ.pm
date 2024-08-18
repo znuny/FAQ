@@ -30,8 +30,8 @@ sub Data {
     $Self->{Translation}->{'Edit Category'} = 'Endre kategori';
     $Self->{Translation}->{'Subcategory of'} = 'Underkategori av';
     $Self->{Translation}->{'Please select at least one permission group.'} = '';
-    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = 'Saksbehandlergrupper som har tilgang til artikler i denne kategorien';
-    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'Vil vises som kommentar i utforskeren';
+    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = 'Saksbehandlergrupper som har tilgang til artikler i denne kategorien.';
+    $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'Vil vises som kommentar i utforskeren.';
     $Self->{Translation}->{'Do you really want to delete this category?'} = 'Vil du virkelig slette denne kategorien?';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
         'Du kan ikke slette denne kategorien, fordi den er brukt i minst en OSS-artikkel og/eller foreldre til minst en annen kategori';
@@ -51,7 +51,7 @@ sub Data {
     $Self->{Translation}->{'Advanced Search'} = 'Avansert søk';
     $Self->{Translation}->{'Subcategories'} = 'Underkategorier';
     $Self->{Translation}->{'FAQ Articles'} = 'Ofte Stilte Spørsmål';
-    $Self->{Translation}->{'No subcategories found.'} = 'Ingen underkategorier funnet';
+    $Self->{Translation}->{'No subcategories found.'} = 'Ingen underkategorier funnet.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQHistory.tt
     $Self->{Translation}->{'History of'} = 'Historikk for';
@@ -80,7 +80,7 @@ sub Data {
     $Self->{Translation}->{'FAQ articles per page'} = 'OSS artikler per side';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewSmall.tt
-    $Self->{Translation}->{'No FAQ data found.'} = 'Ingen artikler funnet';
+    $Self->{Translation}->{'No FAQ data found.'} = 'Ingen artikler funnet.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
     $Self->{Translation}->{'out of 5'} = 'av 5';
@@ -448,7 +448,6 @@ sub Data {
         '';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         '';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         '';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = '';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

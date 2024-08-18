@@ -448,7 +448,6 @@ sub Data {
         'Állapottípusok listája, amelyek használhatók az ügyfélfelületen.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Állapottípusok listája, amelyek használhatók a nyilvános felületen.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Betöltőmodul regisztráció a nyilvános felülethez.';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Az ügyintézői felület GyIK böngésző eredményében megjelenítendő GyIK bejegyzések legnagyobb száma.';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'nyilvános (nyilvános)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

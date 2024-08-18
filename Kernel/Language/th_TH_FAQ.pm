@@ -448,7 +448,6 @@ sub Data {
         'รายชื่อของประเภทสถานภาพต่างๆที่สามารถใช้งานในอินเตอร์เฟซของลูกค้าได้';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'รายชื่อของประเภทสถานภาพต่างๆที่สามารถใช้งานในอินเตอร์เฟซสาธารณะได้';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'จำนวนบทความ FAQ สูงสุดที่จะแสดงใน FAQ Explorer ในอินเตอร์เฟซของเอเย่นต์';
@@ -581,7 +580,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = '';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',
