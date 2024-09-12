@@ -372,7 +372,7 @@ sub Data {
         'Define as colunas mostradas na pesquisa FAQ. Esta opção não tem efeito sobre a posição da coluna.';
     $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} = 'Define onde o link "Inserir FAQ" será exibido.';
     $Self->{Translation}->{'Definition of FAQ item free text field.'} = 'Definição de campos de texto livre.';
-    $Self->{Translation}->{'Delete this FAQ'} = 'Apagar esta FAQ!';
+    $Self->{Translation}->{'Delete this FAQ'} = 'Apagar esta FAQ';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ add screen of the agent interface.'} =
         'Campos dinâmicos exibidos no ecrã de adicionar FAQ da interface de agente.';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ edit screen of the agent interface.'} =
