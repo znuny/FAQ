@@ -343,7 +343,7 @@ sub Data {
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface.'} =
         'Укажите стандартное значение атрибута сортировки в FAQ Explorere интерфейса клиента.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface.'} =
-        'Укажите стандартное значение атрибута сортировки в FAQ Explorere в общедоступном  интерфейсе.';
+        'Укажите стандартное значение атрибута сортировки в FAQ Explorere в общедоступном интерфейсе.';
     $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         'Укажите стандартный порядок в результатах FAQ Explorer интерфейса агента. Up: позднее наверху. Down: новое наверху.';
     $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top.'} =
@@ -438,7 +438,7 @@ sub Data {
     $Self->{Translation}->{'Journal'} = 'Журнал';
     $Self->{Translation}->{'Language Management'} = 'Управление языками';
     $Self->{Translation}->{'Language Management.'} = 'Управление языками.';
-    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} = 'Лимит  для поиска для построения списка контекстных статей FAQ.';
+    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} = 'Лимит для поиска для построения списка контекстных статей FAQ.';
     $Self->{Translation}->{'Link another object to this FAQ item'} = 'Привязать другой объект к этому элементу FAQ';
     $Self->{Translation}->{'List of queue names for which the related article feature is enabled.'} =
         'Список очередей для которых возможность поиска контекстных статей FAQ включена.';
