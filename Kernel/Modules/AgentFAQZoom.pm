@@ -620,6 +620,7 @@ sub Run {
                 Name => 'FAQDynamicFieldLink',
                 Data => {
                     Value                       => $ValueStrg->{Value},
+                    ValueKey                    => $FAQData{ 'DynamicField_' . $DynamicFieldConfig->{Name} },
                     Title                       => $ValueStrg->{Title},
                     Link                        => $ValueStrg->{Link},
                     $DynamicFieldConfig->{Name} => $ValueStrg->{Title},

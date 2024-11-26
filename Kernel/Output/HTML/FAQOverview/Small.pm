@@ -362,6 +362,7 @@ sub Run {
                             Name => 'RecordDynamicFieldLink',
                             Data => {
                                 Value                       => $ValueStrg->{Value},
+                                ValueKey                    => $Value,
                                 Title                       => $ValueStrg->{Title},
                                 Link                        => $ValueStrg->{Link},
                                 $DynamicFieldConfig->{Name} => $ValueStrg->{Title},
