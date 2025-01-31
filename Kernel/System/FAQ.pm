@@ -2698,12 +2698,53 @@ sub _FAQApprovalTicketCreate {
     }
 
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
-
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $UserObject   = $Kernel::OM->Get('Kernel::System::User');
+
+    my $UserName = $UserObject->UserName(
+        UserID => $Param{UserID},
+    );
+
+    my %State = $Self->StateGet(
+        StateID => $Param{StateID},
+        UserID  => $Param{UserID},
+    );
+
+    # categories can be nested; you can have some::long::category.
+    my @CategoryNames;
+    my $CategoryID = $Param{CategoryID};
+    CATEGORY:
+    while (1) {
+        my %Category = $Self->CategoryGet(
+            CategoryID => $CategoryID,
+            UserID     => $Param{UserID},
+        );
+        push @CategoryNames, $Category{Name};
+        last CATEGORY if !$Category{ParentID};
+        $CategoryID = $Category{ParentID};
+    }
+    my $Category = join( '::', reverse @CategoryNames );
+
+    my $Language;
+    if ( $ConfigObject->Get('FAQ::MultiLanguage') ) {
+        $Language = $Self->LanguageLookup(
+            LanguageID => $Param{LanguageID},
+        );
+    }
+    else {
+        $Language = '-';
+    }
 
     # get subject
     my $Subject = $ConfigObject->Get('FAQ::ApprovalTicketSubject');
-    $Subject =~ s{ <OTRS_FAQ_NUMBER> }{$Param{FAQNumber}}xms;
+    $Subject =~ s{ <OTRS_FAQ_CATEGORYID> }{$Param{CategoryID}}gxms;
+    $Subject =~ s{ <OTRS_FAQ_CATEGORY>   }{$Category}gxms;
+    $Subject =~ s{ <OTRS_FAQ_LANGUAGE>   }{$Language}gxms;
+    $Subject =~ s{ <OTRS_FAQ_ITEMID>     }{$Param{ItemID}}gxms;
+    $Subject =~ s{ <OTRS_FAQ_NUMBER>     }{$Param{FAQNumber}}gxms;
+    $Subject =~ s{ <OTRS_FAQ_TITLE>      }{$Param{Title}}gxms;
+    $Subject =~ s{ <OTRS_FAQ_AUTHOR>     }{$UserName}gxms;
+    $Subject =~ s{ <OTRS_FAQ_STATE>      }{$State{Name}}gxms;
 
     # check if we can find existing open approval tickets for this FAQ article
     my @TicketIDs = $TicketObject->TicketSearch(
@@ -2745,52 +2786,16 @@ sub _FAQApprovalTicketCreate {
 
     if ($TicketID) {
 
-        my $UserObject = $Kernel::OM->Get('Kernel::System::User');
-
-        my $UserName = $UserObject->UserName(
-            UserID => $Param{UserID},
-        );
-
-        my %State = $Self->StateGet(
-            StateID => $Param{StateID},
-            UserID  => $Param{UserID},
-        );
-
-        # categories can be nested; you can have some::long::category.
-        my @CategoryNames;
-        my $CategoryID = $Param{CategoryID};
-        CATEGORY:
-        while (1) {
-            my %Category = $Self->CategoryGet(
-                CategoryID => $CategoryID,
-                UserID     => $Param{UserID},
-            );
-            push @CategoryNames, $Category{Name};
-            last CATEGORY if !$Category{ParentID};
-            $CategoryID = $Category{ParentID};
-        }
-        my $Category = join( '::', reverse @CategoryNames );
-
-        my $Language;
-        if ( $ConfigObject->Get('FAQ::MultiLanguage') ) {
-            $Language = $Self->LanguageLookup(
-                LanguageID => $Param{LanguageID},
-            );
-        }
-        else {
-            $Language = '-';
-        }
-
         # get body from config
         my $Body = $ConfigObject->Get('FAQ::ApprovalTicketBody');
-        $Body =~ s{ <OTRS_FAQ_CATEGORYID> }{$Param{CategoryID}}xms;
-        $Body =~ s{ <OTRS_FAQ_CATEGORY>   }{$Category}xms;
-        $Body =~ s{ <OTRS_FAQ_LANGUAGE>   }{$Language}xms;
-        $Body =~ s{ <OTRS_FAQ_ITEMID>     }{$Param{ItemID}}xms;
-        $Body =~ s{ <OTRS_FAQ_NUMBER>     }{$Param{FAQNumber}}xms;
-        $Body =~ s{ <OTRS_FAQ_TITLE>      }{$Param{Title}}xms;
-        $Body =~ s{ <OTRS_FAQ_AUTHOR>     }{$UserName}xms;
-        $Body =~ s{ <OTRS_FAQ_STATE>      }{$State{Name}}xms;
+        $Body =~ s{ <OTRS_FAQ_CATEGORYID> }{$Param{CategoryID}}gxms;
+        $Body =~ s{ <OTRS_FAQ_CATEGORY>   }{$Category}gxms;
+        $Body =~ s{ <OTRS_FAQ_LANGUAGE>   }{$Language}gxms;
+        $Body =~ s{ <OTRS_FAQ_ITEMID>     }{$Param{ItemID}}gxms;
+        $Body =~ s{ <OTRS_FAQ_NUMBER>     }{$Param{FAQNumber}}gxms;
+        $Body =~ s{ <OTRS_FAQ_TITLE>      }{$Param{Title}}gxms;
+        $Body =~ s{ <OTRS_FAQ_AUTHOR>     }{$UserName}gxms;
+        $Body =~ s{ <OTRS_FAQ_STATE>      }{$State{Name}}gxms;
 
         my %User = $UserObject->GetUserData(
             UserID => $Param{UserID},
