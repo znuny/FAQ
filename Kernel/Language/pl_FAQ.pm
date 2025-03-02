@@ -17,24 +17,24 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
     $Self->{Translation}->{'Add FAQ Article'} = 'Dodaj artykuł FAQ';
-    $Self->{Translation}->{'Keywords'} = 'słowa kluczowe';
+    $Self->{Translation}->{'Keywords'} = 'Słowa kluczowe';
     $Self->{Translation}->{'A category is required.'} = 'Kategoria jest wymagana.';
-    $Self->{Translation}->{'Approval'} = 'Zatwierdzenie';
+    $Self->{Translation}->{'Approval'} = 'Zatwierdzanie';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'Add category'} = 'Dodaj kategorię';
     $Self->{Translation}->{'FAQ Category Management'} = 'Zarządzanie kategoriami FAQ';
-    $Self->{Translation}->{'Add FAQ Category'} = 'Dodaj kategorię FAQ';
+    $Self->{Translation}->{'Add FAQ Category'} = 'Dodaj kategorię FAQ';
     $Self->{Translation}->{'Edit FAQ Category'} = 'Edytuj kategorię FAQ';
     $Self->{Translation}->{'Add Category'} = 'Dodaj kategorię';
     $Self->{Translation}->{'Edit Category'} = 'Edytuj kategorię';
     $Self->{Translation}->{'Subcategory of'} = 'Podkategoria';
     $Self->{Translation}->{'Please select at least one permission group.'} = 'Zaznacz przynajmniej jedną grupę uprawnień.';
-    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = 'Grupy agnetów, które mają dostęp do tej kategorii.';
+    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = 'Grupy agentów, które mają dostęp do tej kategorii.';
     $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'Zostanie pokazany jako komentarz w eksplorerze.';
     $Self->{Translation}->{'Do you really want to delete this category?'} = 'Czy na pewno chcesz usunąć tę kategorię?';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
-        'Nie możesz usunąć tej kategorii. Jest ona używana przez przynajmniej jeden artykuł FAQ lub/i jest rodzicem prznajmniej jednej innej kategorii';
+        'Nie możesz usunąć tej kategorii. Jest ona używana przez przynajmniej jeden artykuł FAQ i/lub jest rodzicem przynajmniej jednej innej kategorii';
     $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'Ta kategoria jest używana w następujących artykułach FAQ';
     $Self->{Translation}->{'This category is parent of the following subcategories'} = 'Ta kategoria jest rodzicem następujących podkategorii';
 
@@ -73,7 +73,7 @@ sub Data {
     $Self->{Translation}->{'Do you really want to delete this language?'} = 'Czy na pewno chcesz usunąć ten język?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'Nie możesz usunąć tego języka. Jest on używany w przynajmniej jednym artykule FAQ!';
-    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Ten język jest używany w następujących artukułach FAQ';
+    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'Ten język jest używany w następujących artykułach FAQ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Ustawienia kontekstowe';
@@ -112,7 +112,7 @@ sub Data {
     $Self->{Translation}->{'Specific rate'} = 'Konkretna ocena';
     $Self->{Translation}->{'e. g. Equals 25% or GreaterThan 75%'} = 'np.: równe 25% lub więcej niż 75%';
     $Self->{Translation}->{'FAQ Article Create Time'} = 'Czas utworzenia artykułu FAQ';
-    $Self->{Translation}->{'FAQ Article Change Time'} = 'FAQ Czas zmiany zgłoszenia';
+    $Self->{Translation}->{'FAQ Article Change Time'} = 'FAQ Czas zmiany artykułu';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
     $Self->{Translation}->{'FAQ Information'} = 'Informacje FAQ';
@@ -129,7 +129,7 @@ sub Data {
     $Self->{Translation}->{'very helpful'} = 'pomocne';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
-    $Self->{Translation}->{'Add FAQ title to article subject'} = 'Dodaj tytuł FAQ jako temat wiadomości';
+    $Self->{Translation}->{'Add FAQ title to article subject'} = 'Dodaj tytuł FAQ do tematu artykułu';
     $Self->{Translation}->{'Insert FAQ Text'} = 'Wstaw tekst FAQ';
     $Self->{Translation}->{'Insert Full FAQ'} = 'Wstaw cały FAQ';
     $Self->{Translation}->{'Insert FAQ Link'} = 'Wstaw odnośnik FAQ';
@@ -164,7 +164,7 @@ sub Data {
     $Self->{Translation}->{'VLimitation'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
-    $Self->{Translation}->{'Public'} = 'Pobliczne';
+    $Self->{Translation}->{'Public'} = 'Publiczne';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'Wróć do Przeglądu FAQ';
@@ -318,32 +318,32 @@ sub Data {
     $Self->{Translation}->{'Default priority of tickets for the approval of FAQ articles.'} =
         'Domyślny priorytet zgłoszeń dla zatwierdzeń artykułów FAQ.';
     $Self->{Translation}->{'Default state for FAQ entry.'} = 'Domyślny stan dla pozycji FAQ.';
-    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} = 'Domyślny stan zgłoszenia o zatwierdzenie artykułu FAQ.';
-    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} = 'Domyślny stan zgłoszeń o zatwierdzenie Artykułów FAQ.';
+    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} = 'Domyślny stan zgłoszeń do zatwierdzenia artykułów FAQ.';
+    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} = 'Domyślny typ zgłoszeń do zatwierdzenia Artykułów FAQ.';
     $Self->{Translation}->{'Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system.'} =
         'Domyślna wartość parametru Action na stronie publicznej. Parametr Action jest używany w skryptach systemowych.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '';
+        'Definiuje akcje, w których przycisk ustawień powinien być dostępny w widżecie połączonych obiektów (LinkObject::ViewMode = „complex”). Należy pamiętać, że następujące pliki JS i CSS muszą być zarejestrowane dla tych akcji: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js i Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
-        '';
+        'Określa, czy tytuł FAQ powinien być połączony z tematem artykułu.';
     $Self->{Translation}->{'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'} =
-        '';
+        'Określa, które kolumny są wyświetlane w widżecie „Połączone FAQ” (LinkObject::ViewMode = „complex”). Uwaga: Tylko atrybuty FAQ i pola dynamiczne (DynamicField_NameX) są dozwolone dla standardowych kolumn.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ journal.'} =
-        '';
+        'Definiuje moduł przeglądu do wyświetlania małego widoku w dzienniku FAQ.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ list.'} =
-        '';
+        'Definiuje moduł przeglądu do wyświetlania małego widoku listy FAQ.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w interfejsie agenta.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w interfejsie klienta.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w interfejsie publicznym.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w interfejsie agenta.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w interfejsie klienta.';
     $Self->{Translation}->{'Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface.'} =
-        '';
+        'Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w interfejsie publicznym.';
     $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top.'} =
         '';
     $Self->{Translation}->{'Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top.'} =
