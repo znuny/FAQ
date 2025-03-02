@@ -8,15 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2022-05-30 21:09+0000\n"
+"PO-Revision-Date: 2025-03-02 16:06+0000\n"
 "Last-Translator: Daniel Lisiecki <lisiecki.daniel@gmail.com>\n"
-"Language-Team: Polish <https://translations.znuny.org/projects/znuny/faq/pl/>\n"
+"Language-Team: Polish <https://translations.znuny.org/projects/znuny/faq/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 4.11.2\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && ("
+"n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -24,7 +27,7 @@ msgstr "Dodaj artykuł FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Keywords"
-msgstr "słowa kluczowe"
+msgstr "Słowa kluczowe"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "A category is required."
@@ -32,7 +35,7 @@ msgstr "Kategoria jest wymagana."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Approval"
-msgstr "Zatwierdzenie"
+msgstr "Zatwierdzanie"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "FAQ Category Management"
@@ -40,7 +43,7 @@ msgstr "Zarządzanie kategoriami FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add FAQ Category"
-msgstr "Dodaj kategorię FAQ"
+msgstr "Dodaj kategorię FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
@@ -68,7 +71,7 @@ msgstr "Zaznacz przynajmniej jedną grupę uprawnień."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Agent groups that can access articles in this category."
-msgstr "Grupy agnetów, które mają dostęp do tej kategorii."
+msgstr "Grupy agentów, które mają dostęp do tej kategorii."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Will be shown as comment in Explorer."
@@ -80,7 +83,9 @@ msgstr "Czy na pewno chcesz usunąć tę kategorię?"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category"
-msgstr "Nie możesz usunąć tej kategorii. Jest ona używana przez przynajmniej jeden artykuł FAQ lub/i jest rodzicem prznajmniej jednej innej kategorii"
+msgstr ""
+"Nie możesz usunąć tej kategorii. Jest ona używana przez przynajmniej jeden "
+"artykuł FAQ i/lub jest rodzicem przynajmniej jednej innej kategorii"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "This category is used in the following FAQ article(s)"
@@ -180,7 +185,7 @@ msgstr "Nie możesz usunąć tego języka. Jest on używany w przynajmniej jedny
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "This language is used in the following FAQ Article(s)"
-msgstr "Ten język jest używany w następujących artukułach FAQ"
+msgstr "Ten język jest używany w następujących artykułach FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "Context Settings"
@@ -284,7 +289,7 @@ msgstr "Czas utworzenia artykułu FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Change Time"
-msgstr "FAQ Czas zmiany zgłoszenia"
+msgstr "FAQ Czas zmiany artykułu"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "FAQ Information"
@@ -328,7 +333,7 @@ msgstr "pomocne"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Add FAQ title to article subject"
-msgstr "Dodaj tytuł FAQ jako temat wiadomości"
+msgstr "Dodaj tytuł FAQ do tematu artykułu"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text"
@@ -412,7 +417,7 @@ msgstr "Szukaj artykułów za pomocą słowa kluczowego"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
 msgid "Public"
-msgstr "Pobliczne"
+msgstr "Publiczne"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
 msgid "Back to FAQ Explorer"
@@ -796,11 +801,11 @@ msgstr "Domyślny stan dla pozycji FAQ."
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr "Domyślny stan zgłoszenia o zatwierdzenie artykułu FAQ."
+msgstr "Domyślny stan zgłoszeń do zatwierdzenia artykułów FAQ."
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr "Domyślny stan zgłoszeń o zatwierdzenie Artykułów FAQ."
+msgstr "Domyślny typ zgłoszeń do zatwierdzenia Artykułów FAQ."
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
@@ -809,46 +814,67 @@ msgstr "Domyślna wartość parametru Action na stronie publicznej. Parametr Act
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Definiuje akcje, w których przycisk ustawień powinien być dostępny w "
+"widżecie połączonych obiektów (LinkObject::ViewMode = „complex”). Należy "
+"pamiętać, że następujące pliki JS i CSS muszą być zarejestrowane dla tych "
+"akcji: Core.AllocationList.css, Core.UI.AllocationList.js, "
+"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js i Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Określa, czy tytuł FAQ powinien być połączony z tematem artykułu."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Określa, które kolumny są wyświetlane w widżecie „Połączone FAQ” "
+"(LinkObject::ViewMode = „complex”). Uwaga: Tylko atrybuty FAQ i pola "
+"dynamiczne (DynamicField_NameX) są dozwolone dla standardowych kolumn."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
 msgstr ""
+"Definiuje moduł przeglądu do wyświetlania małego widoku w dzienniku FAQ."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Definiuje moduł przeglądu do wyświetlania małego widoku listy FAQ."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w "
+"interfejsie agenta."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w "
+"interfejsie klienta."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w wyszukiwaniu FAQ w "
+"interfejsie publicznym."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w "
+"interfejsie agenta."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w "
+"interfejsie klienta."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
+"Definiuje domyślny atrybut FAQ do sortowania w eksploratorze FAQ w "
+"interfejsie publicznym."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
@@ -1493,4 +1519,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
-
