@@ -76,7 +76,7 @@
             </div>
             <div class="Field">
                 <input type="text" name="Fulltext" value="[% Data.Fulltext | html %]" class="W50pc" />
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -86,7 +86,7 @@
             </div>
             <div class="Field">
                 <input type="text" name="Number" value="[% Data.Number | html %]" class="W50pc"/>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
             </div>
             <div class="Field">
                 <input type="text" name="Title" value="[% Data.Title | html %]" class="W50pc"/>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -106,7 +106,7 @@
             </div>
             <div class="Field">
                 <input type="text" name="Keyword" value="[% Data.Keyword | html %]" class="W50pc"/>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -116,7 +116,7 @@
             </div>
             <div class="Field">
                 [% Data.ValidSelectionStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -126,7 +126,7 @@
             </div>
             <div class="Field">
                 [% Data.LanguagesSelectionStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -136,7 +136,7 @@
             </div>
             <div class="Field">
                 [% Data.CategoriesSelectionStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -146,7 +146,7 @@
             </div>
             <div class="Field">
                 [% Data.StateSelectionStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -157,7 +157,7 @@
             <div class="Field">
                 [% Data.VoteSearchTypeSelectionStrg %]
                 <input type="text" name="VoteSearch" value="[% Data.VoteSearch | html %]" class="W25pc"/>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -167,7 +167,7 @@
             <div class="Field">
                 [% Data.RateSearchTypeSelectionStrg %]
                 [% Data.RateSearchSelectionStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -176,7 +176,7 @@
             </div>
             <div class="Field">
                 [% Data.ApprovedStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -185,7 +185,7 @@
             </div>
             <div class="Field">
                 [% Data.CreatedUserStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -195,7 +195,7 @@
             </div>
             <div class="Field">
                 [% Data.LastChangedUserStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -206,7 +206,7 @@
             <div class="Field">
                 <input type="hidden" name="TimeSearchType" value="TimePoint" [% Data.item("TimeSearchType::TimePoint") %]/>
                 [% Data.ItemCreateTimePointStartStrg %] [% Data.ItemCreateTimePointStrg %] [% Data.ItemCreateTimePointFormatStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -220,7 +220,7 @@
                     <div>[% Translate("and") | html %]</div>
                     <div>[% Data.ItemCreateTimeStopStrg %]</div>
                 </div>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -230,7 +230,7 @@
             <div class="Field">
                 <input type="hidden" name="ChangeTimeSearchType" value="TimePoint" [% Data.item("ChangeTimeSearchType::TimePoint") %]/>
                 [% Data.ItemChangeTimePointStartStrg %][% Data.ItemChangeTimePointStrg %][% Data.ItemChangeTimePointFormatStrg %]
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
         <div class="field-wrapper">
@@ -244,7 +244,7 @@
                     <div>[% Translate("and") | html %]</div>
                     <div>[% Data.ItemChangeTimeStopStrg %]</div>
                 </div>
-                <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+                <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
             </div>
         </div>
 
@@ -252,7 +252,7 @@
         [% Data.Label %]
         <div class="Field">
             [% Data.Field %]
-            <a class="RemoveButton" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
+            <a class="RemoveButton icon-hover" href="#" title="[% Translate("Remove this entry") | html %]"><i class="fa fa-times"></i><span class="InvisibleText">[% Translate("Remove") | html %]</span></a>
         </div>
 [% RenderBlockEnd("DynamicField") %]
         [% Data.AttributesOrigStrg %]
