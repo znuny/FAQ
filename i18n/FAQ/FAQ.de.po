@@ -57,15 +57,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTRS\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2022-03-26 13:53+0000\n"
-"Last-Translator: Silvia Hentschel <silvia.hentschel@tu-dresden.de>\n"
-"Language-Team: German <https://translations.znuny.org/projects/znuny/faq/de/>\n"
+"PO-Revision-Date: 2025-05-10 18:18+0000\n"
+"Last-Translator: Roy Kaldung <rk@znuny.com>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny-lts/faq/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -1489,7 +1490,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Unterhalb des Betreffs"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
@@ -1497,7 +1498,7 @@ msgstr "Kundenbenutzer-Attribut zur Prüfung der Gruppenzuordnung."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Legt die Position fest wo verwandte Artikel angezeigt werden."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
@@ -1509,7 +1510,7 @@ msgstr "Attribute für Kundenbenutzerrechte aktivieren."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Aktiviert die Funktion verwandte Artikel für die Agenten-Oberfläche."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
@@ -1529,9 +1530,8 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
 msgid "Search Results for"
-msgstr ""
+msgstr "Suchergebnisse für"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr "Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer."
-
