@@ -57,15 +57,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2022-03-26 13:53+0000\n"
-"Last-Translator: Silvia Hentschel <silvia.hentschel@tu-dresden.de>\n"
-"Language-Team: German <https://translations.znuny.org/projects/znuny/faq/de/>\n"
+"PO-Revision-Date: 2025-05-16 16:25+0000\n"
+"Last-Translator: Roy Kaldung <rk@znuny.com>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny/faq/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -1477,19 +1478,19 @@ msgstr "öffentlich (öffentlich)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Agent FAQ relevante Artikel"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Agenten FAQ relevante Artikel."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Unterhalb des Textes"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Unter dem Betreff"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
@@ -1498,6 +1499,8 @@ msgstr "Kundenbenutzer-Attribut zur Prüfung der Gruppenzuordnung."
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Legt die Position fest, an der sich das Widget für relative FAQ-Artikel "
+"befinden"
 
 #. SysConfig
 msgid "Enable customer group support permissions."
@@ -1509,7 +1512,7 @@ msgstr "Attribute für Kundenbenutzerrechte aktivieren."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Aktiviere die Funktion \"relativen Artikel\" für das Agenten-Frontend."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
@@ -1526,6 +1529,8 @@ msgstr "Mapping zwischen Kundenbenutzer-Attributwert und Gruppe."
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Zeige die Sterne für die Artikel mit einer Bewertung, die gleich oder größer "
+"als der definierte Wert ist, falls aktiviert."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
@@ -1533,7 +1538,7 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Vorlagename"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "VLimitation"
@@ -1542,4 +1547,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr "Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer."
-
