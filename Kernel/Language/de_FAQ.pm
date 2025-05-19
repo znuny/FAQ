@@ -293,7 +293,7 @@ sub Data {
     $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
     $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
     $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Below subject'} = 'Unterhalb des Betreffs';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'CSS-Farbe für das Bewertungs-Ergebnis.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Cachezeit für FAQ-Artikel.';
     $Self->{Translation}->{'Category Management'} = 'Kategorienverwaltung';
@@ -358,7 +358,7 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definiert die Parameter für das Übersichtsseiten-Backend. "Limit" definiert die Anzahl der Einträge, die standardmäßig angezeigt werden. "Group" wird verwendet, um den Zugriff auf das Plugin zu begrenzen (bspw. Group: admin;group1;group2;). "Default" steuert, ob das Plugin standardmäßig aktiviert ist oder ob der User es manuell aktivieren muss.';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        '';
+        'Legt die Position fest wo verwandte Artikel angezeigt werden.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definert die angezeigten Spalten im FAQ-Explorer. Diese Option hat keine Auswirkung auf die Position der Spalten.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -402,7 +402,7 @@ sub Data {
     $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Attribute für Kundenbenutzerrechte aktivieren.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Multiple Sprachen im FAQ-Modul aktivieren.';
-    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = 'Aktiviert die Funktion verwandte Artikel für die Agenten-Oberfläche.';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Aktivieren Sie die zugehörige Artikelfunktion für das Kunden-Frontend.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Bewertungs-Mechanismus im FAQ-Modul aktivieren.';
@@ -443,7 +443,6 @@ sub Data {
         'Liste der Statustypen, die in der Kundenoberfläche genutzt werden können.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Liste der Statustypen, die in der öffentlichen Oberfläche genutzt werden können.';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = 'Lade-Modulregistrierung für das öffentliche Interface.';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = 'Mapping zwischen Kundenbenutzer-Attributwert und Gruppe.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Maximale Anzahl von FAQ-Artikeln die im FAQ-Explorerl im Agenten-Interface angezeigt werden.';
@@ -576,7 +575,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'öffentlich (öffentlich)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',

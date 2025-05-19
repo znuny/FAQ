@@ -225,10 +225,10 @@ sub Data {
     $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = '';
     $Self->{Translation}->{'FAQ Item Change Time (between)'} = '';
     $Self->{Translation}->{'Equals'} = '';
-    $Self->{Translation}->{'Greater than'} = '';
-    $Self->{Translation}->{'Greater than equals'} = '';
-    $Self->{Translation}->{'Smaller than'} = '';
-    $Self->{Translation}->{'Smaller than equals'} = '';
+    $Self->{Translation}->{'Greater than'} = 'Maggiore di';
+    $Self->{Translation}->{'Greater than equals'} = 'Maggiore o uguale di';
+    $Self->{Translation}->{'Smaller than'} = 'Minore di';
+    $Self->{Translation}->{'Smaller than equals'} = 'Minore o uguale di';
 
     # Perl Module: Kernel/Modules/AgentFAQZoom.pm
     $Self->{Translation}->{'Need FileID!'} = '';
@@ -443,7 +443,6 @@ sub Data {
         '';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         '';
-    $Self->{Translation}->{'Loader module registration for the public interface.'} = '';
     $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         '';
@@ -576,7 +575,7 @@ sub Data {
     $Self->{Translation}->{'public (public)'} = 'pubblico (pubblico)';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',
     'Ok',
     'Settings',
