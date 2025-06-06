@@ -145,7 +145,7 @@ sub Data {
     $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = 'Nach dem Eintippen eines Betreffs oder Textes werden hier passende Artikel angezeigt.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Template name'} = '';
+    $Self->{Translation}->{'Template name'} = 'Vorlagename';
     $Self->{Translation}->{'Vote restrictions'} = 'Wahleinschränkungen';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'Nur FAQ-Artikel mit Abstimmungen';
     $Self->{Translation}->{'Rate restrictions'} = 'Anteilsbeschränkungen';
@@ -295,10 +295,10 @@ sub Data {
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Ein Filter zur automatischen Generierung von FAQ-Links, wenn ein Hinweis auf einen FAQ-Artikel identifiziert wird. Das Element Image erlaubt zwei Eingabeformen: Erstens der Name eines Icons (z. B. faq.png). In diesem Fall wird auf das Grafik-Verzeichnis des OTRS zugegriffen. Als zweite Möglichkeit kann man aber auch den direkten Link zur Grafik angeben (z. B. http://otrs.org/faq.png).';
     $Self->{Translation}->{'Add FAQ article'} = 'FAQ-Artikel hinzufügen';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = 'Agent FAQ relevante Artikel';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = 'Agenten FAQ relevante Artikel.';
+    $Self->{Translation}->{'Below body'} = 'Unterhalb des Textes';
+    $Self->{Translation}->{'Below subject'} = 'Unter dem Betreff';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'CSS-Farbe für das Bewertungs-Ergebnis.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Cachezeit für FAQ-Artikel.';
     $Self->{Translation}->{'Category Management'} = 'Kategorienverwaltung';
@@ -363,7 +363,7 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definiert die Parameter für das Übersichtsseiten-Backend. "Limit" definiert die Anzahl der Einträge, die standardmäßig angezeigt werden. "Group" wird verwendet, um den Zugriff auf das Plugin zu begrenzen (bspw. Group: admin;group1;group2;). "Default" steuert, ob das Plugin standardmäßig aktiviert ist oder ob der User es manuell aktivieren muss.';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        '';
+        'Legt die Position fest, an der sich das Widget für relative FAQ-Artikel befinden';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definert die angezeigten Spalten im FAQ-Explorer. Diese Option hat keine Auswirkung auf die Position der Spalten.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -407,7 +407,7 @@ sub Data {
     $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Attribute für Kundenbenutzerrechte aktivieren.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Multiple Sprachen im FAQ-Modul aktivieren.';
-    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = 'Aktiviere die Funktion "relativen Artikel" für das Agenten-Frontend.';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'Aktivieren Sie die zugehörige Artikelfunktion für das Kunden-Frontend.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Bewertungs-Mechanismus im FAQ-Modul aktivieren.';
@@ -542,7 +542,7 @@ sub Data {
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Zeigt die Sterne für die Artikel mit einer Bewertung gleich oder größer wie der definierte Wert an (Setzen Sie den Wert auf \'0\' zum Deaktivieren der Ausgabe).';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
-        '';
+        'Zeige die Sterne für die Artikel mit einer Bewertung, die gleich oder größer als der definierte Wert ist, falls aktiviert.';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Interfaces in denen das Top 10 Feature angezeigt werden soll.';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Interfaces in denen das Voting Feature angezeigt werden soll.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =
