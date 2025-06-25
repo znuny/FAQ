@@ -426,7 +426,7 @@ sub _MaskNew {
         SelectedID   => $Param{CategoryID},
         PossibleNone => 1,
         Class        => 'Validate_Required Modernize ' . $Param{CategoryIDServerError},
-        Translation  => 0,
+        Translation  => 1,
         TreeView     => 1,
     );
 
