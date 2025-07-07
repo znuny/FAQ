@@ -15,12 +15,12 @@
 [% RenderBlockStart("FAQPathCategoryElement") %]
         <li>
             <a href="[% Env("Baselink") %]Action=AgentFAQExplorer;CategoryID=[% Data.CategoryID | uri %];Nav=[% Data.Nav | uri %]">
-                [% Data.Name | html %]
+                [% Translate(Data.Name) | html %]
             </a>
         </li>
 [% RenderBlockEnd("FAQPathCategoryElement") %]
 [% RenderBlockStart("FAQPathCategoryElementNoLink") %]
-        <li>[% Data.Name | html %]</li>
+        <li>[% Translate(Data.Name) | html %]</li>
 [% RenderBlockEnd("FAQPathCategoryElementNoLink") %]
 
     </ul>
@@ -117,7 +117,7 @@
 [% RenderBlockEnd("NoDataFoundMsg") %]
 [% RenderBlockStart("OverviewResultRow") %]
                                 <tr class="MasterAction">
-                                    <td><a class="AsBlock MasterActionLink" href="[% Env("Baselink") %]Action=[% Env("Action") %];CategoryID=[% Data.CategoryID | uri %];Nav=[% Data.Nav | uri %]">[% Data.Name | html %]</a></td>
+                                    <td><a class="AsBlock MasterActionLink" href="[% Env("Baselink") %]Action=[% Env("Action") %];CategoryID=[% Data.CategoryID | uri %];Nav=[% Data.Nav | uri %]">[% Translate(Data.Name) | html %]</a></td>
                                     <td>[% Data.Comment | html %]</td>
                                     <td>[% Data.SubCategoryCount | html %]</td>
                                     <td>[% Data.ArticleCount | html %]</td>

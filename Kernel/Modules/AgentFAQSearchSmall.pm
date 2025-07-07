@@ -734,7 +734,7 @@ sub _MaskForm {
         Name        => 'CategoryIDs',
         Size        => 5,
         SelectedID  => $Param{CategoryIDs} || [],
-        Translation => 0,
+        Translation => 1,
         Multiple    => 1,
         TreeView    => $TreeView,
         Class       => 'Modernize',
