@@ -121,7 +121,7 @@ sub Run {
 
     # TODO the JS should be moved in a own JS file with OTRS 6!
     # inject the necessary JS into the template
-    $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF");
+    $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF" );
 var QueuesEnabled = [ $QueuesEnabledStrg ],
 LastData;
 

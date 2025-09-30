@@ -12,8 +12,8 @@ package Kernel::Modules::PublicFAQZoom;
 use strict;
 use warnings;
 
-use MIME::Base64 qw();
-use Kernel::Language qw(Translatable);
+use MIME::Base64                  qw();
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;

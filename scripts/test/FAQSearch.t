@@ -950,7 +950,7 @@ $Self->True(
         StateID    => 1,
         LanguageID => 1,
         Keywords   => "$Keywords{Keyword1},$Keywords{Keyword2},$Keywords{Keyword3},$Keywords{Keyword4}",
-        ,
+
         UserID      => 1,
         ContentType => 'text/html',
     );
@@ -969,7 +969,7 @@ $Self->True(
         StateID    => 1,
         LanguageID => 1,
         Keywords   => "$Keywords{Keyword1};$Keywords{Keyword2};$Keywords{Keyword3};$Keywords{Keyword4}",
-        ,
+
         UserID      => 1,
         ContentType => 'text/html',
     );
@@ -1124,7 +1124,7 @@ $Self->True(
             Name   => 'Title',
             Config => {
                 Title => 'tITLe' . $RandomID,
-                ,
+
                 What    => 'l',
                 OrderBy => ['Created'],
             },

@@ -12,8 +12,8 @@ package Kernel::Modules::PublicFAQSearch;
 use strict;
 use warnings;
 
-use MIME::Base64 qw();
-use Kernel::Language qw(Translatable);
+use MIME::Base64                  qw();
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
@@ -72,7 +72,7 @@ sub Run {
 
     # get config data
     my $StartHit        = int( $ParamObject->GetParam( Param => 'StartHit' ) || 1 );
-    my $SearchLimit     = $Config->{SearchLimit} || 200;
+    my $SearchLimit     = $Config->{SearchLimit}     || 200;
     my $SearchPageShown = $Config->{SearchPageShown} || 40;
     my $SortBy          = $ParamObject->GetParam( Param => 'SortBy' )
         || $Config->{'SortBy::Default'}
@@ -1212,7 +1212,7 @@ sub Run {
                 Name => 'SearchTerms',
                 Data => {
                     Attribute => $DynamicFieldConfig->{Label},
-                    Value =>
+                    Value     =>
                         $DynamicFieldSearchDisplay{ 'DynamicField_' . $DynamicFieldConfig->{Name} },
                 },
             );
@@ -1225,7 +1225,7 @@ sub Run {
             PageShown => $SearchPageShown,
             AllHits   => $Counter,
             Action    => "Action=PublicFAQSearch;Subaction=Search",
-            Link =>
+            Link      =>
                 "$Self->{Profile}SortBy=$SortBy;Order=$OrderBy;",
             IDPrefix => "PublicFAQSearch",
         );
@@ -1318,7 +1318,7 @@ sub Run {
                     = $DynamicFieldBackendObject->SearchFieldRender(
                     DynamicFieldConfig => $DynamicFieldConfig,
                     Profile            => \%GetParam,
-                    DefaultValue =>
+                    DefaultValue       =>
                         $Config->{Defaults}->{DynamicField}->{ $DynamicFieldConfig->{Name} },
                     LayoutObject           => $LayoutObject,
                     ConfirmationCheckboxes => 1,

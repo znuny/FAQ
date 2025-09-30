@@ -13,7 +13,7 @@ use strict;
 use warnings;
 
 use XML::RSS::SimpleGen qw();
-use Kernel::Language qw(Translatable);
+use Kernel::Language    qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 

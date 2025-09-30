@@ -36,7 +36,7 @@ sub Run {
 
     # get config data
     my $StartHit        = int( $ParamObject->GetParam( Param => 'StartHit' ) || 1 );
-    my $SearchLimit     = $Config->{SearchLimit} || 200;
+    my $SearchLimit     = $Config->{SearchLimit}     || 200;
     my $SearchPageShown = $Config->{SearchPageShown} || 3;
     my $SortBy          = $ParamObject->GetParam( Param => 'SortBy' )
         || $Config->{'SortBy::Default'}

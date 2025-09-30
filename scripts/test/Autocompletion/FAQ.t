@@ -69,19 +69,19 @@ my $ExpectedFAQData = [
     [
         {
             'selection_list_title' => '(en) Third title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>Problem Description...<br /><h2>Problem:</h2>Solution not found...<br /><h2>Solution:</h2>',
             'id' => $ThirdItemID,
         },
         {
             'selection_list_title' => '(en) Second title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
             'id' => $SecondItemID,
         },
         {
             'selection_list_title' => '(en) First title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
             'id' => $FirstItemID,
         }
@@ -103,13 +103,13 @@ $ExpectedFAQData = [
     [
         {
             'selection_list_title' => '(en) Second title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
             'id' => $SecondItemID,
         },
         {
             'selection_list_title' => '(en) First title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
             'id' => $FirstItemID,
         }
@@ -138,7 +138,7 @@ $ExpectedFAQData = [
     [
         {
             'selection_list_title' => '(en) Second title',
-            'inserted_value' =>
+            'inserted_value'       =>
                 '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
             'id' => $SecondItemID
         }

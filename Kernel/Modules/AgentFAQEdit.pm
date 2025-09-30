@@ -12,7 +12,7 @@ package Kernel::Modules::AgentFAQEdit;
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
@@ -222,7 +222,7 @@ sub Run {
                 $DynamicFieldBackendObject->EditFieldRender(
                 DynamicFieldConfig => $DynamicFieldConfig,
                 Value              => $Value,
-                Mandatory =>
+                Mandatory          =>
                     $Self->{Config}->{DynamicField}->{ $DynamicFieldConfig->{Name} } == 2,
                 LayoutObject => $LayoutObject,
                 ParamObject  => $ParamObject,
@@ -373,7 +373,7 @@ sub Run {
             my $ValidationResult = $DynamicFieldBackendObject->EditFieldValueValidate(
                 DynamicFieldConfig => $DynamicFieldConfig,
                 ParamObject        => $ParamObject,
-                Mandatory =>
+                Mandatory          =>
                     $Self->{Config}->{DynamicField}->{ $DynamicFieldConfig->{Name} } == 2,
             );
 
@@ -396,7 +396,7 @@ sub Run {
             $DynamicFieldHTML{ $DynamicFieldConfig->{Name} } =
                 $DynamicFieldBackendObject->EditFieldRender(
                 DynamicFieldConfig => $DynamicFieldConfig,
-                Mandatory =>
+                Mandatory          =>
                     $Self->{Config}->{DynamicField}->{ $DynamicFieldConfig->{Name} } == 2,
                 ServerError  => $ValidationResult->{ServerError}  || '',
                 ErrorMessage => $ValidationResult->{ErrorMessage} || '',
@@ -433,7 +433,7 @@ sub Run {
                 if ( !$ApprovalQueueID ) {
                     $Output .= $LayoutObject->Notify(
                         Priority => 'Error',
-                        Info =>
+                        Info     =>
                             "FAQ Approval is enabled but queue '$ApprovalQueue' does not exists",
                         Link => $LayoutObject->{Baselink}
                             . 'Action=AdminSystemConfiguration;Subaction=ViewCustomGroup;Names=FAQ::ApprovalQueue',

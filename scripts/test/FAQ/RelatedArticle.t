@@ -75,7 +75,7 @@ my @FAQItems = (
         CategoryID => 1,
         StateID    => $ReverseStateList{'external (customer)'},    # 'external'
         LanguageID => 1,                                           # 'en'
-        Keywords =>
+        Keywords   =>
             "ticket$RandomNumber keyword$RandomNumber itsm$RandomNumber example$RandomNumber $RandomNumber.$RandomNumber",
         Field1      => 'Problem...',
         Field2      => 'Solution...',
@@ -569,7 +569,7 @@ for my $Keyword ( sort keys %{ $Tests[-1]->{ReferenceData} } ) {
             'Test with some html keywords in the subject and body (with html and link) for RelatedCustomerArticleList',
         RelatedCustomerArticleList => {
             Subject => "itsm$RandomNumber",
-            Body =>
+            Body    =>
                 "$RandomNumber itsm$RandomNumber ticket$RandomNumber <br />keyword$RandomNumber ITSM$RandomNumber. [1] https://faq.com/",
             UserID => $CustomerUsers[0],
         },
@@ -701,7 +701,7 @@ for my $Keyword ( sort keys %{ $Tests[-1]->{ReferenceData} } ) {
             'Test with some html keywords in the subject and body (with html and link) for RelatedAgentArticleList',
         RelatedAgentArticleList => {
             Subject => "itsm$RandomNumber",
-            Body =>
+            Body    =>
                 "$RandomNumber itsm$RandomNumber ticket$RandomNumber <br />keyword$RandomNumber ITSM$RandomNumber. [1] https://faq.com/",
             UserID => $TestUserID,
         },

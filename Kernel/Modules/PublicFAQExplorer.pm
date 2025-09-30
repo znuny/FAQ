@@ -41,7 +41,7 @@ sub Run {
 
     # get config data
     my $StartHit        = int( $ParamObject->GetParam( Param => 'StartHit' ) || 1 );
-    my $SearchLimit     = $Config->{SearchLimit} || 200;
+    my $SearchLimit     = $Config->{SearchLimit}     || 200;
     my $SearchPageShown = $Config->{SearchPageShown} || 3;
     my $SortBy          = $ParamObject->GetParam( Param => 'SortBy' )
         || $Config->{'SortBy::Default'}
@@ -109,8 +109,8 @@ sub Run {
     $LayoutObject->Block(
         Name => 'MetaLink',
         Data => {
-            Rel  => 'alternate',
-            Type => 'application/rss+xml',
+            Rel   => 'alternate',
+            Type  => 'application/rss+xml',
             Title =>
                 $LayoutObject->{LanguageObject}->Translate('FAQ Articles (new created)'),
             Href => $LayoutObject->{Baselink} . 'Action=PublicFAQRSS;Type=Created',
@@ -121,8 +121,8 @@ sub Run {
     $LayoutObject->Block(
         Name => 'MetaLink',
         Data => {
-            Rel  => 'alternate',
-            Type => 'application/rss+xml',
+            Rel   => 'alternate',
+            Type  => 'application/rss+xml',
             Title =>
                 $LayoutObject->{LanguageObject}->Translate('FAQ Articles (recently changed)'),
             Href => $LayoutObject->{Baselink} . 'Action=PublicFAQRSS;Type=Changed',

@@ -579,9 +579,9 @@ sub FAQAdd {
             \$Param{Number},     \$Param{Name},    \$Param{LanguageID}, \$Param{Title},
             \$Param{CategoryID}, \$Param{StateID}, \$Param{Keywords},   \$Param{Approved},
             \$Param{ValidID},    \$Param{ContentType},
-            \$Param{Field1}, \$Param{Field2}, \$Param{Field3},
-            \$Param{Field4}, \$Param{Field5}, \$Param{Field6},
-            \$Param{UserID}, \$Param{UserID},
+            \$Param{Field1},     \$Param{Field2}, \$Param{Field3},
+            \$Param{Field4},     \$Param{Field5}, \$Param{Field6},
+            \$Param{UserID},     \$Param{UserID},
         ],
     );
 
@@ -962,7 +962,7 @@ sub AttachmentAdd {
             . 'AND created_by = ? AND changed_by = ?',
         Bind => [
             \$Param{ItemID}, \$Param{Filename}, \$Param{ContentType}, \$Param{Filesize},
-            \$Param{Inline}, \$Param{UserID}, \$Param{UserID},
+            \$Param{Inline}, \$Param{UserID},   \$Param{UserID},
         ],
         Limit => 1,
     );
@@ -2777,7 +2777,7 @@ sub _FAQApprovalTicketCreate {
         Title    => $Subject,
         Queue    => $ConfigObject->Get('FAQ::ApprovalQueue') || 'Raw',
         Lock     => 'unlock',
-        Priority => $ConfigObject->Get('FAQ::ApprovalTicketPriority') || '3 normal',
+        Priority => $ConfigObject->Get('FAQ::ApprovalTicketPriority')     || '3 normal',
         State    => $ConfigObject->Get('FAQ::ApprovalTicketDefaultState') || 'new',
         Type     => $TicketType,
         OwnerID  => 1,
@@ -2816,7 +2816,7 @@ sub _FAQApprovalTicketCreate {
             Body                 => $Body,
             ContentType          => 'text/plain; charset=utf-8',
             UserID               => $Param{UserID},
-            HistoryType =>
+            HistoryType          =>
                 $ConfigObject->Get('Ticket::Frontend::AgentTicketNote')->{HistoryType}
                 || 'AddNote',
             HistoryComment =>
