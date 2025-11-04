@@ -19,19 +19,6 @@ my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 $Selenium->RunTest(
     sub {
 
-        # OTRSBusiness package is required for this test. Skip if it is not available.
-        my $BusinessInstalled = $Kernel::OM->Get('Kernel::System::Main')->Require(
-            'Kernel::Output::HTML::FilterElementPost::FAQAgentRelatedArticles',
-            Silent => 1
-        );
-        if ( !$BusinessInstalled ) {
-            $Self->True(
-                1,
-                "OTRSBusiness is not installed, skip this test."
-            );
-            return 1;
-        }
-
         my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
         $Helper->ConfigSettingChange(
@@ -130,10 +117,21 @@ $Selenium->RunTest(
             ? '#StandardTemplateID_Search'
             : '#Subject';
 
+        # wait for the CKE to load
+        $Selenium->WaitFor(
+            JavaScript =>
+                "return \$('.ck-editor__editable').contents().length >= 1;"
+        );
+
+        $Selenium->CreateScreenshot();
+
         # Set body text and add a whitespace at the end to trigger the AJAX request for the related faq article.
-        sleep 1;
-        $Selenium->execute_script("CKEDITOR.instances.RichText.setData('$FAQArticles[1]->{Keyword}');");
-        $Selenium->WaitFor( JavaScript => 'return CKEDITOR.instances.RichText.getData()' );
+        $Selenium->execute_script(
+            "return Core.UI.RichTextEditor.GetInstance('RichText').setData('$FAQArticles[1]->{Keyword}');"
+        );
+
+        $Selenium->WaitFor( JavaScript => "return Core.UI.RichTextEditor.GetInstance('RichText').getData()" );
+
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys( $FAQArticles[1]->{Keyword} );
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");
@@ -167,7 +165,7 @@ $Selenium->RunTest(
 
         # Change the body, to have a text which should not return some related faq article.
         sleep 1;
-        $Selenium->execute_script('CKEDITOR.instances.RichText.setData();');
+        $Selenium->execute_script("Core.UI.RichTextEditor.GetInstance('RichText').setData('');");
         $Selenium->find_element( "#Subject", 'css' )->send_keys('Nothing');
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");
@@ -198,7 +196,9 @@ $Selenium->RunTest(
         # Set subject + body text.
         sleep 1;
         $Selenium->find_element( "#Subject", 'css' )->send_keys($SubjectRandom);
-        $Selenium->execute_script("CKEDITOR.instances.RichText.setData('$FAQArticles[1]->{Keyword}');");
+        $Selenium->execute_script(
+            "return Core.UI.RichTextEditor.GetInstance('RichText').setData('$FAQArticles[1]->{Keyword}');"
+        );
 
         # Add a whitespace at the end to trigger the AJAX request.
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");

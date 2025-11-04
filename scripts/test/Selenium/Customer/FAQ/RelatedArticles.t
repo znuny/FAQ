@@ -102,6 +102,14 @@ $Selenium->RunTest(
             $Element->is_displayed();
         }
 
+        $Selenium->CreateScreenshot();
+
+        $Selenium->WaitFor(
+            JavaScript => "return typeof(\$) === 'function' && \$('.ck-editor__editable').length === 1;"
+        );
+
+        $Selenium->CreateScreenshot();
+
         # Check if until RelatedFAQArticles box is displayed
         $Selenium->WaitFor(
             JavaScript => 'return typeof($) === "function" && $("#FAQRelatedArticles:visible").length'
@@ -118,8 +126,10 @@ $Selenium->RunTest(
 
         # Set body text and add a whitespace at the end to trigger the AJAX request for the related faq article.
         sleep 1;
-        $Selenium->execute_script("CKEDITOR.instances.RichText.setData('$FAQArticles[1]->{Keyword}');");
-        $Selenium->WaitFor( JavaScript => 'return CKEDITOR.instances.RichText.getData()' );
+        $Selenium->execute_script(
+            "return Core.UI.RichTextEditor.GetInstance('RichText').setData('$FAQArticles[1]->{Keyword}');"
+        );
+        $Selenium->WaitFor( JavaScript => "return Core.UI.RichTextEditor.GetInstance('RichText').getData()" );
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");
 
@@ -145,7 +155,7 @@ $Selenium->RunTest(
 
         # Change the body, to have a text which should not return some related faq article.
         sleep 1;
-        $Selenium->execute_script('CKEDITOR.instances.RichText.setData();');
+        $Selenium->execute_script("Core.UI.RichTextEditor.GetInstance('RichText').setData('');");
         $Selenium->find_element( "#Subject", 'css' )->send_keys('Nothing');
         $Selenium->find_element( "#Subject", 'css' )->send_keys(" ");
         $Selenium->find_element( "#Subject", 'css' )->send_keys("\N{U+E004}");

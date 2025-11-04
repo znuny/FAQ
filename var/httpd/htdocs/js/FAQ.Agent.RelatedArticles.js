@@ -70,7 +70,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
 
                 if ((!QueuesEnabled.length || !SelectedQueueName || $.inArray(SelectedQueueName, QueuesEnabled) > -1)) {
 
-                    if ($('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+                    if ($('#Subject').val() || Core.UI.RichTextEditor.GetInstance('RichText').getData()) {
                         $('#Subject').trigger('change');
                     }
                 }
@@ -106,7 +106,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                     Data = {
                         Action: 'AgentFAQRelatedArticles',
                         Subject: $('#Subject').val(),
-                        Body: CKEDITOR.instances['RichText'].getData()
+                        Body: Core.UI.RichTextEditor.GetInstance('RichText').getData()
                     };
 
                     if (!LastData || LastData.Subject != Data.Subject || LastData.Body != Data.Body) {
@@ -215,26 +215,29 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
                 }
             });
 
-            // The "change" event is fired whenever a change is made in the editor.
-            CKEDITOR.instances['RichText'].on('key', function (Event) {
+            Core.UI.RichTextEditor.GetInstance('RichText').editing.view.document.on('keyup', function (Event, Data) {
 
-                // trigger only the change event for the subject, if space or enter was pressed
-                if (Event.data.keyCode == 32 || Event.data.keyCode == 13) {
+                // Fire "change" event in subject whenever an enter or space is pressed in the editor.
+                if (Data.keyCode == 32 || Data.keyCode == 13) {
                     $('#Subject').trigger('change');
                 }
             });
 
-            // The "paste" event is fired whenever a paste is made in the editor.
-            CKEDITOR.instances['RichText'].on('paste', function () {
+            Core.UI.RichTextEditor.GetInstance('RichText').editing.view.document.on('clipboardOutput', function (Event, Data) {
+                // Fire "change" event in subject whenever cutting a text in editor
+                if (Data.method === 'cut') {
+                    $('#Subject').trigger('change');
+                }
+            }, { priority: 'lowest' });
 
-                // trigger only the change event for the subject
+            Core.UI.RichTextEditor.GetInstance('RichText').plugins.get('ClipboardPipeline').on('contentInsertion', function () {
+                // Fire "change" event in subject whenever an enter or space is pressed in the editor.
                 $('#Subject').trigger('change');
-            });
+            }, { priority: 'lowest' });
 
-            // The "blur" event is fired whenever a blur is made in the editor.
-            CKEDITOR.instances['RichText'].on('blur', function () {
+            Core.App.Subscribe("Event.UI.RichTextEditor.Blur", function () {
 
-                // trigger only the change event for the subject
+                // Fire "change" event in subject on any blur action in the editor.
                 $('#Subject').trigger('change');
             });
 
@@ -242,7 +245,7 @@ FAQ.Agent.RelatedArticles = (function (TargetNS) {
             //  that the queue is already selected at the page load or show the widget always if the queue selection is disabled.
             if (!$('#Dest').length) {
 
-                if ($('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+                if ($('#Subject').val() || Core.UI.RichTextEditor.GetInstance('RichText').getData()) {
                     $('#Subject').trigger('change');
                 }
             }

@@ -82,7 +82,6 @@ sub Run {
         Limit  => 1,
         UserID => 1,
     );
-
     return 1 if !@FAQArticleIDs;
 
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
@@ -133,7 +132,7 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
     if ( \$('#FAQRelatedArticles').hasClass('Hidden') && (!QueuesEnabled.length || !SelectedQueueName || \$.inArray(SelectedQueueName, QueuesEnabled) > -1) ) {
         \$('#FAQRelatedArticles').removeClass('Hidden');
 
-        if (\$('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+        if (\$('#Subject').val() || Core.UI.RichTextEditor.GetInstance('RichText').getData()) {
             \$('#Subject').trigger('change');
         }
     }
@@ -156,7 +155,7 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
         Data = {
             Action: 'CustomerFAQRelatedArticles',
             Subject: \$('#Subject').val(),
-            Body: CKEDITOR.instances['RichText'].getData()
+            Body: Core.UI.RichTextEditor.GetInstance('RichText').getData()
         };
 
         if ( !LastData || LastData.Subject != Data.Subject || LastData.Body != Data.Body ) {
@@ -197,26 +196,27 @@ Core.App.Subscribe('Event.UI.RichTextEditor.InstanceReady', function() {
     }
 });
 
-// The "change" event is fired whenever a change is made in the editor.
-CKEDITOR.instances['RichText'].on( 'key', function (Event) {
+Core.UI.RichTextEditor.GetInstance('RichText').editing.view.document.on( 'keyup', function (Event, Data) {
 
-    // trigger only the change event for the subject, if space or enter was pressed
-    if ( Event.data.keyCode == 32 || Event.data.keyCode == 13) {
+    // Fire "change" event in subject whenever an enter or space is pressed in the editor.
+    if ( Data.keyCode == 32 || Data.keyCode == 13) {
         \$('#Subject').trigger('change');
     }
 });
 
-// The "paste" event is fired whenever a paste is made in the editor.
-CKEDITOR.instances['RichText'].on( 'paste', function (Event) {
+Core.UI.RichTextEditor.GetInstance('RichText').editing.view.document.on('clipboardOutput', function (Event, Data) {
+    // Fire "change event in subject whenever cutting a text in editor"
+    if (Data.method === 'cut') {
+        \$('#Subject').trigger('change');
+    }
+}, { priority: 'lowest' });
 
-    // trigger only the change event for the subject
+Core.UI.RichTextEditor.GetInstance('RichText').plugins.get('ClipboardPipeline').on('contentInsertion', function () {
     \$('#Subject').trigger('change');
-});
+}, { priority: 'lowest' });
 
-// The "blur" event is fired whenever a blur is made in the editor.
-CKEDITOR.instances['RichText'].on( 'blur', function (Event) {
-
-    // trigger only the change event for the subject
+Core.App.Subscribe("Event.UI.RichTextEditor.Blur", function () {
+    // Fire "change" event in subject on any blur action in the editor.
     \$('#Subject').trigger('change');
 });
 
@@ -225,7 +225,7 @@ CKEDITOR.instances['RichText'].on( 'blur', function (Event) {
 if ( !\$('#Dest').length ) {
      \$('#FAQRelatedArticles').removeClass('Hidden');
 
-    if (\$('#Subject').val() || CKEDITOR.instances['RichText'].getData()) {
+    if (\$('#Subject').val() || Core.UI.RichTextEditor.GetInstance('RichText').getData()) {
         \$('#Subject').trigger('change');
     }
 }

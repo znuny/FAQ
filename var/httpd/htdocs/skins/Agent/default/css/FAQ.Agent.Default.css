@@ -191,4 +191,8 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
         line-height: 140%;
         gap: var(--gap-sm);
     }
+
+    .Dialog.modal-fit-content {
+        max-width: fit-content;
+    }
 }

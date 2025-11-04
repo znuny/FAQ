@@ -211,16 +211,16 @@ $Selenium->RunTest(
             Value   => 1,
         );
 
-        # Wait until CKEDITOR is loaded (there are 4 editors in the screen).
+        # Wait until CKEditor is loaded (there are 4 editors in the screen).
         $Selenium->WaitFor(
             JavaScript =>
-                "return typeof(\$) === 'function' && \$('body.cke_editable', \$('.cke_wysiwyg_frame').contents()).length === 4;"
+                "return typeof(\$) === 'function' && \$('.ck-editor__editable').length === 4;"
         );
 
-        $Selenium->execute_script("CKEDITOR.instances.Field1.setData('$Field1HTML');");
+        $Selenium->execute_script("Core.UI.RichTextEditor.GetInstance('Field1').setData('$Field1HTML');");
         $Selenium->WaitFor(
             JavaScript =>
-                "return CKEDITOR.instances.Field1.getData().indexOf('FormID=$FormID;ContentID=$ContentID') > -1;"
+                "return Core.UI.RichTextEditor.GetInstance('Field1').getData().indexOf('FormID=$FormID;ContentID=$ContentID') > -1;"
         );
 
         $Selenium->InputFieldValueSet(

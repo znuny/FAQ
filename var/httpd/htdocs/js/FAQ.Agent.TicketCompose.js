@@ -9,8 +9,10 @@
 
 "use strict";
 
-var FAQ = FAQ || {};
-FAQ.Agent = FAQ.Agent || {};
+var FAQ = FAQ || {},
+    ZnunyEditor = ZnunyEditor;
+FAQ.Agent = FAQ.Agent || {},
+
 
 /**
  * @namespace
@@ -30,11 +32,8 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
      */
     TargetNS.InitFAQTicketCompose = function ($Element) {
 
-        // See bug#9116:
-        // In Chrome sometimes the click event is triggered before the focus event
-        // we prevent that by checking EditorGotFocus first
         var InstanceName = $Element.attr('id'),
-            EditorGotFocus = false;
+            RTEditor;
 
         function GetCursorPosition() {
             var Element = $Element[0],
@@ -65,36 +64,16 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
             });
         }
 
+        RTEditor = typeof ZnunyEditor !== 'undefined' && ZnunyEditor ? Core.UI.RichTextEditor.GetInstance(InstanceName) : null;
+
         // Register RTE events for saving the cursor position
-        if (typeof CKEDITOR !== 'undefined' && CKEDITOR && CKEDITOR.instances.RichText) {
-            // Get last cursor position and save it (on focus we come back to this position)
-            CKEDITOR.instances[InstanceName].on('contentDom', function() {
-                CKEDITOR.instances[InstanceName].document.on('click', function () {
-                    if (EditorGotFocus) {
-                        $('#' + InstanceName).data('RTECursor', CKEDITOR.instances[InstanceName].getSelection().getRanges());
-                    }
-                });
-                CKEDITOR.instances[InstanceName].document.on('keyup', function () {
-                    if (EditorGotFocus) {
-                        $('#' + InstanceName).data('RTECursor', CKEDITOR.instances[InstanceName].getSelection().getRanges());
-                    }
-                });
+        if (RTEditor) {
+            // Get last cursor position and save it (on FAQ replacement we come back to this position)
+            RTEditor.editing.view.document.on('click', function () {
+                $('#' + InstanceName).data('RTECursor', RTEditor.model.document.selection.getFirstRange());
             });
-
-            // needed for client-side validation and inserting data into RTE
-            CKEDITOR.instances[InstanceName].on('focus', function () {
-                // if a saved cursor position exists, set this position now
-                var RTECursorRange = $('#' + InstanceName).data('RTECursor'),
-                    Selection;
-
-                EditorGotFocus = true;
-
-                if (RTECursorRange) {
-                    Selection = new CKEDITOR.dom.selection(CKEDITOR.instances[InstanceName].document);
-                    Selection.selectRanges(RTECursorRange);
-                    // delete saved cursor position (to not keep old stuff)
-                    $('#' + InstanceName).data('RTECursor', undefined);
-                }
+            RTEditor.editing.view.document.on('keyup', function () {
+                $('#' + InstanceName).data('RTECursor', RTEditor.model.document.selection.getFirstRange());
             });
         }
         // Register events for saving the cursor position of textarea
@@ -121,15 +100,21 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
     function SetData (FAQTitle, FAQContent, FAQHTMLContent) {
 
         var $ParentSubject = $('#Subject', parent.document),
-            $ParentBody = $('#RichText', parent.document),
+            InstanceName = 'RichText',
+            $ParentBody = $('#' + InstanceName, parent.document),
             ParentBody = $ParentBody[0],
             ParentBodyValue = $ParentBody.val(),
             Range,
             StartRange = 0,
             EndRange = 0,
-            NewPosition = 0;
+            NewPosition = 0,
+            ParentRTEditor,
+            ParentRTEViewHTML,
+            ParentRTEViewHTMLToModelHTML,
+            RTECursorRange;
 
-        if ($('#Subject', parent.document).length && $('#RichText', parent.document).length) {
+
+        if ($('#Subject', parent.document).length && $('#' + InstanceName, parent.document).length) {
 
             if (Core.Config.Get('TicketCompose.UpdateArticleSubject') === '1' && $('#UpdateArticleSubjectOption').prop('checked')) {
                 // copy subject
@@ -141,14 +126,29 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
                 }
             }
 
+            ParentRTEditor = parent.ZnunyEditor ? parent.Core.UI.RichTextEditor.GetInstance(InstanceName) : null;
+
             // add FAQ text and/or link to WYSIWYG editor in parent window
-            if (parent.CKEDITOR && parent.CKEDITOR.instances.RichText) {
-                parent.CKEDITOR.instances.RichText.focus();
+            if (ParentRTEditor) {
+                parent.Core.UI.RichTextEditor.Focus(parent.$(ParentRTEditor.sourceElement));
                 window.setTimeout(function () {
                     // In some circumstances, this command throws an error (although inserting the HTML works)
                     // Because the intended functionality also works, we just wrap it in a try-catch-statement
                     try {
-                        parent.CKEDITOR.instances.RichText.insertHtml(FAQHTMLContent);
+                        // if a saved cursor position exists, set this position now
+                        RTECursorRange = parent.$('#' + InstanceName).data('RTECursor');
+
+                        if (RTECursorRange) {
+                            parent.Core.UI.RichTextEditor.SetTextCursorPosition(
+                                InstanceName, ParentRTEditor.model.document.getRoot().getChild(RTECursorRange.start.path[0]), 'after'
+                            );
+                            // delete saved cursor position (to not keep old stuff)
+                            parent.$('#' + InstanceName).data('RTECursor', undefined);
+                        }
+
+                        ParentRTEViewHTML = ParentRTEditor.data.processor.toView(FAQHTMLContent);
+                        ParentRTEViewHTMLToModelHTML = ParentRTEditor.data.toModel(ParentRTEViewHTML);
+                        ParentRTEditor.model.insertContent(ParentRTEViewHTMLToModelHTML);
                     }
                     catch (Error) {
                         $.noop();
@@ -163,9 +163,9 @@ FAQ.Agent.TicketCompose = (function (TargetNS) {
             // insert body and/or link to textarea (if possible to cursor position otherwise to the top)
             else {
                 // Get previously saved cursor position of textarea
-                if (parent.$('#RichText', parent.document).data('Cursor')) {
-                    StartRange = parent.$('#RichText', parent.document).data('Cursor').StartRange;
-                    EndRange = parent.$('#RichText', parent.document).data('Cursor').EndRange;
+                if (parent.$('#' + InstanceName, parent.document).data('Cursor')) {
+                    StartRange = parent.$('#' + InstanceName, parent.document).data('Cursor').StartRange;
+                    EndRange = parent.$('#' + InstanceName, parent.document).data('Cursor').EndRange;
                 }
 
                 // Add new text to textarea
