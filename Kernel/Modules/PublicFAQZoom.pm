@@ -137,6 +137,17 @@ sub Run {
             ) || '';
         }
 
+        # Detect all plain text links and put them into an HTML <a> tag.
+        $FieldContent = $HTMLUtilsObject->LinkQuote(
+            String => $FieldContent,
+        );
+
+        # Set target="_blank" attribute to all HTML <a> tags.
+        $FieldContent = $HTMLUtilsObject->LinkQuote(
+            String    => $FieldContent,
+            TargetAdd => 1,
+        );
+
         # add needed HTML headers
         $FieldContent = $HTMLUtilsObject->DocumentComplete(
             String  => $FieldContent,
