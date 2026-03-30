@@ -103,7 +103,7 @@ END
         ${ $Param{Data} } =~ s{ ($StartPattern) $FinishPattern }{$1$Replace}ixms;
 
         # inject the necessary JS into the template
-        $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF");
+        $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF" );
 /*global FAQ: true */
 FAQ.Agent.TicketCompose.InitFAQTicketCompose(\$('#RichText'));
 \$('#OptionFAQ').bind('click', function (event) {
@@ -129,7 +129,7 @@ EOF
 END
     ${ $Param{Data} } =~ s{ ($StartPattern) }{$Replace}ixms;
 
-    $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF");
+    $LayoutObject->AddJSOnDocumentComplete( Code => <<"EOF" );
 /*global FAQ: true */
 FAQ.Agent.TicketCompose.InitFAQTicketCompose(\$('#RichText'));
 \$('#OptionFAQ').bind('click', function (event) {

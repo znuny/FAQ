@@ -12,7 +12,7 @@ package Kernel::Modules::AgentFAQSearch;
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
@@ -770,7 +770,7 @@ sub Run {
 
                 # Return Excel to download.
                 return $LayoutObject->Attachment(
-                    Filename => $FileName . "_" . "$Y-$M-$D" . "_" . "$h-$m.xlsx",
+                    Filename    => $FileName . "_" . "$Y-$M-$D" . "_" . "$h-$m.xlsx",
                     ContentType =>
                         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                     Content => $Excel,
@@ -1327,7 +1327,7 @@ sub _MaskForm {
                 = $DynamicFieldBackendObject->SearchFieldRender(
                 DynamicFieldConfig => $DynamicFieldConfig,
                 Profile            => \%GetParam,
-                DefaultValue =>
+                DefaultValue       =>
                     $Config->{Defaults}->{DynamicField}
                     ->{ $DynamicFieldConfig->{Name} },
                 LayoutObject => $LayoutObject,

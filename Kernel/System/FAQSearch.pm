@@ -611,7 +611,7 @@ sub FAQSearch {
         if ( !$Time ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message =>
+                Message  =>
                     "Search not executed due to invalid time '"
                     . $Param{ItemCreateTimeOlderDate} . "'!",
             );
@@ -647,7 +647,7 @@ sub FAQSearch {
         if ( !$Time ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message =>
+                Message  =>
                     "Search not executed due to invalid time '"
                     . $Param{ItemCreateTimeNewerDate} . "'!",
             );
@@ -709,7 +709,7 @@ sub FAQSearch {
         if ( !$Time ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message =>
+                Message  =>
                     "Search not executed due to invalid time '"
                     . $Param{ItemChangeTimeOlderDate} . "'!",
             );
@@ -745,7 +745,7 @@ sub FAQSearch {
         if ( !$Time ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message =>
+                Message  =>
                     "Search not executed due to invalid time '"
                     . $Param{ItemChangeTimeNewerDate} . "'!",
             );
@@ -810,7 +810,7 @@ sub FAQSearch {
                 if ( !$ValidateSuccess ) {
                     $Kernel::OM->Get('Kernel::System::Log')->Log(
                         Priority => 'error',
-                        Message =>
+                        Message  =>
                             "Search not executed due to invalid value '"
                             . $Text
                             . "' on field '"

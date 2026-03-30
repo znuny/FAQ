@@ -12,7 +12,7 @@ package Kernel::Modules::AgentFAQSearchSmall;
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
@@ -1010,7 +1010,7 @@ sub _MaskForm {
                 = $DynamicFieldBackendObject->SearchFieldRender(
                 DynamicFieldConfig => $DynamicFieldConfig,
                 Profile            => \%Param,
-                DefaultValue =>
+                DefaultValue       =>
                     $Self->{Config}->{Defaults}->{DynamicField}->{ $DynamicFieldConfig->{Name} },
                 LayoutObject => $LayoutObject,
                 Type         => $Preference->{Type},

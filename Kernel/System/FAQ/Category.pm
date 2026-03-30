@@ -96,7 +96,7 @@ sub CategoryAdd {
                 changed, changed_by)
             VALUES ( ?, ?, ?, ?, current_timestamp, ?, current_timestamp, ?)',
         Bind => [
-            \$Param{Name}, \$Param{ParentID}, \$Param{Comment}, \$Param{ValidID},
+            \$Param{Name},   \$Param{ParentID}, \$Param{Comment}, \$Param{ValidID},
             \$Param{UserID}, \$Param{UserID},
         ],
     );

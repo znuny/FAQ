@@ -12,7 +12,7 @@ use strict;
 use warnings;
 
 use List::Util qw();
-use vars qw($Self);
+use vars       qw($Self);
 use var::packagesetup::FAQ;
 
 my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');

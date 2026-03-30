@@ -12,7 +12,7 @@ package Kernel::Modules::AgentFAQRichText;
 use strict;
 use warnings;
 
-use MIME::Base64 qw();
+use MIME::Base64     qw();
 use Kernel::Language qw(Translatable);
 
 our $ObjectManagerDisabled = 1;

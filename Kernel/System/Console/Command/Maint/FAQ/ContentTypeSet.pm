@@ -23,7 +23,7 @@ sub Configure {
 
     $Self->Description('Sets the content type of FAQ items.');
     $Self->AddOption(
-        Name => 'faq-item-id',
+        Name        => 'faq-item-id',
         Description =>
             "specify one or more ids of faq items to set its content type (if not set, all FAQ items will be affected).",
         Required   => 0,

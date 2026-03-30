@@ -162,10 +162,10 @@ sub Run {
 
     # Perform FAQ search.
     my @ViewableItemIDs = $FAQObject->FAQSearch(
-        Number  => $Param{Data}->{Number}  || '',
-        Title   => $Param{Data}->{Title}   || '',
-        What    => $Param{Data}->{What}    || '',
-        Keyword => $Param{Data}->{Keyword} || '',
+        Number           => $Param{Data}->{Number}  || '',
+        Title            => $Param{Data}->{Title}   || '',
+        What             => $Param{Data}->{What}    || '',
+        Keyword          => $Param{Data}->{Keyword} || '',
         LanguageIDs      => $LanguageIDs,
         CategoryIDs      => $CategoryIDs,
         OrderBy          => $SortBy,
