@@ -24,6 +24,8 @@ my $ConfigObject            = $Kernel::OM->Get('Kernel::Config');
 my $FAQObject               = $Kernel::OM->Get('Kernel::System::FAQ');
 my $AutocompletionFAQObject = $Kernel::OM->Get('Kernel::System::Autocompletion::FAQ');
 
+my $Baselink = '/test/index.pl?';
+
 my $FirstItemID = $FAQObject->FAQAdd(
     Title       => 'First title',
     CategoryID  => 1,
@@ -32,6 +34,7 @@ my $FirstItemID = $FAQObject->FAQAdd(
     Keywords    => '',
     Field1      => 'Functionality blocked',
     Field2      => 'Create new key',
+    Field3      => 'This is the solution',
     ContentType => 'text/html',
     UserID      => 1,
 );
@@ -63,6 +66,7 @@ my $ThirdItemID = $FAQObject->FAQAdd(
 my @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
     SearchString => 'title',
+    Baselink     => $Baselink,
 );
 
 my $ExpectedFAQData = [
@@ -70,19 +74,19 @@ my $ExpectedFAQData = [
         {
             'selection_list_title' => '(en) Third title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>Problem Description...<br /><h2>Problem:</h2>Solution not found...<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>Problem Description...<br /><h2>Problem:</h2>Solution not found...',
             'id' => $ThirdItemID,
         },
         {
             'selection_list_title' => '(en) Second title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
             'id' => $SecondItemID,
         },
         {
             'selection_list_title' => '(en) First title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>This is the solution',
             'id' => $FirstItemID,
         }
     ]
@@ -97,6 +101,7 @@ $Self->IsDeeply(
 @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
     SearchString => 'key',
+    Baselink     => $Baselink,
 );
 
 $ExpectedFAQData = [
@@ -104,13 +109,13 @@ $ExpectedFAQData = [
         {
             'selection_list_title' => '(en) Second title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
             'id' => $SecondItemID,
         },
         {
             'selection_list_title' => '(en) First title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>This is the solution',
             'id' => $FirstItemID,
         }
     ]
@@ -132,6 +137,7 @@ $AutoCompletionModuleFAQConfig->{SearchFields} = [
 @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
     SearchString => 'key',
+    Baselink     => $Baselink,
 );
 
 $ExpectedFAQData = [
@@ -139,7 +145,7 @@ $ExpectedFAQData = [
         {
             'selection_list_title' => '(en) Second title',
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>',
+                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
             'id' => $SecondItemID
         }
     ]

@@ -11,6 +11,8 @@ package Kernel::System::Autocompletion::FAQ;
 use strict;
 use warnings;
 
+use utf8;
+
 use Kernel::Language;
 use Kernel::System::VariableCheck qw(:all);
 
@@ -20,11 +22,13 @@ our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::System::FAQ',
     'Kernel::System::Log',
+    'Kernel::System::Main',
     'Kernel::System::User',
     'Kernel::System::Valid',
+    'Kernel::System::Web::UploadCache',
 );
 
-=head2 GetData()
+=head1 GetData()
 
     Returns autocompletion data for FAQ entry.
 
@@ -53,6 +57,7 @@ sub GetData {
     my $UserObject   = $Kernel::OM->Get('Kernel::System::User');
     my $FAQObject    = $Kernel::OM->Get('Kernel::System::FAQ');
     my $ValidObject  = $Kernel::OM->Get('Kernel::System::Valid');
+    my $MainObject   = $Kernel::OM->Get('Kernel::System::Main');
 
     NEEDED:
     for my $Needed (qw(SearchString UserID)) {
@@ -64,6 +69,8 @@ sub GetData {
         );
         return;
     }
+
+    my $AdditionalParams = $Param{AdditionalParams} // {};
 
     my %User = $UserObject->GetUserData(
         UserID => $Param{UserID},
@@ -101,6 +108,18 @@ sub GetData {
 
     my @FAQItems;
 
+    my $Loaded = $MainObject->Require(
+        'Kernel::Language',
+    );
+
+    if ( !$Loaded ) {
+        $LogObject->Log(
+            Priority => 'error',
+            Message  => "Can't load language object.",
+        );
+        return;
+    }
+
     FAQITEMID:
     for my $FAQItemID (@FAQItemIDs) {
         my %FAQItem = $FAQObject->FAQGet(
@@ -110,10 +129,18 @@ sub GetData {
         );
         next FAQITEMID if !%FAQItem;
 
+        my $ScriptAlias = $ConfigObject->Get('ScriptAlias') || 'otrs/';
+        my $URLRegex    = '/' . $ScriptAlias . 'index.pl\?Action=AgentFAQZoom;'
+            . 'Subaction=DownloadAttachment;ItemID=' . $FAQItemID . ';FileID=[0-9]+';
+        my $ElemRegex = 'src="(' . $URLRegex . ')"';
+
+        my @Fields;
+
         my $FAQLanguageObject = Kernel::Language->new(
             UserLanguage => $FAQItem{Language},
         );
 
+        # Get configuration options for Ticket Compose.
         my $TicketComposeConfig = $ConfigObject->Get('FAQ::TicketCompose');
 
         my $InternalStateType = $FAQObject->StateTypeGet(
@@ -123,15 +150,26 @@ sub GetData {
 
         my $InternalStateID = $InternalStateType->{StateID};
 
-        my @Fields;
+        my $UploadCacheObject = $Kernel::OM->Get('Kernel::System::Web::UploadCache');
+
+        my $FormID = $AdditionalParams->{FormID};
+        if ( !$FormID ) {
+            $FormID = $UploadCacheObject->FormIDCreate();
+        }
 
         FIELD:
         for my $Field ( 1 .. 6 ) {
-            my $FieldContent = $FAQItem{ 'Field' . $Field };
-            next FIELD if !defined $FieldContent;
 
+            # Don't waste any further processing power, if the current field doesn't have any content.
+            next FIELD if !$FAQItem{ 'Field' . $Field };
+
+            my $FieldContent = $FAQItem{ 'Field' . $Field };
+
+            # Get config of current FAQ field from SysConfig.
             my $FieldConfig = $ConfigObject->Get( 'FAQ::Item::Field' . $Field );
-            next FIELD if !IsHashRefWithData($FieldConfig);
+
+            next FIELD if !$FieldConfig;
+            next FIELD if ref $FieldConfig ne 'HASH';
             next FIELD if !$FieldConfig->{Show};
 
             my $StateTypeData = $FAQObject->StateTypeGet(
@@ -140,24 +178,135 @@ sub GetData {
             );
 
             # Check if current field is internal.
-            my $IsInternal = ( $StateTypeData->{StateID} == $InternalStateID ) ? 1 : 0;
-            if ( $IsInternal && !$TicketComposeConfig->{IncludeInternal} ) {
+            my $IsInternal;
+            if ( $StateTypeData->{StateID} == $InternalStateID ) {
+                $IsInternal = 1;
+            }
+
+            # Check whether the current field should be visible to the public, thus be inserted into a
+            #   response to a customer or not.
+            if ( !$TicketComposeConfig->{IncludeInternal} && $IsInternal ) {
                 next FIELD;
             }
 
-            # Add the caption of the field as header.
-            if (
-                IsStringWithData( $FieldConfig->{Caption} )
-                && $TicketComposeConfig->{ShowFieldNames}
-                )
-            {
+            # Extract all URLs which point to an embedded image.
+            my @MatchedURLs = ( $FieldContent =~ m{$ElemRegex}xgms );
+            for my $URL (@MatchedURLs) {
+
+                # Extract the ID of the attachment
+                my ($FileID) = $URL =~ m{ FileID=([0-9]+) }msx;
+
+                if ( $ConfigObject->{Debug} > 0 ) {
+                    $LogObject->Log(
+                        Priority => 'debug',
+                        Message  => "FileID: $FileID",
+                    );
+                }
+
+                # Get the attachment to which the current URL points.
+                my %Attachment = $FAQObject->AttachmentGet(
+                    ItemID => $FAQItemID,
+                    FileID => $FileID,
+                    UserID => $Param{UserID},
+                );
+
+                my @AttachmentMeta = $UploadCacheObject->FormIDGetAllFilesMeta(
+                    FormID => $FormID,
+                );
+
+                my $FilenameTmp    = $Attachment{Filename};
+                my $SuffixTmp      = 0;
+                my $UniqueFilename = '';
+
+                # Create now an article attachment (inline) based on the data of %Attachment (FAQ).
+                if (%Attachment) {
+
+                    # Check if name already exists.
+                    while ( !$UniqueFilename ) {
+                        $UniqueFilename = $FilenameTmp;
+                        NEWNAME:
+                        for my $Attachment ( reverse @AttachmentMeta ) {
+                            next NEWNAME if $FilenameTmp ne $Attachment->{Filename};
+
+                            # Name exists -> change.
+                            ++$SuffixTmp;
+                            if ( $Attachment{Filename} =~ m{\A (.*) \. (.+?) \z}msx ) {
+                                $FilenameTmp = "$1-$SuffixTmp.$2";
+                            }
+                            else {
+                                $FilenameTmp = "$Attachment{Filename}-$SuffixTmp";
+                            }
+                            $UniqueFilename = '';
+                            last NEWNAME;
+                        }
+                    }
+
+                    $Attachment{Filename} = $FilenameTmp;
+                    delete $Attachment{ContentID};
+
+                    # Add the attachment to the upload cache of the current ticket.
+                    $UploadCacheObject->FormIDAddFile(
+                        FormID      => $FormID,
+                        Disposition => 'inline',
+                        %Attachment,
+                    );
+                }
+                else {
+                    $LogObject->Log(
+                        Priority => 'error',
+                        Message  => 'Couldn\'t get FAQ attachment '
+                            . "(ItemID: $FAQItemID, FileID: $FileID)!",
+                    );
+                    return;
+                }
+
+                # Get new ContentID
+                my $ContentIDNew = '';
+                @AttachmentMeta = $UploadCacheObject->FormIDGetAllFilesMeta(
+                    FormID => $FormID,
+                );
+
+                ATTACHMENT:
+                for my $Attachment (@AttachmentMeta) {
+                    next ATTACHMENT if $FilenameTmp ne $Attachment->{Filename};
+                    $ContentIDNew = $Attachment->{ContentID};
+                    last ATTACHMENT;
+                }
+
+                if ( $ContentIDNew eq '' ) {
+                    $LogObject->Log(
+                        Priority => 'error',
+                        Message  => "Couldn't determine a new ContentID!",
+                    );
+                    return;
+                }
+
+                # Extract the actual MIME type from the content type, which also contains the filename.
+                my ($MimeType) = $Attachment{ContentType} =~ m{^(.+/.+); [ ] name=.+$}xms;
+
+                my $Session = '';
+                if ( $Self->{SessionID} && !$Self->{SessionIDCookie} ) {
+                    $Session = '&' . $Self->{SessionName} . '=' . $Self->{SessionID};
+                }
+
+                # Create the new inline image URL.
+                my $InlineImage = $Param{Baselink}
+                    . "Action=PictureUpload;FormID=$FormID;ContentID=$ContentIDNew$Session";
+
+                # Replace the image URL with the inline image.
+                $FieldContent =~ s{\Q$URL\E}{$InlineImage}xms;
+            }
+
+            # Add the name of the field as header.
+            if ( $FieldConfig->{Caption} && $TicketComposeConfig->{ShowFieldNames} ) {
+
+                # Translate the caption to the language of the FAQ item.
                 my $TranslatedCaption = $FAQLanguageObject->Translate( $FieldConfig->{Caption} );
 
-                if ( IsStringWithData($TranslatedCaption) ) {
+                if ($TranslatedCaption) {
                     $FieldContent = '<h2>' . $TranslatedCaption . ':</h2>' . $FieldContent;
                 }
             }
-
             push @Fields, $FieldContent;
         }
 
