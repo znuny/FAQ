@@ -94,6 +94,25 @@ sub GetData {
 
     my @CategoryIDs = grep { $Categories{ $CategoryTree->{$_} } } keys %{$CategoryTree};
 
+    my @Data;
+
+    # Check user permission for categories.
+    my @AllowedCategoryIDs;
+    CATEGORYID:
+    for my $CategoryID (@CategoryIDs) {
+        my $CategoryIDIsAllowed = $FAQObject->CheckCategoryUserPermission(
+            UserID     => $Param{UserID},
+            CategoryID => $CategoryID,
+            Type       => 'ro',
+        );
+        next CATEGORYID if !$CategoryIDIsAllowed;
+
+        push @AllowedCategoryIDs, $CategoryID;
+    }
+
+    # Return empty if categories have been given but none is allowed after permission check.
+    return \@Data if @CategoryIDs && !@AllowedCategoryIDs;
+
     my @FAQItemIDs = $FAQObject->FAQSearch(
         OrderBy          => ['FAQID'],
         OrderByDirection => ['Down'],
@@ -101,7 +120,7 @@ sub GetData {
         Interface        => {
             'Name' => 'internal'
         },
-        CategoryIDs => \@CategoryIDs,
+        CategoryIDs => \@AllowedCategoryIDs,
         UserID      => $Param{UserID},
         ValidIDs    => \@ValidIDs,
     );
@@ -316,8 +335,6 @@ sub GetData {
 
         push @FAQItems, \%FAQItem;
     }
-
-    my @Data;
 
     FAQITEM:
     for my $FAQItem (@FAQItems) {
