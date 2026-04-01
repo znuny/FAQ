@@ -57,15 +57,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2025-05-16 16:25+0000\n"
-"Last-Translator: Roy Kaldung <rk@znuny.com>\n"
-"Language-Team: German <https://translations.znuny.org/projects/znuny/faq/de/>\n"
+"PO-Revision-Date: 2026-04-01 21:51+0000\n"
+"Last-Translator: Weblate Admin <operations@znuny.com>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny/faq/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -1525,7 +1526,9 @@ msgstr "Mapping zwischen Kundenbenutzer-Attributwert und Gruppe."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
-msgstr "Zeige die Sterne für die Artikel mit einer Bewertung, die gleich oder größer als der definierte Wert ist, falls aktiviert."
+msgstr ""
+"Zeige die Sterne für die Artikel mit einer Bewertung, die gleich oder größer "
+"als der definierte Wert ist, falls aktiviert."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
@@ -1542,4 +1545,3 @@ msgstr ""
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr "Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer."
-
