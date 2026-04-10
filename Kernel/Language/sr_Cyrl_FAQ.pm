@@ -103,6 +103,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'FAQ претрага';
     $Self->{Translation}->{'Profile Selection'} = 'Избор профила';
     $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = '';
     $Self->{Translation}->{'Vote'} = 'Глас';
     $Self->{Translation}->{'No vote settings'} = 'Нема подешавања за гласање';
     $Self->{Translation}->{'Specific votes'} = 'Специфични гласови';

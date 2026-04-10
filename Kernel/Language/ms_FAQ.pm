@@ -103,6 +103,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'Carian FAQ';
     $Self->{Translation}->{'Profile Selection'} = 'Pilihan profil';
     $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = '';
     $Self->{Translation}->{'Vote'} = 'Undi';
     $Self->{Translation}->{'No vote settings'} = 'Tiada tetapan undi';
     $Self->{Translation}->{'Specific votes'} = 'Undi spesifik';

@@ -103,6 +103,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'FAQ搜索';
     $Self->{Translation}->{'Profile Selection'} = '配置选择';
     $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = '';
     $Self->{Translation}->{'Vote'} = '投票';
     $Self->{Translation}->{'No vote settings'} = '无投票设置';
     $Self->{Translation}->{'Specific votes'} = '指定投票';

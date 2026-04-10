@@ -1538,3 +1538,7 @@ msgstr ""
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
+msgid "Dynamic Info"
+msgstr ""
+

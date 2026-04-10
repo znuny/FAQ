@@ -103,6 +103,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'GyIK keresés';
     $Self->{Translation}->{'Profile Selection'} = 'Profil kiválasztás';
     $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = '';
     $Self->{Translation}->{'Vote'} = 'Szavazás';
     $Self->{Translation}->{'No vote settings'} = 'Nincsenek szavazási beállítások';
     $Self->{Translation}->{'Specific votes'} = 'Adott szavazatok';

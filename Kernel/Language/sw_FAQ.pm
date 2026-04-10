@@ -103,6 +103,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'Tafuta maswali';
     $Self->{Translation}->{'Profile Selection'} = 'Chaguo la maelezo mafupi';
     $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = '';
     $Self->{Translation}->{'Vote'} = 'Kura';
     $Self->{Translation}->{'No vote settings'} = 'Hakuna Mipangilio ya kura';
     $Self->{Translation}->{'Specific votes'} = 'Kura maalumu';
