@@ -258,17 +258,9 @@ sub Run {
         );
 
         if ( $ScreenType eq 'Popup' ) {
-            $LayoutObject->Block(
-                Name => 'EndSmall',
-                Data => {},
-            );
             $Output .= $LayoutObject->Footer( Type => 'Small' );
         }
         else {
-            $LayoutObject->Block(
-                Name => 'EndNormal',
-                Data => {},
-            );
             $Output .= $LayoutObject->Footer();
         }
 
@@ -451,18 +443,9 @@ sub Run {
             );
 
             if ( $ScreenType eq 'Popup' ) {
-                $LayoutObject->Block(
-                    Name => 'EndSmall',
-                    Data => {},
-                );
-
                 $Output .= $LayoutObject->Footer( Type => 'Small' );
             }
             else {
-                $LayoutObject->Block(
-                    Name => 'EndNormal',
-                    Data => {},
-                );
                 $Output .= $LayoutObject->Footer();
             }
 
@@ -959,6 +942,9 @@ sub _MaskNew {
     if ( $ScreenType ne 'Popup' ) {
         $LayoutObject->Block(
             Name => 'EndNormal',
+        );
+        $LayoutObject->Block(
+            Name => 'CloseNormalContentColumn',
         );
     }
 

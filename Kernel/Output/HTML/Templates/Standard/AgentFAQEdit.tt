@@ -15,6 +15,7 @@
         <p class="AsteriskExplanation">[% Translate("All fields marked with an asterisk (*) are mandatory.") | html %]</p>
 
         <div class="ContentColumn">
+            <div class="Content card">
 [% RenderBlockEnd("StartNormal") %]
 
 [% RenderBlockStart("StartSmall") %]
@@ -158,22 +159,27 @@
                             </div>
 [% RenderBlockEnd("FAQContent") %]
 
-                        <div class="field-wrapper">
 [% RenderBlockStart("EndNormal") %]
-                                <div class="Field SpacingTop">
-                                    <button class="Primary CallForAction" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]">
-                                        <span>
-                                            <i class="fa fa-check"></i>
-                                            [% Translate("Update") | html %]
-                                        </span>
-                                    </button>
-                                </div>
-[% RenderBlockEnd("EndNormal") %]
+                    <div class="field-wrapper form-button-actions">
+                        <div class="Field buttons-field">
+                            <a href="[% Env("Baselink") %]Action=AgentFAQZoom;ItemID=[% Data.ItemID | uri %]" class="btn-cancel-ghost btn-main btn-width-md">[% Translate("Cancel") | html %]</a>
+
+                            <button class="btn-primary btn-main btn-width-md" id="FAQSubmit" type="button" value="[% Translate("Update") | html %]">
+                                <span>
+                                    [% Translate("Update") | html %]
+                                </span>
+                            </button>
                         </div>
+                    </div>
+[% RenderBlockEnd("EndNormal") %]
 
                     </fieldset>
 [% RenderBlockEnd("FAQEdit") %]
                 </div>
+
+[% RenderBlockStart("CloseNormalContentColumn") %]
+        </div>
+[% RenderBlockEnd("CloseNormalContentColumn") %]
 
 [% RenderBlockStart("EndSmall") %]
                     <div class="Footer">
