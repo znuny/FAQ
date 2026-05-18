@@ -149,7 +149,12 @@ function CheckIFrameHeight(IFrameID) {
 [% RenderBlockStart("FAQDynamicField") %]
                 <li>
                     <span class="Key">[% Translate(Data.Label) | html %]:</span>
+[% RenderBlockStart("FAQDynamicFieldLink") %]
+                    <span title="[% Data.Title | html %]"><a href="[% Data.Link | Interpolate %]" target="_blank" class="DynamicFieldLink">[% Data.Value %]</a></span>
+[% RenderBlockEnd("FAQDynamicFieldLink") %]
+[% RenderBlockStart("FAQDynamicFieldPlain") %]
                     <span title="[% Data.Title | html %]">[% Data.Value %]</span>
+[% RenderBlockEnd("FAQDynamicFieldPlain") %]
                 </li>
 [% RenderBlockEnd("FAQDynamicField") %]
 # example of how to use fixed dynamic field blocks for customizations
