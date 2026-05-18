@@ -148,6 +148,11 @@
 [% RenderBlockStart("RecordDynamicField") %]
                                     <td class="DynamicField" title="[% Data.Title | html %]">[% Data.Value %]</td>
 [% RenderBlockEnd("RecordDynamicField") %]
+[% RenderBlockStart("RecordDynamicFieldLink") %]
+                                    <td class="DynamicField" title="[% Data.Title | html %]">
+                                        <a href="[% Data.Link | Interpolate %]" target="_blank" class="DynamicFieldLink">[% Data.Value %]</a>
+                                    </td>
+[% RenderBlockEnd("RecordDynamicFieldLink") %]
                             </tr>
 [% RenderBlockEnd("Record") %]
                     </tbody>

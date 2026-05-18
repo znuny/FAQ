@@ -214,6 +214,7 @@ Enhanced link handling in PublicFAQZoom module. (#7)</ChangeLog>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.RelatedArticles.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Agent.TicketCompose.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/FAQ.Customer.FAQZoom.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/FAQ.DynamicFieldLink.js"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/FAQ.Agent.Default.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/FAQ.Agent.Detail.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/img/help-small.png"/>

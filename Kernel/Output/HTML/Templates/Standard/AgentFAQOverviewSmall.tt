@@ -155,7 +155,7 @@
                     <td>
                         <div title="[% Data.Title | html %]">
 [% RenderBlockStart("RecordDynamicFieldLink") %]
-                                <a href="[% Data.Link | Interpolate %]" class="DynamicFieldLink">[% Data.Value %]</a>
+                                <a href="[% Data.Link | Interpolate %]" target="_blank" class="DynamicFieldLink">[% Data.Value %]</a>
 [% RenderBlockEnd("RecordDynamicFieldLink") %]
 
 [% RenderBlockStart("RecordDynamicFieldPlain") %]

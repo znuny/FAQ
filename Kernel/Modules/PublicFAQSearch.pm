@@ -1023,13 +1023,27 @@ sub Run {
                             LayoutObject       => $LayoutObject,
                         );
 
-                        $LayoutObject->Block(
-                            Name => 'RecordDynamicField',
-                            Data => {
-                                Value => $ValueStrg->{Value},
-                                Title => $ValueStrg->{Title},
-                            },
-                        );
+                        if ( $ValueStrg->{Link} ) {
+                            $LayoutObject->Block(
+                                Name => 'RecordDynamicFieldLink',
+                                Data => {
+                                    Value    => $ValueStrg->{Value},
+                                    ValueKey => $FAQData{ 'DynamicField_' . $DynamicFieldConfig->{Name} },
+                                    Title    => $ValueStrg->{Title},
+                                    Link     => $ValueStrg->{Link},
+                                    $DynamicFieldConfig->{Name} => $ValueStrg->{Title},
+                                },
+                            );
+                        }
+                        else {
+                            $LayoutObject->Block(
+                                Name => 'RecordDynamicField',
+                                Data => {
+                                    Value => $ValueStrg->{Value},
+                                    Title => $ValueStrg->{Title},
+                                },
+                            );
+                        }
                     }
                 }
             }

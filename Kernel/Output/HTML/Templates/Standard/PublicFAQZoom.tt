@@ -88,7 +88,12 @@
 [% RenderBlockStart("FAQDynamicField") %]
                                 <span>
                                     <label class="Key">[% Translate(Data.Label) | html %]</label>
+[% RenderBlockStart("FAQDynamicFieldLink") %]
+                                    <p title="[% Data.Title | html %]"><a href="[% Data.Link | Interpolate %]" target="_blank" class="DynamicFieldLink">[% Data.Value %]</a></p>
+[% RenderBlockEnd("FAQDynamicFieldLink") %]
+[% RenderBlockStart("FAQDynamicFieldPlain") %]
                                     <p title="[% Data.Title | html %]">[% Data.Value %]</p>
+[% RenderBlockEnd("FAQDynamicFieldPlain") %]
                                 </span>
 [% RenderBlockEnd("FAQDynamicField") %]
 
