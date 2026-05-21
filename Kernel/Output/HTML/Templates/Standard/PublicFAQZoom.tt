@@ -116,6 +116,7 @@
 [% RenderBlockStart("ViewRating") %]
                                 <span>
                                     <label class="Key RatingLabel">[% Translate("Rating") | html %]</label>
+                                    <div>
 
 [% RenderBlockStart("RateStars") %]
                                         <span class="RateStar">
@@ -129,6 +130,7 @@
                                             [% Translate("out of 5") | html %]
                                         </span>
 [% RenderBlockEnd("RateStarsCount") %]
+                                    </div>
                                 </span>
 [% RenderBlockEnd("ViewRating") %]
 
