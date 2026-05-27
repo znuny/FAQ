@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>FAQ</Name>
-    <Version>7.3.6</Version>
+    <Version>7.3.7</Version>
     <Framework>7.3.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -9,6 +9,7 @@
     <Description Lang="en">FAQ/knowledge base.</Description>
     <Description Lang="de">FAQ-/Wissensdatenbank.</Description>
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
+    <ChangeLog Version="7.3.7" Date="2026-05-27 12:40:04 +0200">Add German documentation under doc/de.</ChangeLog>
     <ChangeLog Version="7.3.6" Date="2026-05-18 15:23:32 +0200">Dynamic field links now available in public FAQ zoom and overview (search results) and customer FAQ overview (search results).</ChangeLog>
     <ChangeLog Version="7.3.5" Date="2026-05-13 11:23:21 +0200">Fixed layout of FAQ editing dialog in non-popup mode.</ChangeLog>
     <ChangeLog Version="7.3.4" Date="2026-04-10 10:46:10 +0200">Updated .pm translation files.</ChangeLog>
