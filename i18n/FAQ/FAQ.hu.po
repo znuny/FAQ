@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Znuny\n"
 "POT-Creation-Date: 2020-07-06 13:00+0000\n"
-"PO-Revision-Date: 2020-09-21 14:13+0000\n"
-"Last-Translator: Balázs Úr <balazs.ur@otrs.com>\n"
-"Language-Team: Hungarian <https://translate.otrs.com/projects/otrs-6/faq/hu/>\n"
+"PO-Revision-Date: 2026-06-08 09:33+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <https://translations.znuny.org/projects/znuny/faq/"
+"hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQAdd.tt
 msgid "Add FAQ Article"
@@ -402,7 +403,7 @@ msgstr "Keresési profil sablonként?"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Article Number"
-msgstr "Bejegyzésszám"
+msgstr "Bejegyzés száma"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Search for articles with keyword"
@@ -1426,73 +1427,84 @@ msgstr "nyilvános (nyilvános)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Ügyintéző GyIK kapcsolódó bejegyzések"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Ügyintéző GyIK kapcsolódó bejegyzések."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Törzs alatt"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Tárgy alatt"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Ügyfél-felhasználó attribútum a csoportkapcsolatának ellenőrzéséhez."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Meghatározza azt az elhelyezkedést, ahol a kapcsolódó GyIK bejegyzések "
+"felületi elem található."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Ügyfélcsoport-támogatás jogosultságainak engedélyezése."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Ügyfél-felhasználó jogosultsági attribútumainak engedélyezése."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
 msgstr ""
+"A kapcsolódó bejegyzések funkció engedélyezése az ügyintézői "
+"előtétprogramhoz."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"HTML tartalomhorgok előállítása a megadott blokkoknál azért, hogy a szűrők "
+"használhassák azokat."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Az a csoport, amelyhez az ügyfél-felhasználók alapértelmezetten tartoznak "
+"(ha ez a beállítás engedélyezve van)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Leképezés az ügyfél-felhasználó attribútumértéke és a csoport között."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"A csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál "
+"nagyobb értékeléssel rendelkező bejegyzéseknél, ha engedélyezve van."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Alapvető GyIK adatok"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Sablon neve"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "VLimitation"
-msgstr ""
+msgstr "Korlátozás"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"A GyIK alkategóriákból származó bejegyzések számolásának engedélyezése a "
+"GyIK böngészőnél."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
-
+msgstr "Dinamikus információ"
