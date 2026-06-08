@@ -101,7 +101,7 @@
                         </fieldset>
 
                         <fieldset class="section-block last">
-                            <h2>[% Translate("VLimitation") | html %]</h2>
+                            <h2>[% Translate("Limitation") | html %]</h2>
 
                             <div class="active-inner-cols">
                                 <div class="field-wrapper col-wide-100 col-desktop-100 col-tablet-100">
