@@ -34,7 +34,7 @@
         <div class="mainContent">
             <div class="SidebarColumn">
 [% RenderBlockStart("QuickSearch") %]
-                    <div class="WidgetSimple">
+                    <div class="WidgetSimple search-widget">
                         <div class="Header">
                             <h3>[% Translate("Search") | html %]</h3>
                         </div>
@@ -46,14 +46,23 @@
                                         <input type="hidden" name="Action" value="[% Data.Action | html %]"/>
                                         <input type="hidden" name="Subaction" value="Search"/>
                                         <input type="hidden" name="Nav" value="[% Data.Nav | html %]"/>
-                                        <input type="text" name="Fulltext" value="[% Data.Search | html %]" id="Search" title="[% Translate("Search") | html %]"/>
-                                        <button type="submit" value="[% Translate("Search") | html %]"><i class="fa fa-search"></i><span class="InvisibleText">[% Translate("Quick Search") | html %]</span></button>
+
+                                        <div class="field-wrapper">
+                                            <input type="text" name="Fulltext" value="[% Data.Search | html %]" id="Search" title="[% Translate("Search") | html %]"/>
+                                            <button type="submit" value="[% Translate("Search") | html %]" class="btn-primary btn-main btn-icon">
+                                                <i class="fa fa-search"></i>
+                                                <span class="InvisibleText"><span>
+                                                [% Translate("Quick Search") | html %]
+                                            </button>
+                                        </div>
                                     </form>
-                                    <p class="FieldExplanation">
-                                        [% Translate("Wildcards are allowed.") | html %]
-                                    </p>
-                                    <a  class="CallForAction FAQSearchButton SpacingTop" href="[% Env("Baselink") %]Action=[% Data.Action | uri %];">
-                                        <span><i class="fa fa-search"></i> [% Translate("Advanced Search") | html %]</span>
+
+                                    <p class="FieldExplanation">[% Translate("Wildcards are allowed.") | html %]</p>
+
+                                    <a  class="btn-primary btn-main" href="[% Env("Baselink") %]Action=[% Data.Action | uri %];">
+                                        <span>
+                                            [% Translate("Advanced Search") | html %]
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
