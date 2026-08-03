@@ -11,7 +11,7 @@
     <Description Lang="hu">A GyIK/tudásbázis csomag.</Description>
     <ChangeLog Version="7.3.10" Date="2026-07-27 11:27:04 +0200">Fixed: CustomerFAQExplorer: Layout of search widget is now consistent.</ChangeLog>
     <ChangeLog Version="7.3.9" Date="2026-06-08 10:21:33 +0200">Fixed typo (Limitation). Marked cancel button as translatable.</ChangeLog>
-    <ChangeLog Version="7.3.8" Date="2026-06-03 11:20:06 +0200">Fixed: AgentFAQSearch: "Save changes in template" is shown when no template is selected. 
+    <ChangeLog Version="7.3.8" Date="2026-06-03 11:20:06 +0200">Fixed: AgentFAQSearch: "Save changes in template" is shown when no template is selected.
 Fixed Bug - No padding in FAQ frames (.ck.ck.content class).</ChangeLog>
     <ChangeLog Version="7.3.7" Date="2026-05-27 12:40:04 +0200">Add German documentation under doc/de.</ChangeLog>
     <ChangeLog Version="7.3.6" Date="2026-05-18 15:23:32 +0200">Dynamic field links now available in public FAQ zoom and overview (search results) and customer FAQ overview (search results).</ChangeLog>
