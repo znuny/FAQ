@@ -1503,3 +1503,7 @@ msgstr ""
 msgid "Dynamic Info"
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
+msgid "All fields marked with an asterisk (*) are mandatory."
+msgstr ""
+

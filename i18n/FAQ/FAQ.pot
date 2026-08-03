@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FAQ\n"
-"POT-Creation-Date: 2026-04-10 08:44+0000\n"
+"POT-Creation-Date: 2026-08-03 08:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,6 +88,10 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "FAQ"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
+msgid "All fields marked with an asterisk (*) are mandatory."
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
@@ -412,10 +416,6 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
-msgid "VLimitation"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
