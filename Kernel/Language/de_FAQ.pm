@@ -43,7 +43,7 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = 'Alle mit einem Sternchen (*) gekennzeichneten Felder sind Pflichtfelder.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'FAQ-Explorer';
@@ -104,7 +104,7 @@ sub Data {
     $Self->{Translation}->{'FAQ Search'} = 'FAQ Suche';
     $Self->{Translation}->{'Profile Selection'} = 'Profilauswahl';
     $Self->{Translation}->{'Core FAQ Data'} = '';
-    $Self->{Translation}->{'Dynamic Info'} = '';
+    $Self->{Translation}->{'Dynamic Info'} = 'Dynamische Information';
     $Self->{Translation}->{'Vote'} = 'Abstimmen';
     $Self->{Translation}->{'No vote settings'} = 'Keine Einstellung für Abstimmung';
     $Self->{Translation}->{'Specific votes'} = 'spezifische Abstimmung';
@@ -364,7 +364,7 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Definiert die Parameter für das Übersichtsseiten-Backend. "Limit" definiert die Anzahl der Einträge, die standardmäßig angezeigt werden. "Group" wird verwendet, um den Zugriff auf das Plugin zu begrenzen (bspw. Group: admin;group1;group2;). "Default" steuert, ob das Plugin standardmäßig aktiviert ist oder ob der User es manuell aktivieren muss.';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        'Legt die Position fest, an der sich das Widget für relative FAQ-Artikel befinden';
+        'Legt die Position fest, an der sich das Widget für verwandte FAQ-Artikel befinden';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Definert die angezeigten Spalten im FAQ-Explorer. Diese Option hat keine Auswirkung auf die Position der Spalten.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -405,7 +405,7 @@ sub Data {
     $Self->{Translation}->{'Edit this FAQ'} = 'FAQ bearbeiten';
     $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
         'Aktiviert das Miteinbeziehen von FAQ-Artikeln aus Unterkategorien im FAQ-Explorer.';
-    $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = 'Kundengruppenrechte aktivieren.';
     $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Attribute für Kundenbenutzerrechte aktivieren.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Multiple Sprachen im FAQ-Modul aktivieren.';
     $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = 'Aktiviere die Funktion "relativen Artikel" für das Agenten-Frontend.';
@@ -428,7 +428,7 @@ sub Data {
     $Self->{Translation}->{'Field5'} = 'Feld5';
     $Self->{Translation}->{'Full FAQ'} = 'Vollständiges FAQ';
     $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
+        'Erstelle HTML-Kommentar-Hooks für die angegebenen Blöcke, damit Filter diese nutzen können.';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Gruppe für die Freigabe von FAQ-Artikeln.';
     $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
         'Gruppe, zu der Kundenbenutzer standardmäßig gehören (sofern diese Einstellung aktiviert ist).';
