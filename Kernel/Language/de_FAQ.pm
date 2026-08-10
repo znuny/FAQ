@@ -103,7 +103,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ Suche';
     $Self->{Translation}->{'Profile Selection'} = 'Profilauswahl';
-    $Self->{Translation}->{'Core FAQ Data'} = '';
+    $Self->{Translation}->{'Core FAQ Data'} = 'FAQ-Kerndaten';
     $Self->{Translation}->{'Dynamic Info'} = 'Dynamische Information';
     $Self->{Translation}->{'Vote'} = 'Abstimmen';
     $Self->{Translation}->{'No vote settings'} = 'Keine Einstellung für Abstimmung';

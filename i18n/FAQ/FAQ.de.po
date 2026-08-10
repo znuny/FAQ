@@ -1529,15 +1529,15 @@ msgstr "Zeige die Sterne für die Artikel mit einer Bewertung, die gleich oder g
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "FAQ-Kerndaten"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
 msgstr "Vorlagename"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
-msgid "VLimitation"
-msgstr ""
+msgid "Limitation"
+msgstr "Einschränkung"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."

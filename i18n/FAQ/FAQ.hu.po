@@ -1485,7 +1485,7 @@ msgid "Template name"
 msgstr "Sablon neve"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
-msgid "VLimitation"
+msgid "Limitation"
 msgstr "Korlátozás"
 
 #. SysConfig
