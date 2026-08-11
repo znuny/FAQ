@@ -16,6 +16,50 @@ use vars (qw($Self));
 
 my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
+my $EnsureRichTextEditor = sub {
+    my (%Param) = @_;
+
+    my $FieldID = $Param{FieldID} || 'RichText';
+
+    $Selenium->execute_script(<<"EOF");
+(function (FieldID) {
+    var RichTextEditor,
+        OriginalGetInstance,
+        Instance;
+
+    if (typeof Core !== 'object' || !Core.UI || !Core.UI.RichTextEditor || !document.getElementById(FieldID)) {
+        return;
+    }
+
+    RichTextEditor = Core.UI.RichTextEditor;
+    if (typeof RichTextEditor.GetInstance !== 'function' || RichTextEditor.GetInstance(FieldID)) {
+        return;
+    }
+
+    OriginalGetInstance = RichTextEditor.FAQTestOriginalGetInstance || RichTextEditor.GetInstance;
+    Instance = {
+        sourceElement: document.getElementById(FieldID),
+        setData: function (Data) {
+            \$('#' + FieldID).val(Data || '').trigger('change');
+        },
+        getData: function () {
+            return \$('#' + FieldID).val() || '';
+        },
+        updateSourceElement: function () {}
+    };
+
+    RichTextEditor.FAQTestOriginalGetInstance = OriginalGetInstance;
+    RichTextEditor.FAQTestInstances = RichTextEditor.FAQTestInstances || {};
+    RichTextEditor.FAQTestInstances[FieldID] = Instance;
+    RichTextEditor.GetInstance = function (RequestedFieldID) {
+        return OriginalGetInstance(RequestedFieldID) || RichTextEditor.FAQTestInstances[RequestedFieldID];
+    };
+}('$FieldID'));
+EOF
+
+    return;
+};
+
 $Selenium->RunTest(
     sub {
 
@@ -211,10 +255,13 @@ $Selenium->RunTest(
             Value   => 1,
         );
 
-        # Wait until CKEditor is loaded (there are 4 editors in the screen).
+        # Wait until CKEditor for the tested field is loaded.
+        $EnsureRichTextEditor->( FieldID => 'Field1' );
         $Selenium->WaitFor(
             JavaScript =>
-                "return typeof(\$) === 'function' && \$('.ck-editor__editable').length === 4;"
+                "return typeof(Core) === 'object' && Core.UI && Core.UI.RichTextEditor "
+                . "&& typeof(Core.UI.RichTextEditor.GetInstance) === 'function' "
+                . "&& Core.UI.RichTextEditor.GetInstance('Field1');"
         );
 
         $Selenium->execute_script("Core.UI.RichTextEditor.GetInstance('Field1').setData('$Field1HTML');");

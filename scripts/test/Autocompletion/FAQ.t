@@ -24,35 +24,38 @@ my $ConfigObject            = $Kernel::OM->Get('Kernel::Config');
 my $FAQObject               = $Kernel::OM->Get('Kernel::System::FAQ');
 my $AutocompletionFAQObject = $Kernel::OM->Get('Kernel::System::Autocompletion::FAQ');
 
-my $Baselink = '/test/index.pl?';
+my $Baselink          = '/test/index.pl?';
+my $RandomID          = $Helper->GetRandomID();
+my $TitleSearchString = "title$RandomID";
+my $FieldSearchString = "key$RandomID";
 
 my $FirstItemID = $FAQObject->FAQAdd(
-    Title       => 'First title',
+    Title       => "First $TitleSearchString",
     CategoryID  => 1,
     StateID     => 1,
     LanguageID  => 1,
     Keywords    => '',
     Field1      => 'Functionality blocked',
-    Field2      => 'Create new key',
+    Field2      => "Create new $FieldSearchString",
     Field3      => 'This is the solution',
     ContentType => 'text/html',
     UserID      => 1,
 );
 
 my $SecondItemID = $FAQObject->FAQAdd(
-    Title       => 'Second title',
+    Title       => "Second $TitleSearchString",
     CategoryID  => 1,
     StateID     => 1,
     LanguageID  => 1,
     Keywords    => '',
-    Field1      => 'My key has expired ',
-    Field2      => 'Create new key',
+    Field1      => "My $FieldSearchString has expired ",
+    Field2      => "Create new $FieldSearchString",
     ContentType => 'text/html',
     UserID      => 1,
 );
 
 my $ThirdItemID = $FAQObject->FAQAdd(
-    Title       => 'Third title',
+    Title       => "Third $TitleSearchString",
     CategoryID  => 1,
     StateID     => 1,
     LanguageID  => 1,
@@ -65,28 +68,28 @@ my $ThirdItemID = $FAQObject->FAQAdd(
 
 my @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
-    SearchString => 'title',
+    SearchString => $TitleSearchString,
     Baselink     => $Baselink,
 );
 
 my $ExpectedFAQData = [
     [
         {
-            'selection_list_title' => '(en) Third title',
+            'selection_list_title' => "(en) Third $TitleSearchString",
             'inserted_value'       =>
                 '<h2>Symptom:</h2>Problem Description...<br /><h2>Problem:</h2>Solution not found...',
             'id' => $ThirdItemID,
         },
         {
-            'selection_list_title' => '(en) Second title',
+            'selection_list_title' => "(en) Second $TitleSearchString",
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
+                "<h2>Symptom:</h2>My $FieldSearchString has expired <br /><h2>Problem:</h2>Create new $FieldSearchString",
             'id' => $SecondItemID,
         },
         {
-            'selection_list_title' => '(en) First title',
+            'selection_list_title' => "(en) First $TitleSearchString",
             'inserted_value'       =>
-                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>This is the solution',
+                "<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new $FieldSearchString<br /><h2>Solution:</h2>This is the solution",
             'id' => $FirstItemID,
         }
     ]
@@ -100,22 +103,22 @@ $Self->IsDeeply(
 
 @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
-    SearchString => 'key',
+    SearchString => $FieldSearchString,
     Baselink     => $Baselink,
 );
 
 $ExpectedFAQData = [
     [
         {
-            'selection_list_title' => '(en) Second title',
+            'selection_list_title' => "(en) Second $TitleSearchString",
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
+                "<h2>Symptom:</h2>My $FieldSearchString has expired <br /><h2>Problem:</h2>Create new $FieldSearchString",
             'id' => $SecondItemID,
         },
         {
-            'selection_list_title' => '(en) First title',
+            'selection_list_title' => "(en) First $TitleSearchString",
             'inserted_value'       =>
-                '<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new key<br /><h2>Solution:</h2>This is the solution',
+                "<h2>Symptom:</h2>Functionality blocked<br /><h2>Problem:</h2>Create new $FieldSearchString<br /><h2>Solution:</h2>This is the solution",
             'id' => $FirstItemID,
         }
     ]
@@ -136,16 +139,16 @@ $AutoCompletionModuleFAQConfig->{SearchFields} = [
 
 @AutocompletionData = $AutocompletionFAQObject->GetData(
     UserID       => 1,
-    SearchString => 'key',
+    SearchString => $FieldSearchString,
     Baselink     => $Baselink,
 );
 
 $ExpectedFAQData = [
     [
         {
-            'selection_list_title' => '(en) Second title',
+            'selection_list_title' => "(en) Second $TitleSearchString",
             'inserted_value'       =>
-                '<h2>Symptom:</h2>My key has expired <br /><h2>Problem:</h2>Create new key',
+                "<h2>Symptom:</h2>My $FieldSearchString has expired <br /><h2>Problem:</h2>Create new $FieldSearchString",
             'id' => $SecondItemID
         }
     ]

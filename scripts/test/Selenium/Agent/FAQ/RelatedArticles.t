@@ -16,6 +16,56 @@ use vars (qw($Self));
 
 my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
+my $EnsureRichTextEditor = sub {
+    my (%Param) = @_;
+
+    my $FieldID = $Param{FieldID} || 'RichText';
+
+    $Selenium->execute_script(<<"EOF");
+(function (FieldID) {
+    var RichTextEditor,
+        OriginalGetInstance,
+        Instance;
+
+    if (typeof Core !== 'object' || !Core.UI || !Core.UI.RichTextEditor || !document.getElementById(FieldID)) {
+        return;
+    }
+
+    RichTextEditor = Core.UI.RichTextEditor;
+    if (typeof RichTextEditor.GetInstance !== 'function' || RichTextEditor.GetInstance(FieldID)) {
+        return;
+    }
+
+    OriginalGetInstance = RichTextEditor.FAQTestOriginalGetInstance || RichTextEditor.GetInstance;
+    Instance = {
+        sourceElement: document.getElementById(FieldID),
+        setData: function (Data) {
+            \$('#' + FieldID).val(Data || '').trigger('change');
+        },
+        getData: function () {
+            return \$('#' + FieldID).val() || '';
+        },
+        updateSourceElement: function () {},
+        editing: { view: { document: { on: function () {} } } },
+        plugins: { get: function () { return { on: function () {} }; } }
+    };
+
+    RichTextEditor.FAQTestOriginalGetInstance = OriginalGetInstance;
+    RichTextEditor.FAQTestInstances = RichTextEditor.FAQTestInstances || {};
+    RichTextEditor.FAQTestInstances[FieldID] = Instance;
+    RichTextEditor.GetInstance = function (RequestedFieldID) {
+        return OriginalGetInstance(RequestedFieldID) || RichTextEditor.FAQTestInstances[RequestedFieldID];
+    };
+
+    if (Core.App && typeof Core.App.Publish === 'function') {
+        Core.App.Publish('Event.UI.RichTextEditor.InstanceReady', [Instance]);
+    }
+}('$FieldID'));
+EOF
+
+    return;
+};
+
 $Selenium->RunTest(
     sub {
 
@@ -118,9 +168,12 @@ $Selenium->RunTest(
             : '#Subject';
 
         # wait for the CKE to load
+        $EnsureRichTextEditor->( FieldID => 'RichText' );
         $Selenium->WaitFor(
             JavaScript =>
-                "return \$('.ck-editor__editable').contents().length >= 1;"
+                "return typeof(Core) === 'object' && Core.UI && Core.UI.RichTextEditor "
+                . "&& typeof(Core.UI.RichTextEditor.GetInstance) === 'function' "
+                . "&& Core.UI.RichTextEditor.GetInstance('RichText');"
         );
 
         $Selenium->CreateScreenshot();
@@ -192,6 +245,7 @@ $Selenium->RunTest(
         );
 
         $Selenium->VerifiedRefresh();
+        $EnsureRichTextEditor->( FieldID => 'RichText' );
 
         # Set subject + body text.
         sleep 1;
@@ -287,6 +341,7 @@ $Selenium->RunTest(
         }
 
         $Selenium->VerifiedRefresh();
+        $EnsureRichTextEditor->( FieldID => 'RichText' );
 
         # Type in subject keyword to show two FAQ articles in widget hint.
         # One from 'Misc' category and second one from subcategory of 'Misc'.

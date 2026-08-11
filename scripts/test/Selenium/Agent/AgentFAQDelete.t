@@ -73,12 +73,15 @@ $Selenium->RunTest(
         # Execute delete.
         $Selenium->find_element( "#DialogButton1", 'css' )->click();
         $Selenium->WaitFor( JavaScript => 'return !$(".Dialog.Modal").length' );
+        $Selenium->WaitFor( JavaScript => 'return window.location.href.indexOf("Action=AgentFAQExplorer") > -1' );
 
         # Verify delete action.
-        # Try to navigate to the AgetnFAQZoom of deleted test FAQ.
-        $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentFAQZoom;ItemID=$ItemID;Nav=");
-        $Self->True(
-            index( $Selenium->get_page_source(), "No such ItemID $ItemID!" ) > -1,
+        my %DeletedFAQ = $Kernel::OM->Get('Kernel::System::FAQ')->FAQGet(
+            ItemID => $ItemID,
+            UserID => 1,
+        );
+        $Self->False(
+            scalar keys %DeletedFAQ,
             "Delete action - success",
         );
 
