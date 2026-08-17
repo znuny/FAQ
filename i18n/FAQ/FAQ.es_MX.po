@@ -1429,77 +1429,89 @@ msgstr "público (público)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Artículos FAQ relacionados del agente"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Artículos FAQ relacionados del agente."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Debajo del cuerpo"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Debajo del asunto"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Atributo de usuario cliente para verificar su relación de grupo."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Define la posición donde se encuentra el widget de artículos FAQ "
+"relacionados."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Habilitar permisos de soporte de grupos de clientes."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Habilitar atributos de permiso de usuarios clientes."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
 msgstr ""
+"Habilitar la función de artículos relacionados en el frontend del "
+"agente."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Generar hooks de comentario HTML para los bloques especificados para "
+"que los filtros puedan usarlos."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Grupo al que pertenecen los usuarios clientes de forma predeterminada "
+"(si esta configuración está habilitada)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Mapeo entre el valor del atributo de usuario cliente y el grupo."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Mostrar las estrellas para los artículos con una calificación igual o "
+"mayor que el valor definido, si está habilitado."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Datos principales de FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Nombre de plantilla"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Limitación"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"Habilitar el conteo de artículos de subcategorías FAQ en el "
+"explorador FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Información dinámica"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Todos los campos marcados con un asterisco (*) son obligatorios."
 

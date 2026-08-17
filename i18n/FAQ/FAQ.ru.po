@@ -818,6 +818,10 @@ msgstr "Задает, должен ли заголовок FAQ объединя�
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Определяет, какие столбцы отображаются в виджете связанных FAQ "
+"(LinkObject::ViewMode = \"complex\"). Примечание: для DefaultColumns "
+"разрешены только атрибуты FAQ и динамические поля "
+"(DynamicField_NameX)."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -1429,77 +1433,83 @@ msgstr "общедоступный (публичный)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Связанные статьи FAQ агента"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Связанные статьи FAQ агента."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Под текстом"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Под темой"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Атрибут пользователя клиента для проверки его связи с группой."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Определяет позицию виджета связанных статей FAQ."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Включить права поддержки групп клиентов."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Включить атрибуты прав пользователей клиентов."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Включить функцию связанных статей для интерфейса агента."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Создавать HTML-комментарии-хуки для указанных блоков, чтобы фильтры "
+"могли их использовать."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Группа, к которой пользователи клиентов принадлежат по умолчанию "
+"(если этот параметр включен)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Сопоставление между значением атрибута пользователя клиента и группой."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Показывать звёзды для статей с рейтингом равным или большим заданного "
+"значения, если включено."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Основные данные FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Имя шаблона"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Ограничение"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Включить подсчёт статей из подкатегорий FAQ в обзоре FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Динамическая информация"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Все поля, отмеченные звёздочкой (*), обязательны для заполнения."
 

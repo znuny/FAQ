@@ -154,7 +154,7 @@ msgstr "編輯 FAQ 語言"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
+msgstr "如果您想使用多種語言，請使用此功能。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add language"
@@ -194,7 +194,7 @@ msgstr "沒有找到常見問題數據。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQRelatedArticles.tt
 msgid "out of 5"
-msgstr ""
+msgstr "滿分 5"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Keyword"
@@ -302,7 +302,7 @@ msgstr "沒有找到選票！"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "No votes found! Be the first one to rate this FAQ article."
-msgstr ""
+msgstr "尚未找到評分！成為第一個為此 FAQ 文章評分的人。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "Download Attachment"
@@ -310,11 +310,11 @@ msgstr "下載附件"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
-msgstr ""
+msgstr "若要開啟下列說明區塊中的連結，您可能需要在點選連結時按住 Ctrl、Cmd 或 Shift 鍵（取決於瀏覽器與作業系統）。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
-msgstr ""
+msgstr "這篇文章對您有幫助嗎？請評分以協助改善 FAQ 資料庫。謝謝！"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "not helpful"
@@ -354,15 +354,15 @@ msgstr "沒有找到常見問題文章。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "This might be helpful"
-msgstr ""
+msgstr "這可能有幫助"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "找不到與主旨和文字相關的有用資源。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "輸入主旨或文字以取得有用資源清單。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
@@ -398,7 +398,7 @@ msgstr "只是常見問題文章創建於"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "將搜尋設定檔作為範本？"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Article Number"
@@ -418,19 +418,19 @@ msgstr "回到常見問題瀏覽器"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "您需要讀寫權限！"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "找不到使用者具有讀寫權限的類別！"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "找不到預設語言，且無法建立新的預設語言。"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "需要 CategoryID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
@@ -442,15 +442,15 @@ msgstr "此目錄分類已經存在"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "此類別已存在！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "未提供 CategoryID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "無法刪除類別 %s！"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
@@ -466,27 +466,27 @@ msgstr "刪除目錄分類"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "未提供 ItemID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "您沒有此類別的權限！"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "無法刪除 FAQ 文章 %s！"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "CategoryID %s 無效。"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "無法顯示歷史紀錄，因為未提供 ItemID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ 歷史"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
@@ -494,19 +494,19 @@ msgstr "常見問題日誌"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "需要組態選項 FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
-msgstr ""
+msgstr "組態選項 FAQ::Frontend::Overview 必須是 HASH 參考！"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "找不到檢視「%s」的組態選項！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "未提供 LanguageID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -518,7 +518,7 @@ msgstr "此語言已存在!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "無法刪除語言 %s！"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
@@ -546,11 +546,11 @@ msgstr "常見問題動態欄位"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "未提供 %s！"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "無法載入 LanguageObject！"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
@@ -562,47 +562,47 @@ msgstr "常見問題編號"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "最後修改者"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQ 項目建立時間（之前/之後）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQ 項目建立時間（介於）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ 項目修改時間（之前/之後）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ 項目修改時間（介於）"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "等於"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "大於"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "大於等於"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "小於"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "小於等於"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "需要 FileID！"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
@@ -618,11 +618,11 @@ msgstr "沒有選取評分!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "評分機制未啟用！"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "評分比率未定義！"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
@@ -630,11 +630,11 @@ msgstr "常見問題文章列印"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "建立於之間"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "需要 ItemID！"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
@@ -650,39 +650,39 @@ msgstr "常見問題文章 (首10篇)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "未提供類型！"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "類型必須是 LastCreate、LastChange 或 Top10！"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "無法建立 RSS 檔案！"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s - 客戶 (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - 客戶 (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - 公開 (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - 公開 (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "需要評分！"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
@@ -702,7 +702,7 @@ msgstr "首10篇常見問題文章"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "內容類型"
 
 #. XML Definition: FAQ.sopm
 msgid "internal"
@@ -723,10 +723,12 @@ msgstr "Ok"
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"用於 HTML 輸出的篩選器，可在定義字串後加入連結。Image 元素允許兩種輸入方式：一是圖片名稱（例如 "
+"faq.png），此時會使用系統圖片路徑；二是直接插入圖片連結。"
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "新增 FAQ 文章"
 
 #. SysConfig
 msgid "CSS color for the voting result."
@@ -742,31 +744,31 @@ msgstr "目錄分類管理"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "類別管理。"
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "客戶 FAQ 列印。"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "客戶 FAQ 相關文章"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "客戶 FAQ 相關文章。"
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "客戶 FAQ 詳細檢視。"
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "客戶 FAQ 搜尋。"
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "客戶 FAQ。"
 
 #. SysConfig
 msgid "Decimal places of the voting result."
@@ -802,19 +804,25 @@ msgstr "等待審批常見問題文章的工單默許類別"
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
-msgstr ""
+msgstr "公開前端 Action 參數的預設值。Action 參數由系統指令碼使用。"
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"定義在連結物件小工具中顯示設定按鈕的 Actions（LinkObject::ViewMode = \"complex\"）。請注意，這些 "
+"Actions 必須已註冊下列 JS 與 CSS 檔案：Core.AllocationList.css、Core.UI.Allocation"
+"List.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js 以及 "
+"Core.Agent.LinkObject.js。"
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "定義是否將 FAQ 標題串接到文章主旨。"
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"定義連結 FAQ 小工具中顯示的欄位（LinkObject::ViewMode = "
+"\"complex\"）。注意：DefaultColumns 僅允許 FAQ 屬性與動態欄位（DynamicField_NameX）。"
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -826,75 +834,77 @@ msgstr "設定顯示常見問題列表小檢閱模式的概況模組"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
-msgstr ""
+msgstr "定義客服介面 FAQ 搜尋排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
-msgstr ""
+msgstr "定義客戶介面 FAQ 搜尋排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
-msgstr ""
+msgstr "定義公開介面 FAQ 搜尋排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
-msgstr ""
+msgstr "定義客服介面 FAQ 瀏覽器排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "定義客戶介面 FAQ 瀏覽器排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "定義公開介面 FAQ 瀏覽器排序的預設 FAQ 屬性。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義客服介面 FAQ 瀏覽器結果的預設排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義客戶介面 FAQ 瀏覽器結果的預設排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義公開介面 FAQ 瀏覽器結果的預設排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義客服介面搜尋結果的預設 FAQ 排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義客戶介面搜尋結果的預設 FAQ 排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
-msgstr ""
+msgstr "定義公開介面搜尋結果的預設 FAQ 排序。上：最舊在上。下：最新在上。"
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
-msgstr ""
+msgstr "定義 FAQ 搜尋畫面預設顯示的 FAQ 搜尋屬性。"
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
-msgstr ""
+msgstr "定義插入以 FAQ 為基礎的票證之資訊。「Full FAQ」包含文字、附件與內嵌圖片。"
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"定義儀表板後端參數。「Limit」定義預設顯示的項目數。「Group」用於限制外掛存取（例如 Group: "
+"admin;group1;group2;）。「Default」表示外掛是否預設啟用，或使用者需手動啟用。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
-msgstr ""
+msgstr "定義 FAQ 瀏覽器中顯示的欄位。此選項不影響欄位位置。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
-msgstr ""
+msgstr "定義 FAQ 日誌中顯示的欄位。此選項不影響欄位位置。"
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
-msgstr ""
+msgstr "定義 FAQ 搜尋中顯示的欄位。此選項不影響欄位位置。"
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
@@ -902,7 +912,7 @@ msgstr "設定 '插入常見問題' 顯示位置"
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "FAQ 項目自由文字欄位的定義。"
 
 #. SysConfig
 msgid "Delete this FAQ"
@@ -910,59 +920,59 @@ msgstr "刪除此常見問題"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 新增畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 編輯畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 總覽畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 總覽畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 列印畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 列印畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 列印畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 搜尋畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 搜尋畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 搜尋畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 精簡格式總覽畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 詳細畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 詳細畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 詳細畫面顯示的動態欄位。"
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -974,7 +984,7 @@ msgstr "啓用常見問題模組多種語言"
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "為客戶前端啟用相關文章功能。"
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
@@ -986,31 +996,31 @@ msgstr "瀏覽器"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX Responder"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "FAQ AJAX Responder（Richtext）。"
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "FAQ 區域"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "FAQ 區域。"
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "刪除 FAQ。"
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "編輯 FAQ。"
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "FAQ 歷史。"
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
@@ -1022,11 +1032,11 @@ msgstr "常見問題概況 \"小\"模式限制"
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "列印 FAQ。"
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 搜尋後端路由器。"
 
 #. SysConfig
 msgid "Field4"
@@ -1038,7 +1048,7 @@ msgstr "欄位5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "完整 FAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
@@ -1070,11 +1080,11 @@ msgstr "語言管理"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "語言管理。"
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "建立關鍵字 FAQ 文章清單的搜尋上限。"
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
@@ -1082,7 +1092,7 @@ msgstr "連結其他物件到此常見問題物件"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "已啟用相關文章功能的佇列名稱清單。"
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
@@ -1098,7 +1108,7 @@ msgstr "在公開介面可使用的狀態分類列表"
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "公開介面的載入模組註冊。"
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
@@ -1130,47 +1140,47 @@ msgstr "在公開介面可顯示於搜尋結果的常見問題文章最大數量
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 瀏覽器中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 瀏覽器中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 瀏覽器中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 搜尋中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 搜尋中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 搜尋中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "客服介面 FAQ 日誌中顯示的 FAQ 文章標題最大長度。"
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
-msgstr ""
+msgstr "產生客戶介面短 FAQ 搜尋 HTML OpenSearch 設定檔的模組。"
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
-msgstr ""
+msgstr "產生公開介面短 FAQ 搜尋 HTML OpenSearch 設定檔的模組。"
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "產生短 FAQ 搜尋 HTML OpenSearch 設定檔的模組。"
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "新增 FAQ 文章。"
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
@@ -1178,19 +1188,19 @@ msgstr "新常見問題文章發佈前需要經過審批"
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "客戶介面 FAQ 瀏覽器中顯示的 FAQ 文章數量。"
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
-msgstr ""
+msgstr "公開介面 FAQ 瀏覽器中顯示的 FAQ 文章數量。"
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
-msgstr ""
+msgstr "客戶介面搜尋結果每頁顯示的 FAQ 文章數量。"
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
-msgstr ""
+msgstr "公開介面搜尋結果每頁顯示的 FAQ 文章數量。"
 
 #. SysConfig
 msgid "Number of shown items in last changes."
@@ -1206,19 +1216,19 @@ msgstr "首10篇功能顯示項目數量"
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
+msgstr "將 JavaScript 加入 CustomerTicketMessage 畫面的輸出篩選器。"
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "相關 FAQ 文章的輸出上限。"
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
-msgstr ""
+msgstr "精簡 FAQ 日誌總覽頁面（顯示 FAQ 項目）的參數。"
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
-msgstr ""
+msgstr "精簡 FAQ 總覽頁面（顯示 FAQ 項目）的參數。"
 
 #. SysConfig
 msgid "Print this FAQ"
@@ -1226,19 +1236,19 @@ msgstr "列印此常見問題"
 
 #. SysConfig
 msgid "Public FAQ Print."
-msgstr ""
+msgstr "公開 FAQ 列印。"
 
 #. SysConfig
 msgid "Public FAQ Zoom."
-msgstr ""
+msgstr "公開 FAQ 詳細檢視。"
 
 #. SysConfig
 msgid "Public FAQ search."
-msgstr ""
+msgstr "公開 FAQ 搜尋。"
 
 #. SysConfig
 msgid "Public FAQ."
-msgstr ""
+msgstr "公開 FAQ。"
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
@@ -1250,7 +1260,7 @@ msgstr "投票評分。數值必須為百分率。"
 
 #. SysConfig
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. SysConfig
 msgid "Search FAQ"
@@ -1258,19 +1268,19 @@ msgstr "搜尋常見問題"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "搜尋 FAQ（精簡）。"
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "搜尋 FAQ。"
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
-msgstr ""
+msgstr "選擇日誌總覽「Small」預設顯示多少項目。"
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
-msgstr ""
+msgstr "選擇總覽「Small」預設顯示多少項目。"
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
@@ -1282,23 +1292,23 @@ msgstr "設定在CustomerFAQZoom (及PublicFAQZoom)中內嵌HTML欄位默許高�
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "設定 AgentFAQZoom 中內嵌 HTML 欄位的最大高度（像素）。"
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
-msgstr ""
+msgstr "設定 CustomerFAQZoom（以及 PublicFAQZoom）中內嵌 HTML 欄位的最大高度（像素）。"
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "在 AgentFAQZoomSmall 中為公開 FAQ 文章顯示「插入 FAQ 連結」按鈕。"
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
-msgstr ""
+msgstr "在 AgentFAQZoomSmall 中為公開 FAQ 文章顯示「插入 FAQ 文字與連結」/「插入完整 FAQ 與連結」按鈕。"
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
-msgstr ""
+msgstr "在 AgentFAQZoomSmall 中顯示「插入 FAQ 文字」/「插入完整 FAQ」按鈕。"
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
@@ -1310,7 +1320,7 @@ msgstr "顯示常見問題路徑 (是/否)"
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 瀏覽器結果中顯示無效項目。"
 
 #. SysConfig
 msgid "Show items of subcategories."
@@ -1326,7 +1336,7 @@ msgstr "顯示指定介面的最近創建項目"
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
-msgstr ""
+msgstr "對評分等於或大於定義值的文章顯示星級（設為「0」可停用輸出）。"
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
@@ -1338,27 +1348,27 @@ msgstr "顯示指定介面的投票"
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便將 FAQ 與其他物件連結。"
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便刪除 FAQ。"
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便存取 FAQ 歷史。"
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便編輯 FAQ。"
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便返回上一頁。"
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
-msgstr ""
+msgstr "在客服介面 FAQ 詳細檢視的選單中顯示連結，以便列印 FAQ。"
 
 #. SysConfig
 msgid "Solution"
@@ -1366,47 +1376,47 @@ msgstr "解決方案"
 
 #. SysConfig
 msgid "Symptom"
-msgstr ""
+msgstr "症狀"
 
 #. SysConfig
 msgid "Text Only"
-msgstr ""
+msgstr "僅文字"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "相關 FAQ 文章的預設語言。"
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
+msgstr "FAQ 識別碼，例如 FAQ#、KB#、MyFAQ#。預設為 FAQ#。"
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
-msgstr ""
+msgstr "此設定定義「FAQ」物件可使用「Normal」連結類型與其他「FAQ」物件連結。"
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "此設定定義「FAQ」物件可使用「ParentChild」連結類型與其他「FAQ」物件連結。"
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
-msgstr ""
+msgstr "此設定定義「FAQ」物件可使用「Normal」連結類型與其他「Ticket」物件連結。"
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
-msgstr ""
+msgstr "此設定定義「FAQ」物件可使用「ParentChild」連結類型與其他「Ticket」物件連結。"
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "核准 FAQ 文章的票證內文。"
 
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article."
-msgstr ""
+msgstr "核准 FAQ 文章的票證主旨。"
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "捷徑的工具列項目。"
 
 #. SysConfig
 msgid "external (customer)"
@@ -1422,81 +1432,81 @@ msgstr "公開  (全部)"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
+msgstr "公開（公開）"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "客服 FAQ 相關文章"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "客服 FAQ 相關文章。"
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "內文下方"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "主旨下方"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "用於檢查群組關聯的客戶使用者屬性。"
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "定義相關 FAQ 文章小工具的位置。"
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "啟用客戶群組支援權限。"
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "啟用客戶使用者權限屬性。"
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "為客服前端啟用相關文章功能。"
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
-msgstr ""
+msgstr "為指定區塊產生 HTML 註解掛鉤，以便篩選器使用。"
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
-msgstr ""
+msgstr "客戶使用者預設所屬群組（若啟用此設定）。"
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "客戶使用者屬性值與群組的對應。"
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
-msgstr ""
+msgstr "若啟用，對評分等於或大於定義值的文章顯示星級。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "FAQ 核心資料"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "範本名稱"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "限制"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "啟用 FAQ 瀏覽器對子類別文章的計數。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "動態資訊"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "所有標有星號 (*) 的欄位皆為必填。"
 

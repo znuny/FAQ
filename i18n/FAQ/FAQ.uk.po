@@ -178,6 +178,8 @@ msgstr "Ви дійсно хочете видалити цю мову?"
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "You can not delete this language. It is used in at least one FAQ article!"
 msgstr ""
+"Ви не можете видалити цю мову. Вона використовується принаймні в "
+"одній статті FAQ!"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "This language is used in the following FAQ Article(s)"
@@ -425,15 +427,15 @@ msgstr "Вам необхідні права на запис"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
-msgstr ""
+msgstr "Не знайдено категорій, де користувач має права читання/запису!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "Стандартну мову не знайдено, і нову створити не вдалося."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "Потрібен CategoryID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
@@ -445,15 +447,15 @@ msgstr "Дана категорія уже існує."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "Ця категорія вже існує!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "Не вказано CategoryID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "Не вдалося видалити категорію %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
@@ -465,51 +467,53 @@ msgstr "Додані категорії довідникаа."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Delete Category"
-msgstr ""
+msgstr "Видалити категорію"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "Не вказано ItemID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "У вас немає прав для цієї категорії!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "Не вдалося видалити статтю FAQ %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "CategoryID %s недійсний."
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "Неможливо показати історію, ItemID не вказано!"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "Історія FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
-msgstr ""
+msgstr "Журнал FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Потрібен параметр конфігурації FAQ::Frontend::Overview"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
 msgstr ""
+"Параметр конфігурації FAQ::Frontend::Overview має бути "
+"HASH-посиланням!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "Не знайдено параметр конфігурації для вигляду \"%s\"!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "Не вказано LanguageID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -521,7 +525,7 @@ msgstr "Ця мова вже існує!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "Не вдалося видалити мову %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
@@ -533,7 +537,7 @@ msgstr "Додано мову довідки!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Delete Language %s"
-msgstr ""
+msgstr "Видалити мову %s"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Result"
@@ -541,23 +545,23 @@ msgstr "Результат"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "Останнє оновлення"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "Динамічні поля FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "Не вказано %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "Не вдалося завантажити LanguageObject!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "Немає результатів!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
@@ -565,47 +569,47 @@ msgstr "Номер FAQ"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "Останню зміну зробив"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "Час створення елемента FAQ (до/після)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "Час створення елемента FAQ (між)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "Час зміни елемента FAQ (до/після)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "Час зміни елемента FAQ (між)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "Дорівнює"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "Більше ніж"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "Більше або дорівнює"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "Менше ніж"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Менше або дорівнює"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "Потрібен FileID!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
@@ -621,11 +625,11 @@ msgstr "Немає обраної категорії!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "Механізм голосування не ввімкнено!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "Рівень голосування не визначено!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
@@ -633,11 +637,11 @@ msgstr "Надрукувати статтю довідника"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "Створено між"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "Потрібен ItemID!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
@@ -653,43 +657,43 @@ msgstr "Довідник (найкращі 10 статтей)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "Не вказано тип!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "Тип має бути LastCreate, LastChange або Top10!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "Не вдалося створити RSS-файл!"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s - Клієнт (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - Клієнт (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - Публічний (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - Публічний (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Потрібна оцінка!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "Ця стаття порожня!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
@@ -705,7 +709,7 @@ msgstr "Топ 10 статтей"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "Тип вмісту"
 
 #. XML Definition: FAQ.sopm
 msgid "internal"
@@ -721,267 +725,346 @@ msgstr "публічне"
 
 #. JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"Фільтр HTML-виводу для додавання посилань після визначеного рядка. "
+"Елемент Image дозволяє два типи введення. Спочатку назва зображення "
+"(напр. faq.png) — тоді використовується шлях до зображень Znuny. "
+"Другий варіант — вказати посилання на зображення."
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "Додати статтю FAQ"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "CSS-колір для результату голосування."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Час життя кешу для елементів FAQ."
 
 #. SysConfig
 msgid "Category Management"
-msgstr ""
+msgstr "Керування категоріями"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Керування категоріями."
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "Друк FAQ клієнта."
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Пов’язані статті FAQ клієнта"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Пов’язані статті FAQ клієнта."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "Детальний перегляд FAQ клієнта."
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "Пошук FAQ клієнта."
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "FAQ клієнта."
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Кількість десяткових знаків результату голосування."
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "Стандартна назва категорії."
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Стандартна мова для статей FAQ у режимі однієї мови."
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Стандартний максимальний розмір заголовків статті FAQ для показу."
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Стандартний пріоритет тікетів для затвердження статей FAQ."
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Стандартний стан запису FAQ."
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Стандартний стан тікетів для затвердження статей FAQ."
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Стандартний тип тікетів для затвердження статей FAQ"
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 msgstr ""
+"Стандартне значення параметра Action для публічного інтерфейсу. "
+"Параметр Action використовується у скриптах системи."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Визначте Actions, де кнопка налаштувань доступна у віджеті пов’язаних "
+"об’єктів (LinkObject::ViewMode = \"complex\"). Зверніть увагу: для "
+"цих Actions мають бути зареєстровані такі JS- та CSS-файли: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, "
+"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js та "
+"Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Визначає, чи слід додавати заголовок FAQ до теми статті."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Визначає, які стовпці показуються у віджеті пов’язаних FAQ "
+"(LinkObject::ViewMode = \"complex\"). Примітка: для DefaultColumns "
+"дозволені лише атрибути FAQ та динамічні поля (DynamicField_NameX)."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "Визначає модуль огляду для малого вигляду журналу FAQ."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Визначає модуль огляду для малого вигляду списку FAQ."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в пошуку FAQ у "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в пошуку FAQ у "
+"інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в пошуку FAQ у "
+"публічному інтерфейсі."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в FAQ Explorer у "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в FAQ Explorer у "
+"інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
+"Визначає стандартний атрибут FAQ для сортування в FAQ Explorer у "
+"публічному інтерфейсі."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок у результаті FAQ Explorer у інтерфейсі "
+"агента. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок у результаті FAQ Explorer у інтерфейсі "
+"клієнта. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок у результаті FAQ Explorer у публічному "
+"інтерфейсі. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок результату пошуку FAQ в інтерфейсі "
+"агента. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок результату пошуку FAQ в інтерфейсі "
+"клієнта. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Визначає стандартний порядок результату пошуку FAQ у публічному "
+"інтерфейсі. Вгору: найстаріші зверху. Вниз: найновіші зверху."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
-msgstr ""
+msgstr "Визначає стандартний атрибут пошуку FAQ для екрана пошуку FAQ."
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
 msgstr ""
+"Визначає інформацію для вставки в тікет на основі FAQ. «Повний FAQ» "
+"включає текст, вкладення та вбудовані зображення."
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"Визначає параметри для backend панелі. «Limit» — кількість записів за "
+"замовчуванням. «Group» обмежує доступ до плагіна (напр. Group: "
+"admin;group1;group2;). «Default» вказує, чи плагін увімкнено за "
+"замовчуванням, чи користувач має ввімкнути його вручну."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
+"Визначає відображувані стовпці в FAQ Explorer. Цей параметр не "
+"впливає на позицію стовпця."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
 msgstr ""
+"Визначає відображувані стовпці в журналі FAQ. Цей параметр не впливає "
+"на позицію стовпця."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
 msgstr ""
+"Визначає відображувані стовпці в пошуку FAQ. Цей параметр не впливає "
+"на позицію стовпця."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "Визначає, де відображатиметься посилання «Вставити FAQ»."
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "Визначення вільного текстового поля елемента FAQ."
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "Видалити цей FAQ"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані створення в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані редагування в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані огляду в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані огляду в публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані друку в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані друку в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані друку в публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані пошуку в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані пошуку в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані пошуку в публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані малого огляду в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані детального перегляду "
+"в інтерфейсі агента."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані детального перегляду "
+"в інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
+"Динамічні поля, що відображаються на FAQ екрані детального перегляду "
+"в публічному інтерфейсі."
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "Редагувати цей FAQ"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Увімкнути кілька мов у модулі FAQ."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "Увімкнути функцію пов’язаних статей для клієнтського інтерфейсу."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Увімкнути механізм голосування в модулі FAQ."
 
 #. SysConfig
 msgid "Explorer"
@@ -989,379 +1072,451 @@ msgstr "Провідник"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX Responder"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "FAQ AJAX Responder для Richtext."
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "Область FAQ"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "Область FAQ."
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "Видалити FAQ."
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "Редагувати FAQ."
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "Історія FAQ."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "Ліміт огляду журналу FAQ «Малий»"
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "Ліміт огляду FAQ «Малий»"
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "Друк FAQ."
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "Маршрутизатор backend пошуку FAQ в інтерфейсі агента."
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "Поле4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "Поле5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "Повний FAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Група для затвердження статей FAQ."
 
 #. SysConfig
 msgid "History of this FAQ"
-msgstr ""
+msgstr "Історія цього FAQ"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Включати внутрішні поля в тікет на основі FAQ."
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Включати назву кожного поля в тікет на основі FAQ."
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Інтерфейси, де має відображатися швидкий пошук."
 
 #. SysConfig
 msgid "Journal"
-msgstr ""
+msgstr "Журнал"
 
 #. SysConfig
 msgid "Language Management"
-msgstr ""
+msgstr "Керування мовами"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "Керування мовами."
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "Ліміт пошуку для побудови списку статей FAQ за ключовими словами."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "Зв’язати інший об’єкт із цим елементом FAQ"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "Список назв черг, для яких увімкнено функцію пов’язаних статей."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "Список типів станів для використання в інтерфейсі агента."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "Список типів станів для використання в інтерфейсі клієнта."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "Список типів станів для використання в публічному інтерфейсі."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Реєстрація модуля завантаження для публічного інтерфейсу."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті FAQ Explorer в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті FAQ Explorer в "
+"інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті FAQ Explorer у "
+"публічному інтерфейсі."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
-msgstr ""
+msgstr "Максимальна кількість статей FAQ у журналі FAQ в інтерфейсі агента."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті пошуку в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті пошуку в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
 msgstr ""
+"Максимальна кількість статей FAQ у результаті пошуку в публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у FAQ Explorer в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у FAQ Explorer в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у FAQ Explorer у публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у пошуку FAQ в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у пошуку FAQ в інтерфейсі "
+"клієнта."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у пошуку FAQ у публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
 msgstr ""
+"Максимальний розмір заголовків статей FAQ у журналі FAQ в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Модуль для створення HTML OpenSearch-профілю для короткого пошуку FAQ "
+"в інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 msgstr ""
+"Модуль для створення HTML OpenSearch-профілю для короткого пошуку FAQ "
+"у публічному інтерфейсі."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Модуль для створення HTML OpenSearch-профілю для короткого пошуку FAQ."
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "Нова стаття FAQ."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Нові статті FAQ потребують затвердження перед публікацією."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Кількість статей FAQ для показу в FAQ Explorer в інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
 msgstr ""
+"Кількість статей FAQ для показу в FAQ Explorer у публічному "
+"інтерфейсі."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
 msgstr ""
+"Кількість статей FAQ на кожній сторінці результату пошуку в "
+"інтерфейсі клієнта."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
 msgstr ""
+"Кількість статей FAQ на кожній сторінці результату пошуку в "
+"публічному інтерфейсі."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "Кількість показаних елементів у останніх змінах."
 
 #. SysConfig
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "Кількість показаних елементів у останніх створених."
 
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "Кількість показаних елементів у функції Top 10."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
-msgstr ""
+msgstr "Фільтр виводу для додавання JavaScript на екран CustomerTicketMessage."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Ліміт виводу для пов’язаних статей FAQ."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
 msgstr ""
+"Параметри сторінок (де показуються елементи FAQ) малого огляду "
+"журналу FAQ."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
-msgstr ""
+msgstr "Параметри сторінок (де показуються елементи FAQ) малого огляду FAQ."
 
 #. SysConfig
 msgid "Print this FAQ"
-msgstr ""
+msgstr "Друкувати цей FAQ"
 
 #. SysConfig
 msgid "Public FAQ Print."
-msgstr ""
+msgstr "Друк публічного FAQ."
 
 #. SysConfig
 msgid "Public FAQ Zoom."
-msgstr ""
+msgstr "Детальний перегляд публічного FAQ."
 
 #. SysConfig
 msgid "Public FAQ search."
-msgstr ""
+msgstr "Пошук публічного FAQ."
 
 #. SysConfig
 msgid "Public FAQ."
-msgstr ""
+msgstr "Публічний FAQ."
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Черга для затвердження статей FAQ."
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Оцінки для голосування. Ключ має бути у відсотках."
 
 #. SysConfig
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. SysConfig
 msgid "Search FAQ"
-msgstr ""
+msgstr "Пошук FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Пошук FAQ «Малий»."
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "Пошук FAQ."
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
 msgstr ""
+"Виберіть, скільки елементів показувати в огляді журналу «Малий» за "
+"замовчуванням."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
 msgstr ""
+"Виберіть, скільки елементів показувати в огляді «Малий» за "
+"замовчуванням."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"Встановити стандартну висоту (у пікселях) вбудованих HTML-полів у "
+"AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Встановити стандартну висоту (у пікселях) вбудованих HTML-полів у "
+"CustomerFAQZoom (та PublicFAQZoom)."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"Встановити максимальну висоту (у пікселях) вбудованих HTML-полів у "
+"AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Встановити максимальну висоту (у пікселях) вбудованих HTML-полів у "
+"CustomerFAQZoom (та PublicFAQZoom)."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Показувати кнопку «Вставити посилання FAQ» в AgentFAQZoomSmall для "
+"публічних статей FAQ."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Показувати кнопку «Вставити текст FAQ і посилання» / «Вставити повний "
+"FAQ і посилання» в AgentFAQZoomSmall для публічних статей FAQ."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
 msgstr ""
+"Показувати кнопку «Вставити текст FAQ» / «Вставити повний FAQ» в "
+"AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "Показувати статтю FAQ з HTML."
 
 #. SysConfig
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "Показувати шлях FAQ так/ні."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Показувати недійсні елементи в результаті FAQ Explorer в інтерфейсі "
+"агента."
 
 #. SysConfig
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Показувати елементи з підкатегорій."
 
 #. SysConfig
 msgid "Show last change items in defined interfaces."
-msgstr ""
+msgstr "Показувати останні змінені елементи у визначених інтерфейсах."
 
 #. SysConfig
 msgid "Show last created items in defined interfaces."
-msgstr ""
+msgstr "Показувати останні створені елементи у визначених інтерфейсах."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Показувати зірки для статей з оцінкою рівною або вищою за визначене "
+"значення (встановіть «0», щоб вимкнути вивід)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "Показувати елементи Top 10 у визначених інтерфейсах."
 
 #. SysConfig
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Показувати голосування у визначених інтерфейсах."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
 msgstr ""
+"Показує посилання в меню для зв’язування FAQ з іншим об’єктом у "
+"детальному перегляді FAQ в інтерфейсі агента."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
 msgstr ""
+"Показує посилання в меню для видалення FAQ у детальному перегляді в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
 msgstr ""
+"Показує посилання в меню для доступу до історії FAQ у детальному "
+"перегляді в інтерфейсі агента."
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Показує посилання в меню для редагування FAQ у детальному перегляді в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
 msgstr ""
+"Показує посилання в меню для повернення назад у детальному перегляді "
+"FAQ в інтерфейсі агента."
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Показує посилання в меню для друку FAQ у детальному перегляді в "
+"інтерфейсі агента."
 
 #. SysConfig
 msgid "Solution"
@@ -1373,43 +1528,51 @@ msgstr "Симптоми"
 
 #. SysConfig
 msgid "Text Only"
-msgstr ""
+msgstr "Лише текст"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Стандартні мови для пов’язаних статей FAQ."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
+msgstr "Ідентифікатор для FAQ, напр. FAQ#, KB#, MyFAQ#. За замовчуванням FAQ#."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
 msgstr ""
+"Цей параметр визначає, що об’єкт «FAQ» можна зв’язати з іншими "
+"об’єктами «FAQ» типом зв’язку «Normal»."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
 msgstr ""
+"Цей параметр визначає, що об’єкт «FAQ» можна зв’язати з іншими "
+"об’єктами «FAQ» типом зв’язку «ParentChild»."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
 msgstr ""
+"Цей параметр визначає, що об’єкт «FAQ» можна зв’язати з іншими "
+"об’єктами «Ticket» типом зв’язку «Normal»."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
 msgstr ""
+"Цей параметр визначає, що об’єкт «FAQ» можна зв’язати з іншими "
+"об’єктами «Ticket» типом зв’язку «ParentChild»."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Текст тікета для затвердження статті FAQ."
 
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article."
-msgstr ""
+msgstr "Тема тікета для затвердження статті FAQ."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Елемент панелі інструментів для ярлика."
 
 #. SysConfig
 msgid "external (customer)"
@@ -1425,81 +1588,87 @@ msgstr "Загальнодоступне"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
+msgstr "публічний (публічний)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Пов’язані статті FAQ агента"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Пов’язані статті FAQ агента."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Під текстом"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Під темою"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Атрибут користувача клієнта для перевірки належності до групи."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Визначає позицію віджета пов’язаних статей FAQ."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Увімкнути права підтримки груп клієнтів."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Увімкнути атрибути прав користувача клієнта."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Увімкнути функцію пов’язаних статей для інтерфейсу агента."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Генерувати HTML-коментарні хуки для вказаних блоків, щоб фільтри "
+"могли їх використовувати."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Група, до якої користувачі клієнта належать за замовчуванням (якщо "
+"параметр увімкнено)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Відповідність між значенням атрибута користувача клієнта та групою."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Показувати зірки для статей з оцінкою рівною або вищою за визначене "
+"значення, якщо увімкнено."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Основні дані FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Назва шаблону"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Обмеження"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Увімкнути підрахунок статей із підкатегорій FAQ для FAQ Explorer."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Динамічна інформація"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Усі поля, позначені зірочкою (*), є обов’язковими."
 

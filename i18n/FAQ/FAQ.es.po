@@ -221,9 +221,8 @@ msgid "Approved"
 msgstr "Aprobado"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
-#, fuzzy
 msgid "Last changed by"
-msgstr "Ultimo cambio por"
+msgstr "Último cambio por"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (before/after)"
@@ -314,9 +313,8 @@ msgid "No votes found! Be the first one to rate this FAQ article."
 msgstr "No se encontró ningún voto. Sea el primero en valorar este artículo FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
-#, fuzzy
 msgid "Download Attachment"
-msgstr "Descargar Archivo adjunto"
+msgstr "Descargar adjunto"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
@@ -727,7 +725,6 @@ msgid "public"
 msgstr "público"
 
 #. JS File: var/httpd/htdocs/js/FAQ.Agent.ConfirmationDialog.js
-#, fuzzy
 msgid "Ok"
 msgstr "Aceptar"
 
@@ -1437,77 +1434,89 @@ msgstr "público (público)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Artículos FAQ relacionados del agente"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Artículos FAQ relacionados del agente."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Debajo del cuerpo"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Debajo del asunto"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Atributo de usuario cliente para comprobar su relación de grupo."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Define la posición donde se ubica el widget de artículos FAQ "
+"relacionados."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Activar permisos de soporte de grupos de clientes."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Activar atributos de permiso de usuarios clientes."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
 msgstr ""
+"Activar la función de artículos relacionados en el frontend del "
+"agente."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Generar hooks de comentario HTML para los bloques especificados para "
+"que los filtros puedan usarlos."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Grupo al que pertenecen los usuarios clientes por defecto (si esta "
+"configuración está activada)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Asignación entre el valor del atributo de usuario cliente y el grupo."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Mostrar las estrellas para los artículos con una valoración igual o "
+"mayor que el valor definido, si está activado."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Datos principales de FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Nombre de plantilla"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Limitación"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"Activar el conteo de artículos de subcategorías FAQ en el explorador "
+"FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Información dinámica"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Todos los campos marcados con un asterisco (*) son obligatorios."
 

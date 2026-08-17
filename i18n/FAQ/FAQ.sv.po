@@ -485,7 +485,7 @@ msgstr "KategoriID:t %s är ogiltigt."
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "Kan inte visa historik, ingen ItemID angiven!"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
@@ -497,19 +497,21 @@ msgstr "FAQ-loggboken"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Konfigurationsalternativ FAQ::Frontend::Overview krävs"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
 msgstr ""
+"Konfigurationsalternativ FAQ::Frontend::Overview måste vara en "
+"HASH-referens!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "Inget konfigurationsalternativ hittades för vyn \"%s\"!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "Ingen LanguageID angiven!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -521,7 +523,7 @@ msgstr "Detta språk finns redan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "Kunde inte ta bort språket %s!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
@@ -549,11 +551,11 @@ msgstr "FAQ Dynamiska Fält"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "Ingen %s angiven!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "Kan inte ladda LanguageObject!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
@@ -585,27 +587,27 @@ msgstr "FAQ-Artikel Ändrad Tid (mellan)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "Är lika med"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "Större än"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "Större än eller lika med"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "Mindre än"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Mindre än eller lika med"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "FileID krävs!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
@@ -621,11 +623,11 @@ msgstr "Inget betyg satt!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "Röstningsfunktionen är inte aktiverad!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "Röstningsgraden är inte definierad!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
@@ -637,7 +639,7 @@ msgstr "Skapat mellan"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "ItemID krävs!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
@@ -653,39 +655,39 @@ msgstr "FAQ-artiklar (Topp 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "Ingen typ angiven!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "Typ måste vara LastCreate, LastChange eller Top10!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "Kan inte skapa RSS-fil!"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s - Kund (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - Kund (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - Publik (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - Publik (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Betyg krävs!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
@@ -705,7 +707,7 @@ msgstr "Topp 10 FAQ-artiklar"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "Innehållstyp"
 
 #. XML Definition: FAQ.sopm
 msgid "internal"
@@ -726,6 +728,10 @@ msgstr "Ok"
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"Ett filter för HTML-utdata som lägger till länkar efter en definierad "
+"sträng. Elementet Image tillåter två typer av indata. Först namnet på "
+"en bild (t.ex. faq.png). Då används Znuny-bildsökvägen. Det andra "
+"alternativet är att ange länken till bilden."
 
 #. SysConfig
 msgid "Add FAQ article"
@@ -733,11 +739,11 @@ msgstr "Lägg till FAQ-artikel"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "CSS-färg för röstningsresultatet."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Cache-tid för FAQ-artiklar."
 
 #. SysConfig
 msgid "Category Management"
@@ -745,167 +751,215 @@ msgstr "Kategorihantering"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Kategorihantering."
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "Kund-FAQ utskrift."
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Relaterade artiklar för kund-FAQ"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Relaterade artiklar för kund-FAQ."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "Kund-FAQ detaljvy."
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "Kund-FAQ sökning."
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "Kund-FAQ."
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Decimalplatser för röstningsresultatet."
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "Standardnamn för rotkategori."
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Standardspråk för FAQ-artiklar i enkeltspråksläge."
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Standard maxstorlek för titlar som visas i en FAQ-artikel."
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Standardprioritet för tickets vid godkännande av FAQ-artiklar."
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Standardstatus för FAQ-post."
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Standardstatus för tickets vid godkännande av FAQ-artiklar."
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Standardtyp för tickets vid godkännande av FAQ-artiklar"
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 msgstr ""
+"Standardvärde för Action-parametern för det publika gränssnittet. "
+"Action-parametern används i systemets skript."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Definiera Actions där en inställningsknapp ska finnas i widgeten för "
+"länkade objekt (LinkObject::ViewMode = \"complex\"). Observera att "
+"dessa Actions måste ha registrerat följande JS- och CSS-filer: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, "
+"Core.UI.Table.Sort.js, Core.Agent.TableFilters.js och "
+"Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Definiera om FAQ-titeln ska läggas till artikelns ämne."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Definiera vilka kolumner som visas i widgeten för länkade FAQ "
+"(LinkObject::ViewMode = \"complex\"). Obs: Endast FAQ-attribut och "
+"dynamiska fält (DynamicField_NameX) är tillåtna för DefaultColumns."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "Definierar en översiktsmodul för att visa Small-vyn av en FAQ-journal."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Definierar en översiktsmodul för att visa Small-vyn av en FAQ-lista."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ-sökning i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ-sökning i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ-sökning i "
+"publika gränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ Explorer i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ Explorer i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
+"Definierar standard-FAQ-attributtet för sortering i FAQ Explorer i "
+"publika gränssnittet."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering i FAQ Explorer i agentgränssnittet. Upp: "
+"äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering i FAQ Explorer i kundgränssnittet. Upp: "
+"äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering i FAQ Explorer i publika gränssnittet. "
+"Upp: äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering för FAQ-sökresultat i agentgränssnittet. "
+"Upp: äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering för FAQ-sökresultat i kundgränssnittet. "
+"Upp: äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Definierar standardsortering för FAQ-sökresultat i det publika "
+"gränssnittet. Upp: äldst överst. Ner: nyast överst."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
-msgstr ""
+msgstr "Definierar standardattributt som visas för FAQ-sökskärmen."
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
 msgstr ""
+"Definierar informationen som ska infogas i en FAQ-baserad ticket. "
+"\"Fullständig FAQ\" inkluderar text, bilagor och infogade bilder."
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"Definierar parametrarna för översiktssidans backend. \"Limit\" anger "
+"antal poster som visas som standard. \"Group\" begränsar åtkomst till "
+"pluginet (t.ex. Group: admin;group1;group2;). \"Default\" anger om "
+"pluginet är aktiverat som standard eller om användaren måste aktivera "
+"det manuellt."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
+"Definierar visade kolumner i FAQ Explorer. Alternativet påverkar inte "
+"kolumnens position."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
 msgstr ""
+"Definierar visade kolumner i FAQ-journalen. Alternativet påverkar "
+"inte kolumnens position."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
 msgstr ""
+"Definierar visade kolumner i FAQ-sökningen. Alternativet påverkar "
+"inte kolumnens position."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "Definierar var länken 'Infoga FAQ' ska visas."
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "Definition av fritextfält för FAQ-post."
 
 #. SysConfig
 msgid "Delete this FAQ"
@@ -913,59 +967,69 @@ msgstr "Radera denna FAQ"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ skapningsskärmen i agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
+"Dynamiska fält som visas på FAQ redigeringsskärmen i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ översiktsskärmen i kundgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"Dynamiska fält som visas på FAQ översiktsskärmen i det publika "
+"gränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ utskriftsskärmen i agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ utskriftsskärmen i kundgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
+"Dynamiska fält som visas på FAQ utskriftsskärmen i det publika "
+"gränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ sökskärmen i agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ sökskärmen i kundgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ sökskärmen i det publika gränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
+"Dynamiska fält som visas på FAQ översikten i litet format i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ zoom-skärmen i agentgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
-msgstr ""
+msgstr "Dynamiska fält som visas på FAQ zoom-skärmen i kundgränssnittet."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
+"Dynamiska fält som visas på FAQ zoom-skärmen i det publika "
+"gränssnittet."
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -973,15 +1037,15 @@ msgstr "Redigera FAQ"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Aktivera flera språk i FAQ-modulen."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "Aktivera funktionen för relaterade artiklar i kundgränssnittet."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Aktivera röstningsmekanismen i FAQ-modulen."
 
 #. SysConfig
 msgid "Explorer"
@@ -989,63 +1053,63 @@ msgstr "Utforskare"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX Responder"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "FAQ AJAX Responder för Richtext."
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "FAQ-område"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "FAQ-område."
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "Ta bort FAQ."
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "Redigera FAQ."
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "FAQ-historik."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "Gräns för FAQ-journalöversikt \"Liten\""
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "Gräns för FAQ-översikt \"Liten\""
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "Skriv ut FAQ."
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "Sök-backend-router för FAQ-sökning i agentgränssnittet."
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "Fält4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "Fält5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "Fullständig FAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Grupp för godkännande av FAQ-artiklar."
 
 #. SysConfig
 msgid "History of this FAQ"
@@ -1053,15 +1117,15 @@ msgstr "FAQ-historik"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Inkludera interna fält i en FAQ-baserad ticket."
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Inkludera namnet på varje fält i en FAQ-baserad ticket."
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Gränssnitt där snabbökning ska visas."
 
 #. SysConfig
 msgid "Journal"
@@ -1073,11 +1137,13 @@ msgstr "Språkhantering"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "Språkhantering."
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
 msgstr ""
+"Gräns för sökningen som bygger listan över FAQ-artiklar efter "
+"nyckelord."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
@@ -1085,143 +1151,183 @@ msgstr "Länka ett annat objekt till denna FAQ-artikel"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "Lista över könamn där funktionen för relaterade artiklar är aktiverad."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
-msgstr ""
+msgstr "Lista över statustyper som kan användas i agentgränssnittet."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
-msgstr ""
+msgstr "Lista över statustyper som kan användas i kundgränssnittet."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
-msgstr ""
+msgstr "Lista över statustyper som kan användas i det publika gränssnittet."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Registrering av loadermodul för det publika gränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i FAQ Explorer-resultatet i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i FAQ Explorer-resultatet i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i FAQ Explorer-resultatet i det "
+"publika gränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i FAQ-journalen i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i sökresultatet i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i sökresultatet i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
 msgstr ""
+"Maximalt antal FAQ-artiklar som visas i sökresultatet i det publika "
+"gränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ Explorer i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ Explorer i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ Explorer i "
+"det publika gränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ-sökningen i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ-sökningen i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ-sökningen i "
+"det publika gränssnittet."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
 msgstr ""
+"Maximal storlek på titlar i FAQ-artiklar som visas i FAQ-journalen i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Modul för att generera HTML OpenSearch-profil för kort FAQ-sökning i "
+"kundgränssnittet."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 msgstr ""
+"Modul för att generera HTML OpenSearch-profil för kort FAQ-sökning i "
+"det publika gränssnittet."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Modul för att generera HTML OpenSearch-profil för kort FAQ-sökning."
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "Ny FAQ-artikel."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Nya FAQ-artiklar kräver godkännande innan de publiceras."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
-msgstr ""
+msgstr "Antal FAQ-artiklar som visas i FAQ Explorer i kundgränssnittet."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
 msgstr ""
+"Antal FAQ-artiklar som visas i FAQ Explorer i det publika "
+"gränssnittet."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
-msgstr ""
+msgstr "Antal FAQ-artiklar per sida i sökresultat i kundgränssnittet."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
-msgstr ""
+msgstr "Antal FAQ-artiklar per sida i sökresultat i det publika gränssnittet."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "Antal visade objekt under senaste ändringar."
 
 #. SysConfig
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "Antal visade objekt under senast skapade."
 
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "Antal visade objekt i Top 10-funktionen."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
 msgstr ""
+"Utdatafilter för att lägga till JavaScript på skärmen "
+"CustomerTicketMessage."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Utbegränsning för relaterade FAQ-artiklar."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
 msgstr ""
+"Parametrar för sidorna (där FAQ-poster visas) i Small-översikten för "
+"FAQ-journalen."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
 msgstr ""
+"Parametrar för sidorna (där FAQ-poster visas) i Small-översikten för "
+"FAQ."
 
 #. SysConfig
 msgid "Print this FAQ"
@@ -1229,19 +1335,19 @@ msgstr "Skriv ut FAQ"
 
 #. SysConfig
 msgid "Public FAQ Print."
-msgstr ""
+msgstr "Publik FAQ utskrift."
 
 #. SysConfig
 msgid "Public FAQ Zoom."
-msgstr ""
+msgstr "Publik FAQ detaljvy."
 
 #. SysConfig
 msgid "Public FAQ search."
-msgstr ""
+msgstr "Publik FAQ sökning."
 
 #. SysConfig
 msgid "Public FAQ."
-msgstr ""
+msgstr "Publik FAQ."
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
@@ -1249,11 +1355,11 @@ msgstr "Kö för godkännande av FAQ-artiklar."
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Vikter för röstning. Nyckeln måste anges i procent."
 
 #. SysConfig
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. SysConfig
 msgid "Search FAQ"
@@ -1261,47 +1367,59 @@ msgstr "Sök FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Sök FAQ \"Liten\"."
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "Sök FAQ."
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
 msgstr ""
+"Välj hur många objekt som ska visas i journalöversikt \"Liten\" som "
+"standard."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
-msgstr ""
+msgstr "Välj hur många objekt som ska visas i översikt \"Liten\" som standard."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Ange standardhöjd (i pixlar) för infogade HTML-fält i AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Ange standardhöjd (i pixlar) för infogade HTML-fält i CustomerFAQZoom "
+"(och PublicFAQZoom)."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
-msgstr ""
+msgstr "Ange maximal höjd (i pixlar) för infogade HTML-fält i AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Ange maximal höjd (i pixlar) för infogade HTML-fält i CustomerFAQZoom "
+"(och PublicFAQZoom)."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Visa knappen \"Infoga FAQ-länk\" i AgentFAQZoomSmall för publika "
+"FAQ-artiklar."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Visa knappen \"Infoga FAQ-text & länk\" / \"Infoga fullständig FAQ & "
+"länk\" i AgentFAQZoomSmall för publika FAQ-artiklar."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
 msgstr ""
+"Visa knappen \"Infoga FAQ-text\" / \"Infoga fullständig FAQ\" i "
+"AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
@@ -1313,55 +1431,69 @@ msgstr "Visa FAQ sökväg ja/nej."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
-msgstr ""
+msgstr "Visa ogiltiga poster i FAQ Explorer-resultatet i agentgränssnittet."
 
 #. SysConfig
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Visa objekt från underkategorier."
 
 #. SysConfig
 msgid "Show last change items in defined interfaces."
-msgstr ""
+msgstr "Visa senast ändrade objekt i definierade gränssnitt."
 
 #. SysConfig
 msgid "Show last created items in defined interfaces."
-msgstr ""
+msgstr "Visa senast skapade objekt i definierade gränssnitt."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Visa stjärnor för artiklar med betyg lika med eller högre än det "
+"angivna värdet (sätt värdet till '0' för att inaktivera utdata)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "Visa Top 10-objekt i definierade gränssnitt."
 
 #. SysConfig
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Visa röstning i definierade gränssnitt."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
 msgstr ""
+"Visar en länk i menyn som gör det möjligt att länka en FAQ till ett "
+"annat objekt i zoom-vyn för den FAQ:n i agentgränssnittet."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
 msgstr ""
+"Visar en länk i menyn som gör det möjligt att ta bort en FAQ i "
+"zoom-vyn i agentgränssnittet."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
 msgstr ""
+"Visar en länk i menyn för att öppna historiken för en FAQ i zoom-vyn "
+"i agentgränssnittet."
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Visar en länk i menyn för att redigera en FAQ i zoom-vyn i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
 msgstr ""
+"Visar en länk i menyn för att gå tillbaka i FAQ zoom-vyn i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Visar en länk i menyn för att skriva ut en FAQ i zoom-vyn i "
+"agentgränssnittet."
 
 #. SysConfig
 msgid "Solution"
@@ -1373,43 +1505,53 @@ msgstr "Symptom"
 
 #. SysConfig
 msgid "Text Only"
-msgstr ""
+msgstr "Endast text"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Standardspråk för relaterade FAQ-artiklar."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
 msgstr ""
+"Identifierare för en FAQ, t.ex. FAQ#, KB#, MyFAQ#. Standardvärdet är "
+"FAQ#."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
 msgstr ""
+"Denna inställning anger att ett 'FAQ'-objekt kan länkas till andra "
+"'FAQ'-objekt med länktypen 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
 msgstr ""
+"Denna inställning anger att ett 'FAQ'-objekt kan länkas till andra "
+"'FAQ'-objekt med länktypen 'ParentChild'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
 msgstr ""
+"Denna inställning anger att ett 'FAQ'-objekt kan länkas till andra "
+"'Ticket'-objekt med länktypen 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
 msgstr ""
+"Denna inställning anger att ett 'FAQ'-objekt kan länkas till andra "
+"'Ticket'-objekt med länktypen 'ParentChild'."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Ticket-brödtext för godkännande av FAQ-artikel."
 
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article."
-msgstr ""
+msgstr "Ticket-ämne för godkännande av FAQ-artikel."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Verktygsfältspost för snabbkommando."
 
 #. SysConfig
 msgid "external (customer)"
@@ -1425,81 +1567,87 @@ msgstr "offentlig (alla)"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
+msgstr "publik (publik)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Relaterade artiklar för agent-FAQ"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Relaterade artiklar för agent-FAQ."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Under brödtexten"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Under ämnet"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Kundanvändarattribut för att kontrollera grupptillhörighet."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Definierar positionen för widgeten med relaterade FAQ-artiklar."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Aktivera behörigheter för kundgrupper."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Aktivera behörighetsattributt för kundanvändare."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Aktivera funktionen för relaterade artiklar i agentgränssnittet."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Generera HTML-kommentarhakar för angivna block så att filter kan "
+"använda dem."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Grupp som kundanvändare tillhör som standard (om denna inställning är "
+"aktiverad)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Mappning mellan värde för kundanvändarattribut och grupp."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Visa stjärnor för artiklar med betyg lika med eller högre än det "
+"angivna värdet om aktiverat."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "FAQ-kärndata"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Mallnamn"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Begränsning"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Aktivera räkning av artiklar från FAQ-underkategorier i FAQ Explorer."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Dynamisk information"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Alla fält markerade med en asterisk (*) är obligatoriska."
 

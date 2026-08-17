@@ -37,11 +37,11 @@ msgstr "UKK kategorioiden hallinta"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "Lisää FAQ-kategoria"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "Muokkaa FAQ-kategoriaa"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add category"
@@ -105,7 +105,7 @@ msgstr "Pikahaku"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Wildcards are allowed."
-msgstr ""
+msgstr "Jokerimerkit ovat sallittuja."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
 msgid "Advanced Search"
@@ -137,7 +137,7 @@ msgstr "Luontiaika"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQJournalOverviewSmall.tt
 msgid "No FAQ Journal data found."
-msgstr ""
+msgstr "FAQ-lokitietoja ei löytynyt."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "FAQ Language Management"
@@ -145,15 +145,15 @@ msgstr "UKK kielten hallinta"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "Lisää FAQ-kieli"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit FAQ Language"
-msgstr ""
+msgstr "Muokkaa FAQ-kieltä"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Use this feature if you want to work with multiple languages."
-msgstr ""
+msgstr "Käytä tätä ominaisuutta, jos haluat työskennellä useilla kielillä."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add language"
@@ -181,7 +181,7 @@ msgstr "Seuraavat artikkelit käyttävät tätä kieltä"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "Context Settings"
-msgstr ""
+msgstr "Kontekstiasetukset"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
 msgid "FAQ articles per page"
@@ -201,39 +201,39 @@ msgstr "Hakusana"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Vote (e. g. Equals 10 or GreaterThan 60)"
-msgstr ""
+msgstr "Äänestys (esim. Equals 10 tai GreaterThan 60)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Rate (e. g. Equals 25% or GreaterThan 75%)"
-msgstr ""
+msgstr "Arvosana (esim. Equals 25% tai GreaterThan 75%)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Approved"
-msgstr ""
+msgstr "Hyväksytty"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "Last changed by"
-msgstr ""
+msgstr "Viimeksi muuttanut"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (before/after)"
-msgstr ""
+msgstr "FAQ-artikkelin luontiaika (ennen/jälkeen)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Create Time (between)"
-msgstr ""
+msgstr "FAQ-artikkelin luontiaika (välillä)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (before/after)"
-msgstr ""
+msgstr "FAQ-artikkelin muutosajankohta (ennen/jälkeen)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
 msgid "FAQ Article Change Time (between)"
-msgstr ""
+msgstr "FAQ-artikkelin muutosajankohta (välillä)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
 msgid "FAQFulltext"
-msgstr ""
+msgstr "FAQFulltext"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Search"
@@ -241,47 +241,47 @@ msgstr "UKK haku"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Profile Selection"
-msgstr ""
+msgstr "Profiilin valinta"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Vote"
-msgstr ""
+msgstr "Äänestä"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No vote settings"
-msgstr ""
+msgstr "Ei äänestysasetuksia"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific votes"
-msgstr ""
+msgstr "Tietyt äänet"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 10 or GreaterThan 60"
-msgstr ""
+msgstr "esim. Equals 10 tai GreaterThan 60"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Rate"
-msgstr ""
+msgstr "Arvosana"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "No rate settings"
-msgstr ""
+msgstr "Ei arvosana-asetuksia"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Specific rate"
-msgstr ""
+msgstr "Tietty arvosana"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "e. g. Equals 25% or GreaterThan 75%"
-msgstr ""
+msgstr "esim. Equals 25% tai GreaterThan 75%"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Create Time"
-msgstr ""
+msgstr "FAQ-artikkelin luontiaika"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "FAQ Article Change Time"
-msgstr ""
+msgstr "FAQ-artikkelin muutosajankohta"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "FAQ Information"
@@ -310,6 +310,9 @@ msgstr "Lataa liitetiedosto"
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS)."
 msgstr ""
+"Seuraavien kuvauslohkojen linkkien avaamiseen saatat joutua painamaan "
+"Ctrl-, Cmd- tai Shift-näppäintä linkkiä napsauttaessa (selaimesta ja "
+"käyttöjärjestelmästä riippuen)."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoom.tt
 msgid "How helpful was this article? Please give us your rating and help to improve the FAQ Database. Thank You!"
@@ -325,7 +328,7 @@ msgstr "hyödyllinen"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Add FAQ title to article subject"
-msgstr ""
+msgstr "Lisää FAQ-otsikko artikkelin aiheeseen"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Text"
@@ -333,7 +336,7 @@ msgstr "Lisää UKK teksti"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ"
-msgstr ""
+msgstr "Lisää koko FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert FAQ Link"
@@ -345,7 +348,7 @@ msgstr "Lisää UKK teksti ja linkki"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQZoomSmall.tt
 msgid "Insert Full FAQ & Link"
-msgstr ""
+msgstr "Lisää koko FAQ ja linkki"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQExplorer.tt
 msgid "No FAQ articles found."
@@ -353,15 +356,15 @@ msgstr "Yhtään artikkelia ei löytynyt."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "This might be helpful"
-msgstr ""
+msgstr "Tästä voi olla apua"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "Aiheelle ja tekstille ei löytynyt hyödyllisiä resursseja."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "Kirjoita aihe tai teksti saadaksesi listan hyödyllisistä resursseista."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
@@ -369,19 +372,19 @@ msgstr "Hae artikkeleista (esim. \"Matti*\" tai \"Meik*nen\")"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Vote restrictions"
-msgstr ""
+msgstr "Äänestysrajoitukset"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with votes..."
-msgstr ""
+msgstr "Vain FAQ-artikkelit, joilla on ääniä..."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Rate restrictions"
-msgstr ""
+msgstr "Arvosanarajoitukset"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles with rate..."
-msgstr ""
+msgstr "Vain FAQ-artikkelit arvosanalla..."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Time restrictions"
@@ -389,19 +392,19 @@ msgstr "Aikarajoitus"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created"
-msgstr ""
+msgstr "Vain luodut FAQ-artikkelit"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Only FAQ articles created between"
-msgstr ""
+msgstr "Vain FAQ-artikkelit luotu välillä"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Search-Profile as Template?"
-msgstr ""
+msgstr "Hakuprofiili mallina?"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Article Number"
-msgstr ""
+msgstr "Artikkelinumero"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
 msgid "Search for articles with keyword"
@@ -413,23 +416,25 @@ msgstr "Julkinen"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchResultShort.tt
 msgid "Back to FAQ Explorer"
-msgstr ""
+msgstr "Takaisin FAQ-selaimeen"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "You need rw permission!"
-msgstr ""
+msgstr "Tarvitset rw-oikeuden!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No categories found where user has read/write permissions!"
 msgstr ""
+"Ei löytynyt kategorioita, joihin käyttäjällä on "
+"luku-/kirjoitusoikeudet!"
 
 #. Perl Module: Kernel/Modules/AgentFAQAdd.pm
 msgid "No default language found and can't create a new one."
-msgstr ""
+msgstr "Oletuskieltä ei löytynyt, eikä uutta voi luoda."
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Need CategoryID!"
-msgstr ""
+msgstr "CategoryID tarvitaan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "A category should have a name!"
@@ -441,15 +446,15 @@ msgstr "Tämä kategoria on jo olemassa"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "This category already exists!"
-msgstr ""
+msgstr "Tämä kategoria on jo olemassa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "No CategoryID is given!"
-msgstr ""
+msgstr "CategoryID-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "Was not able to delete the category %s!"
-msgstr ""
+msgstr "Kategoriaa %s ei voitu poistaa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQCategory.pm
 msgid "FAQ category updated!"
@@ -465,27 +470,27 @@ msgstr "Poista kategoria"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "No ItemID is given!"
-msgstr ""
+msgstr "ItemID-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "You have no permission for this category!"
-msgstr ""
+msgstr "Sinulla ei ole oikeuksia tähän kategoriaan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQDelete.pm
 msgid "Was not able to delete the FAQ article %s!"
-msgstr ""
+msgstr "FAQ-artikkelia %s ei voitu poistaa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQExplorer.pm
 msgid "The CategoryID %s is invalid."
-msgstr ""
+msgstr "CategoryID %s on virheellinen."
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "Can't show history, as no ItemID is given!"
-msgstr ""
+msgstr "Historiaa ei voi näyttää, koska ItemID-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/AgentFAQHistory.pm
 msgid "FAQ History"
-msgstr ""
+msgstr "FAQ-historia"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "FAQ Journal"
@@ -493,19 +498,21 @@ msgstr "UKK aikajärjestys"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Need config option FAQ::Frontend::Overview"
-msgstr ""
+msgstr "Konfigurointivaihtoehto FAQ::Frontend::Overview tarvitaan"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "Config option FAQ::Frontend::Overview needs to be a HASH ref!"
 msgstr ""
+"Konfigurointivaihtoehdon FAQ::Frontend::Overview on oltava "
+"HASH-viittaus!"
 
 #. Perl Module: Kernel/Modules/AgentFAQJournal.pm
 msgid "No config option found for the view \"%s\"!"
-msgstr ""
+msgstr "Näkymälle \"%s\" ei löytynyt konfigurointivaihtoehtoa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "No LanguageID is given!"
-msgstr ""
+msgstr "LanguageID-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "The name is required!"
@@ -517,7 +524,7 @@ msgstr "Tämä kieli on jo olemassa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "Was not able to delete the language %s!"
-msgstr ""
+msgstr "Kieltä %s ei voitu poistaa!"
 
 #. Perl Module: Kernel/Modules/AgentFAQLanguage.pm
 msgid "FAQ language updated!"
@@ -537,23 +544,23 @@ msgstr "Vastaus"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "Last update"
-msgstr ""
+msgstr "Viimeisin päivitys"
 
 #. Perl Module: Kernel/Modules/AgentFAQPrint.pm
 msgid "FAQ Dynamic Fields"
-msgstr ""
+msgstr "FAQ-dynaamiset kentät"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "No %s is given!"
-msgstr ""
+msgstr "%s-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/AgentFAQRichText.pm
 msgid "Can't load LanguageObject!"
-msgstr ""
+msgstr "LanguageObjectia ei voi ladata!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "No Result!"
-msgstr ""
+msgstr "Ei tulosta!"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Number"
@@ -561,47 +568,47 @@ msgstr "UKK numero"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Last Changed by"
-msgstr ""
+msgstr "Viimeksi muuttanut"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (before/after)"
-msgstr ""
+msgstr "FAQ-kohteen luontiaika (ennen/jälkeen)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Create Time (between)"
-msgstr ""
+msgstr "FAQ-kohteen luontiaika (välillä)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (before/after)"
-msgstr ""
+msgstr "FAQ-kohteen muutosajankohta (ennen/jälkeen)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "FAQ Item Change Time (between)"
-msgstr ""
+msgstr "FAQ-kohteen muutosajankohta (välillä)"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Equals"
-msgstr ""
+msgstr "Yhtä suuri kuin"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than"
-msgstr ""
+msgstr "Suurempi kuin"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Greater than equals"
-msgstr ""
+msgstr "Suurempi tai yhtä suuri kuin"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than"
-msgstr ""
+msgstr "Pienempi kuin"
 
 #. Perl Module: Kernel/Modules/AgentFAQSearch.pm
 msgid "Smaller than equals"
-msgstr ""
+msgstr "Pienempi tai yhtä suuri kuin"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Need FileID!"
-msgstr ""
+msgstr "FileID tarvitaan!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "Thanks for your vote!"
@@ -617,11 +624,11 @@ msgstr "Ei valittua arviota"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The voting mechanism is not enabled!"
-msgstr ""
+msgstr "Äänestysmekanismi ei ole käytössä!"
 
 #. Perl Module: Kernel/Modules/AgentFAQZoom.pm
 msgid "The vote rate is not defined!"
-msgstr ""
+msgstr "Äänestysarvosanaa ei ole määritelty!"
 
 #. Perl Module: Kernel/Modules/CustomerFAQPrint.pm
 msgid "FAQ Article Print"
@@ -629,11 +636,11 @@ msgstr "Tulosta artikkeli"
 
 #. Perl Module: Kernel/Modules/CustomerFAQSearch.pm
 msgid "Created between"
-msgstr ""
+msgstr "Luotu välillä"
 
 #. Perl Module: Kernel/Modules/CustomerFAQZoom.pm
 msgid "Need ItemID!"
-msgstr ""
+msgstr "ItemID tarvitaan!"
 
 #. Perl Module: Kernel/Modules/PublicFAQExplorer.pm
 msgid "FAQ Articles (new created)"
@@ -649,43 +656,43 @@ msgstr "Artikkelit (Top 10)"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "No Type is given!"
-msgstr ""
+msgstr "Type-arvoa ei ole annettu!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Type must be either LastCreate or LastChange or Top10!"
-msgstr ""
+msgstr "Typen on oltava LastCreate, LastChange tai Top10!"
 
 #. Perl Module: Kernel/Modules/PublicFAQRSS.pm
 msgid "Can't create RSS file!"
-msgstr ""
+msgstr "RSS-tiedostoa ei voi luoda!"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
 msgid "%s (FAQFulltext)"
-msgstr ""
+msgstr "%s (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (%s)"
-msgstr ""
+msgstr "%s - Asiakas (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
 msgid "%s - Customer (FAQFulltext)"
-msgstr ""
+msgstr "%s - Asiakas (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (%s)"
-msgstr ""
+msgstr "%s - Julkinen (%s)"
 
 #. Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
 msgid "%s - Public (FAQFulltext)"
-msgstr ""
+msgstr "%s - Julkinen (FAQFulltext)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Arvosana tarvitaan!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
-msgstr ""
+msgstr "Tämä artikkeli on tyhjä!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Latest created FAQ articles"
@@ -701,7 +708,7 @@ msgstr "Top 10 artikkelit"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "Sisältötyyppi"
 
 #. XML Definition: FAQ.sopm
 msgid "internal"
@@ -722,18 +729,22 @@ msgstr "Ok"
 #. SysConfig
 msgid "A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image."
 msgstr ""
+"Suodatin HTML-tulosteeseen, joka lisää linkkejä määritellyn "
+"merkkijonon taakse. Elementti Image sallii kaksi syöttötapaa. Ensiksi "
+"kuvan nimi (esim. faq.png). Tällöin käytetään järjestelmän "
+"kuvapolkua. Toinen mahdollisuus on syöttää linkki kuvaan."
 
 #. SysConfig
 msgid "Add FAQ article"
-msgstr ""
+msgstr "Lisää FAQ-artikkeli"
 
 #. SysConfig
 msgid "CSS color for the voting result."
-msgstr ""
+msgstr "CSS-väri äänestystulokselle."
 
 #. SysConfig
 msgid "Cache Time To Leave for FAQ items."
-msgstr ""
+msgstr "Välimuistin Time To Leave FAQ-kohteille."
 
 #. SysConfig
 msgid "Category Management"
@@ -741,243 +752,322 @@ msgstr "Kategoriahallinta"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Kategorioiden hallinta."
 
 #. SysConfig
 msgid "Customer FAQ Print."
-msgstr ""
+msgstr "Asiakas-FAQ-tulostus."
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Asiakas-FAQ:n liittyvät artikkelit"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Asiakas-FAQ:n liittyvät artikkelit."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
-msgstr ""
+msgstr "Asiakas-FAQ-zoom."
 
 #. SysConfig
 msgid "Customer FAQ search."
-msgstr ""
+msgstr "Asiakas-FAQ-haku."
 
 #. SysConfig
 msgid "Customer FAQ."
-msgstr ""
+msgstr "Asiakas-FAQ."
 
 #. SysConfig
 msgid "Decimal places of the voting result."
-msgstr ""
+msgstr "Äänestystuloksen desimaalien määrä."
 
 #. SysConfig
 msgid "Default category name."
-msgstr ""
+msgstr "Oletuskategorian nimi."
 
 #. SysConfig
 msgid "Default language for FAQ articles on single language mode."
-msgstr ""
+msgstr "Oletuskieli FAQ-artikkeleille yksikielisessä tilassa."
 
 #. SysConfig
 msgid "Default maximum size of the titles in a FAQ article to be shown."
-msgstr ""
+msgstr "Oletusarvoinen enimmäispituus näytettäville FAQ-artikkelin otsikoille."
 
 #. SysConfig
 msgid "Default priority of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Oletusprioriteetti tiketeille FAQ-artikkelien hyväksyntään."
 
 #. SysConfig
 msgid "Default state for FAQ entry."
-msgstr ""
+msgstr "Oletustila FAQ-merkinnälle."
 
 #. SysConfig
 msgid "Default state of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Oletustila tiketeille FAQ-artikkelien hyväksyntään."
 
 #. SysConfig
 msgid "Default type of tickets for the approval of FAQ articles."
-msgstr ""
+msgstr "Oletustyyppi tiketeille FAQ-artikkelien hyväksyntään."
 
 #. SysConfig
 msgid "Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system."
 msgstr ""
+"Oletusarvo Action-parametrille julkisessa käyttöliittymässä. "
+"Action-parametria käytetään järjestelmän skripteissä."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Määritä Actions, joissa asetukset-painike on käytettävissä "
+"linkitettyjen objektien widgetissä (LinkObject::ViewMode = "
+"\"complex\"). Huomaa, että näiden Actionien on rekisteröitävä "
+"seuraavat JS- ja CSS-tiedostot: Core.AllocationList.css, "
+"Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js ja Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define if the FAQ title should be concatenated to article subject."
-msgstr ""
+msgstr "Määritä, lisätäänkö FAQ-otsikko artikkelin aiheeseen."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Määritä, mitkä sarakkeet näytetään linkitettyjen FAQ:iden widgetissä "
+"(LinkObject::ViewMode = \"complex\"). Huom: "
+"DefaultColumns-asetuksessa sallitaan vain FAQ-attribuutit ja "
+"dynaamiset kentät (DynamicField_NameX)."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
-msgstr ""
+msgstr "Määrittää yleiskatsausmoduulin FAQ-lokin pienenäkymän näyttämiseen."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ list."
-msgstr ""
+msgstr "Määrittää yleiskatsausmoduulin FAQ-listan pienenäkymän näyttämiseen."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the agent interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun agentin "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the customer interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun asiakkaan "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in a FAQ search of the public interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun julkisen "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the agent interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun agentin "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the customer interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun asiakkaan "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Defines the default FAQ attribute for FAQ sorting in the FAQ Explorer of the public interface."
 msgstr ""
+"Määrittää oletusarvoisen FAQ-attribuutin FAQ-lajitteluun julkisen "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletusjärjestyksen FAQ-selaimen tuloksissa agentin "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletusjärjestyksen FAQ-selaimen tuloksissa asiakkaan "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default FAQ order in the FAQ Explorer result of the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletusjärjestyksen FAQ-selaimen tuloksissa julkisen "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the agent interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletus-FAQ-järjestyksen hakutulokselle agentin "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the customer interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletus-FAQ-järjestyksen hakutulokselle asiakkaan "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default FAQ order of a search result in the public interface. Up: oldest on top. Down: latest on top."
 msgstr ""
+"Määrittää oletus-FAQ-järjestyksen hakutulokselle julkisen "
+"käyttöliittymässä. Up: vanhin ylinnä. Down: uusin ylinnä."
 
 #. SysConfig
 msgid "Defines the default shown FAQ search attribute for FAQ search screen."
-msgstr ""
+msgstr "Määrittää oletuksena näytettävän FAQ-hakuattribuutin FAQ-hakunäytölle."
 
 #. SysConfig
 msgid "Defines the information to be inserted in a FAQ based Ticket. \"Full FAQ\" includes text, attachments and inline images."
 msgstr ""
+"Määrittää tiedot, jotka lisätään FAQ-pohjaiseen tikettiin. \"Full "
+"FAQ\" sisältää tekstin, liitteet ja upotetut kuvat."
 
 #. SysConfig
 msgid "Defines the parameters for the dashboard backend. \"Limit\" defines the number of entries displayed by default. \"Group\" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" indicates if the plugin is enabled by default or if the user needs to enable it manually."
 msgstr ""
+"Määrittää parametrit kojelaudan taustajärjestelmälle. \"Limit\" "
+"määrittää oletuksena näytettävien merkintöjen määrän. \"Group\" "
+"rajoittaa pääsyä laajennukseen (esim. Group: admin;group1;group2;). "
+"\"Default\" ilmaisee, onko laajennus oletuksena käytössä vai pitääkö "
+"käyttäjän ottaa se käyttöön manuaalisesti."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column."
 msgstr ""
+"Määrittää näytettävät sarakkeet FAQ-selaimessa. Tällä asetuksella ei "
+"ole vaikutusta sarakkeen sijaintiin."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ journal. This option has no effect on the position of the column."
 msgstr ""
+"Määrittää näytettävät sarakkeet FAQ-lokissa. Tällä asetuksella ei ole "
+"vaikutusta sarakkeen sijaintiin."
 
 #. SysConfig
 msgid "Defines the shown columns in the FAQ search. This option has no effect on the position of the column."
 msgstr ""
+"Määrittää näytettävät sarakkeet FAQ-haussa. Tällä asetuksella ei ole "
+"vaikutusta sarakkeen sijaintiin."
 
 #. SysConfig
 msgid "Defines where the 'Insert FAQ' link will be displayed."
-msgstr ""
+msgstr "Määrittää, missä 'Insert FAQ' -linkki näytetään."
 
 #. SysConfig
 msgid "Definition of FAQ item free text field."
-msgstr ""
+msgstr "FAQ-kohteen vapaatekstikentän määrittely."
 
 #. SysConfig
 msgid "Delete this FAQ"
-msgstr ""
+msgstr "Poista tämä FAQ"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
 msgstr ""
+"FAQ:n lisäysnäytössä agentin käyttöliittymässä näytettävät dynaamiset "
+"kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
 msgstr ""
+"FAQ:n muokkausnäytössä agentin käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"FAQ:n yleiskatsausnäytössä asiakkaan käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"FAQ:n yleiskatsausnäytössä julkisessa käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
 msgstr ""
+"FAQ:n tulostusnäytössä agentin käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
+"FAQ:n tulostusnäytössä asiakkaan käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
+"FAQ:n tulostusnäytössä julkisessa käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
 msgstr ""
+"FAQ:n hakunäytössä agentin käyttöliittymässä näytettävät dynaamiset "
+"kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"FAQ:n hakunäytössä asiakkaan käyttöliittymässä näytettävät dynaamiset "
+"kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
+"FAQ:n hakunäytössä julkisessa käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
+"FAQ:n pienen muodon yleiskatsausnäytössä agentin käyttöliittymässä "
+"näytettävät dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
 msgstr ""
+"FAQ:n zoom-näytössä agentin käyttöliittymässä näytettävät dynaamiset "
+"kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
+"FAQ:n zoom-näytössä asiakkaan käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
 msgstr ""
+"FAQ:n zoom-näytössä julkisessa käyttöliittymässä näytettävät "
+"dynaamiset kentät."
 
 #. SysConfig
 msgid "Edit this FAQ"
-msgstr ""
+msgstr "Muokkaa tätä FAQ:ta"
 
 #. SysConfig
 msgid "Enable multiple languages on FAQ module."
-msgstr ""
+msgstr "Ota useat kielet käyttöön FAQ-moduulissa."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
 msgstr ""
+"Ota liittyvien artikkelien ominaisuus käyttöön "
+"asiakaskäyttöliittymässä."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
-msgstr ""
+msgstr "Ota äänestysmekanismi käyttöön FAQ-moduulissa."
 
 #. SysConfig
 msgid "Explorer"
@@ -985,79 +1075,79 @@ msgstr "Selain"
 
 #. SysConfig
 msgid "FAQ AJAX Responder"
-msgstr ""
+msgstr "FAQ AJAX Responder"
 
 #. SysConfig
 msgid "FAQ AJAX Responder for Richtext."
-msgstr ""
+msgstr "FAQ AJAX Responder rich textille."
 
 #. SysConfig
 msgid "FAQ Area"
-msgstr ""
+msgstr "FAQ-alue"
 
 #. SysConfig
 msgid "FAQ Area."
-msgstr ""
+msgstr "FAQ-alue."
 
 #. SysConfig
 msgid "FAQ Delete."
-msgstr ""
+msgstr "FAQ-poisto."
 
 #. SysConfig
 msgid "FAQ Edit."
-msgstr ""
+msgstr "FAQ-muokkaus."
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "FAQ-historia."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
-msgstr ""
+msgstr "FAQ-lokin yleiskatsauksen \"Small\" -raja"
 
 #. SysConfig
 msgid "FAQ Overview \"Small\" Limit"
-msgstr ""
+msgstr "FAQ-yleiskatsauksen \"Small\" -raja"
 
 #. SysConfig
 msgid "FAQ Print."
-msgstr ""
+msgstr "FAQ-tulostus."
 
 #. SysConfig
 msgid "FAQ search backend router of the agent interface."
-msgstr ""
+msgstr "FAQ-haun taustareititin agentin käyttöliittymässä."
 
 #. SysConfig
 msgid "Field4"
-msgstr ""
+msgstr "Field4"
 
 #. SysConfig
 msgid "Field5"
-msgstr ""
+msgstr "Field5"
 
 #. SysConfig
 msgid "Full FAQ"
-msgstr ""
+msgstr "Koko FAQ"
 
 #. SysConfig
 msgid "Group for the approval of FAQ articles."
-msgstr ""
+msgstr "Ryhmä FAQ-artikkelien hyväksyntään."
 
 #. SysConfig
 msgid "History of this FAQ"
-msgstr ""
+msgstr "Tämän FAQ:n historia"
 
 #. SysConfig
 msgid "Include internal fields on a FAQ based Ticket."
-msgstr ""
+msgstr "Sisällytä sisäiset kentät FAQ-pohjaiseen tikettiin."
 
 #. SysConfig
 msgid "Include the name of each field in a FAQ based Ticket."
-msgstr ""
+msgstr "Sisällytä kunkin kentän nimi FAQ-pohjaiseen tikettiin."
 
 #. SysConfig
 msgid "Interfaces where the quick search should be shown."
-msgstr ""
+msgstr "Käyttöliittymät, joissa pikahaku näytetään."
 
 #. SysConfig
 msgid "Journal"
@@ -1069,155 +1159,209 @@ msgstr "Kielten hallinta"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "Kielten hallinta."
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "Hakuraja avainsanoihin perustuvan FAQ-artikkelilistan muodostamiseen."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
-msgstr ""
+msgstr "Linkitä toinen objekti tähän FAQ-kohteeseen"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
 msgstr ""
+"Luettelo jonoista, joissa liittyvien artikkelien ominaisuus on "
+"käytössä."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
 msgstr ""
+"Luettelo tilatyypeistä, joita voidaan käyttää agentin "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "List of state types which can be used in the customer interface."
 msgstr ""
+"Luettelo tilatyypeistä, joita voidaan käyttää asiakkaan "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "List of state types which can be used in the public interface."
 msgstr ""
+"Luettelo tilatyypeistä, joita voidaan käyttää julkisessa "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Latausmoduulin rekisteröinti julkiseen käyttöliittymään."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä agentin käyttöliittymän "
+"FAQ-selaimen tuloksissa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä asiakkaan käyttöliittymän "
+"FAQ-selaimen tuloksissa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä julkisen käyttöliittymän "
+"FAQ-selaimen tuloksissa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ journal in the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä agentin käyttöliittymän "
+"FAQ-lokissa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä agentin käyttöliittymän "
+"hakutuloksessa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä asiakkaan käyttöliittymän "
+"hakutuloksessa."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the result of a search in the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien enimmäismäärä julkisen käyttöliittymän "
+"hakutuloksessa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus agentin "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus asiakkaan "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Explorer in the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus julkisen "
+"käyttöliittymän FAQ-selaimessa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus agentin "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus asiakkaan "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ Search in the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus julkisen "
+"käyttöliittymän FAQ-haussa."
 
 #. SysConfig
 msgid "Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface."
 msgstr ""
+"Näytettävien FAQ-artikkelin otsikoiden enimmäispituus agentin "
+"käyttöliittymän FAQ-lokissa."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Moduuli HTML OpenSearch -profiilin luomiseen lyhyttä FAQ-hakua varten "
+"asiakkaan käyttöliittymässä."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
 msgstr ""
+"Moduuli HTML OpenSearch -profiilin luomiseen lyhyttä FAQ-hakua varten "
+"julkisessa käyttöliittymässä."
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Moduuli html OpenSearch -profiilin luomiseen lyhyttä FAQ-hakua varten."
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "Uusi FAQ-artikkeli."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
-msgstr ""
+msgstr "Uudet FAQ-artikkelit tarvitsevat hyväksynnän ennen julkaisua."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien määrä asiakkaan käyttöliittymän "
+"FAQ-selaimessa."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed in the FAQ Explorer of the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien määrä julkisen käyttöliittymän "
+"FAQ-selaimessa."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the customer interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien määrä hakutuloksen kullakin sivulla "
+"asiakkaan käyttöliittymässä."
 
 #. SysConfig
 msgid "Number of FAQ articles to be displayed on each page of a search result in the public interface."
 msgstr ""
+"Näytettävien FAQ-artikkelien määrä hakutuloksen kullakin sivulla "
+"julkisessa käyttöliittymässä."
 
 #. SysConfig
 msgid "Number of shown items in last changes."
-msgstr ""
+msgstr "Näytettävien kohteiden määrä viimeisimmissä muutoksissa."
 
 #. SysConfig
 msgid "Number of shown items in last created."
-msgstr ""
+msgstr "Näytettävien kohteiden määrä viimeisimmissä luoduissa."
 
 #. SysConfig
 msgid "Number of shown items in the top 10 feature."
-msgstr ""
+msgstr "Näytettävien kohteiden määrä top 10 -ominaisuudessa."
 
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
 msgstr ""
+"Tulostussuodatin JavaScriptin lisäämiseen "
+"CustomerTicketMessage-näyttöön."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Tulostusraja liittyville FAQ-artikkeleille."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
 msgstr ""
+"Parametrit sivuille (joissa FAQ-kohteet näytetään) pienen FAQ-lokin "
+"yleiskatsauksessa."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview."
 msgstr ""
+"Parametrit sivuille (joissa FAQ-kohteet näytetään) pienen "
+"FAQ-yleiskatsauksessa."
 
 #. SysConfig
 msgid "Print this FAQ"
@@ -1225,139 +1369,174 @@ msgstr "Tulosta artikkeli"
 
 #. SysConfig
 msgid "Public FAQ Print."
-msgstr ""
+msgstr "Julkinen FAQ-tulostus."
 
 #. SysConfig
 msgid "Public FAQ Zoom."
-msgstr ""
+msgstr "Julkinen FAQ-zoom."
 
 #. SysConfig
 msgid "Public FAQ search."
-msgstr ""
+msgstr "Julkinen FAQ-haku."
 
 #. SysConfig
 msgid "Public FAQ."
-msgstr ""
+msgstr "Julkinen FAQ."
 
 #. SysConfig
 msgid "Queue for the approval of FAQ articles."
-msgstr ""
+msgstr "Jono FAQ-artikkelien hyväksyntään."
 
 #. SysConfig
 msgid "Rates for voting. Key must be in percent."
-msgstr ""
+msgstr "Äänestyksen arvosanat. Avaimen on oltava prosentteina."
 
 #. SysConfig
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. SysConfig
 msgid "Search FAQ"
-msgstr ""
+msgstr "Hae FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Hae FAQ Small."
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "Hae FAQ."
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
 msgstr ""
+"Valitse, kuinka monta kohdetta näytetään oletuksena lokin "
+"yleiskatsauksessa \"Small\"."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
 msgstr ""
+"Valitse, kuinka monta kohdetta näytetään oletuksena yleiskatsauksessa "
+"\"Small\"."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"Aseta upotettujen HTML-kenttien oletuskorkeus (pikseleinä) näytössä "
+"AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Aseta upotettujen HTML-kenttien oletuskorkeus (pikseleinä) näytöissä "
+"CustomerFAQZoom (ja PublicFAQZoom)."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in AgentFAQZoom."
 msgstr ""
+"Aseta upotettujen HTML-kenttien enimmäiskorkeus (pikseleinä) näytössä "
+"AgentFAQZoom."
 
 #. SysConfig
 msgid "Set the maximum height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom)."
 msgstr ""
+"Aseta upotettujen HTML-kenttien enimmäiskorkeus (pikseleinä) "
+"näytöissä CustomerFAQZoom (ja PublicFAQZoom)."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Näytä \"Insert FAQ Link\" -painike näytössä AgentFAQZoomSmall "
+"julkisille FAQ-artikkeleille."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" Button in AgentFAQZoomSmall for public FAQ Articles."
 msgstr ""
+"Näytä \"Insert FAQ Text & Link\" / \"Insert Full FAQ & Link\" "
+"-painike näytössä AgentFAQZoomSmall julkisille FAQ-artikkeleille."
 
 #. SysConfig
 msgid "Show \"Insert FAQ Text\" / \"Insert Full FAQ\" Button in AgentFAQZoomSmall."
 msgstr ""
+"Näytä \"Insert FAQ Text\" / \"Insert Full FAQ\" -painike näytössä "
+"AgentFAQZoomSmall."
 
 #. SysConfig
 msgid "Show FAQ Article with HTML."
-msgstr ""
+msgstr "Näytä FAQ-artikkeli HTML:nä."
 
 #. SysConfig
 msgid "Show FAQ path yes/no."
-msgstr ""
+msgstr "Näytä FAQ-polku kyllä/ei."
 
 #. SysConfig
 msgid "Show invalid items in the FAQ Explorer result of the agent interface."
 msgstr ""
+"Näytä virheelliset kohteet agentin käyttöliittymän FAQ-selaimen "
+"tuloksissa."
 
 #. SysConfig
 msgid "Show items of subcategories."
-msgstr ""
+msgstr "Näytä alikategorioiden kohteet."
 
 #. SysConfig
 msgid "Show last change items in defined interfaces."
-msgstr ""
+msgstr "Näytä viimeksi muutetut kohteet määritellyissä käyttöliittymissä."
 
 #. SysConfig
 msgid "Show last created items in defined interfaces."
-msgstr ""
+msgstr "Näytä viimeksi luodut kohteet määritellyissä käyttöliittymissä."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Näytä tähdet artikkeleille, joiden arvosana on yhtä suuri tai "
+"suurempi kuin määritelty arvo (aseta arvoksi '0' poistaaksesi "
+"tulosteen käytöstä)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
-msgstr ""
+msgstr "Näytä top 10 -kohteet määritellyissä käyttöliittymissä."
 
 #. SysConfig
 msgid "Show voting in defined interfaces."
-msgstr ""
+msgstr "Näytä äänestys määritellyissä käyttöliittymissä."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface."
 msgstr ""
+"Näyttää valikossa linkin, jolla FAQ voidaan linkittää toiseen "
+"objektiin kyseisen FAQ:n zoom-näkymässä agentin käyttöliittymässä."
 
 #. SysConfig
 msgid "Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface."
 msgstr ""
+"Näyttää valikossa linkin, jolla FAQ voidaan poistaa zoom-näkymässään "
+"agentin käyttöliittymässä."
 
 #. SysConfig
 msgid "Shows a link in the menu to access the history of a FAQ in its zoom view of the agent interface."
 msgstr ""
+"Näyttää valikossa linkin FAQ:n historiaan zoom-näkymässä agentin "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "Shows a link in the menu to edit a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Näyttää valikossa linkin FAQ:n muokkaamiseen zoom-näkymässä agentin "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "Shows a link in the menu to go back in the FAQ zoom view of the agent interface."
 msgstr ""
+"Näyttää valikossa linkin paluuseen FAQ:n zoom-näkymässä agentin "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "Shows a link in the menu to print a FAQ in the its zoom view of the agent interface."
 msgstr ""
+"Näyttää valikossa linkin FAQ:n tulostamiseen zoom-näkymässä agentin "
+"käyttöliittymässä."
 
 #. SysConfig
 msgid "Solution"
@@ -1365,47 +1544,55 @@ msgstr "Ratkaisu"
 
 #. SysConfig
 msgid "Symptom"
-msgstr ""
+msgstr "Oire"
 
 #. SysConfig
 msgid "Text Only"
-msgstr ""
+msgstr "Vain teksti"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Oletuskielet liittyville FAQ-artikkeleille."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
-msgstr ""
+msgstr "Tunniste FAQ:lle, esim. FAQ#, KB#, MyFAQ#. Oletus on FAQ#."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'Normal' link type."
 msgstr ""
+"Tämä asetus määrittää, että 'FAQ'-objekti voidaan linkittää muihin "
+"'FAQ'-objekteihin linkkityypillä 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'FAQ' objects using the 'ParentChild' link type."
 msgstr ""
+"Tämä asetus määrittää, että 'FAQ'-objekti voidaan linkittää muihin "
+"'FAQ'-objekteihin linkkityypillä 'ParentChild'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'Normal' link type."
 msgstr ""
+"Tämä asetus määrittää, että 'FAQ'-objekti voidaan linkittää muihin "
+"'Ticket'-objekteihin linkkityypillä 'Normal'."
 
 #. SysConfig
 msgid "This setting defines that a 'FAQ' object can be linked with other 'Ticket' objects using the 'ParentChild' link type."
 msgstr ""
+"Tämä asetus määrittää, että 'FAQ'-objekti voidaan linkittää muihin "
+"'Ticket'-objekteihin linkkityypillä 'ParentChild'."
 
 #. SysConfig
 msgid "Ticket body for approval of FAQ article."
-msgstr ""
+msgstr "Tiketin sisältö FAQ-artikkelin hyväksyntään."
 
 #. SysConfig
 msgid "Ticket subject for approval of FAQ article."
-msgstr ""
+msgstr "Tiketin aihe FAQ-artikkelin hyväksyntään."
 
 #. SysConfig
 msgid "Toolbar Item for a shortcut."
-msgstr ""
+msgstr "Työkalurivin kohde pikakuvakkeelle."
 
 #. SysConfig
 msgid "external (customer)"
@@ -1421,81 +1608,91 @@ msgstr "julkinen (kaikki)"
 
 #. SysConfig
 msgid "public (public)"
-msgstr ""
+msgstr "julkinen (julkinen)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Agentti-FAQ:n liittyvät artikkelit"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Agentti-FAQ:n liittyvät artikkelit."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Sisällön alapuolella"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Aiheen alapuolella"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Asiakaskäyttäjän attribuutti ryhmäsuhteen tarkistamiseen."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Määrittää sijainnin, jossa liittyvien FAQ-artikkelien widget on."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Ota asiakasryhmien tukioikeudet käyttöön."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Ota asiakaskäyttäjän käyttöoikeusattribuutit käyttöön."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
 msgstr ""
+"Ota liittyvien artikkelien ominaisuus käyttöön "
+"agenttikäyttöliittymässä."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Luo HTML-kommenttikoukut määritellyille lohkoille, jotta suodattimet "
+"voivat käyttää niitä."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Ryhmä, johon asiakaskäyttäjät kuuluvat oletuksena (jos asetus on "
+"käytössä)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Vastaavuus asiakaskäyttäjän attribuuttiarvon ja ryhmän välillä."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Näytä tähdet artikkeleille, joiden arvosana on yhtä suuri tai "
+"suurempi kuin määritelty arvo, jos käytössä."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "FAQ-ydintiedot"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Mallin nimi"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Rajoitus"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"Ota käyttöön artikkelien laskenta FAQ-alikategorioista FAQ-selainta "
+"varten."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Dynaamiset tiedot"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Kaikki tähdellä (*) merkityt kentät ovat pakollisia."
 

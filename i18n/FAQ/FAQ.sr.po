@@ -1426,77 +1426,83 @@ msgstr "јавно (јавно)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Повезани FAQ чланци оператера"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Повезани FAQ чланци оператера."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Испод текста"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Испод предмета"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Атрибут корисника клијента за проверу његове везе са групом."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Одређује положај виџета повезаних FAQ чланака."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Омогући дозволе подршке група клијената."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Омогући атрибуте дозвола корисника клијента."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Омогући функцију повезаних чланака у интерфејсу оператера."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Генериши HTML коментар куке за наведене блокове како би их филтери "
+"могли користити."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Група којој корисници клијента подразумевано припадају (ако је ова "
+"поставка омогућена)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Мапирање између вредности атрибута корисника клијента и групе."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Прикажи звезде за чланке са оценом једнаком или већом од дефинисане "
+"вредности ако је омогућено."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Основни FAQ подаци"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Назив шаблона"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Ограничење"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Омогући бројање чланака из FAQ поткатегорија у FAQ претраживачу."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Динамичке информације"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Сва поља означена звездицом (*) су обавезна."
 

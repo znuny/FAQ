@@ -1451,56 +1451,66 @@ msgstr "Atributo de usuário cliente para verificar sua relação de grupo."
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Define a posição onde o widget de artigos FAQ relacionados se "
+"encontra."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Ativar permissões de suporte de grupos de clientes."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Ativar atributos de permissão de utilizadores de cliente."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Ativar a funcionalidade de artigos relacionados no frontend do agente."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Gerar hooks de comentário HTML para os blocos especificados para que "
+"os filtros os possam utilizar."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Grupo ao qual os utilizadores de cliente pertencem por predefinição "
+"(se esta definição estiver ativada)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
 msgstr ""
+"Mapeamento entre o valor do atributo de utilizador de cliente e o "
+"grupo."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Mostrar as estrelas para os artigos com uma classificação igual ou "
+"superior ao valor definido, se ativado."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Dados principais da FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Nome do modelo"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Limitação"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "Ativar a contagem de artigos das subcategorias FAQ no explorador FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Informação dinâmica"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Todos os campos marcados com um asterisco (*) são obrigatórios."
 

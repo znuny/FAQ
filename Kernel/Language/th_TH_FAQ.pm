@@ -24,26 +24,33 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
     $Self->{Translation}->{'Add category'} = 'เพิ่มหมวดหมู่';
     $Self->{Translation}->{'FAQ Category Management'} = 'การจัดการหมวดหมู่ FAQ';
-    $Self->{Translation}->{'Add FAQ Category'} = '';
-    $Self->{Translation}->{'Edit FAQ Category'} = '';
+    $Self->{Translation}->{'Add FAQ Category'} = 'เพิ่มหมวดหมู่ FAQ';
+    $Self->{Translation}->{'Edit FAQ Category'} = 'แก้ไขหมวดหมู่ FAQ';
     $Self->{Translation}->{'Add Category'} = 'เพิ่มหมวดหมู่';
     $Self->{Translation}->{'Edit Category'} = 'แก้ไขหมวดหมู่';
     $Self->{Translation}->{'Subcategory of'} = 'หมวดหมู่ย่อยของ';
-    $Self->{Translation}->{'Please select at least one permission group.'} = 'กรุณาเลือกอย่างน้อยหนึ่งกลุ่มที่ได้รับอนุญาต';
-    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = 'กลุ่มเอเย่นต์ที่สามารถเข้าถึงบทความในหมวดหมู่นี้';
+    $Self->{Translation}->{'Please select at least one permission group.'} =
+        'กรุณาเลือกอย่างน้อยหนึ่งกลุ่มที่ได้รับอนุญาต';
+    $Self->{Translation}->{'Agent groups that can access articles in this category.'} =
+        'กลุ่มเอเย่นต์ที่สามารถเข้าถึงบทความในหมวดหมู่นี้';
     $Self->{Translation}->{'Will be shown as comment in Explorer.'} = 'จะแสดงเป็นความคิดเห็นในExplorer';
-    $Self->{Translation}->{'Do you really want to delete this category?'} = 'คุณต้องการที่จะลบหมวดหมู่นี้หรือไม่?';
+    $Self->{Translation}->{'Do you really want to delete this category?'} =
+        'คุณต้องการที่จะลบหมวดหมู่นี้หรือไม่?';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
         'คุณไม่สามารถลบหมวดหมู่นี้ได้เพราะหมวดหมู่นี้ถูกใช้ในอย่างน้อยหนึ่งบทความ FAQ หรือ หมวดหมู่นี้คือ หมวดหมู่หลัก';
-    $Self->{Translation}->{'This category is used in the following FAQ article(s)'} = 'หมวดหมู่นี้ใช้ในการติดตามบทความ FAQ (s)';
-    $Self->{Translation}->{'This category is parent of the following subcategories'} = 'หมวดหมู่นี้คือหมวดหมู่หลักของหมวดหมู่ย่อยต่อไปนี้';
+    $Self->{Translation}->{'This category is used in the following FAQ article(s)'} =
+        'หมวดหมู่นี้ใช้ในการติดตามบทความ FAQ (s)';
+    $Self->{Translation}->{'This category is parent of the following subcategories'} =
+        'หมวดหมู่นี้คือหมวดหมู่หลักของหมวดหมู่ย่อยต่อไปนี้';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQDelete.tt
-    $Self->{Translation}->{'Do you really want to delete this FAQ article?'} = 'คุณต้องการลบหัวข้อ FAQ นี้หรือไม่?';
+    $Self->{Translation}->{'Do you really want to delete this FAQ article?'} =
+        'คุณต้องการลบหัวข้อ FAQ นี้หรือไม่?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} =
+        'ช่องทั้งหมดที่ทำเครื่องหมายด้วยเครื่องหมายดอกจัน (*) เป็นช่องบังคับ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'นักสำรวจ FAQ';
@@ -64,17 +71,19 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
     $Self->{Translation}->{'Use this feature if you want to work with multiple languages.'} =
-        '';
+        'ใช้คุณสมบัตินี้หากต้องการทำงานกับหลายภาษา';
     $Self->{Translation}->{'Add language'} = 'เพิ่มภาษา';
     $Self->{Translation}->{'FAQ Language Management'} = 'การจัดการภาษา FAQ';
-    $Self->{Translation}->{'Add FAQ Language'} = '';
-    $Self->{Translation}->{'Edit FAQ Language'} = '';
+    $Self->{Translation}->{'Add FAQ Language'} = 'เพิ่มภาษา FAQ';
+    $Self->{Translation}->{'Edit FAQ Language'} = 'แก้ไขภาษา FAQ';
     $Self->{Translation}->{'Add Language'} = 'เพิ่มภาษา';
     $Self->{Translation}->{'Edit Language'} = 'แก้ไขภาษา';
-    $Self->{Translation}->{'Do you really want to delete this language?'} = 'คุณต้องการลบภาษานี้หรือไม่?';
+    $Self->{Translation}->{'Do you really want to delete this language?'} =
+        'คุณต้องการลบภาษานี้หรือไม่?';
     $Self->{Translation}->{'You can not delete this language. It is used in at least one FAQ article!'} =
         'คุณไม่สามารถลบภาษานี้เพราะภาษานี้กำลังใช้ในอย่างน้อยหนึ่งในบทความ FAQ!';
-    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} = 'ภาษานี้ใช้ในบทความ FAQ(s) เหล่านี้';
+    $Self->{Translation}->{'This language is used in the following FAQ Article(s)'} =
+        'ภาษานี้ใช้ในบทความ FAQ(s) เหล่านี้';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'การตั้งค่าข้อความ';
@@ -88,14 +97,19 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearch.tt
     $Self->{Translation}->{'Keyword'} = 'คีย์เวิร์ด';
-    $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} = 'โหวต (เช่น เท่ากับ 10 หรือมากกว่า60)';
-    $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} = 'เรต (เช่น เท่ากับ 25% หรือ มากกว่า 75%)';
+    $Self->{Translation}->{'Vote (e. g. Equals 10 or GreaterThan 60)'} =
+        'โหวต (เช่น เท่ากับ 10 หรือมากกว่า60)';
+    $Self->{Translation}->{'Rate (e. g. Equals 25% or GreaterThan 75%)'} =
+        'เรต (เช่น เท่ากับ 25% หรือ มากกว่า 75%)';
     $Self->{Translation}->{'Approved'} = 'อนุมัติแล้ว';
     $Self->{Translation}->{'Last changed by'} = 'การเปลี่ยนแปลงล่าสุดโดย';
-    $Self->{Translation}->{'FAQ Article Create Time (before/after)'} = 'เวลาที่สร้างบทความ FAQ (ก่อน/หลัง)';
+    $Self->{Translation}->{'FAQ Article Create Time (before/after)'} =
+        'เวลาที่สร้างบทความ FAQ (ก่อน/หลัง)';
     $Self->{Translation}->{'FAQ Article Create Time (between)'} = 'เวลาที่สร้างบทความ FAQ (ในระหว่าง)';
-    $Self->{Translation}->{'FAQ Article Change Time (before/after)'} = 'เวลาที่เปลี่ยนแปลงบทความ FAQ (ก่อน/หลัง)';
-    $Self->{Translation}->{'FAQ Article Change Time (between)'} = 'เวลาที่เปลี่ยนแปลงบทความ FAQ (ในระหว่าง)';
+    $Self->{Translation}->{'FAQ Article Change Time (before/after)'} =
+        'เวลาที่เปลี่ยนแปลงบทความ FAQ (ก่อน/หลัง)';
+    $Self->{Translation}->{'FAQ Article Change Time (between)'} =
+        'เวลาที่เปลี่ยนแปลงบทความ FAQ (ในระหว่าง)';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchOpenSearchDescriptionFulltext.tt
     $Self->{Translation}->{'FAQFulltext'} = 'ข้อความFAQฉบับเต็ม';
@@ -103,8 +117,8 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'การค้นหาโดย FAQ';
     $Self->{Translation}->{'Profile Selection'} = 'การเลือกโปรไฟล์';
-    $Self->{Translation}->{'Core FAQ Data'} = '';
-    $Self->{Translation}->{'Dynamic Info'} = '';
+    $Self->{Translation}->{'Core FAQ Data'} = 'ข้อมูลหลัก FAQ';
+    $Self->{Translation}->{'Dynamic Info'} = 'ข้อมูลไดนามิก';
     $Self->{Translation}->{'Vote'} = 'โหวต';
     $Self->{Translation}->{'No vote settings'} = 'ไม่มีการตั้งค่าการโหวต';
     $Self->{Translation}->{'Specific votes'} = 'การโหวตที่เฉพาะเจาะจง';
@@ -121,7 +135,8 @@ sub Data {
     $Self->{Translation}->{'Rating'} = 'เรตติ้ง';
     $Self->{Translation}->{'Votes'} = 'โหวต';
     $Self->{Translation}->{'No votes found!'} = 'ไม่พบการโหวต!';
-    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} = 'ไม่พบการโหวต! เป็นคนแรกในการประเมินหัวข้อ FAQ นี้';
+    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} =
+        'ไม่พบการโหวต! เป็นคนแรกในการประเมินหัวข้อ FAQ นี้';
     $Self->{Translation}->{'Download Attachment'} = 'ดาวน์โหลดสิ่งที่แนบมา';
     $Self->{Translation}->{'To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS).'} =
         'ในการเปิดการลิงค์ในบล็อกคำอธิบายต่อไปนี้ คุณอาจจะต้องกดปุ่ม Ctrl หรือ Cmd หรือ Shift ในขณะที่กดลิงค์ (ขึ้นอยุ่กับเบราเซอร์และระบบปฎิบัติการของคุณ)';
@@ -142,12 +157,14 @@ sub Data {
     $Self->{Translation}->{'No FAQ articles found.'} = 'ไม่พบบทความ FAQ ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
-    $Self->{Translation}->{'This might be helpful'} = '';
-    $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = '';
-    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '';
+    $Self->{Translation}->{'This might be helpful'} = 'สิ่งนี้อาจเป็นประโยชน์';
+    $Self->{Translation}->{'Found no helpful resources for the subject and text.'} =
+        'ไม่พบแหล่งข้อมูลที่เป็นประโยชน์สำหรับหัวเรื่องและข้อความ';
+    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} =
+        'พิมพ์หัวเรื่องหรือข้อความเพื่อรับรายการแหล่งข้อมูลที่เป็นประโยชน์';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Template name'} = '';
+    $Self->{Translation}->{'Template name'} = 'ชื่อเทมเพลต';
     $Self->{Translation}->{'Vote restrictions'} = 'ข้อจำกัดการโหวต';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = 'เฉพาะบทความFAQ โดยการโหวด...';
     $Self->{Translation}->{'Rate restrictions'} = 'ข้อจำกัดการประเมิน';
@@ -162,7 +179,8 @@ sub Data {
     $Self->{Translation}->{'Search for articles with keyword'} = 'ค้นหาบทความด้วยคีย์เวิร์ด';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = 'ค้นหาแบบฉบับเต็มในบทความ FAQ (เช่น "John*n" or "Will*")';
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} =
+        'ค้นหาแบบฉบับเต็มในบทความ FAQ (เช่น "John*n" or "Will*")';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = 'สาธารณะ';
@@ -171,45 +189,52 @@ sub Data {
     $Self->{Translation}->{'Back to FAQ Explorer'} = 'กลับไปที่ FAQ Explorer';
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
-    $Self->{Translation}->{'You need rw permission!'} = '';
-    $Self->{Translation}->{'No categories found where user has read/write permissions!'} = '';
-    $Self->{Translation}->{'No default language found and can\'t create a new one.'} = '';
+    $Self->{Translation}->{'You need rw permission!'} = 'คุณต้องมีสิทธิ์อ่าน/เขียน!';
+    $Self->{Translation}->{'No categories found where user has read/write permissions!'} =
+        'ไม่พบหมวดหมู่ที่ผู้ใช้มีสิทธิ์อ่าน/เขียน!';
+    $Self->{Translation}->{'No default language found and can\'t create a new one.'} =
+        'ไม่พบภาษาเริ่มต้นและไม่สามารถสร้างใหม่ได้';
 
     # Perl Module: Kernel/Modules/AgentFAQCategory.pm
-    $Self->{Translation}->{'Need CategoryID!'} = '';
+    $Self->{Translation}->{'Need CategoryID!'} = 'ต้องการ CategoryID!';
     $Self->{Translation}->{'A category should have a name!'} = 'ต้องระบุชื่อหมวดหมู่!';
     $Self->{Translation}->{'This category already exists'} = 'หมวดหมู่นี้มีอยู่แล้ว!';
-    $Self->{Translation}->{'This category already exists!'} = '';
-    $Self->{Translation}->{'No CategoryID is given!'} = '';
-    $Self->{Translation}->{'Was not able to delete the category %s!'} = '';
+    $Self->{Translation}->{'This category already exists!'} = 'หมวดหมู่นี้มีอยู่แล้ว!';
+    $Self->{Translation}->{'No CategoryID is given!'} = 'ไม่ได้ระบุ CategoryID!';
+    $Self->{Translation}->{'Was not able to delete the category %s!'} = 'ไม่สามารถลบหมวดหมู่ %s ได้!';
     $Self->{Translation}->{'FAQ category updated!'} = 'อัปเดตหมวดหมู่ FAQ แล้ว!';
     $Self->{Translation}->{'FAQ category added!'} = 'เพิ่มหมวดหมู่ FAQ แล้ว!';
     $Self->{Translation}->{'Delete Category'} = 'ลบหมวดหมู่';
 
     # Perl Module: Kernel/Modules/AgentFAQDelete.pm
-    $Self->{Translation}->{'No ItemID is given!'} = '';
-    $Self->{Translation}->{'You have no permission for this category!'} = '';
-    $Self->{Translation}->{'Was not able to delete the FAQ article %s!'} = '';
+    $Self->{Translation}->{'No ItemID is given!'} = 'ไม่ได้ระบุ ItemID!';
+    $Self->{Translation}->{'You have no permission for this category!'} =
+        'คุณไม่มีสิทธิ์สำหรับหมวดหมู่นี้!';
+    $Self->{Translation}->{'Was not able to delete the FAQ article %s!'} =
+        'ไม่สามารถลบบทความ FAQ %s ได้!';
 
     # Perl Module: Kernel/Modules/AgentFAQExplorer.pm
-    $Self->{Translation}->{'The CategoryID %s is invalid.'} = '';
+    $Self->{Translation}->{'The CategoryID %s is invalid.'} = 'CategoryID %s ไม่ถูกต้อง';
 
     # Perl Module: Kernel/Modules/AgentFAQHistory.pm
-    $Self->{Translation}->{'Can\'t show history, as no ItemID is given!'} = '';
-    $Self->{Translation}->{'FAQ History'} = '';
+    $Self->{Translation}->{'Can\'t show history, as no ItemID is given!'} =
+        'ไม่สามารถแสดงประวัติได้ เนื่องจากไม่ได้ระบุ ItemID!';
+    $Self->{Translation}->{'FAQ History'} = 'ประวัติ FAQ';
 
     # Perl Module: Kernel/Modules/AgentFAQJournal.pm
     $Self->{Translation}->{'FAQ Journal'} = 'วารสาร FAQ';
-    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} = '';
+    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} =
+        'ต้องการตัวเลือกการตั้งค่า FAQ::Frontend::Overview';
     $Self->{Translation}->{'Config option FAQ::Frontend::Overview needs to be a HASH ref!'} =
-        '';
-    $Self->{Translation}->{'No config option found for the view "%s"!'} = '';
+        'ตัวเลือกการตั้งค่า FAQ::Frontend::Overview ต้องเป็น HASH ref!';
+    $Self->{Translation}->{'No config option found for the view "%s"!'} =
+        'ไม่พบตัวเลือกการตั้งค่าสำหรับมุมมอง "%s"!';
 
     # Perl Module: Kernel/Modules/AgentFAQLanguage.pm
-    $Self->{Translation}->{'No LanguageID is given!'} = '';
+    $Self->{Translation}->{'No LanguageID is given!'} = 'ไม่ได้ระบุ LanguageID!';
     $Self->{Translation}->{'The name is required!'} = 'ต้องระบุชื่อ!';
     $Self->{Translation}->{'This language already exists!'} = 'ภาษานี้มีอยู่แล้ว!';
-    $Self->{Translation}->{'Was not able to delete the language %s!'} = '';
+    $Self->{Translation}->{'Was not able to delete the language %s!'} = 'ไม่สามารถลบภาษา %s ได้!';
     $Self->{Translation}->{'FAQ language updated!'} = 'อัปเดตภาษา FAQ แล้ว!';
     $Self->{Translation}->{'FAQ language added!'} = 'เพิ่มภาษา FAQ แล้ว!';
     $Self->{Translation}->{'Delete Language %s'} = 'ลบภาษา %';
@@ -219,39 +244,39 @@ sub Data {
     $Self->{Translation}->{'FAQ Dynamic Fields'} = 'ไดมานิคฟิลด์ของ FAQ';
 
     # Perl Module: Kernel/Modules/AgentFAQRichText.pm
-    $Self->{Translation}->{'No %s is given!'} = '';
-    $Self->{Translation}->{'Can\'t load LanguageObject!'} = '';
+    $Self->{Translation}->{'No %s is given!'} = 'ไม่ได้ระบุ %s!';
+    $Self->{Translation}->{'Can\'t load LanguageObject!'} = 'ไม่สามารถโหลด LanguageObject ได้!';
 
     # Perl Module: Kernel/Modules/AgentFAQSearch.pm
     $Self->{Translation}->{'No Result!'} = 'ไม่มีผลลัพธ์!';
     $Self->{Translation}->{'FAQ Number'} = 'หมายเลข FAQ';
-    $Self->{Translation}->{'Last Changed by'} = '';
-    $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = '';
-    $Self->{Translation}->{'FAQ Item Create Time (between)'} = '';
-    $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = '';
-    $Self->{Translation}->{'FAQ Item Change Time (between)'} = '';
-    $Self->{Translation}->{'Equals'} = '';
-    $Self->{Translation}->{'Greater than'} = '';
-    $Self->{Translation}->{'Greater than equals'} = '';
-    $Self->{Translation}->{'Smaller than'} = '';
-    $Self->{Translation}->{'Smaller than equals'} = '';
+    $Self->{Translation}->{'Last Changed by'} = 'แก้ไขล่าสุดโดย';
+    $Self->{Translation}->{'FAQ Item Create Time (before/after)'} = 'เวลาสร้างรายการ FAQ (ก่อน/หลัง)';
+    $Self->{Translation}->{'FAQ Item Create Time (between)'} = 'เวลาสร้างรายการ FAQ (ระหว่าง)';
+    $Self->{Translation}->{'FAQ Item Change Time (before/after)'} = 'เวลาแก้ไขรายการ FAQ (ก่อน/หลัง)';
+    $Self->{Translation}->{'FAQ Item Change Time (between)'} = 'เวลาแก้ไขรายการ FAQ (ระหว่าง)';
+    $Self->{Translation}->{'Equals'} = 'เท่ากับ';
+    $Self->{Translation}->{'Greater than'} = 'มากกว่า';
+    $Self->{Translation}->{'Greater than equals'} = 'มากกว่าหรือเท่ากับ';
+    $Self->{Translation}->{'Smaller than'} = 'น้อยกว่า';
+    $Self->{Translation}->{'Smaller than equals'} = 'น้อยกว่าหรือเท่ากับ';
 
     # Perl Module: Kernel/Modules/AgentFAQZoom.pm
-    $Self->{Translation}->{'Need FileID!'} = '';
+    $Self->{Translation}->{'Need FileID!'} = 'ต้องการ FileID!';
     $Self->{Translation}->{'Thanks for your vote!'} = 'ขอบคุณสำหรับการโหวตของคุณ!';
     $Self->{Translation}->{'You have already voted!'} = 'คุณได้ทำการโหวตแล้ว!';
     $Self->{Translation}->{'No rate selected!'} = 'ไม่มีเรทที่ถูกเลือก';
-    $Self->{Translation}->{'The voting mechanism is not enabled!'} = '';
-    $Self->{Translation}->{'The vote rate is not defined!'} = '';
+    $Self->{Translation}->{'The voting mechanism is not enabled!'} = 'กลไกการโหวตไม่ได้เปิดใช้งาน!';
+    $Self->{Translation}->{'The vote rate is not defined!'} = 'ไม่ได้กำหนดอัตราการโหวต!';
 
     # Perl Module: Kernel/Modules/CustomerFAQPrint.pm
     $Self->{Translation}->{'FAQ Article Print'} = 'พิมพ์บทความ FAQ ';
 
     # Perl Module: Kernel/Modules/CustomerFAQSearch.pm
-    $Self->{Translation}->{'Created between'} = '';
+    $Self->{Translation}->{'Created between'} = 'สร้างระหว่าง';
 
     # Perl Module: Kernel/Modules/CustomerFAQZoom.pm
-    $Self->{Translation}->{'Need ItemID!'} = '';
+    $Self->{Translation}->{'Need ItemID!'} = 'ต้องการ ItemID!';
 
     # Perl Module: Kernel/Modules/PublicFAQExplorer.pm
     $Self->{Translation}->{'FAQ Articles (new created)'} = 'บทความ FAQ (เพิ่งสร้างใหม่)';
@@ -259,30 +284,31 @@ sub Data {
     $Self->{Translation}->{'FAQ Articles (Top 10)'} = 'บทความ FAQ (10 อันดับยอดนิยม)';
 
     # Perl Module: Kernel/Modules/PublicFAQRSS.pm
-    $Self->{Translation}->{'No Type is given!'} = '';
-    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} = '';
-    $Self->{Translation}->{'Can\'t create RSS file!'} = '';
+    $Self->{Translation}->{'No Type is given!'} = 'ไม่ได้ระบุ Type!';
+    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} =
+        'Type ต้องเป็น LastCreate หรือ LastChange หรือ Top10!';
+    $Self->{Translation}->{'Can\'t create RSS file!'} = 'ไม่สามารถสร้างไฟล์ RSS ได้!';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
-    $Self->{Translation}->{'%s (FAQFulltext)'} = '';
+    $Self->{Translation}->{'%s (FAQFulltext)'} = '%s (FAQFulltext)';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/CustomerFAQSearch.pm
-    $Self->{Translation}->{'%s - Customer (%s)'} = '';
-    $Self->{Translation}->{'%s - Customer (FAQFulltext)'} = '';
+    $Self->{Translation}->{'%s - Customer (%s)'} = '%s - ลูกค้า (%s)';
+    $Self->{Translation}->{'%s - Customer (FAQFulltext)'} = '%s - ลูกค้า (FAQFulltext)';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/PublicFAQSearch.pm
-    $Self->{Translation}->{'%s - Public (%s)'} = '';
-    $Self->{Translation}->{'%s - Public (FAQFulltext)'} = '';
+    $Self->{Translation}->{'%s - Public (%s)'} = '%s - สาธารณะ (%s)';
+    $Self->{Translation}->{'%s - Public (FAQFulltext)'} = '%s - สาธารณะ (FAQFulltext)';
 
     # Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
-    $Self->{Translation}->{'Need rate!'} = '';
+    $Self->{Translation}->{'Need rate!'} = 'ต้องการคะแนน!';
     $Self->{Translation}->{'This article is empty!'} = 'บทความนี้ว่างเปล่า';
     $Self->{Translation}->{'Latest created FAQ articles'} = 'บทความ FAQ ที่สร้างล่าสุด';
     $Self->{Translation}->{'Latest updated FAQ articles'} = 'บทความ FAQ ที่อัปเดตล่าสุด';
     $Self->{Translation}->{'Top 10 FAQ articles'} = '10 บทความ FAQ ยอดนิยม';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
-    $Self->{Translation}->{'Content Type'} = '';
+    $Self->{Translation}->{'Content Type'} = 'ประเภทเนื้อหา';
 
     # XML Definition: FAQ.sopm
     $Self->{Translation}->{'internal'} = 'ภายใน';
@@ -295,40 +321,45 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'ตัวกรองสำหรับการแสดงผล HTMLเพื่อเพิ่มการเชื่อมโยงที่อยู่เบื้องหลังของอักขระที่กำหนดไว้ องค์ประกอบของภาพที่จะช่วยให้สามารถป้อนข้อมูลสองชนิดได้ หนึ่งคือชื่อของภาพ (เช่น faq.png)ในกรณีนี้เส้นทางของภาพOTRS จะถูกนำมาใช้ สองคือการแทรกการเชื่อมโยงไปยังภาพ';
-    $Self->{Translation}->{'Add FAQ article'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Add FAQ article'} = 'เพิ่มบทความ FAQ';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = 'บทความที่เกี่ยวข้องกับ FAQ ของเอเจนต์';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = 'บทความที่เกี่ยวข้องกับ FAQ ของเอเจนต์';
+    $Self->{Translation}->{'Below body'} = 'ใต้เนื้อหา';
+    $Self->{Translation}->{'Below subject'} = 'ใต้หัวเรื่อง';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'สี CSS สำหรับผลการโหวต';
-    $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'เวลาแคชที่จะปล่อยให้สำหรับรายการFAQ';
+    $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} =
+        'เวลาแคชที่จะปล่อยให้สำหรับรายการFAQ';
     $Self->{Translation}->{'Category Management'} = 'การจัดการหมวดหมู่';
-    $Self->{Translation}->{'Category Management.'} = '';
-    $Self->{Translation}->{'Customer FAQ Print.'} = '';
-    $Self->{Translation}->{'Customer FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Customer FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Customer FAQ Zoom.'} = '';
-    $Self->{Translation}->{'Customer FAQ search.'} = '';
-    $Self->{Translation}->{'Customer FAQ.'} = '';
-    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
+    $Self->{Translation}->{'Category Management.'} = 'การจัดการหมวดหมู่';
+    $Self->{Translation}->{'Customer FAQ Print.'} = 'พิมพ์ FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer FAQ Related Articles'} = 'บทความที่เกี่ยวข้องกับ FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer FAQ Related Articles.'} = 'บทความที่เกี่ยวข้องกับ FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer FAQ Zoom.'} = 'ซูม FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer FAQ search.'} = 'ค้นหา FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer FAQ.'} = 'FAQ ของลูกค้า';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} =
+        'แอตทริบิวต์ผู้ใช้ลูกค้าเพื่อตรวจสอบความสัมพันธ์ของกลุ่ม';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'ตำแหน่งทศนิยมของผลการนับคะแนน';
     $Self->{Translation}->{'Default category name.'} = 'ชื่อหมวดหมู่เริ่มต้น';
-    $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'ภาษาเริ่มต้นสำหรับ FAQ ในโหมดภาษาเดียว';
+    $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} =
+        'ภาษาเริ่มต้นสำหรับ FAQ ในโหมดภาษาเดียว';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'ขนาดเริ่มต้นที่สูงสุดของหัวข้อในบทความ FAQ ที่จะแสดง';
     $Self->{Translation}->{'Default priority of tickets for the approval of FAQ articles.'} =
         'ลำดับความสำคัญเริ่มต้นของตั๋วสำหรับการอนุมัติของบทความ FAQ.';
     $Self->{Translation}->{'Default state for FAQ entry.'} = 'สถานภาพเริ่มต้นสำหรับการกรอกข้อมูล FAQ.';
-    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} = 'สถานภาพตั๋วเริ่มต้นสำหรับการอนุมัติบทความ FAQ.';
-    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} = 'ประเภทตั๋วเริ่มต้นสำหรับการอนุมัติบทความ FAQ.';
+    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} =
+        'สถานภาพตั๋วเริ่มต้นสำหรับการอนุมัติบทความ FAQ.';
+    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} =
+        'ประเภทตั๋วเริ่มต้นสำหรับการอนุมัติบทความ FAQ.';
     $Self->{Translation}->{'Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system.'} =
         'ค่าเริ่มต้นสำหรับพารามิเตอร์การดำเนินการในหน้าสาธารณะ พารามิเตอร์การดำเนินการถูกนำมาใช้ในสคริปต์ของระบบ';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '';
+        'กำหนด Actions ที่ปุ่มการตั้งค่าจะพร้อมใช้งานในวิดเจ็ตออบเจ็กต์ที่เชื่อมโยง (LinkObject::ViewMode = "complex") โปรดทราบว่า Actions เหล่านี้ต้องลงทะเบียนไฟล์ JS และ CSS ต่อไปนี้: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js และ Core.Agent.LinkObject.js';
     $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
         'กำหนดค่าถ้าหากหัวข้อFAQ ควรได้รับการตัดแบ่งข้อความไปยังบทความ';
     $Self->{Translation}->{'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'} =
-        '';
+        'กำหนดคอลัมน์ที่จะแสดงในวิดเจ็ต FAQ ที่เชื่อมโยง (LinkObject::ViewMode = "complex") หมายเหตุ: อนุญาตเฉพาะแอตทริบิวต์ FAQ และฟิลด์ไดนามิก (DynamicField_NameX) สำหรับ DefaultColumns';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ journal.'} =
         'กำหนดโมดูลภาพรวมที่จะแสดงมุมมองเล็ก ๆ ของวารสาร FAQ.';
     $Self->{Translation}->{'Defines an overview module to show the small view of a FAQ list.'} =
@@ -364,92 +395,106 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'กำหนดพารามิเตอร์สำหรับแดชบอร์ดเบื้องหลัง  "จำกัด" คือกำหนดจำนวนของรายการที่แสดงโดยค่าเริ่มต้น "กลุ่ม" จะถูกนำมาใช้เพื่อจำกัดการเข้าถึงปลั๊กอิน (เช่นกลุ่ม: ผู้ดูแลระบบ; กลุ่ม 1; กลุ่ม2;) "เริ่มต้น" ระบุว่าถ้าปลั๊กอินถูกเปิดใช้งานโดยค่าเริ่มต้นหรือหากผู้ใช้ต้องการเพื่อเปิดใช้งานได้ด้วยตนเอง';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        '';
+        'กำหนดตำแหน่งที่วิดเจ็ตบทความ FAQ ที่เกี่ยวข้องอยู่';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'กำหนดคอลัมน์ที่แสดงอยู่ใน FAQ Explorer  ซึ่งตัวเลือกนี้จะไม่มีผลต่อตำแหน่งของคอลัมน์';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
         'กำหนดคอลัมน์ที่แสดงอยู่ในนิตยสาร FAQ ซึ่งตัวเลือกนี้จะไม่มีผลต่อตำแหน่งของคอลัมน์';
     $Self->{Translation}->{'Defines the shown columns in the FAQ search. This option has no effect on the position of the column.'} =
         'กำหนดคอลัมน์ที่แสดงอยู่ในการค้นหา FAQ ซึ่งตัวเลือกนี้จะไม่มีผลต่อตำแหน่งของคอลัมน์';
-    $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} = 'กำหนดสถานที่ที่ลิงค์ \'แทรกFAQ \' จะปรากฏ';
-    $Self->{Translation}->{'Definition of FAQ item free text field.'} = 'คำนิยามของช่องข้อความของรายการ FAQ';
+    $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} =
+        'กำหนดสถานที่ที่ลิงค์ \'แทรกFAQ \' จะปรากฏ';
+    $Self->{Translation}->{'Definition of FAQ item free text field.'} =
+        'คำนิยามของช่องข้อความของรายการ FAQ';
     $Self->{Translation}->{'Delete this FAQ'} = 'ลบ FAQ นี้!';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ add screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอเพิ่ม FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ edit screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอแก้ไข FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ overview screen of the customer interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอภาพรวม FAQ ของอินเทอร์เฟซลูกค้า';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ overview screen of the public interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอภาพรวม FAQ ของอินเทอร์เฟซสาธารณะ';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอพิมพ์ FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the customer interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอพิมพ์ FAQ ของอินเทอร์เฟซลูกค้า';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ print screen of the public interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอพิมพ์ FAQ ของอินเทอร์เฟซสาธารณะ';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอค้นหา FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the customer interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอค้นหา FAQ ของอินเทอร์เฟซลูกค้า';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ search screen of the public interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอค้นหา FAQ ของอินเทอร์เฟซสาธารณะ';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ small format overview screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอภาพรวมรูปแบบเล็กของ FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the agent interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอซูม FAQ ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the customer interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอซูม FAQ ของอินเทอร์เฟซลูกค้า';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ zoom screen of the public interface.'} =
-        '';
+        'ฟิลด์ไดนามิกที่แสดงในหน้าจอซูม FAQ ของอินเทอร์เฟซสาธารณะ';
     $Self->{Translation}->{'Edit this FAQ'} = 'แก้ไข FAQ นี้';
     $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
-        '';
-    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
-    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
-    $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'เปิดใช้งานหลากหลายภาษา ในโมดูล FAQ.';
-    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
+        'เปิดใช้งานการนับบทความจากหมวดหมู่ย่อย FAQ สำหรับตัวสำรวจ FAQ';
+    $Self->{Translation}->{'Enable customer group support permissions.'} =
+        'เปิดใช้งานสิทธิ์การสนับสนุนกลุ่มลูกค้า';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} =
+        'เปิดใช้งานแอตทริบิวต์สิทธิ์ผู้ใช้ลูกค้า';
+    $Self->{Translation}->{'Enable multiple languages on FAQ module.'} =
+        'เปิดใช้งานหลากหลายภาษา ในโมดูล FAQ.';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} =
+        'เปิดใช้งานคุณสมบัติบทความที่เกี่ยวข้องสำหรับส่วนหน้าของเอเจนต์';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
-        '';
-    $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'เปิดใช้งานกลไกการโหวตในโมดูลFAQ.';
+        'เปิดใช้งานคุณสมบัติบทความที่เกี่ยวข้องสำหรับส่วนหน้าของลูกค้า';
+    $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} =
+        'เปิดใช้งานกลไกการโหวตในโมดูลFAQ.';
     $Self->{Translation}->{'Explorer'} = 'นักสำรวจ';
-    $Self->{Translation}->{'FAQ AJAX Responder'} = '';
-    $Self->{Translation}->{'FAQ AJAX Responder for Richtext.'} = '';
-    $Self->{Translation}->{'FAQ Area'} = '';
-    $Self->{Translation}->{'FAQ Area.'} = '';
-    $Self->{Translation}->{'FAQ Delete.'} = '';
-    $Self->{Translation}->{'FAQ Edit.'} = '';
-    $Self->{Translation}->{'FAQ History.'} = '';
+    $Self->{Translation}->{'FAQ AJAX Responder'} = 'FAQ AJAX Responder';
+    $Self->{Translation}->{'FAQ AJAX Responder for Richtext.'} = 'FAQ AJAX Responder สำหรับ Richtext';
+    $Self->{Translation}->{'FAQ Area'} = 'พื้นที่ FAQ';
+    $Self->{Translation}->{'FAQ Area.'} = 'พื้นที่ FAQ';
+    $Self->{Translation}->{'FAQ Delete.'} = 'ลบ FAQ';
+    $Self->{Translation}->{'FAQ Edit.'} = 'แก้ไข FAQ';
+    $Self->{Translation}->{'FAQ History.'} = 'ประวัติ FAQ';
     $Self->{Translation}->{'FAQ Journal Overview "Small" Limit'} = 'ภาพรวมของวารสารFAQ"ขนาดเล็ก"';
     $Self->{Translation}->{'FAQ Overview "Small" Limit'} = 'ภาพรวมของFAQ"ขนาดเล็ก"';
-    $Self->{Translation}->{'FAQ Print.'} = '';
-    $Self->{Translation}->{'FAQ search backend router of the agent interface.'} = 'backend router ค้นหา FAQ ของอินเตอร์เฟซเอเย่นต์';
+    $Self->{Translation}->{'FAQ Print.'} = 'พิมพ์ FAQ';
+    $Self->{Translation}->{'FAQ search backend router of the agent interface.'} =
+        'backend router ค้นหา FAQ ของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Field4'} = 'ฟิลด์4';
     $Self->{Translation}->{'Field5'} = 'ฟิลด์5';
-    $Self->{Translation}->{'Full FAQ'} = '';
+    $Self->{Translation}->{'Full FAQ'} = 'FAQ แบบเต็ม';
     $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
-    $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'กลุ่มสำหรับการอนุมัติบทความ FAQ.';
+        'สร้างฮุกความคิดเห็น HTML สำหรับบล็อกที่ระบุเพื่อให้ตัวกรองสามารถใช้งานได้';
+    $Self->{Translation}->{'Group for the approval of FAQ articles.'} =
+        'กลุ่มสำหรับการอนุมัติบทความ FAQ.';
     $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
-        '';
+        'กลุ่มที่ผู้ใช้ลูกค้าอยู่โดยค่าเริ่มต้น (หากเปิดการตั้งค่านี้)';
     $Self->{Translation}->{'History of this FAQ'} = 'ประวัติของ FAQ นี้';
-    $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'รวมเขตข้อมูลภายในเกี่ยวกับFAQ ตามตั๋ว';
-    $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'รวมถึงชื่อของแต่ละเขตข้อมูลภายในFAQ ตามตั๋ว';
-    $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = 'อินเตอร์เฟซที่การค้นหาแบบรวดเร็วควรจะแสดง';
+    $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} =
+        'รวมเขตข้อมูลภายในเกี่ยวกับFAQ ตามตั๋ว';
+    $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} =
+        'รวมถึงชื่อของแต่ละเขตข้อมูลภายในFAQ ตามตั๋ว';
+    $Self->{Translation}->{'Interfaces where the quick search should be shown.'} =
+        'อินเตอร์เฟซที่การค้นหาแบบรวดเร็วควรจะแสดง';
     $Self->{Translation}->{'Journal'} = 'วารสาร';
     $Self->{Translation}->{'Language Management'} = 'การจัดการภาษา';
-    $Self->{Translation}->{'Language Management.'} = '';
-    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} = '';
+    $Self->{Translation}->{'Language Management.'} = 'การจัดการภาษา';
+    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} =
+        'ขีดจำกัดสำหรับการค้นหาเพื่อสร้างรายการบทความ FAQ ตามคำสำคัญ';
     $Self->{Translation}->{'Link another object to this FAQ item'} = 'ลิงค์ออบเจกต์อื่นไปยัง FAQ นี้';
     $Self->{Translation}->{'List of queue names for which the related article feature is enabled.'} =
-        '';
+        'รายชื่อคิวที่เปิดใช้งานคุณสมบัติบทความที่เกี่ยวข้อง';
     $Self->{Translation}->{'List of state types which can be used in the agent interface.'} =
         'รายชื่อของประเภทสถานภาพต่างๆที่สามารถใช้งานในอินเตอร์เฟซของเอเย่นต์ได้';
     $Self->{Translation}->{'List of state types which can be used in the customer interface.'} =
         'รายชื่อของประเภทสถานภาพต่างๆที่สามารถใช้งานในอินเตอร์เฟซของลูกค้าได้';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'รายชื่อของประเภทสถานภาพต่างๆที่สามารถใช้งานในอินเตอร์เฟซสาธารณะได้';
-    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} =
+        'การแมประหว่างค่าแอตทริบิวต์ผู้ใช้ลูกค้าและกลุ่ม';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'จำนวนบทความ FAQ สูงสุดที่จะแสดงใน FAQ Explorer ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -479,13 +524,14 @@ sub Data {
     $Self->{Translation}->{'Maximum size of the titles in a FAQ article to be shown in the FAQ journal in the agent interface.'} =
         'จำนวนหัวข้อสูงสุดในบทความ FAQ ที่จะแสดงในวารสาร FAQ ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Module to generate HTML OpenSearch profile for short FAQ search in the customer interface.'} =
-        '';
+        'โมดูลสำหรับสร้างโปรไฟล์ HTML OpenSearch สำหรับการค้นหา FAQ สั้นในอินเทอร์เฟซลูกค้า';
     $Self->{Translation}->{'Module to generate HTML OpenSearch profile for short FAQ search in the public interface.'} =
         'โมดูลในการสร้างโปรไฟล์ OpenSearch html สำหรับการค้นหา FAQ แบบกระชับ ในอินเตอร์เฟซที่สาธารณะ';
     $Self->{Translation}->{'Module to generate html OpenSearch profile for short FAQ search.'} =
-        '';
-    $Self->{Translation}->{'New FAQ Article.'} = '';
-    $Self->{Translation}->{'New FAQ articles need approval before they get published.'} = 'บทความFAQ ใหม่ต้องที่ได้รับการอนุมัติก่อนได้รับการตีพิมพ์';
+        'โมดูลสำหรับสร้างโปรไฟล์ HTML OpenSearch สำหรับการค้นหา FAQ สั้น';
+    $Self->{Translation}->{'New FAQ Article.'} = 'บทความ FAQ ใหม่';
+    $Self->{Translation}->{'New FAQ articles need approval before they get published.'} =
+        'บทความFAQ ใหม่ต้องที่ได้รับการอนุมัติก่อนได้รับการตีพิมพ์';
     $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface.'} =
         'จำนวนบทความ FAQ ที่จะแสดงใน FAQ Explorer ในอินเตอร์เฟซของลูกค้า';
     $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the public interface.'} =
@@ -494,31 +540,36 @@ sub Data {
         'จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซของลูกค้า';
     $Self->{Translation}->{'Number of FAQ articles to be displayed on each page of a search result in the public interface.'} =
         'จำนวนบทความ FAQ ที่จะแสดงบนแต่ละหน้าของผลการค้นหาในอินเตอร์เฟซสาธารณะ';
-    $Self->{Translation}->{'Number of shown items in last changes.'} = 'จำนวน items ที่แสดงในช่วงที่เปลี่ยนแปลงครั้งล่าสุด';
-    $Self->{Translation}->{'Number of shown items in last created.'} = 'จำนวน items ที่แสดงในช่วงที่สร้างขึ้นครั้งล่าสุด';
-    $Self->{Translation}->{'Number of shown items in the top 10 feature.'} = 'จำนวนรายการที่แสดงฟีเจอร์ใน 10 อันดับแรก';
+    $Self->{Translation}->{'Number of shown items in last changes.'} =
+        'จำนวน items ที่แสดงในช่วงที่เปลี่ยนแปลงครั้งล่าสุด';
+    $Self->{Translation}->{'Number of shown items in last created.'} =
+        'จำนวน items ที่แสดงในช่วงที่สร้างขึ้นครั้งล่าสุด';
+    $Self->{Translation}->{'Number of shown items in the top 10 feature.'} =
+        'จำนวนรายการที่แสดงฟีเจอร์ใน 10 อันดับแรก';
     $Self->{Translation}->{'Output filter to add Java-script to CustomerTicketMessage screen.'} =
-        '';
-    $Self->{Translation}->{'Output limit for the related FAQ articles.'} = '';
+        'ตัวกรองเอาต์พุตเพื่อเพิ่ม JavaScript ไปยังหน้าจอ CustomerTicketMessage';
+    $Self->{Translation}->{'Output limit for the related FAQ articles.'} =
+        'ขีดจำกัดเอาต์พุตสำหรับบทความ FAQ ที่เกี่ยวข้อง';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview.'} =
         'พารามิเตอร์สำหรับหน้าในรายการ (ซึ่งจะแสดงรายการ FAQ ) ของวารสาร FAQ ขนาดเล็ก';
     $Self->{Translation}->{'Parameters for the pages (in which the FAQ items are shown) of the small FAQ overview.'} =
         'พารามิเตอร์สำหรับหน้าในรายการ  (ซึ่งจะแสดงรายการ FAQ) ของ ภาพรวม FAQขนาดเล็ก';
     $Self->{Translation}->{'Print this FAQ'} = 'พิมพ์ FAQ นี้';
-    $Self->{Translation}->{'Public FAQ Print.'} = '';
-    $Self->{Translation}->{'Public FAQ Zoom.'} = '';
-    $Self->{Translation}->{'Public FAQ search.'} = '';
-    $Self->{Translation}->{'Public FAQ.'} = '';
+    $Self->{Translation}->{'Public FAQ Print.'} = 'พิมพ์ FAQ สาธารณะ';
+    $Self->{Translation}->{'Public FAQ Zoom.'} = 'ซูม FAQ สาธารณะ';
+    $Self->{Translation}->{'Public FAQ search.'} = 'ค้นหา FAQ สาธารณะ';
+    $Self->{Translation}->{'Public FAQ.'} = 'FAQ สาธารณะ';
     $Self->{Translation}->{'Queue for the approval of FAQ articles.'} = 'คิวในการอนุมัติบทความFAQ.';
-    $Self->{Translation}->{'Rates for voting. Key must be in percent.'} = 'เรตสำหรับการโหวตต้องกำหนดเป็นร้อยละ';
-    $Self->{Translation}->{'S'} = '';
+    $Self->{Translation}->{'Rates for voting. Key must be in percent.'} =
+        'เรตสำหรับการโหวตต้องกำหนดเป็นร้อยละ';
+    $Self->{Translation}->{'S'} = 'S';
     $Self->{Translation}->{'Search FAQ'} = 'ค้นหา FAQ';
-    $Self->{Translation}->{'Search FAQ Small.'} = '';
-    $Self->{Translation}->{'Search FAQ.'} = '';
+    $Self->{Translation}->{'Search FAQ Small.'} = 'ค้นหา FAQ แบบเล็ก';
+    $Self->{Translation}->{'Search FAQ.'} = 'ค้นหา FAQ';
     $Self->{Translation}->{'Select how many items should be shown in Journal Overview "Small" by default.'} =
-        '';
+        'เลือกจำนวนรายการที่จะแสดงในภาพรวมวารสาร "Small" โดยค่าเริ่มต้น';
     $Self->{Translation}->{'Select how many items should be shown in Overview "Small" by default.'} =
-        '';
+        'เลือกจำนวนรายการที่จะแสดงในภาพรวม "Small" โดยค่าเริ่มต้น';
     $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in AgentFAQZoom.'} =
         'เซตค่าความสูงเริ่มต้น(พิกเซล) ของฟิลด์HTML แบบอินไลน์ใน AgentFAQZoom.';
     $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in CustomerFAQZoom (and PublicFAQZoom).'} =
@@ -536,16 +587,20 @@ sub Data {
     $Self->{Translation}->{'Show FAQ Article with HTML.'} = 'แสดงบทความFAQ ด้วย HTML.';
     $Self->{Translation}->{'Show FAQ path yes/no.'} = 'แสดง ใช่/ ไม่ใช่ พาธFAQ ';
     $Self->{Translation}->{'Show invalid items in the FAQ Explorer result of the agent interface.'} =
-        '';
+        'แสดงรายการที่ไม่ถูกต้องในผลลัพธ์ FAQ Explorer ของอินเทอร์เฟซเอเจนต์';
     $Self->{Translation}->{'Show items of subcategories.'} = 'แสดงรายการของหมวดหมู่ย่อย';
-    $Self->{Translation}->{'Show last change items in defined interfaces.'} = 'แสดงรายการการเปลี่ยนแปลงที่ผ่านมาล่าสุดในอินเตอร์เฟซที่กำหนดไว้';
-    $Self->{Translation}->{'Show last created items in defined interfaces.'} = 'แสดงรายการที่สร้างล่าสุดในอินเตอร์เฟซที่กำหนดไว้.';
+    $Self->{Translation}->{'Show last change items in defined interfaces.'} =
+        'แสดงรายการการเปลี่ยนแปลงที่ผ่านมาล่าสุดในอินเตอร์เฟซที่กำหนดไว้';
+    $Self->{Translation}->{'Show last created items in defined interfaces.'} =
+        'แสดงรายการที่สร้างล่าสุดในอินเตอร์เฟซที่กำหนดไว้.';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
-        '';
+        'แสดงดาวสำหรับบทความที่มีคะแนนเท่ากับหรือมากกว่าค่าที่กำหนด (ตั้งค่าเป็น \'0\' เพื่อปิดการแสดงผล)';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
-        '';
-    $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'แสดง10 รายการยอดนิยมในอินเตอร์เฟซที่กำหนดไว้';
-    $Self->{Translation}->{'Show voting in defined interfaces.'} = 'แสดงการโหวตในอินเตอร์เฟซที่กำหนดไว้';
+        'แสดงดาวสำหรับบทความที่มีคะแนนเท่ากับหรือมากกว่าค่าที่กำหนดหากเปิดใช้งาน';
+    $Self->{Translation}->{'Show top 10 items in defined interfaces.'} =
+        'แสดง10 รายการยอดนิยมในอินเตอร์เฟซที่กำหนดไว้';
+    $Self->{Translation}->{'Show voting in defined interfaces.'} =
+        'แสดงการโหวตในอินเตอร์เฟซที่กำหนดไว้';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =
         'แสดงลิงค์ในเมนูเพื่อลิงค์ FAQ กับออบเจกค์อื่นในการซูมในอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Shows a link in the menu that allows to delete a FAQ in its zoom view in the agent interface.'} =
@@ -560,8 +615,9 @@ sub Data {
         'แสดงลิงค์ในเมนูเพื่อพิมพ์ FAQ ในการซูมของอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'Solution'} = 'วิธีแก้ปัญหา';
     $Self->{Translation}->{'Symptom'} = 'เครื่องแสดง';
-    $Self->{Translation}->{'Text Only'} = '';
-    $Self->{Translation}->{'The default languages for the related FAQ articles.'} = '';
+    $Self->{Translation}->{'Text Only'} = 'ข้อความเท่านั้น';
+    $Self->{Translation}->{'The default languages for the related FAQ articles.'} =
+        'ภาษาเริ่มต้นสำหรับบทความ FAQ ที่เกี่ยวข้อง';
     $Self->{Translation}->{'The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#.'} =
         'ตัวบ่งชี้สำหรับ FAQ, เช่น FAQ#,  KB#, MyFAQ #. ค่าเริ่มต้นคือ FAQ#';
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'FAQ\' objects using the \'Normal\' link type.'} =
@@ -572,14 +628,21 @@ sub Data {
         'การตั้งค่านี้กำหนดว่าออบเจกค์  \'FAQ\' สามารถลิงค์กับออบเจกค์  \'ตั๋ว\' อื่น โดยการใช้ลิงค์  \'Normal\'';
     $Self->{Translation}->{'This setting defines that a \'FAQ\' object can be linked with other \'Ticket\' objects using the \'ParentChild\' link type.'} =
         'การตั้งค่านี้กำหนดว่าออบเจกค์ \'FAQ\' สามารถลิงค์กับออบเจกค์ \'FAQ\' อื่น โดยการใช้ลิงค์ \'ParentChild\'';
-    $Self->{Translation}->{'Ticket body for approval of FAQ article.'} = 'เนื้อเรื่องของตั๋วสำหรับการอนุมัติของบทความ FAQ.';
-    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} = 'หัวข้อของตั๋วสำหรับการอนุมัติของบทความFAQ.';
-    $Self->{Translation}->{'Toolbar Item for a shortcut.'} = '';
+    $Self->{Translation}->{'Ticket body for approval of FAQ article.'} =
+        'เนื้อเรื่องของตั๋วสำหรับการอนุมัติของบทความ FAQ.';
+    $Self->{Translation}->{'Ticket subject for approval of FAQ article.'} =
+        'หัวข้อของตั๋วสำหรับการอนุมัติของบทความFAQ.';
+    $Self->{Translation}->{'Toolbar Item for a shortcut.'} = 'รายการแถบเครื่องมือสำหรับทางลัด';
     $Self->{Translation}->{'external (customer)'} = 'ภายนอก (ลูกค้า)';
     $Self->{Translation}->{'internal (agent)'} = 'ภายใน (เอเย่นต์)';
     $Self->{Translation}->{'public (all)'} = 'สาธารณะ (ทั้งหมด)';
-    $Self->{Translation}->{'public (public)'} = '';
+    $Self->{Translation}->{'public (public)'} = 'สาธารณะ (สาธารณะ)';
 
+
+    $Self->{Translation}->{'Last update'} = 'อัปเดตล่าสุด';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} =
+        'การลงทะเบียนโมดูลโหลดเดอร์สำหรับอินเทอร์เฟซสาธารณะ';
+    $Self->{Translation}->{'Limitation'} = 'ข้อจำกัด';
 
     push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',

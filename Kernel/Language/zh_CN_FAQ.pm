@@ -30,7 +30,8 @@ sub Data {
     $Self->{Translation}->{'Edit Category'} = '编辑类别';
     $Self->{Translation}->{'Subcategory of'} = '子类别于';
     $Self->{Translation}->{'Please select at least one permission group.'} = '请至少选择一个组权限.';
-    $Self->{Translation}->{'Agent groups that can access articles in this category.'} = '能访问此类别文章的服务人员组。';
+    $Self->{Translation}->{'Agent groups that can access articles in this category.'} =
+        '能访问此类别文章的服务人员组。';
     $Self->{Translation}->{'Will be shown as comment in Explorer.'} = '将作为注释在浏览时显示.';
     $Self->{Translation}->{'Do you really want to delete this category?'} = '你确定要删除这个类别吗?';
     $Self->{Translation}->{'You can not delete this category. It is used in at least one FAQ article and/or is parent of at least one other category'} =
@@ -43,7 +44,8 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
     $Self->{Translation}->{'FAQ'} = 'FAQ知识库';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} =
+        '所有标有星号(*)的字段均为必填项。';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQExplorer.tt
     $Self->{Translation}->{'FAQ Explorer'} = 'FAQ浏览器';
@@ -103,8 +105,8 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
     $Self->{Translation}->{'FAQ Search'} = 'FAQ搜索';
     $Self->{Translation}->{'Profile Selection'} = '配置选择';
-    $Self->{Translation}->{'Core FAQ Data'} = '';
-    $Self->{Translation}->{'Dynamic Info'} = '';
+    $Self->{Translation}->{'Core FAQ Data'} = 'FAQ核心数据';
+    $Self->{Translation}->{'Dynamic Info'} = '动态信息';
     $Self->{Translation}->{'Vote'} = '投票';
     $Self->{Translation}->{'No vote settings'} = '无投票设置';
     $Self->{Translation}->{'Specific votes'} = '指定投票';
@@ -121,7 +123,8 @@ sub Data {
     $Self->{Translation}->{'Rating'} = '评分';
     $Self->{Translation}->{'Votes'} = '投票次数';
     $Self->{Translation}->{'No votes found!'} = '还没有投票!';
-    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} = '还没有投票! 这将是该 FAQ 文章的第一个投票。';
+    $Self->{Translation}->{'No votes found! Be the first one to rate this FAQ article.'} =
+        '还没有投票! 这将是该 FAQ 文章的第一个投票。';
     $Self->{Translation}->{'Download Attachment'} = '下载附件';
     $Self->{Translation}->{'To open links in the following description blocks, you might need to press Ctrl or Cmd or Shift key while clicking the link (depending on your browser and OS).'} =
         '要打开下面描述中的链接，你可能需要在单击链接的同时按住 Ctrl 或 Cmd 或 Shift 键 （取决于您的浏览器和操作系统 ）。';
@@ -144,10 +147,11 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
     $Self->{Translation}->{'This might be helpful'} = '这有助于';
     $Self->{Translation}->{'Found no helpful resources for the subject and text.'} = '没有找到有用的主题和正文资源。';
-    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} = '键入主题或正文以获取有用的资源清单。';
+    $Self->{Translation}->{'Type a subject or text to get a list of helpful resources.'} =
+        '键入主题或正文以获取有用的资源清单。';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
-    $Self->{Translation}->{'Template name'} = '';
+    $Self->{Translation}->{'Template name'} = '模板名称';
     $Self->{Translation}->{'Vote restrictions'} = '投票限制条件';
     $Self->{Translation}->{'Only FAQ articles with votes...'} = '仅FAQ文章的投票数……';
     $Self->{Translation}->{'Rate restrictions'} = '评分限制条件';
@@ -162,7 +166,8 @@ sub Data {
     $Self->{Translation}->{'Search for articles with keyword'} = '使用关键字搜索文章';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
-    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} = '在FAQ中进行全文本搜索（例如：“John*n”或“Will*”）';
+    $Self->{Translation}->{'Fulltext search in FAQ articles (e. g. "John*n" or "Will*")'} =
+        '在FAQ中进行全文本搜索（例如：“John*n”或“Will*”）';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
     $Self->{Translation}->{'Public'} = '公开';
@@ -172,8 +177,10 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQAdd.pm
     $Self->{Translation}->{'You need rw permission!'} = '你需要rw权限！';
-    $Self->{Translation}->{'No categories found where user has read/write permissions!'} = '没有找到用户有读写权限的类别！';
-    $Self->{Translation}->{'No default language found and can\'t create a new one.'} = '没有找到默认语言且无法创建新的语言。';
+    $Self->{Translation}->{'No categories found where user has read/write permissions!'} =
+        '没有找到用户有读写权限的类别！';
+    $Self->{Translation}->{'No default language found and can\'t create a new one.'} =
+        '没有找到默认语言且无法创建新的语言。';
 
     # Perl Module: Kernel/Modules/AgentFAQCategory.pm
     $Self->{Translation}->{'Need CategoryID!'} = '需要CategoryID！';
@@ -200,7 +207,8 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentFAQJournal.pm
     $Self->{Translation}->{'FAQ Journal'} = 'FAQ日志';
-    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} = '需要配置选项FAQ::Frontend::Overview';
+    $Self->{Translation}->{'Need config option FAQ::Frontend::Overview'} =
+        '需要配置选项FAQ::Frontend::Overview';
     $Self->{Translation}->{'Config option FAQ::Frontend::Overview needs to be a HASH ref!'} =
         '配置选项FAQ::Frontend::Overview需要是一个哈希引用！';
     $Self->{Translation}->{'No config option found for the view "%s"!'} = '没有找到视图“%s”的配置选项！';
@@ -260,7 +268,8 @@ sub Data {
 
     # Perl Module: Kernel/Modules/PublicFAQRSS.pm
     $Self->{Translation}->{'No Type is given!'} = '没有指定类型！';
-    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} = '类型必须是最后创建、最后修改或Top10！';
+    $Self->{Translation}->{'Type must be either LastCreate or LastChange or Top10!'} =
+        '类型必须是最后创建、最后修改或Top10！';
     $Self->{Translation}->{'Can\'t create RSS file!'} = '不能创建RSS文件！';
 
     # Perl Module: Kernel/Output/HTML/HeaderMeta/AgentFAQSearch.pm
@@ -296,10 +305,10 @@ sub Data {
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         '在HTML输出结果中为预定义字符串添加链接的过滤器。图像元素允许两种输入方式：第一种是用图像的名称（如faq.png），在这种情况下会使用OTRS的图像路径；第二种是插入图像的链接。';
     $Self->{Translation}->{'Add FAQ article'} = '添加FAQ文章';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = '服务人员FAQ相关文章';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '服务人员FAQ相关文章。';
+    $Self->{Translation}->{'Below body'} = '正文下方';
+    $Self->{Translation}->{'Below subject'} = '主题下方';
     $Self->{Translation}->{'CSS color for the voting result.'} = '投票结果的CSS颜色。';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'FAQ文章能显示的时间。';
     $Self->{Translation}->{'Category Management'} = '管理类别';
@@ -310,21 +319,24 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = '客户FAQ详情。';
     $Self->{Translation}->{'Customer FAQ search.'} = '客户FAQ搜索。';
     $Self->{Translation}->{'Customer FAQ.'} = '客户FAQ。';
-    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '用于检查其组关系的客户用户属性。';
     $Self->{Translation}->{'Decimal places of the voting result.'} = '以十分制显示评分结果。';
     $Self->{Translation}->{'Default category name.'} = '默认的目录名称。';
-    $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = '单语言模式下FAQ文章的默认语言。';
+    $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} =
+        '单语言模式下FAQ文章的默认语言。';
     $Self->{Translation}->{'Default maximum size of the titles in a FAQ article to be shown.'} =
         'FAQ文章默认显示标题的最大字符数。';
     $Self->{Translation}->{'Default priority of tickets for the approval of FAQ articles.'} =
         'FAQ 文章审批请求工单的默认优先级。';
     $Self->{Translation}->{'Default state for FAQ entry.'} = 'FAQ文章的默认状态。';
-    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} = 'FAQ 文章请求批准工单的默认状态。';
-    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} = 'FAQ 文章请求批准工单的默认类型。';
+    $Self->{Translation}->{'Default state of tickets for the approval of FAQ articles.'} =
+        'FAQ 文章请求批准工单的默认状态。';
+    $Self->{Translation}->{'Default type of tickets for the approval of FAQ articles.'} =
+        'FAQ 文章请求批准工单的默认类型。';
     $Self->{Translation}->{'Default value for the Action parameter for the public frontend. The Action parameter is used in the scripts of the system.'} =
         '公共前端界面指令参数的默认值，指令参数用于系统脚本。';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '定义链接对象小部件(LinkObject::ViewMode = \"complex\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js和Core.Agent.LinkObject.js。';
+        '定义链接对象小部件(LinkObject::ViewMode = \\"complex\\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js和Core.Agent.LinkObject.js。';
     $Self->{Translation}->{'Define if the FAQ title should be concatenated to article subject.'} =
         '定义FAQ标题是否要加到文章主题中。';
     $Self->{Translation}->{'Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = "complex"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns.'} =
@@ -364,14 +376,15 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         '定义仪表板的后端参数。“限制”定义默认显示条目的数量。“组”用于控制能访问此模块的组（如：admin;group1;group2组）。“默认”表示此模块默认为可用或需要用户手动启用。';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        '';
+        '定义相关FAQ文章小部件的位置。';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         '定义在FAQ浏览器中要显示的列。这个选项不会影响列的位置。';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
         '定义在FAQ日志中要显示的列。这个选项不会影响列的位置。';
     $Self->{Translation}->{'Defines the shown columns in the FAQ search. This option has no effect on the position of the column.'} =
         '定义在FAQ搜索结果中要显示的列。这个选项不会影响列的位置。';
-    $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} = '定义“插入FAQ”链接在何处显示。';
+    $Self->{Translation}->{'Defines where the \'Insert FAQ\' link will be displayed.'} =
+        '定义“插入FAQ”链接在何处显示。';
     $Self->{Translation}->{'Definition of FAQ item free text field.'} = '定义 FAQ 条目的不受限文字字段.';
     $Self->{Translation}->{'Delete this FAQ'} = '删除这篇FAQ';
     $Self->{Translation}->{'Dynamic fields shown in the FAQ add screen of the agent interface.'} =
@@ -404,11 +417,12 @@ sub Data {
         '在公共界面FAQ详情窗口中显示的动态字段。';
     $Self->{Translation}->{'Edit this FAQ'} = '编辑FAQ';
     $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
-        '';
-    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
-    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
+        '在FAQ浏览器中启用对FAQ子类别文章的计数。';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = '启用客户组支持权限。';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = '启用客户用户权限属性。';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = '在FAQ模块中启用多种语言。';
-    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} =
+        '在服务人员前端启用相关文章功能。';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         '启用客户前端的相关文章功能。';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = '在FAQ模块中启用投票机制。';
@@ -428,18 +442,20 @@ sub Data {
     $Self->{Translation}->{'Field5'} = 'Field5';
     $Self->{Translation}->{'Full FAQ'} = '完整FAQ';
     $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
+        '为指定的块生成HTML注释钩子，以便过滤器可以使用它们。';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = '批准 FAQ 文章请求的群组。';
     $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
-        '';
+        '客户用户默认所属的组（如果启用此设置）。';
     $Self->{Translation}->{'History of this FAQ'} = 'FAQ文章的历史信息';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = '在基于FAQ文章的工单中包含内部字段。';
-    $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = '在基于FAQ文章的工单中包含每个字段的名称。';
+    $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} =
+        '在基于FAQ文章的工单中包含每个字段的名称。';
     $Self->{Translation}->{'Interfaces where the quick search should be shown.'} = '快速搜索时显示的界面。';
     $Self->{Translation}->{'Journal'} = '日志';
     $Self->{Translation}->{'Language Management'} = '管理语言';
     $Self->{Translation}->{'Language Management.'} = '管理语言。';
-    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} = '为建立关键字FAQ文章列表的搜索限制。';
+    $Self->{Translation}->{'Limit for the search to build the keyword FAQ article list.'} =
+        '为建立关键字FAQ文章列表的搜索限制。';
     $Self->{Translation}->{'Link another object to this FAQ item'} = '链接对象到这个FAQ条目';
     $Self->{Translation}->{'List of queue names for which the related article feature is enabled.'} =
         '启用相关文章功能的队列名称列表。';
@@ -449,7 +465,8 @@ sub Data {
         '在客户界面中能够使用的状态类型列表。';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         '在公共界面中能够使用的状态类型列表。';
-    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} =
+        '客户用户属性值与组之间的映射。';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         '在服务人员界面中，FAQ浏览器能够显示FAQ文章的最大数量。';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -485,7 +502,8 @@ sub Data {
     $Self->{Translation}->{'Module to generate html OpenSearch profile for short FAQ search.'} =
         '在服务人员界面中，用于简短的FAQ搜索而生成HTML开放式搜索配置文件的模块。';
     $Self->{Translation}->{'New FAQ Article.'} = '创建FAQ文章。';
-    $Self->{Translation}->{'New FAQ articles need approval before they get published.'} = '新建的FAQ文章在发布之前需要审批。';
+    $Self->{Translation}->{'New FAQ articles need approval before they get published.'} =
+        '新建的FAQ文章在发布之前需要审批。';
     $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the customer interface.'} =
         '在客户界面中，FAQ浏览器视图显示的FAQ文章数量。';
     $Self->{Translation}->{'Number of FAQ articles to be displayed in the FAQ Explorer of the public interface.'} =
@@ -543,7 +561,7 @@ sub Data {
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         '显示星级大于或等于定义值的文章（设置值\'0\'以禁用输出）。';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
-        '';
+        '如果启用，则对评分等于或大于定义值的文章显示星级。';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = '在定义的界面上显示点击量前十个条目。';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = '在定义的界面上显示文章评分。';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =
@@ -580,6 +598,10 @@ sub Data {
     $Self->{Translation}->{'public (all)'} = '公开(内外)';
     $Self->{Translation}->{'public (public)'} = '公开（公开）';
 
+
+    $Self->{Translation}->{'Last update'} = '上次更新';
+    $Self->{Translation}->{'Loader module registration for the public interface.'} = '公共界面的加载模块注册。';
+    $Self->{Translation}->{'Limitation'} = '限制';
 
     push @{ $Self->{JavaScriptStrings} //= [] }, (
     'No',

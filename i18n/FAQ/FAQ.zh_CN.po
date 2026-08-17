@@ -1431,77 +1431,77 @@ msgstr "公开（公开）"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "服务人员FAQ相关文章"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "服务人员FAQ相关文章。"
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "正文下方"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "主题下方"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "用于检查其组关系的客户用户属性。"
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "定义相关FAQ文章小部件的位置。"
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "启用客户组支持权限。"
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "启用客户用户权限属性。"
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "在服务人员前端启用相关文章功能。"
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
-msgstr ""
+msgstr "为指定的块生成HTML注释钩子，以便过滤器可以使用它们。"
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
-msgstr ""
+msgstr "客户用户默认所属的组（如果启用此设置）。"
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "客户用户属性值与组之间的映射。"
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
-msgstr ""
+msgstr "如果启用，则对评分等于或大于定义值的文章显示星级。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "FAQ核心数据"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "模板名称"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "限制"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
-msgstr ""
+msgstr "在FAQ浏览器中启用对FAQ子类别文章的计数。"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "动态信息"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "所有标有星号(*)的字段均为必填项。"
 

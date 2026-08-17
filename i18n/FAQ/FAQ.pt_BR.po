@@ -825,6 +825,10 @@ msgstr "Define se o título do FAQ deve ser concatenado ao assunto do artigo."
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Define quais colunas são exibidas no widget de FAQs vinculadas "
+"(LinkObject::ViewMode = \"complex\"). Nota: Apenas atributos FAQ e "
+"campos dinâmicos (DynamicField_NameX) são permitidos para "
+"DefaultColumns."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -929,10 +933,14 @@ msgstr "Campos dinâmicos exibidos na tela de editar FAQ da interface de agente.
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de visão geral de FAQ da interface "
+"do cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de visão geral de FAQ da interface "
+"pública."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
@@ -941,10 +949,14 @@ msgstr "Campos dinâmicos exibidos na tela de imprimir FAQ da interface de agent
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de impressão de FAQ da interface do "
+"cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de impressão de FAQ da interface "
+"pública."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
@@ -953,10 +965,14 @@ msgstr "Campos dinâmicos mostrados na tela de pesquisa de FAQ da interface de a
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de pesquisa de FAQ da interface do "
+"cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de pesquisa de FAQ da interface "
+"pública."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
@@ -969,10 +985,12 @@ msgstr "Campos dinâmicos exibidos na tela de zoom de FAQ da interface de agente
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
+"Campos dinâmicos exibidos na tela de zoom de FAQ da interface do "
+"cliente."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "Campos dinâmicos exibidos na tela de zoom de FAQ da interface pública."
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -1108,7 +1126,7 @@ msgstr "Lista dos tipos de estado que pode ser utilizado na interface pública."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Registro do módulo Loader para a interface pública."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
@@ -1169,6 +1187,8 @@ msgstr "Tamanho máximo de títulos em um artigo FAQ a serem exibidos no Jornal 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Módulo para gerar o perfil HTML OpenSearch para pesquisa rápida de "
+"FAQ na interface do cliente."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
@@ -1177,6 +1197,8 @@ msgstr "Módulo para gerar perfil HTML OpenSearch para pesquisas curtas de FAQ n
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
 msgstr ""
+"Módulo para gerar o perfil HTML OpenSearch para pesquisa rápida de "
+"FAQ."
 
 #. SysConfig
 msgid "New FAQ Article."
@@ -1217,6 +1239,8 @@ msgstr "Número de itens mostrados no recurso top 10."
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
 msgstr ""
+"Filtro de saída para adicionar JavaScript à tela "
+"CustomerTicketMessage."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
@@ -1436,77 +1460,87 @@ msgstr "público (público)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Artigos FAQ relacionados do agente"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Artigos FAQ relacionados do agente."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Abaixo do corpo"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Abaixo do assunto"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Atributo de usuário cliente para verificar sua relação de grupo."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
 msgstr ""
+"Define a posição onde o widget de artigos FAQ relacionados está "
+"localizado."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Habilitar permissões de suporte de grupos de clientes."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Habilitar atributos de permissão de usuários clientes."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Habilitar o recurso de artigos relacionados no frontend do agente."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Gerar hooks de comentário HTML para os blocos especificados para que "
+"os filtros possam usá-los."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Grupo ao qual os usuários clientes pertencem por padrão (se esta "
+"configuração estiver habilitada)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Mapeamento entre o valor do atributo de usuário cliente e o grupo."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Mostrar as estrelas para os artigos com uma avaliação igual ou maior "
+"que o valor definido, se habilitado."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Dados principais da FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Nome do modelo"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Limitação"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"Habilitar a contagem de artigos das subcategorias FAQ no explorador "
+"FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Informação dinâmica"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Todos os campos marcados com um asterisco (*) são obrigatórios."
 

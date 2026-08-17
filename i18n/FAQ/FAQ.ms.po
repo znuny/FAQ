@@ -37,11 +37,11 @@ msgstr "Pengurusan Kategori FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add FAQ Category"
-msgstr ""
+msgstr "Tambah Kategori FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Edit FAQ Category"
-msgstr ""
+msgstr "Edit Kategori FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQCategory.tt
 msgid "Add category"
@@ -145,11 +145,11 @@ msgstr "Pengurusan Bahasa FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Add FAQ Language"
-msgstr ""
+msgstr "Tambah Bahasa FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Edit FAQ Language"
-msgstr ""
+msgstr "Edit Bahasa FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQLanguage.tt
 msgid "Use this feature if you want to work with multiple languages."
@@ -353,15 +353,15 @@ msgstr "Tiada artikel FAQ dijumpai."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "This might be helpful"
-msgstr ""
+msgstr "Ini mungkin membantu"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Found no helpful resources for the subject and text."
-msgstr ""
+msgstr "Tiada sumber berguna ditemui untuk subjek dan teks."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQRelatedArticles.tt
 msgid "Type a subject or text to get a list of helpful resources."
-msgstr ""
+msgstr "Taip subjek atau teks untuk mendapatkan senarai sumber berguna."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Fulltext search in FAQ articles (e. g. \"John*n\" or \"Will*\")"
@@ -681,7 +681,7 @@ msgstr "%s - Umum (tekspenuhFAQ)"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "Need rate!"
-msgstr ""
+msgstr "Perlu penilaian!"
 
 #. Perl Module: Kernel/Output/HTML/Layout/FAQ.pm
 msgid "This article is empty!"
@@ -701,7 +701,7 @@ msgstr "Aritkel FAQ 10 terbaik"
 
 #. Perl Module: Kernel/Output/HTML/LinkObject/FAQ.pm
 msgid "Content Type"
-msgstr ""
+msgstr "Jenis Kandungan"
 
 #. XML Definition: FAQ.sopm
 msgid "internal"
@@ -741,7 +741,7 @@ msgstr "Pengurusan kategori"
 
 #. SysConfig
 msgid "Category Management."
-msgstr ""
+msgstr "Pengurusan Kategori."
 
 #. SysConfig
 msgid "Customer FAQ Print."
@@ -749,11 +749,11 @@ msgstr "Cetakan FAQ Pelanggan"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles"
-msgstr ""
+msgstr "Artikel Berkaitan FAQ Pelanggan"
 
 #. SysConfig
 msgid "Customer FAQ Related Articles."
-msgstr ""
+msgstr "Artikel Berkaitan FAQ Pelanggan."
 
 #. SysConfig
 msgid "Customer FAQ Zoom."
@@ -814,6 +814,9 @@ msgstr "Tentukan jika tajuk FAQ perlu dirangkaikan kepada artikel subjek."
 #. SysConfig
 msgid "Define which columns are shown in the linked FAQs widget (LinkObject::ViewMode = \"complex\"). Note: Only FAQ attributes and dynamic fields (DynamicField_NameX) are allowed for DefaultColumns."
 msgstr ""
+"Tentukan lajur mana yang dipaparkan dalam widget FAQ yang dipautkan "
+"(LinkObject::ViewMode = \"complex\"). Nota: Hanya atribut FAQ dan "
+"medan dinamik (DynamicField_NameX) dibenarkan untuk DefaultColumns."
 
 #. SysConfig
 msgid "Defines an overview module to show the small view of a FAQ journal."
@@ -909,59 +912,71 @@ msgstr "Padam FAQ ini!"
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ add screen of the agent interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin tambah FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ edit screen of the agent interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin edit FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the customer interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin gambaran keseluruhan FAQ "
+"antara muka pelanggan."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ overview screen of the public interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin gambaran keseluruhan FAQ "
+"antara muka awam."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the agent interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin cetak FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the customer interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin cetak FAQ antara muka "
+"pelanggan."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ print screen of the public interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin cetak FAQ antara muka awam."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the agent interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin carian FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the customer interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin carian FAQ antara muka "
+"pelanggan."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ search screen of the public interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin carian FAQ antara muka awam."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ small format overview screen of the agent interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin gambaran keseluruhan format "
+"kecil FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the agent interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin zum FAQ antara muka ejen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the customer interface."
 msgstr ""
+"Medan dinamik yang dipaparkan dalam skrin zum FAQ antara muka "
+"pelanggan."
 
 #. SysConfig
 msgid "Dynamic fields shown in the FAQ zoom screen of the public interface."
-msgstr ""
+msgstr "Medan dinamik yang dipaparkan dalam skrin zum FAQ antara muka awam."
 
 #. SysConfig
 msgid "Edit this FAQ"
@@ -973,7 +988,7 @@ msgstr "Aktifkan pelbagai bahasa pada modul FAQ."
 
 #. SysConfig
 msgid "Enable the related article feature for the customer frontend."
-msgstr ""
+msgstr "Dayakan ciri artikel berkaitan untuk frontend pelanggan."
 
 #. SysConfig
 msgid "Enable voting mechanism on FAQ module."
@@ -1009,7 +1024,7 @@ msgstr "Sunting FAQ"
 
 #. SysConfig
 msgid "FAQ History."
-msgstr ""
+msgstr "Sejarah FAQ."
 
 #. SysConfig
 msgid "FAQ Journal Overview \"Small\" Limit"
@@ -1069,11 +1084,11 @@ msgstr "Pengurusan Bahasa"
 
 #. SysConfig
 msgid "Language Management."
-msgstr ""
+msgstr "Pengurusan Bahasa."
 
 #. SysConfig
 msgid "Limit for the search to build the keyword FAQ article list."
-msgstr ""
+msgstr "Had untuk carian bagi membina senarai artikel FAQ kata kunci."
 
 #. SysConfig
 msgid "Link another object to this FAQ item"
@@ -1081,7 +1096,7 @@ msgstr "FAQ pautan ini kepada objek lain"
 
 #. SysConfig
 msgid "List of queue names for which the related article feature is enabled."
-msgstr ""
+msgstr "Senarai nama baris giliran yang ciri artikel berkaitan didayakan."
 
 #. SysConfig
 msgid "List of state types which can be used in the agent interface."
@@ -1097,7 +1112,7 @@ msgstr "Senarai jenis keadaan yang boleh digunakan dalam antara muka awam."
 
 #. SysConfig
 msgid "Loader module registration for the public interface."
-msgstr ""
+msgstr "Pendaftaran modul pemuat untuk antara muka awam."
 
 #. SysConfig
 msgid "Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface."
@@ -1158,6 +1173,8 @@ msgstr "Saiz maksimum tajuk dalam artikel FAQ untuk ditunjukkan dalam jurnal FAQ
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the customer interface."
 msgstr ""
+"Modul untuk menjana profil HTML OpenSearch bagi carian FAQ ringkas "
+"dalam antara muka pelanggan."
 
 #. SysConfig
 msgid "Module to generate HTML OpenSearch profile for short FAQ search in the public interface."
@@ -1165,11 +1182,11 @@ msgstr "Modul untuk menjana profil HTML OpenSearch untuk carian FAQ pendek dalam
 
 #. SysConfig
 msgid "Module to generate html OpenSearch profile for short FAQ search."
-msgstr ""
+msgstr "Modul untuk menjana profil HTML OpenSearch bagi carian FAQ ringkas."
 
 #. SysConfig
 msgid "New FAQ Article."
-msgstr ""
+msgstr "Artikel FAQ Baharu."
 
 #. SysConfig
 msgid "New FAQ articles need approval before they get published."
@@ -1206,10 +1223,12 @@ msgstr "Bilangan item yang ditunjukkan dalam 10 teratas ciri."
 #. SysConfig
 msgid "Output filter to add Java-script to CustomerTicketMessage screen."
 msgstr ""
+"Penapis output untuk menambah JavaScript ke skrin "
+"CustomerTicketMessage."
 
 #. SysConfig
 msgid "Output limit for the related FAQ articles."
-msgstr ""
+msgstr "Had output untuk artikel FAQ berkaitan."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the FAQ items are shown) of the small FAQ journal overview."
@@ -1257,19 +1276,23 @@ msgstr "Carian FAQ"
 
 #. SysConfig
 msgid "Search FAQ Small."
-msgstr ""
+msgstr "Cari FAQ Kecil."
 
 #. SysConfig
 msgid "Search FAQ."
-msgstr ""
+msgstr "Cari FAQ."
 
 #. SysConfig
 msgid "Select how many items should be shown in Journal Overview \"Small\" by default."
 msgstr ""
+"Pilih berapa banyak item yang dipaparkan secara lalai dalam Gambaran "
+"Keseluruhan Jurnal \"Small\"."
 
 #. SysConfig
 msgid "Select how many items should be shown in Overview \"Small\" by default."
 msgstr ""
+"Pilih berapa banyak item yang dipaparkan secara lalai dalam Gambaran "
+"Keseluruhan \"Small\"."
 
 #. SysConfig
 msgid "Set the default height (in pixels) of inline HTML fields in AgentFAQZoom."
@@ -1326,6 +1349,9 @@ msgstr "Tunjukkan akhir mencipta item dalam antara muka yang ditakrifkan."
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value (set value '0' to deactivate the output)."
 msgstr ""
+"Tunjukkan bintang untuk artikel dengan penilaian sama atau lebih "
+"besar daripada nilai yang ditetapkan (tetapkan nilai '0' untuk "
+"menyahaktifkan output)."
 
 #. SysConfig
 msgid "Show top 10 items in defined interfaces."
@@ -1373,7 +1399,7 @@ msgstr "hanya teks"
 
 #. SysConfig
 msgid "The default languages for the related FAQ articles."
-msgstr ""
+msgstr "Bahasa lalai untuk artikel FAQ berkaitan."
 
 #. SysConfig
 msgid "The identifier for a FAQ, e.g. FAQ#, KB#, MyFAQ#. The default is FAQ#."
@@ -1425,77 +1451,85 @@ msgstr "awam (awam)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Artikel Berkaitan FAQ Ejen"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Artikel Berkaitan FAQ Ejen."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Di bawah teks"
 
 #. SysConfig
 msgid "Below subject"
-msgstr ""
+msgstr "Di bawah subjek"
 
 #. SysConfig
 msgid "Customer user attribute to check its group relation."
-msgstr ""
+msgstr "Atribut pengguna pelanggan untuk memeriksa hubungan kumpulannya."
 
 #. SysConfig
 msgid "Defines the position where the related FAQ articles widget is located."
-msgstr ""
+msgstr "Mentakrifkan kedudukan di mana widget artikel FAQ berkaitan berada."
 
 #. SysConfig
 msgid "Enable customer group support permissions."
-msgstr ""
+msgstr "Dayakan kebenaran sokongan kumpulan pelanggan."
 
 #. SysConfig
 msgid "Enable customer user permission attributes."
-msgstr ""
+msgstr "Dayakan atribut kebenaran pengguna pelanggan."
 
 #. SysConfig
 msgid "Enable the related article feature for the agent frontend."
-msgstr ""
+msgstr "Dayakan ciri artikel berkaitan untuk frontend ejen."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
 msgstr ""
+"Jana cangkuk komen HTML untuk blok yang ditentukan supaya penapis "
+"boleh menggunakannya."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
 msgstr ""
+"Kumpulan yang pengguna pelanggan tergolong secara lalai (jika tetapan "
+"ini didayakan)."
 
 #. SysConfig
 msgid "Mapping between customer user attribute value and group."
-msgstr ""
+msgstr "Pemetaan antara nilai atribut pengguna pelanggan dan kumpulan."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
 msgstr ""
+"Tunjukkan bintang untuk artikel dengan penilaian sama atau lebih "
+"besar daripada nilai yang ditetapkan jika didayakan."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Core FAQ Data"
-msgstr ""
+msgstr "Data Teras FAQ"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearch.tt
 msgid "Template name"
-msgstr ""
+msgstr "Nama templat"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearch.tt
 msgid "Limitation"
-msgstr ""
+msgstr "Had"
 
 #. SysConfig
 msgid "Enable counting of articles from FAQ subcategories for FAQ explorer."
 msgstr ""
+"Dayakan pengiraan artikel daripada subkategori FAQ untuk penjelajah "
+"FAQ."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQSearchSmall.tt
 msgid "Dynamic Info"
-msgstr ""
+msgstr "Maklumat Dinamik"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentFAQEdit.tt
 msgid "All fields marked with an asterisk (*) are mandatory."
-msgstr ""
+msgstr "Semua medan yang ditandai dengan tanda bintang (*) adalah wajib."
 
