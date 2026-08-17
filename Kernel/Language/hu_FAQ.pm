@@ -155,7 +155,7 @@ sub Data {
     $Self->{Translation}->{'Search-Profile as Template?'} = 'Keresési profil sablonként?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQZoom.tt
-    $Self->{Translation}->{'Article Number'} = 'Bejegyzésszám';
+    $Self->{Translation}->{'Article Number'} = 'Bejegyzés száma';
     $Self->{Translation}->{'Search for articles with keyword'} = 'Bejegyzések keresése kulcsszavakkal';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/PublicFAQSearchOpenSearchDescriptionFAQNumber.tt
@@ -290,10 +290,10 @@ sub Data {
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Egy szűrő a HTML kimenethez, hogy hivatkozásokat adjon egy meghatározott szöveg mögé. Az Image elem kétféle bemenetet fogad. Az első a kép neve (például faq.png). Ebben az esetben az OTRS képek útvonala lesz felhasználva. A második lehetőség a képre mutató hivatkozás beszúrása.';
     $Self->{Translation}->{'Add FAQ article'} = 'GyIK bejegyzés hozzáadása';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
-    $Self->{Translation}->{'Below subject'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = 'Ügyintéző GyIK kapcsolódó bejegyzések';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = 'Ügyintéző GyIK kapcsolódó bejegyzések.';
+    $Self->{Translation}->{'Below body'} = 'Törzs alatt';
+    $Self->{Translation}->{'Below subject'} = 'Tárgy alatt';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'CSS szín a szavazás eredményéhez.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Gyorsítótár idő a GyIK elemek elhagyásához.';
     $Self->{Translation}->{'Category Management'} = 'Kategóriakezelés';
@@ -304,7 +304,7 @@ sub Data {
     $Self->{Translation}->{'Customer FAQ Zoom.'} = 'Ügyfél GyIK nagyítás.';
     $Self->{Translation}->{'Customer FAQ search.'} = 'Ügyfél GyIK keresés.';
     $Self->{Translation}->{'Customer FAQ.'} = 'Ügyfél GyIK.';
-    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = '';
+    $Self->{Translation}->{'Customer user attribute to check its group relation.'} = 'Ügyfél-felhasználó attribútum a csoportkapcsolatának ellenőrzéséhez.';
     $Self->{Translation}->{'Decimal places of the voting result.'} = 'A szavazási eredmény tizedesjegyeinek száma.';
     $Self->{Translation}->{'Default category name.'} = 'Alapértelmezett kategórianév.';
     $Self->{Translation}->{'Default language for FAQ articles on single language mode.'} = 'A GyIK bejegyzések alapértelmezett nyelve egynyelvű módban.';
@@ -358,7 +358,7 @@ sub Data {
     $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Limit" defines the number of entries displayed by default. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually.'} =
         'Meghatározza a vezérlőpult háttérprogram paramétereit. A „Limit” határozza meg az alapértelmezetten megjelenített bejegyzések számát. A „Group” használható a hozzáférés korlátozásához a bővítményre (például Group: admin;csoport1;csoport2;). A „Default” jelzi, hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak kézzel kell engedélyeznie azt.';
     $Self->{Translation}->{'Defines the position where the related FAQ articles widget is located.'} =
-        '';
+        'Meghatározza azt az elhelyezkedést, ahol a kapcsolódó GyIK bejegyzések felületi elem található.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ Explorer. This option has no effect on the position of the column.'} =
         'Meghatározza a megjelenített oszlopokat a GyIK böngészőben. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
     $Self->{Translation}->{'Defines the shown columns in the FAQ journal. This option has no effect on the position of the column.'} =
@@ -398,11 +398,11 @@ sub Data {
         'A nyilvános felület GyIK nagyítása képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Edit this FAQ'} = 'A GyIK szerkesztése';
     $Self->{Translation}->{'Enable counting of articles from FAQ subcategories for FAQ explorer.'} =
-        '';
-    $Self->{Translation}->{'Enable customer group support permissions.'} = '';
-    $Self->{Translation}->{'Enable customer user permission attributes.'} = '';
+        'A GyIK alkategóriákból származó bejegyzések számolásának engedélyezése a GyIK böngészőnél.';
+    $Self->{Translation}->{'Enable customer group support permissions.'} = 'Ügyfélcsoport-támogatás jogosultságainak engedélyezése.';
+    $Self->{Translation}->{'Enable customer user permission attributes.'} = 'Ügyfél-felhasználó jogosultsági attribútumainak engedélyezése.';
     $Self->{Translation}->{'Enable multiple languages on FAQ module.'} = 'Több nyelv engedélyezése a GyIK modulban.';
-    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = '';
+    $Self->{Translation}->{'Enable the related article feature for the agent frontend.'} = 'A kapcsolódó bejegyzések funkció engedélyezése az ügyintézői előtétprogramhoz.';
     $Self->{Translation}->{'Enable the related article feature for the customer frontend.'} =
         'A kapcsolódó bejegyzések funkció engedélyezése az ügyfél előtétprogramhoz.';
     $Self->{Translation}->{'Enable voting mechanism on FAQ module.'} = 'Szavazási mechanizmus engedélyezése a GyIK modulban.';
@@ -422,10 +422,10 @@ sub Data {
     $Self->{Translation}->{'Field5'} = '5. mező';
     $Self->{Translation}->{'Full FAQ'} = 'Teljes GyIK';
     $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
+        'HTML tartalomhorgok előállítása a megadott blokkoknál azért, hogy a szűrők használhassák azokat.';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Csoport a GyIK bejegyzések jóváhagyáshoz.';
     $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
-        '';
+        'Az a csoport, amelyhez az ügyfél-felhasználók alapértelmezetten tartoznak (ha ez a beállítás engedélyezve van).';
     $Self->{Translation}->{'History of this FAQ'} = 'A GyIK előzményei';
     $Self->{Translation}->{'Include internal fields on a FAQ based Ticket.'} = 'Belső mezők felvétele egy GyIK-alapú jegyen.';
     $Self->{Translation}->{'Include the name of each field in a FAQ based Ticket.'} = 'Minden mező nevének felvétele egy GyIK-alapú jegyben.';
@@ -443,7 +443,7 @@ sub Data {
         'Állapottípusok listája, amelyek használhatók az ügyfélfelületen.';
     $Self->{Translation}->{'List of state types which can be used in the public interface.'} =
         'Állapottípusok listája, amelyek használhatók a nyilvános felületen.';
-    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = '';
+    $Self->{Translation}->{'Mapping between customer user attribute value and group.'} = 'Leképezés az ügyfél-felhasználó attribútumértéke és a csoport között.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the agent interface.'} =
         'Az ügyintézői felület GyIK böngésző eredményében megjelenítendő GyIK bejegyzések legnagyobb száma.';
     $Self->{Translation}->{'Maximum number of FAQ articles to be displayed in the FAQ Explorer result of the customer interface.'} =
@@ -537,7 +537,7 @@ sub Data {
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál jobb értékeléssel rendelkező bejegyzéseknél (állítsa az értéket „0”-ra a kimenet kikapcsolásához).';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
-        '';
+        'A csillagok megjelenítése a meghatározott értékkel egyenlő vagy annál nagyobb értékeléssel rendelkező bejegyzéseknél, ha engedélyezve van.';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'A legjobb 10 elem megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Szavazás megjelenítése a meghatározott felületeken.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =
