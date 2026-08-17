@@ -290,9 +290,9 @@ sub Data {
     $Self->{Translation}->{'A filter for HTML output to add links behind a defined string. The element Image allows two input kinds. First the name of an image (e.g. faq.png). In this case the OTRS image path will be used. The second possibility is to insert the link to the image.'} =
         'Ein Filter zur automatischen Generierung von FAQ-Links, wenn ein Hinweis auf einen FAQ-Artikel identifiziert wird. Das Element Image erlaubt zwei Eingabeformen: Erstens der Name eines Icons (z. B. faq.png). In diesem Fall wird auf das Grafik-Verzeichnis des OTRS zugegriffen. Als zweite Möglichkeit kann man aber auch den direkten Link zur Grafik angeben (z. B. http://otrs.org/faq.png).';
     $Self->{Translation}->{'Add FAQ article'} = 'FAQ-Artikel hinzufügen';
-    $Self->{Translation}->{'Agent FAQ Related Articles'} = '';
-    $Self->{Translation}->{'Agent FAQ Related Articles.'} = '';
-    $Self->{Translation}->{'Below body'} = '';
+    $Self->{Translation}->{'Agent FAQ Related Articles'} = 'Agenten-FAQ-bezogene Artikel';
+    $Self->{Translation}->{'Agent FAQ Related Articles.'} = 'Agenten-FAQ-bezogene Artikel.';
+    $Self->{Translation}->{'Below body'} = 'Unterhalb des Textes';
     $Self->{Translation}->{'Below subject'} = 'Unterhalb des Betreffs';
     $Self->{Translation}->{'CSS color for the voting result.'} = 'CSS-Farbe für das Bewertungs-Ergebnis.';
     $Self->{Translation}->{'Cache Time To Leave for FAQ items.'} = 'Cachezeit für FAQ-Artikel.';
@@ -422,7 +422,7 @@ sub Data {
     $Self->{Translation}->{'Field5'} = 'Feld5';
     $Self->{Translation}->{'Full FAQ'} = 'Vollständiges FAQ';
     $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
+        'Erzeugt HTML-Kommentar-Hooks für die angegebenen Blöcke, damit Filter diese verwenden können.';
     $Self->{Translation}->{'Group for the approval of FAQ articles.'} = 'Gruppe für die Freigabe von FAQ-Artikeln.';
     $Self->{Translation}->{'Group to which customer users belong by default (if this setting is enabled).'} =
         'Gruppe, zu der Kundenbenutzer standardmäßig gehören (sofern diese Einstellung aktiviert ist).';
@@ -537,7 +537,7 @@ sub Data {
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value (set value \'0\' to deactivate the output).'} =
         'Zeigt die Sterne für die Artikel mit einer Bewertung gleich oder größer wie der definierte Wert an (Setzen Sie den Wert auf \'0\' zum Deaktivieren der Ausgabe).';
     $Self->{Translation}->{'Show the stars for the articles with a rating equal or greater like the defined value if enabled.'} =
-        '';
+        'Zeigt die Sterne für die Artikel mit einer Bewertung gleich oder größer wie der definierte Wert an, wenn aktiviert.';
     $Self->{Translation}->{'Show top 10 items in defined interfaces.'} = 'Interfaces in denen das Top 10 Feature angezeigt werden soll.';
     $Self->{Translation}->{'Show voting in defined interfaces.'} = 'Interfaces in denen das Voting Feature angezeigt werden soll.';
     $Self->{Translation}->{'Shows a link in the menu that allows linking a FAQ with another object in the zoom view of such FAQ of the agent interface.'} =

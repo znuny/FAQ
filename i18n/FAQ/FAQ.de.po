@@ -1477,15 +1477,15 @@ msgstr "öffentlich (öffentlich)"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles"
-msgstr ""
+msgstr "Agenten-FAQ-bezogene Artikel"
 
 #. SysConfig
 msgid "Agent FAQ Related Articles."
-msgstr ""
+msgstr "Agenten-FAQ-bezogene Artikel."
 
 #. SysConfig
 msgid "Below body"
-msgstr ""
+msgstr "Unterhalb des Textes"
 
 #. SysConfig
 msgid "Below subject"
@@ -1513,7 +1513,7 @@ msgstr "Aktiviert die Funktion verwandte Artikel für die Agenten-Oberfläche."
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
-msgstr ""
+msgstr "Erzeugt HTML-Kommentar-Hooks für die angegebenen Blöcke, damit Filter diese verwenden können."
 
 #. SysConfig
 msgid "Group to which customer users belong by default (if this setting is enabled)."
@@ -1525,7 +1525,7 @@ msgstr "Mapping zwischen Kundenbenutzer-Attributwert und Gruppe."
 
 #. SysConfig
 msgid "Show the stars for the articles with a rating equal or greater like the defined value if enabled."
-msgstr ""
+msgstr "Zeigt die Sterne für die Artikel mit einer Bewertung gleich oder größer wie der definierte Wert an, wenn aktiviert."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/CustomerFAQSearchResultShort.tt
 msgid "Search Results for"
