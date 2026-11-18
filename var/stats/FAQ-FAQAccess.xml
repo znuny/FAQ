@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<otrs_stats>
+<znuny_stats>
 <Cache>0</Cache>
 <Description>Shows an overview of FAQ articles in a defined time period sorted by access numbers.</Description>
 <Format>CSV</Format>
@@ -14,4 +14,4 @@
 <SumRow>0</SumRow>
 <Title>FAQ access overview</Title>
 <Valid>1</Valid>
-</otrs_stats>
+</znuny_stats>

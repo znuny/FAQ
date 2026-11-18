@@ -22,7 +22,7 @@ customers, therefore effectively saving time.
 
 **Prerequisites**
 
-- Znuny 7.3
+- Znuny 7.5
 
 **Installation**
 
